@@ -16,24 +16,29 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
         child: Column(
           children: [
             Expanded(
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    radius: 12,
-                  ),
-                  Icon(Icons.comment_bank_outlined),
-                  Text("128"),
-                  Icon(Icons.vpn_key),
-                  Text("0"),
-                  Icon(Icons.shield),
-                  Text("3"),
-                  Badge(
-                    child: Icon(
-                      Icons.notifications,
-                      color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(
+                      radius: 16,
                     ),
-                  )
-                ],
+
+                    Icon(Icons.comment_bank_outlined),
+                    Text("128"),
+                    Icon(Icons.vpn_key),
+                    Text("0"),
+                    Icon(Icons.shield),
+                    Text("3"),
+                    Badge(
+                      child: Icon(
+                        Icons.notifications,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
               flex: 2,
             ),
@@ -42,35 +47,38 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
               flex: 20,
             ),
             Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home),
-                    iconSize: 28,
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home),
+                      iconSize: 28,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.radio_button_checked),
+                      iconSize: 28,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.shield),
+                      iconSize: 28,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.waterfall_chart),
+                      iconSize: 28,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.confirmation_num_outlined),
+                      iconSize: 28,
+                    ),
+                  ],
+                ),
               ),
               flex: 2,
             ),
