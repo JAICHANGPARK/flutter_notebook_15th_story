@@ -11,6 +11,15 @@ class BoxizHomePage extends StatefulWidget {
 class _BoxizHomePageState extends State<BoxizHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+
+      body: Column(
+        children: [
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 20,),
+          Expanded(child: Placeholder(), flex: 2,),
+        ],
+      ),
+    );
   }
 }
