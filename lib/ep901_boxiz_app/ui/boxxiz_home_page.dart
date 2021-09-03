@@ -34,10 +34,11 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
                 ],
               ),
               flex: 2,
