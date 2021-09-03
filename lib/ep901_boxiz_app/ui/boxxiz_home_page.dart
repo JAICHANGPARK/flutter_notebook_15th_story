@@ -17,12 +17,23 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
           children: [
             Expanded(
               child: Row(
-                children: [CircleAvatar(
-                  radius: 12,
-                ),
-                Badge(
-                  child: Icon(Icons.notifications, color: Colors.white,),
-                )],
+                children: [
+                  CircleAvatar(
+                    radius: 12,
+                  ),
+                  Icon(Icons.comment_bank_outlined),
+                  Text("128"),
+                  Icon(Icons.vpn_key),
+                  Text("0"),
+                  Icon(Icons.shield),
+                  Text("3"),
+                  Badge(
+                    child: Icon(
+                      Icons.notifications,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
               ),
               flex: 2,
             ),
@@ -34,11 +45,31 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home), iconSize: 28,),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                    iconSize: 28,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                    iconSize: 28,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                    iconSize: 28,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                    iconSize: 28,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                    iconSize: 28,
+                  ),
                 ],
               ),
               flex: 2,
