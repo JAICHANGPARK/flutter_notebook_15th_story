@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class BoxizHomePage extends StatefulWidget {
@@ -15,7 +16,14 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                children: [CircleAvatar(
+                  radius: 12,
+                ),
+                Badge(
+                  child: Icon(Icons.notifications, color: Colors.white,),
+                )],
+              ),
               flex: 2,
             ),
             Expanded(
@@ -23,7 +31,15 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
               flex: 20,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                ],
+              ),
               flex: 2,
             ),
           ],
