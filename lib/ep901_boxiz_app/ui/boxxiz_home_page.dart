@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep901_boxiz_app/model/boxiz.dart';
 
 class BoxizHomePage extends StatefulWidget {
   const BoxizHomePage({Key? key}) : super(key: key);
@@ -43,7 +44,9 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
             ),
             Expanded(
               child: ListView.builder(
+                itemCount: boxizItems.length,
                 itemBuilder: (context, index){
+                  Boxiz _boxiz = boxizItems[index];
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
