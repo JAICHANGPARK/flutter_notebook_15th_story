@@ -45,7 +45,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
             Expanded(
               child: ListView.builder(
                 itemCount: boxizItems.length,
-                itemBuilder: (context, index){
+                itemBuilder: (context, index) {
                   Boxiz _boxiz = boxizItems[index];
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -53,19 +53,32 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                       height: 380,
                       child: Column(
                         children: [
-                          Expanded(child: Container(
-                            decoration: BoxDecoration(color: Colors.blue),
-                          )),
                           Expanded(
+                              flex: 5,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(16),
+                                    topLeft: Radius.circular(16)
+                                  ),
+                                    color: Colors.blue,
+                                    image: DecorationImage(image:
+                                    NetworkImage(_boxiz.img ?? ""), fit: BoxFit.cover)),
+                              )),
+                          Expanded(
+                            flex: 4,
                             child: Column(
                               children: [
-                                
+                                Row(
+                                  children: [
+                                    
+                                  ],
+                                )
                               ],
                             ),
                           )
                         ],
                       ),
-
                     ),
                   );
                 },
