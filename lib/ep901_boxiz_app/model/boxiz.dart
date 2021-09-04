@@ -7,5 +7,8 @@ class Boxiz{
   String? title;
   String? datetime;
   String? coin;
-  String 
+  List<String>? items;
+  String? liveIn;
+
+  Boxiz({this.img, this.prize, this.type, this.title, this.datetime, this.coin, this.items, this.liveIn});
 }
