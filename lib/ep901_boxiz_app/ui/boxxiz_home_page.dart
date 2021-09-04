@@ -24,7 +24,6 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                     CircleAvatar(
                       radius: 16,
                     ),
-
                     Icon(Icons.comment_bank_outlined),
                     Text("128"),
                     Icon(Icons.vpn_key),
@@ -43,7 +42,15 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
               flex: 2,
             ),
             Expanded(
-              child: Placeholder(),
+              child: ListView.builder(
+                itemBuilder: (context, index){
+                  return Container(
+                    height: 380,
+                    decoration: BoxDecoration(color: Colors.blue),
+                  );
+                },
+              
+              ),
               flex: 20,
             ),
             Expanded(
