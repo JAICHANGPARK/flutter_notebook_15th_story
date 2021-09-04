@@ -46,9 +46,23 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                 itemBuilder: (context, index){
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
+                    child: SizedBox(
                       height: 380,
-                      decoration: BoxDecoration(color: Colors.blue),
+                      child: Column(
+                        children: [
+                          Expanded(child: Container(
+                            decoration: BoxDecoration(color: Colors.blue),
+                          )),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+
                     ),
                   );
                 },
