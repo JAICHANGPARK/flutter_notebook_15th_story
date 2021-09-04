@@ -8,7 +8,7 @@ class Boxiz{
   String? datetime;
   String? coin;
   List<String>? items;
-  String? liveIn;
+  Duration? liveIn;
 
   Boxiz({this.img, this.prize, this.type, this.title, this.datetime, this.coin, this.items, this.liveIn});
 }
@@ -19,6 +19,9 @@ List<Boxiz> boxizItems = [
     title: "Bulls @ Lakers",
     datetime: "Jun 20 @ 8:30PM ET",
     coin: "50 Box Coin",
-    liveIn: "4m 54s",
+    liveIn: Duration(seconds: 54, minutes: 4),
+    prize: "VIRTUAL PRIZE",
+    type: "NBA",
+    items: ["05", "17", "35" , "68", "92"]
   )
 ];
