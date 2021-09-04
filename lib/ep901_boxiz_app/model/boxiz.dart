@@ -12,3 +12,8 @@ class Boxiz{
 
   Boxiz({this.img, this.prize, this.type, this.title, this.datetime, this.coin, this.items, this.liveIn});
 }
+
+
+List<Boxiz> boxizItems = [
+  
+];
