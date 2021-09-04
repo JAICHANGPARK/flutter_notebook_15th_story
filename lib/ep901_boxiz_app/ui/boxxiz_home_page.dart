@@ -71,7 +71,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                               children: [
                                 Row(
                                   children: [
-                                    
+
                                   ],
                                 )
                               ],
