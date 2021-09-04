@@ -44,12 +44,14 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index){
-                  return Container(
-                    height: 380,
-                    decoration: BoxDecoration(color: Colors.blue),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 380,
+                      decoration: BoxDecoration(color: Colors.blue),
+                    ),
                   );
                 },
-              
               ),
               flex: 20,
             ),
