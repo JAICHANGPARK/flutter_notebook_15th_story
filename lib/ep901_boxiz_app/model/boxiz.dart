@@ -15,5 +15,10 @@ class Boxiz{
 
 
 List<Boxiz> boxizItems = [
-  
+  Boxiz(
+    title: "Bulls @ Lakers",
+    datetime: "Jun 20 @ 8:30PM ET",
+    coin: "50 Box Coin",
+    liveIn: "4m 54s",
+  )
 ];
