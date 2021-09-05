@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep901_boxiz_app/boxiz_theme.dart';
 import 'package:flutter_notebook_15th_story/ep901_boxiz_app/model/boxiz.dart';
 
 class BoxizHomePage extends StatefulWidget {
@@ -25,12 +26,24 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                     CircleAvatar(
                       radius: 16,
                     ),
-                    Icon(Icons.comment_bank_outlined),
-                    Text("128"),
-                    Icon(Icons.vpn_key),
-                    Text("0"),
-                    Icon(Icons.shield),
-                    Text("3"),
+                    Icon(
+                      Icons.comment_bank_outlined,
+                      color: Colors.orange,
+                    ),
+                    Text(
+                      "128",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Icon(
+                      Icons.vpn_key,
+                      color: Colors.grey,
+                    ),
+                    Text("0", style: TextStyle(color: Colors.white)),
+                    Icon(
+                      Icons.shield,
+                      color: BoxizTheme.accentColor,
+                    ),
+                    Text("3", style: TextStyle(color: Colors.white)),
                     Badge(
                       child: Icon(
                         Icons.notifications,
@@ -57,22 +70,17 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                               flex: 5,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(16),
-                                    topLeft: Radius.circular(16)
-                                  ),
+                                    borderRadius:
+                                        BorderRadius.only(topRight: Radius.circular(16), topLeft: Radius.circular(16)),
                                     color: Colors.blue,
-                                    image: DecorationImage(image:
-                                    NetworkImage(_boxiz.img ?? ""), fit: BoxFit.cover)),
+                                    image: DecorationImage(image: NetworkImage(_boxiz.img ?? ""), fit: BoxFit.cover)),
                               )),
                           Expanded(
                             flex: 4,
                             child: Column(
                               children: [
                                 Row(
-                                  children: [
-
-                                  ],
+                                  children: [],
                                 )
                               ],
                             ),
@@ -95,26 +103,27 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                       onPressed: () {},
                       icon: Icon(Icons.home),
                       iconSize: 28,
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.radio_button_checked),
-                      iconSize: 28,
+                      iconSize: 28,color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.shield),
-                      iconSize: 28,
+                      iconSize: 28,color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.waterfall_chart),
-                      iconSize: 28,
+                      iconSize: 28,color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.confirmation_num_outlined),
-                      iconSize: 28,
+                      iconSize: 28,color: Colors.white,
                     ),
                   ],
                 ),
