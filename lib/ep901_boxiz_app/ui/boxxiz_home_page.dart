@@ -77,12 +77,25 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                               )),
                           Expanded(
                             flex: 4,
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [],
-                                )
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("${_boxiz.prize}"),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.4),
+
+                                        ),
+                                        child: Text("${_boxiz.type}"),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
