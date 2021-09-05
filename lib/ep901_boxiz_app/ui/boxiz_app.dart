@@ -9,7 +9,9 @@ class BoxizApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.light().copyWith(scaffoldBackgroundColor: BoxizTheme.backgroundColor),
+      theme: ThemeData.light().copyWith(
+          accentColor: ,
+          scaffoldBackgroundColor: BoxizTheme.backgroundColor),
       home: BoxizHomePage(),
     );
   }
