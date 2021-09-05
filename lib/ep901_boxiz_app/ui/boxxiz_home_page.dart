@@ -127,6 +127,9 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ],
+                                  ),
+                                  Row(
+                                    children: _boxiz.items?.map((e) => Container()).toList() ?? [],
                                   )
                                 ],
                               ),
