@@ -91,6 +91,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                         ),
                                       ),
                                       Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 4,vertical: 2),
                                         decoration: BoxDecoration(
                                             color: Colors.white.withOpacity(0.4),
                                             borderRadius: BorderRadius.circular(4)),
