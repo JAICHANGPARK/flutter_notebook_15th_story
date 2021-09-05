@@ -62,7 +62,11 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                   Boxiz _boxiz = boxizItems[index];
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: SizedBox(
+                    child: Container(
+
+                      decoration: BoxDecoration(   color: BoxizTheme.cardColor,
+                        borderRadius: BorderRadius.circular(16)
+                      ),
                       height: 380,
                       child: Column(
                         children: [
@@ -154,6 +158,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                                 .toList() ??
                                             [],
                                       ),
+                                      Spacer(),
                                       Text(
                                         "Live in",
                                         style: TextStyle(
@@ -161,6 +166,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold),
                                       ),
+                                      SizedBox(width: 8,),
                                       Text(
                                         "${_boxiz.liveIn?.inMinutes ?? 0}m ${_boxiz.liveIn?.inSeconds ?? 0}s",
                                         style: TextStyle(color: BoxizTheme.accentColor),
