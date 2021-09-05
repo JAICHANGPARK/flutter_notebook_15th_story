@@ -161,7 +161,10 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      Text("${_boxiz.liveIn?.inMinutes ?? 0}m ")
+                                      Text(
+                                        "${_boxiz.liveIn?.inMinutes ?? 0}m ${_boxiz.liveIn?.inSeconds ?? 0}s",
+                                        style: TextStyle(color: BoxizTheme.accentColor),
+                                      )
                                     ],
                                   )
                                 ],
