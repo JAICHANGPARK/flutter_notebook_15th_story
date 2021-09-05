@@ -103,9 +103,18 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                       )
                                     ],
                                   ),
+                                  SizedBox(height: 8,),
                                   Text(
                                     _boxiz.title ?? "unknown",
-                                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                    style: TextStyle(color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    _boxiz.datetime ?? "unknown",
+                                    style: TextStyle(color: Colors.white.withOpacity(0.5),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
