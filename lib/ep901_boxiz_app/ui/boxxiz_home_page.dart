@@ -80,6 +80,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,7 +92,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                         ),
                                       ),
                                       Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 4,vertical: 2),
+                                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                         decoration: BoxDecoration(
                                             color: Colors.white.withOpacity(0.4),
                                             borderRadius: BorderRadius.circular(4)),
@@ -102,7 +103,10 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                       )
                                     ],
                                   ),
-                                  Text(_boxiz.title ?? "unknown", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold), )
+                                  Text(
+                                    _boxiz.title ?? "unknown",
+                                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                  )
                                 ],
                               ),
                             ),
