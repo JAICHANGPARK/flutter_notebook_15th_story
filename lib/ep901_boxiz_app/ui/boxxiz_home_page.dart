@@ -115,6 +115,18 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                     style: TextStyle(color: Colors.white.withOpacity(0.5),
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(height: 16,),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.emoji_events, color: Colors.tealAccent,),
+                                      Text(
+                                        _boxiz.coin ?? "unknown",
+                                        style: TextStyle(color: Colors.tealAccent,
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
                                   )
                                 ],
                               ),
