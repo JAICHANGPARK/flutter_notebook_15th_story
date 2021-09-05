@@ -8,11 +8,20 @@ class BoxizApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = ThemeData();
     return MaterialApp(
-      theme: ThemeData.light().copyWith(
-          accentColor: ,
-          scaffoldBackgroundColor: BoxizTheme.backgroundColor),
-      home: BoxizHomePage(),
-    );
+        theme: theme.copyWith(
+          colorScheme: theme.colorScheme.copyWith(
+              background: BoxizTheme.backgroundColor,
+              secondary: BoxizTheme.accentColor
+          ),
+          scaffoldBackgroundColor: BoxizTheme.backgroundColor,
+
+        ),
+
+        // ThemeData.light().copyWith(
+        //     accentColor: ,
+        //     scaffoldBackgroundColor: BoxizTheme.backgroundColor),
+        home: BoxizHomePage(),);
   }
 }
