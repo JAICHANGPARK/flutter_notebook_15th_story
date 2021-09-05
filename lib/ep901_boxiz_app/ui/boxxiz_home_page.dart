@@ -129,7 +129,17 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                     ],
                                   ),
                                   Row(
-                                    children: _boxiz.items?.map((e) => Container()).toList() ?? [],
+                                    children: _boxiz.items?.map((e) => Container(
+                                      margin: EdgeInsets.only(right: 4),
+                                      padding: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.white.withOpacity(0.3)),
+                                        borderRadius: BorderRadius.circular(4)
+                                      ),
+                                      child: Text("$e", style: TextStyle(
+                                        color: Colors.orange
+                                      ),),
+                                    )).toList() ?? [],
                                   )
                                 ],
                               ),
