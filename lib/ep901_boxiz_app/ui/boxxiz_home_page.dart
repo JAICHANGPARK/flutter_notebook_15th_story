@@ -101,7 +101,8 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                         ),
                                       )
                                     ],
-                                  )
+                                  ),
+                                  Text(_boxiz.title ?? "unknown", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold), )
                                 ],
                               ),
                             ),
