@@ -84,13 +84,20 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("${_boxiz.prize}"),
+                                      Text(
+                                        "${_boxiz.prize}",
+                                        style: TextStyle(
+                                          color: Colors.white.withOpacity(0.6),
+                                        ),
+                                      ),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.4),
-
+                                            color: Colors.white.withOpacity(0.4),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        child: Text(
+                                          "${_boxiz.type}",
+                                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                                         ),
-                                        child: Text("${_boxiz.type}"),
                                       )
                                     ],
                                   )
@@ -121,22 +128,26 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.radio_button_checked),
-                      iconSize: 28,color: Colors.white,
+                      iconSize: 28,
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.shield),
-                      iconSize: 28,color: Colors.white,
+                      iconSize: 28,
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.waterfall_chart),
-                      iconSize: 28,color: Colors.white,
+                      iconSize: 28,
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.confirmation_num_outlined),
-                      iconSize: 28,color: Colors.white,
+                      iconSize: 28,
+                      color: Colors.white,
                     ),
                   ],
                 ),
