@@ -17,7 +17,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
       body: Stack(
         children: [
             Positioned(child: Container(
-              decoration: BoxDecoration(),
+              decoration: BoxDecoration(
+                image: 
+              ),
             )),
 
         ],
