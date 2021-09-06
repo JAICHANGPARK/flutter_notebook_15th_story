@@ -49,10 +49,19 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
           Positioned(
             left: 0,
             right: 0,
-            top: 48,
+            top: 64,
             bottom: 16,
             child: Column(
               children: [
+                Row(
+                  children: [
+                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
+                    Text( widget.boxiz?.title ?? "",style: TextStyle(
+                      
+                    ),)
+                  ],
+                ),
+
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
