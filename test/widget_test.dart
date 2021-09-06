@@ -6,6 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep901_boxiz_app/ui/boxiz_app.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_notebook_15th_story/main.dart';
@@ -13,7 +14,7 @@ import 'package:flutter_notebook_15th_story/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const BoxizApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
