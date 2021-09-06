@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep901_boxiz_app/boxiz_theme.dart';
 import 'package:flutter_notebook_15th_story/ep901_boxiz_app/model/boxiz.dart';
 
 class BoxizDetailPage extends StatefulWidget {
@@ -23,7 +24,12 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               bottom: MediaQuery.of(context).size.height / 2,
               child: Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [], begin: Alignment.bottomCenter, end: Alignment.topCenter),
+                    gradient: LinearGradient(colors: [
+                      BoxizTheme.backgroundColor,
+                      BoxizTheme.backgroundColor.withOpacity(0.5),
+                      BoxizTheme.backgroundColor.withOpacity(0.25),
+                      Colors.transparent
+                    ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
                     image: DecorationImage(
                         image: NetworkImage(
                       widget.boxiz?.img ?? "",
