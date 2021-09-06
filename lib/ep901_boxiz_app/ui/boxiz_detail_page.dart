@@ -54,14 +54,17 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                    IconButton(onPressed: () {}, color: Colors.white, icon: Icon(Icons.arrow_back_ios)),
                     Text(
                       widget.boxiz?.title ?? "",
                       style: TextStyle(color: Colors.white),
-                    )
+                    ),
+                    IconButton(onPressed: () {}, color: Colors.white, icon: Icon(Icons.info_outline)),
                   ],
                 ),
+                
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
