@@ -55,13 +55,13 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               children: [
                 Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
-                    Text( widget.boxiz?.title ?? "",style: TextStyle(
-                      
-                    ),)
+                    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                    Text(
+                      widget.boxiz?.title ?? "",
+                      style: TextStyle(color: Colors.white),
+                    )
                   ],
                 ),
-
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
