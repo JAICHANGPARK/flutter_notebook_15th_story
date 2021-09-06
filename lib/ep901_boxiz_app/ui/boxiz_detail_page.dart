@@ -14,7 +14,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
+
         ],
       ),
     );
