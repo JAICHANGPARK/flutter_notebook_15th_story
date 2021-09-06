@@ -21,7 +21,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               left: 0,
               right: 0,
               top: 0,
-              bottom: MediaQuery.of(context).size.height / 2,
+              bottom: MediaQuery.of(context).size.height / 1.5,
               child: Container(
                 decoration: BoxDecoration(
 
@@ -36,7 +36,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               left: 0,
               right: 0,
               top: 0,
-              bottom: MediaQuery.of(context).size.height / 2,
+              bottom: MediaQuery.of(context).size.height /1.5,
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
