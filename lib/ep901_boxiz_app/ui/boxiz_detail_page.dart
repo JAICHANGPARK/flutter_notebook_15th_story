@@ -53,11 +53,15 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
             bottom: 16,
             child: Column(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: BoxizTheme.accentColor,
+                    ),
+                    child: Text("SUBMIT"),
                   ),
-                  child: Text("SUBMIT"),
                 ),
               ],
             ),
