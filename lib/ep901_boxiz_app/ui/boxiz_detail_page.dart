@@ -59,11 +59,12 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: BoxizTheme.accentColor,
+                      borderRadius: BorderRadius.circular(32)
                     ),
                     padding: EdgeInsets.symmetric(
                       vertical: 12,
                     ),
-                    child: Center(child: Text("SUBMIT")),
+                    child: Center(child: Text("SUBMIT",)),
                   ),
                 ),
               ],
