@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep901_boxiz_app/boxiz_theme.dart';
 import 'package:flutter_notebook_15th_story/ep901_boxiz_app/model/boxiz.dart';
+import 'package:flutter_notebook_15th_story/ep901_boxiz_app/ui/boxiz_detail_page.dart';
 
 class BoxizHomePage extends StatefulWidget {
   const BoxizHomePage({Key? key}) : super(key: key);
@@ -64,7 +65,8 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: GestureDetector(
                       onTap: (){
-                        
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                        BoxizDetailPage()));
                       },
                       child: Container(
                         decoration: BoxDecoration(   color: BoxizTheme.cardColor,
