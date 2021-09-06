@@ -24,16 +24,18 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               bottom: MediaQuery.of(context).size.height / 2,
               child: Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                      BoxizTheme.backgroundColor,
-                      BoxizTheme.backgroundColor.withOpacity(0.5),
-                      BoxizTheme.backgroundColor.withOpacity(0.25),
-                      Colors.transparent
-                    ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
-                    image: DecorationImage(
-                        image: NetworkImage(
-                      widget.boxiz?.img ?? "",
-                    ))),
+                  gradient: LinearGradient(colors: [
+                    BoxizTheme.backgroundColor,
+                    BoxizTheme.backgroundColor.withOpacity(0.5),
+                    BoxizTheme.backgroundColor.withOpacity(0.25),
+                    Colors.transparent
+                  ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
+                  image: DecorationImage(
+                      image: NetworkImage(
+                        widget.boxiz?.img ?? "",
+                      ),
+                      fit: BoxFit.cover),
+                ),
               )),
         ],
       ),
