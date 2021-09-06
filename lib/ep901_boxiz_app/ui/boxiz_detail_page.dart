@@ -57,14 +57,15 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                     width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: BoxizTheme.accentColor,
-                      borderRadius: BorderRadius.circular(32)
-                    ),
+                    decoration: BoxDecoration(color: BoxizTheme.accentColor, borderRadius: BorderRadius.circular(32)),
                     padding: EdgeInsets.symmetric(
                       vertical: 12,
                     ),
-                    child: Center(child: Text("SUBMIT",)),
+                    child: Center(
+                        child: Text(
+                      "SUBMIT",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    )),
                   ),
                 ),
               ],
