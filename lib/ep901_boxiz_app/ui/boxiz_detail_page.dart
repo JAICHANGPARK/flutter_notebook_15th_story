@@ -60,7 +60,10 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     decoration: BoxDecoration(
                       color: BoxizTheme.accentColor,
                     ),
-                    child: Text("SUBMIT"),
+                    padding: EdgeInsets.symmetric(
+                      vertical: 12,
+                    ),
+                    child: Center(child: Text("SUBMIT")),
                   ),
                 ),
               ],
