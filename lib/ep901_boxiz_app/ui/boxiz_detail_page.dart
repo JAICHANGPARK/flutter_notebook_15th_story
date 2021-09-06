@@ -24,7 +24,6 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               bottom: MediaQuery.of(context).size.height / 1.5,
               child: Container(
                 decoration: BoxDecoration(
-
                   image: DecorationImage(
                       image: NetworkImage(
                         widget.boxiz?.img ?? "",
@@ -36,7 +35,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
               left: 0,
               right: 0,
               top: 0,
-              bottom: MediaQuery.of(context).size.height /1.5,
+              bottom: MediaQuery.of(context).size.height / 1.5,
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
@@ -47,6 +46,11 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
                 ),
               )),
+          Positioned(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
