@@ -47,8 +47,19 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 ),
               )),
           Positioned(
+            left: 0,
+            right: 0,
+            top: 48,
+            bottom: 16,
             child: Column(
-              children: [],
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                  child: Text("SUBMIT"),
+                ),
+              ],
             ),
           )
         ],
