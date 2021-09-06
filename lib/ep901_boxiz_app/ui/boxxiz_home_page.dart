@@ -66,7 +66,7 @@ class _BoxizHomePageState extends State<BoxizHomePage> {
                     child: GestureDetector(
                       onTap: (){
                         Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                        BoxizDetailPage()));
+                        BoxizDetailPage(boxiz: _boxiz,)));
                       },
                       child: Container(
                         decoration: BoxDecoration(   color: BoxizTheme.cardColor,
