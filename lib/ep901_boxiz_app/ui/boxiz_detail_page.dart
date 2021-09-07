@@ -154,17 +154,20 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                         width: 16,
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(4),
+                          border: Border.all(color: BoxizTheme.accentColor)
                         ),
                       ),
-                      Text("TAKEN"),
+                      Text("AVAILABLE"),
                       Container(
                         height: 16,
                         width: 16,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                          color: Colors.deepOrangeAccent,
+                          borderRadius: BorderRadius.circular(4)
                         ),
                       ),
-                      Text("TAKEN"),
+                      Text("SELECTED"),
                     ],
                   ),
                 ),
