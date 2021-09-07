@@ -96,39 +96,42 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     )
                   ],
                 ),
-                SizedBox(
-                    height: 42,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: _selectItem.length,
-                        itemBuilder: (context, index) {
-                          var item = _selectItem[index];
-                          if (item.isOpen) {
-                            return Container(
-                              decoration: BoxDecoration(
-                                color: Colors.deepOrangeAccent,
-                              ),
-                              child: Center(
-                                child: Text(item.number.toString()),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                      height: 42,
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: _selectItem.length,
+                          itemBuilder: (context, index) {
+                            var item = _selectItem[index];
+                            if (item.isOpen) {
+                              return Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.deepOrangeAccent,
+                                ),
+                                child: Center(
+                                  child: Text(item.number.toString()),
+                                ),
+                              );
+                            }
+                            return Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: BoxizTheme.backgroundColor,
+                                    borderRadius: BorderRadius.circular(3),
+                                    border: Border.all(color: BoxizTheme.accentColor)),
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Center(
+                                    child: Icon(
+                                  Icons.lock,
+                                  color: BoxizTheme.accentColor,
+                                )),
                               ),
                             );
-                          }
-                          return Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: BoxizTheme.backgroundColor,
-                                  borderRadius: BorderRadius.circular(3),
-                                  border: Border.all(color: BoxizTheme.accentColor)),
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Center(
-                                  child: Icon(
-                                Icons.lock,
-                                color: BoxizTheme.accentColor,
-                              )),
-                            ),
-                          );
-                        })),
+                          })),
+                ),
                 Expanded(child: Placeholder()),
                 SizedBox(
                   height: 32,
@@ -148,6 +151,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     )),
                   ),
                 ),
+                Text("Grid 1",style: TextStyle(
+                  color: Colors.white
+                ),)
               ],
             ),
           )
