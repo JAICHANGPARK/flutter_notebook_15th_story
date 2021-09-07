@@ -67,9 +67,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 Column(
                   children: [
                     Text(
-                      "${widget.boxiz?.liveIn?.inHours ?? "0h"} "
-                          "${widget.boxiz?.liveIn?.inMinutes ?? "0m"}"
-                          "${widget.boxiz?.liveIn?.inSeconds ?? "0s"}",
+                      "${widget.boxiz?.liveIn?.inHours ?? "0h"}h "
+                          "${widget.boxiz?.liveIn?.inMinutes ?? "0m"}m "
+                          "${widget.boxiz?.liveIn?.inSeconds ?? "0s"}s",
                       style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     Text(
