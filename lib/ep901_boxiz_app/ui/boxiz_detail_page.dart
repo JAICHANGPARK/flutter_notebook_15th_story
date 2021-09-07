@@ -119,7 +119,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                               padding: const EdgeInsets.all(4.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: BoxizTheme.backgroundColor,
+                                    color: BoxizTheme.backgroundColor,
                                     borderRadius: BorderRadius.circular(3),
                                     border: Border.all(color: BoxizTheme.accentColor)),
                                 padding: EdgeInsets.symmetric(horizontal: 16),
@@ -131,6 +131,13 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                               ),
                             );
                           })),
+                ),
+                Text(
+                  "Grid 1",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Row(
+                  children: [],
                 ),
                 Expanded(child: Placeholder()),
                 SizedBox(
@@ -151,9 +158,6 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     )),
                   ),
                 ),
-                Text("Grid 1",style: TextStyle(
-                  color: Colors.white
-                ),)
               ],
             ),
           )
