@@ -1,9 +1,9 @@
 
 class BoxizSelect{
   int? number;
-  bool? isOpen;
+  bool isOpen;
 
-  BoxizSelect({this.number, this.isOpen});
+  BoxizSelect({this.number, required this.isOpen});
 }
 
 class Boxiz{
