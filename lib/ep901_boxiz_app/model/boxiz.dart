@@ -1,4 +1,10 @@
 
+class BoxizSelect{
+  int? number;
+  bool? isOpen;
+
+  BoxizSelect({this.number, this.isOpen});
+}
 
 class Boxiz{
   String? img;
