@@ -98,7 +98,16 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 ),
                 SizedBox(
                     height: 42,
-                    child: ListView.builder(itemBuilder: (context, index){})),
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: _selectItem.length,
+                        itemBuilder: (context, index){
+                          var item = _selectItem[index];
+                          if(item.isOpen){
+
+                          }
+                          return Container();
+                        })),
                 Expanded(child: Placeholder()),
                 SizedBox(
                   height: 32,
