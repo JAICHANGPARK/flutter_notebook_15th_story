@@ -64,7 +64,15 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     IconButton(onPressed: () {}, color: Colors.white, icon: Icon(Icons.info_outline)),
                   ],
                 ),
-                Column(),
+                Column(
+                  children: [
+                    Text( widget.boxiz?.liveIn.toString() ?? "",style: TextStyle(
+                      color: BoxizTheme.accentColor,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18
+                    ),)
+                  ],
+                ),
                 Expanded(child: Placeholder()),
                 SizedBox(
                   height: 32,
