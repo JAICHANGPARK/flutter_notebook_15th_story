@@ -66,14 +66,16 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 ),
                 Column(
                   children: [
-                    Text( widget.boxiz?.liveIn.toString() ?? "",style: TextStyle(
-                      color: BoxizTheme.accentColor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18
-                    ),),
-                    Text("Starts at ${ widget.boxiz?.datetime}", style: TextStyle(
-                      color: Colors.white
-                    ),)
+                    Text(
+                      "${widget.boxiz?.liveIn?.inHours ?? "0h"} "
+                          "${widget.boxiz?.liveIn?.inMinutes ?? "0m"}"
+                          "${widget.boxiz?.liveIn?.inSeconds ?? "0s"}",
+                      style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold, fontSize: 18),
+                    ),
+                    Text(
+                      "Starts at ${widget.boxiz?.datetime}",
+                      style: TextStyle(color: Colors.white),
+                    )
                   ],
                 ),
                 Expanded(child: Placeholder()),
