@@ -70,6 +70,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                       color: BoxizTheme.accentColor,
                       fontWeight: FontWeight.bold,
                       fontSize: 18
+                    ),),
+                    Text("Starts at ${ widget.boxiz?.datetime}", style: TextStyle(
+                      color: Colors.white
                     ),)
                   ],
                 ),
