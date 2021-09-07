@@ -76,10 +76,15 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                         fontSize: 32,
                       ),
                     ),
-                    SizedBox(height: 4,),
+                    SizedBox(
+                      height: 4,
+                    ),
                     Text(
                       "Starts at ${widget.boxiz?.datetime}",
-                      style: TextStyle(color: Colors.white.withOpacity(0.4),fontSize: 12, ),
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.7),
+                        fontSize: 12,
+                      ),
                     )
                   ],
                 ),
