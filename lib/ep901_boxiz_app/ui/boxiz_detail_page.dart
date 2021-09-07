@@ -148,7 +148,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                           color: Colors.white.withOpacity(0.2),
                         ),
                       ),
-                      Text("TAKEN"),
+                      Text("TAKEN",
+                        style: TextStyle(color: Colors.white, fontSize: 12),),
                       Container(
                         height: 16,
                         width: 16,
@@ -158,7 +159,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                           border: Border.all(color: BoxizTheme.accentColor)
                         ),
                       ),
-                      Text("AVAILABLE"),
+                      Text("AVAILABLE",
+                        style: TextStyle(color: Colors.white, fontSize: 12),),
                       Container(
                         height: 16,
                         width: 16,
@@ -167,7 +169,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                           borderRadius: BorderRadius.circular(4)
                         ),
                       ),
-                      Text("SELECTED"),
+                      Text("SELECTED",
+                        style: TextStyle(color: Colors.white, fontSize: 12),),
                     ],
                   ),
                 ),
