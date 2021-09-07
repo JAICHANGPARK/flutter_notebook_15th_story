@@ -116,7 +116,10 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                           return Padding(
                             padding: const EdgeInsets.all(4.0),
                             child: Container(
-                              decoration: BoxDecoration(border: Border.all(color: BoxizTheme.accentColor)),
+                              decoration: BoxDecoration(
+                                color: BoxizTheme.backgroundColor,
+                                  borderRadius: BorderRadius.circular(3),
+                                  border: Border.all(color: BoxizTheme.accentColor)),
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Center(
                                   child: Icon(
