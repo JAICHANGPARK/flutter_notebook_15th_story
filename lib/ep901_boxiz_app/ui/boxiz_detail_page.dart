@@ -68,13 +68,18 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   children: [
                     Text(
                       "${widget.boxiz?.liveIn?.inHours ?? "0h"}h "
-                          "${widget.boxiz?.liveIn?.inMinutes ?? "0m"}m "
-                          "${widget.boxiz?.liveIn?.inSeconds ?? "0s"}s",
-                      style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold, fontSize: 18),
+                      "${widget.boxiz?.liveIn?.inMinutes ?? "0m"}m "
+                      "${widget.boxiz?.liveIn?.inSeconds ?? "0s"}s",
+                      style: TextStyle(
+                        color: BoxizTheme.accentColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 32,
+                      ),
                     ),
+                    SizedBox(height: 4,),
                     Text(
                       "Starts at ${widget.boxiz?.datetime}",
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white.withOpacity(0.4),fontSize: 12, ),
                     )
                   ],
                 ),
