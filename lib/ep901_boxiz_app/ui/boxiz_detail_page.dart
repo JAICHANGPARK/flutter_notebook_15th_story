@@ -12,6 +12,14 @@ class BoxizDetailPage extends StatefulWidget {
 }
 
 class _BoxizDetailPageState extends State<BoxizDetailPage> {
+
+  List<BoxizSelect> _selectItem = [
+    BoxizSelect(isOpen: false),
+    BoxizSelect(isOpen: false),
+    BoxizSelect(isOpen: false),
+    BoxizSelect(isOpen: false),
+    BoxizSelect(isOpen: false),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,6 +96,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     )
                   ],
                 ),
+                SizedBox(
+                    height: 42,
+                    child: ListView.builder(itemBuilder: (context, index){})),
                 Expanded(child: Placeholder()),
                 SizedBox(
                   height: 32,
