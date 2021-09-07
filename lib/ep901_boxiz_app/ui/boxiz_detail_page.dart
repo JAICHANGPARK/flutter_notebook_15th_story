@@ -134,10 +134,39 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 ),
                 Text(
                   "Grid 1",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
-                Row(
-                  children: [],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        height: 16,
+                        width: 16,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
+                      Text("TAKEN"),
+                      Container(
+                        height: 16,
+                        width: 16,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
+                      Text("TAKEN"),
+                      Container(
+                        height: 16,
+                        width: 16,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
+                      Text("TAKEN"),
+                    ],
+                  ),
                 ),
                 Expanded(child: Placeholder()),
                 SizedBox(
