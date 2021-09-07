@@ -12,7 +12,6 @@ class BoxizDetailPage extends StatefulWidget {
 }
 
 class _BoxizDetailPageState extends State<BoxizDetailPage> {
-
   List<BoxizSelect> _selectItem = [
     BoxizSelect(isOpen: false),
     BoxizSelect(isOpen: false),
@@ -20,6 +19,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
     BoxizSelect(isOpen: false),
     BoxizSelect(isOpen: false),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -101,12 +101,28 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: _selectItem.length,
-                        itemBuilder: (context, index){
+                        itemBuilder: (context, index) {
                           var item = _selectItem[index];
-                          if(item.isOpen){
-
+                          if (item.isOpen) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrangeAccent,
+                              ),
+                              child: Center(
+                                child: Text(item.number.toString()),
+                              ),
+                            );
                           }
-                          return Container();
+                          return Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: BoxizTheme.accentColor)
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 8),
+                            child: Center(
+                              child: Icon(Icons.lock,
+                              color: BoxizTheme.accentColor,)
+                            ),
+                          );
                         })),
                 Expanded(child: Placeholder()),
                 SizedBox(
