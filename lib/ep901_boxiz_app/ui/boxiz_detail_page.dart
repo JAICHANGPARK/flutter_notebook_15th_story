@@ -113,14 +113,16 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                               ),
                             );
                           }
-                          return Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(color: BoxizTheme.accentColor)
-                            ),
-                            padding: EdgeInsets.symmetric(horizontal: 8),
-                            child: Center(
-                              child: Icon(Icons.lock,
-                              color: BoxizTheme.accentColor,)
+                          return Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Container(
+                              decoration: BoxDecoration(border: Border.all(color: BoxizTheme.accentColor)),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Center(
+                                  child: Icon(
+                                Icons.lock,
+                                color: BoxizTheme.accentColor,
+                              )),
                             ),
                           );
                         })),
