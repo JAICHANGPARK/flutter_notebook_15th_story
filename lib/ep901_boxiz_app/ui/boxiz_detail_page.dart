@@ -192,7 +192,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   children: _boxizGridItems.map((e) {
                       return Container(
                         decoration:
-                            BoxDecoration(color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(4)),
+                            BoxDecoration(color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
                       );
                   }).toList(),
                 ),
