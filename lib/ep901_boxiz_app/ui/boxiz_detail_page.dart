@@ -20,6 +20,11 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
     BoxizSelect(isOpen: false),
   ];
 
+  List<BoxizGrid> _boxizGridItems = List.generate(100, (index){
+    
+    return BoxizGrid(isAvailable, number, isSelect)
+  });
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
