@@ -21,7 +21,11 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
   ];
 
   final List<BoxizGrid> _boxizGridItems = List.generate(100, (index) {
-    return BoxizGrid(index % 3 == 0 ? true : false, index, false);
+    return BoxizGrid(
+      (index + 1),
+      false,
+      isAvailable: index % 3 == 0 ? true : false,
+    );
   });
 
   @override
@@ -192,7 +196,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     children: _boxizGridItems.map((e) {
                       return Container(
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                          color: e.isAvailable ? Colors.white.withOpacity(0.2) : Colors.white.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(4),
                         ),
                       );
