@@ -12,7 +12,7 @@ class BoxizDetailPage extends StatefulWidget {
 }
 
 class _BoxizDetailPageState extends State<BoxizDetailPage> {
-  List<BoxizSelect> _selectItem = [
+  final List<BoxizSelect> _selectItem = [
     BoxizSelect(isOpen: false),
     BoxizSelect(isOpen: false),
     BoxizSelect(isOpen: false),
@@ -20,9 +20,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
     BoxizSelect(isOpen: false),
   ];
 
-  List<BoxizGrid> _boxizGridItems = List.generate(100, (index){
-    
-    return BoxizGrid(isAvailable, number, isSelect)
+  final List<BoxizGrid> _boxizGridItems = List.generate(100, (index) {
+    return BoxizGrid(index % 3 == 0 ? true : false, index, false);
   });
 
   @override
@@ -153,29 +152,32 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                           color: Colors.white.withOpacity(0.2),
                         ),
                       ),
-                      Text("TAKEN",
-                        style: TextStyle(color: Colors.white, fontSize: 12),),
+                      Text(
+                        "TAKEN",
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
                       Container(
                         height: 16,
                         width: 16,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                            color: Colors.white.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: BoxizTheme.accentColor)
-                        ),
+                            border: Border.all(color: BoxizTheme.accentColor)),
                       ),
-                      Text("AVAILABLE",
-                        style: TextStyle(color: Colors.white, fontSize: 12),),
+                      Text(
+                        "AVAILABLE",
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
                       Container(
                         height: 16,
                         width: 16,
-                        decoration: BoxDecoration(
-                          color: Colors.deepOrangeAccent,
-                          borderRadius: BorderRadius.circular(4)
-                        ),
+                        decoration:
+                            BoxDecoration(color: Colors.deepOrangeAccent, borderRadius: BorderRadius.circular(4)),
                       ),
-                      Text("SELECTED",
-                        style: TextStyle(color: Colors.white, fontSize: 12),),
+                      Text(
+                        "SELECTED",
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
                     ],
                   ),
                 ),
