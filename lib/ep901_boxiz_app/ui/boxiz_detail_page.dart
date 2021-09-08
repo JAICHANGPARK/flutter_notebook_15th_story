@@ -201,12 +201,17 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     children: _boxizGridItems.map((e) {
                       return GestureDetector(
                         onTap: () {
-                          if(!e.isAvailable){
+                          if (!e.isAvailable) {
+                            return;
+                          }
+                          if (e.isAvailable && (e.isSelect ?? true)) {
+                            setState(() {
+                              e.isSelect = false;
+                            });
                             return;
                           }
                           setState(() {
                             e.isSelect = true;
-                            e.isAvailable = false;
                           });
                         },
                         child: Container(
@@ -216,7 +221,12 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                                 : e.isAvailable
                                     ? Colors.white.withOpacity(0.2)
                                     : Colors.white.withOpacity(0.1),
-                            border: Border.all(color: e.isAvailable ? BoxizTheme.accentColor : Colors.transparent),
+                            border: Border.all(
+                                color: e.isSelect ?? false
+                                    ? Colors.orange
+                                    : (e.isAvailable)
+                                        ? BoxizTheme.accentColor
+                                        : Colors.transparent),
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Center(
