@@ -72,7 +72,12 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, color: Colors.white, icon: Icon(Icons.arrow_back_ios)),
+                    IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        color: Colors.white,
+                        icon: Icon(Icons.arrow_back_ios)),
                     Text(
                       widget.boxiz?.title ?? "",
                       style: TextStyle(color: Colors.white),
