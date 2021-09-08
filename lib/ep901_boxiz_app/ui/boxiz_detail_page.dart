@@ -206,7 +206,11 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                               color:e.isAvailable ?  BoxizTheme.accentColor : Colors.transparent
                           ),
                           borderRadius: BorderRadius.circular(4),
+
                         ),
+                        child: Text("${e.number}", style: TextStyle(
+                          
+                        ),),
                       );
                     }).toList(),
                   ),
