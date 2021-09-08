@@ -1,9 +1,9 @@
 class BoxizGrid {
-  bool? isAvailable;
+  bool isAvailable;
   int? number;
   bool? isSelect;
 
-  BoxizGrid(this.isAvailable, this.number, this.isSelect);
+  BoxizGrid(this.number, this.isSelect, {this.isAvailable = true});
 }
 
 class BoxizSelect {
