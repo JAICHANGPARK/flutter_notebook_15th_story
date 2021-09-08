@@ -202,15 +202,16 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                       return Container(
                         decoration: BoxDecoration(
                           color: e.isAvailable ? Colors.white.withOpacity(0.2) : Colors.white.withOpacity(0.1),
-                          border: Border.all(
-                              color:e.isAvailable ?  BoxizTheme.accentColor : Colors.transparent
-                          ),
+                          border: Border.all(color: e.isAvailable ? BoxizTheme.accentColor : Colors.transparent),
                           borderRadius: BorderRadius.circular(4),
-
                         ),
-                        child: Text("${e.number}", style: TextStyle(
-                          
-                        ),),
+                        child: Center(
+                          child: e.isSelect! ? Icon(Icons.check): Text(
+                            e.isAvailable ?
+                            "${e.number}" : "",
+                            style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       );
                     }).toList(),
                   ),
