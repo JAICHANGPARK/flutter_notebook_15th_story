@@ -181,7 +181,16 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     ],
                   ),
                 ),
-                Expanded(child: Placeholder()),
+                Expanded(child: GridView.count(crossAxisCount: 10,
+                children: _boxizGridItems.map((e) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                  );
+                  
+                }).toList(),)),
                 SizedBox(
                   height: 32,
                 ),
