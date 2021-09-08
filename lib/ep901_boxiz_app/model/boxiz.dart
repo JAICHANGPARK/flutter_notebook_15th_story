@@ -1,12 +1,19 @@
+class BoxizGrid {
+  bool? isAvailable;
+  int? number;
+  bool? isSelect;
 
-class BoxizSelect{
+  BoxizGrid(this.isAvailable, this.number, this.isSelect);
+}
+
+class BoxizSelect {
   int? number;
   bool isOpen;
 
   BoxizSelect({this.number, required this.isOpen});
 }
 
-class Boxiz{
+class Boxiz {
   String? img;
   String? prize;
   String? type;
@@ -19,7 +26,6 @@ class Boxiz{
   Boxiz({this.img, this.prize, this.type, this.title, this.datetime, this.coin, this.items, this.liveIn});
 }
 
-
 List<Boxiz> boxizItems = [
   Boxiz(
     title: "Bulls @ Lakers",
@@ -28,7 +34,7 @@ List<Boxiz> boxizItems = [
     liveIn: Duration(seconds: 54, minutes: 4),
     prize: "VIRTUAL PRIZE",
     type: "NBA",
-    items: ["05", "17", "35" , "68", "92"],
+    items: ["05", "17", "35", "68", "92"],
     img: "https://cdn.pixabay.com/photo/2013/03/21/15/52/basketball-95607_960_720.jpg",
   ),
   Boxiz(
@@ -38,7 +44,7 @@ List<Boxiz> boxizItems = [
     liveIn: Duration(seconds: 54, minutes: 4),
     prize: "VIRTUAL PRIZE",
     type: "NBA",
-    items: ["05", "17", "35" , "68", "92"],
+    items: ["05", "17", "35", "68", "92"],
     img: "https://cdn.pixabay.com/photo/2013/03/21/15/52/basketball-95607_960_720.jpg",
   )
 ];
