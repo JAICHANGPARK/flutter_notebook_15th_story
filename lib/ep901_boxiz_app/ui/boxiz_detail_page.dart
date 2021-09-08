@@ -183,20 +183,22 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                 ),
                 Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: GridView.count(
-                  padding: EdgeInsets.zero,
-                  crossAxisCount: 10,
-                  crossAxisSpacing: 6,
-                  mainAxisSpacing: 6,
-                  children: _boxizGridItems.map((e) {
+                  padding: const EdgeInsets.all(8.0),
+                  child: GridView.count(
+                    padding: EdgeInsets.zero,
+                    crossAxisCount: 10,
+                    crossAxisSpacing: 6,
+                    mainAxisSpacing: 6,
+                    children: _boxizGridItems.map((e) {
                       return Container(
-                        decoration:
-                            BoxDecoration(color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
                       );
-                  }).toList(),
-                ),
-                    )),
+                    }).toList(),
+                  ),
+                )),
                 SizedBox(
                   height: 32,
                 ),
