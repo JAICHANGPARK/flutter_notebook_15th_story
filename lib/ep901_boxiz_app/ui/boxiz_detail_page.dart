@@ -199,23 +199,34 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                     crossAxisSpacing: 6,
                     mainAxisSpacing: 6,
                     children: _boxizGridItems.map((e) {
-                      return Container(
-                        decoration: BoxDecoration(
-                          color: e.isSelect!
-                              ? Colors.orange
-                              : e.isAvailable
-                                  ? Colors.white.withOpacity(0.2)
-                                  : Colors.white.withOpacity(0.1),
-                          border: Border.all(color: e.isAvailable ? BoxizTheme.accentColor : Colors.transparent),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Center(
-                          child: e.isSelect!
-                              ? Icon(Icons.check)
-                              : Text(
-                                  e.isAvailable ? "${e.number}" : "",
-                                  style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold),
-                                ),
+                      return GestureDetector(
+                        onTap: () {
+                          if(!e.isAvailable){
+                            return;
+                          }
+                          setState(() {
+                            e.isSelect = true;
+                            e.isAvailable = false;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: e.isSelect!
+                                ? Colors.orange
+                                : e.isAvailable
+                                    ? Colors.white.withOpacity(0.2)
+                                    : Colors.white.withOpacity(0.1),
+                            border: Border.all(color: e.isAvailable ? BoxizTheme.accentColor : Colors.transparent),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Center(
+                            child: e.isSelect!
+                                ? Icon(Icons.check)
+                                : Text(
+                                    e.isAvailable ? "${e.number}" : "",
+                                    style: TextStyle(color: BoxizTheme.accentColor, fontWeight: FontWeight.bold),
+                                  ),
+                          ),
                         ),
                       );
                     }).toList(),
