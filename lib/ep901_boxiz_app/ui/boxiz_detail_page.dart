@@ -182,6 +182,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   ),
                 ),
                 Expanded(child: GridView.count(crossAxisCount: 10,
+                crossAxisSpacing: 3,
+                mainAxisSpacing: 3,
                 children: _boxizGridItems.map((e) {
                   return Container(
                     decoration: BoxDecoration(
