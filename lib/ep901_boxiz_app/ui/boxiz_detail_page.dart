@@ -202,6 +202,9 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                       return Container(
                         decoration: BoxDecoration(
                           color: e.isAvailable ? Colors.white.withOpacity(0.2) : Colors.white.withOpacity(0.1),
+                          border: Border.all(
+                              color:e.isAvailable ?  BoxizTheme.accentColor : Colors.transparent
+                          ),
                           borderRadius: BorderRadius.circular(4),
                         ),
                       );
@@ -209,7 +212,7 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                   ),
                 )),
                 SizedBox(
-                  height: 32,
+                  height: 16,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
