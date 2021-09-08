@@ -187,8 +187,8 @@ class _BoxizDetailPageState extends State<BoxizDetailPage> {
                       child: GridView.count(
                   padding: EdgeInsets.zero,
                   crossAxisCount: 10,
-                  crossAxisSpacing: 3,
-                  mainAxisSpacing: 3,
+                  crossAxisSpacing: 6,
+                  mainAxisSpacing: 6,
                   children: _boxizGridItems.map((e) {
                       return Container(
                         decoration:
