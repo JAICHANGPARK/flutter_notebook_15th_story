@@ -15,7 +15,19 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
         body: SafeArea(
           child: Column(
             children: [
-              Expanded(flex: 4, child: Placeholder()),
+              Expanded(
+                  flex: 4,
+                  child: PhysicalModel(
+                    color: Colors.grey,
+                    elevation: 3,
+
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                  )),
+              SizedBox(height: 16,),
               Expanded(flex: 15, child: Placeholder()),
             ],
           ),
