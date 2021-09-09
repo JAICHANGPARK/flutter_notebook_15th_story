@@ -32,7 +32,10 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.dashboard),
+                      Icon(
+                        Icons.dashboard,
+                        size: 20,
+                      ),
                       Text("Dashboard"),
                     ],
                   ),
@@ -46,7 +49,13 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Icon(Icons.menu), Text("Menu")],
+                    children: [
+                      Icon(
+                        Icons.menu,
+                        size: 20,
+                      ),
+                      Text("Menu"),
+                    ],
                   ),
                 )
               ],
