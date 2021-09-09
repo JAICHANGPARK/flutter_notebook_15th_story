@@ -11,6 +11,12 @@ class HaibooksHomePage extends StatefulWidget {
 class _HaibooksHomePageState extends State<HaibooksHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder())
+        ],
+      )
+    );
   }
 }
