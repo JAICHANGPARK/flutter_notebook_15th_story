@@ -29,9 +29,15 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                           child: Row(
                         children: [
                           IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+                          Expanded(
+                              child: Center(
+                            child: Text(
+                              "Haibooks Organization",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          )),
                           Badge(
                             child: Icon(Icons.charging_station),
-                            
                           ),
                         ],
                       )),
