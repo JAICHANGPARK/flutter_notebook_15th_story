@@ -11,13 +11,19 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Column(
-        children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(flex: 4, child: Placeholder()),
+            Expanded(flex: 15, child: Placeholder()),
+          ],
+        ),
       ),
-    ));
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+
+        ),
+      )
+    );
   }
 }
