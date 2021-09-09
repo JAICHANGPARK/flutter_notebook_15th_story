@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HaibooksHomePage extends StatefulWidget {
   const HaibooksHomePage({Key? key}) : super(key: key);
 
@@ -12,11 +11,13 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+        body: SafeArea(
+      child: Column(
         children: [
-          Expanded(child: Placeholder())
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
         ],
-      )
-    );
+      ),
+    ));
   }
 }
