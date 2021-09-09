@@ -23,7 +23,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
         bottomNavigationBar: BottomAppBar(
           child: Container(
             height: 64,
-            padding: ,
+            padding: EdgeInsets.symmetric(horizontal: 24),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
