@@ -21,7 +21,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       boxShadow: [
-                        BoxShadow(color: Colors.grey[400]!,offset: Offset(0, 4)),
+                        BoxShadow(color: Colors.blueGrey[400]!,offset: Offset(0, 4)),
                         BoxShadow(color: Colors.grey[200]!,offset: Offset(0, 6))
                       ]
                     ),
