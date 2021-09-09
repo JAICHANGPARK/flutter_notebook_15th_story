@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
+import 'ep907_haibooks_app/haibooks_app.dart';
 
-import 'ep901_boxiz_app/ui/boxiz_app.dart';
-
-main() {
-  runApp(BoxizApp());
-}
+main() => runApp(HaibooksApp());
