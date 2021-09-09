@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class HaibooksHomePage extends StatefulWidget {
@@ -16,17 +17,32 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
           child: Column(
             children: [
               Expanded(
-                  flex: 3,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(color: Colors.blueGrey[400]!,offset: Offset(0, 4)),
-                        BoxShadow(color: Colors.grey[200]!,offset: Offset(0, 6))
-                      ]
-                    ),
-                  )),
-              SizedBox(height: 16,),
+                flex: 3,
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                    BoxShadow(color: Colors.blueGrey[400]!, offset: Offset(0, 4)),
+                    BoxShadow(color: Colors.grey[200]!, offset: Offset(0, 6))
+                  ]),
+                  child: Column(
+                    children: [
+                      Expanded(
+                          child: Row(
+                        children: [
+                          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+                          Badge(
+                            child: Icon(Icons.charging_station),
+                            
+                          ),
+                        ],
+                      )),
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(flex: 15, child: Placeholder()),
             ],
           ),
