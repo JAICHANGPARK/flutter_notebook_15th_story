@@ -16,15 +16,14 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
           child: Column(
             children: [
               Expanded(
-                  flex: 4,
-                  child: PhysicalModel(
-                    color: Colors.grey,
-                    elevation: 3,
-
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                      ),
+                  flex: 3,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(color: Colors.grey[400]!,offset: Offset(0, 4)),
+                        BoxShadow(color: Colors.grey[200]!,offset: Offset(0, 6))
+                      ]
                     ),
                   )),
               SizedBox(height: 16,),
