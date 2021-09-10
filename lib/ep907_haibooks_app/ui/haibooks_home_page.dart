@@ -44,40 +44,46 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                         ],
                       )),
                       Expanded(
-                          child: Row(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                            child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          GestureDetector(
-                            onTap: () {
-                              _topTabIndex.value = 0;
-                            },
-                            child: ValueListenableBuilder(
-                              valueListenable: _topTabIndex,
-                              builder: (context, value, child) {
-                                return Container(
-                                  decoration: BoxDecoration(
-                                    color: value == 0?Colors.transparent : Colors.blueGrey[50],
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
-                                  child: Center(
-                                    child: Text("Last month"),
-                                  ),
-                                );
+                            GestureDetector(
+                              onTap: () {
+                                _topTabIndex.value = 0;
                               },
+                              child: ValueListenableBuilder(
+                                valueListenable: _topTabIndex,
+                                builder: (context, value, child) {
+                                  return Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                    decoration: BoxDecoration(
+                                        color: value == 0 ? Colors.blueGrey[50] : Colors.transparent,
+                                        borderRadius: BorderRadius.circular(16)),
+                                    child: Center(
+                                      child: Text(
+                                        "Last month",
+                                        style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
                             ),
-                          ),
-                          Container(
-                            child: Center(
-                              child: Text("6 months"),
+                            Container(
+                              child: Center(
+                                child: Text("6 months"),
+                              ),
                             ),
-                          ),
-                          Container(
-                            child: Center(
-                              child: Text("Fiscal year"),
-                            ),
-                          )
+                            Container(
+                              child: Center(
+                                child: Text("Fiscal year"),
+                              ),
+                            )
                         ],
-                      )),
+                      ),
+                          )),
                     ],
                   ),
                 ),
