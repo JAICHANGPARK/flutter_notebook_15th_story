@@ -49,9 +49,35 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                             child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                            GestureDetector(
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  _topTabIndex.value = 0;
+                                },
+                                child: ValueListenableBuilder(
+                                  valueListenable: _topTabIndex,
+                                  builder: (context, value, child) {
+                                    return Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 20),
+                                      decoration: BoxDecoration(
+                                          color: value == 0 ? Colors.blueGrey[50] : Colors.transparent,
+                                          borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Text(
+                                          "Last month",
+                                          style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey,
+                                          fontSize: 12),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                          Expanded(
+                            child: GestureDetector(
                               onTap: () {
-                                _topTabIndex.value = 0;
+                                _topTabIndex.value = 1;
                               },
                               child: ValueListenableBuilder(
                                 valueListenable: _topTabIndex,
@@ -59,24 +85,20 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                   return Container(
                                     padding: EdgeInsets.symmetric(horizontal: 20),
                                     decoration: BoxDecoration(
-                                        color: value == 0 ? Colors.blueGrey[50] : Colors.transparent,
+                                        color: value == 1 ? Colors.blueGrey[50] : Colors.transparent,
                                         borderRadius: BorderRadius.circular(16)),
                                     child: Center(
                                       child: Text(
-                                        "Last month",
-                                        style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey,
-                                        fontSize: 12),
+                                        "6 months",
+                                        style: TextStyle(color: value == 1 ? Colors.blue : Colors.grey,
+                                            fontSize: 12),
                                       ),
                                     ),
                                   );
                                 },
                               ),
                             ),
-                            Container(
-                              child: Center(
-                                child: Text("6 months"),
-                              ),
-                            ),
+                          ),
                             Container(
                               child: Center(
                                 child: Text("Fiscal year"),
