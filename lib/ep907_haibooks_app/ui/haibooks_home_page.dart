@@ -29,21 +29,24 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                   child: Column(
                     children: [
                       Expanded(
-                          child: Row(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Row(
                         children: [
-                          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-                          Expanded(
-                              child: Center(
-                            child: Text(
-                              "Haibooks Organization",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+                            Expanded(
+                                child: Center(
+                              child: Text(
+                                "Haibooks Organization",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            )),
+                            Badge(
+                              child: Icon(Icons.charging_station),
                             ),
-                          )),
-                          Badge(
-                            child: Icon(Icons.charging_station),
-                          ),
                         ],
-                      )),
+                      ),
+                          )),
                       Expanded(
                           child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
