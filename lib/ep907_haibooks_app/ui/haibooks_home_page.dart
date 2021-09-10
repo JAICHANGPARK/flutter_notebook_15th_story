@@ -41,7 +41,15 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                           ),
                         ],
                       )),
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Row(
+                        children: [
+                          Container(
+                            child: Center(
+                              child: Text("Last month"),
+                            ),
+                          )
+                        ],
+                      )),
                     ],
                   ),
                 ),
