@@ -169,7 +169,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                               size: 20,
                               color: value == 0 ? Colors.blue : Colors.blueGrey,
                             ),
-                            Siz
+                            SizedBox(height: 4,),
                             Text("Dashboard",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -186,6 +186,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                             Icons.dashboard,
                             size: 20,
                           ),
+                          SizedBox(height: 4,),
                           Text("Dashboard"),
                         ],
                       ),
@@ -214,6 +215,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                               size: 20,
                               color: value == 1 ? Colors.blue : Colors.blueGrey,
                             ),
+                            SizedBox(height: 4,),
                             Text("Menu",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -229,6 +231,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                             Icons.menu,
                             size: 20,
                           ),
+                          SizedBox(height: 4,),
                           Text("Menu"),
                         ],
                       ),
