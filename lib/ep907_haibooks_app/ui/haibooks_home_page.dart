@@ -57,14 +57,15 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                 valueListenable: _topTabIndex,
                                 builder: (context, value, child) {
                                   return Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                    padding: EdgeInsets.symmetric(horizontal: 20),
                                     decoration: BoxDecoration(
                                         color: value == 0 ? Colors.blueGrey[50] : Colors.transparent,
                                         borderRadius: BorderRadius.circular(16)),
                                     child: Center(
                                       child: Text(
                                         "Last month",
-                                        style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey),
+                                        style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey,
+                                        fontSize: 12),
                                       ),
                                     ),
                                   );
