@@ -99,11 +99,31 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                               ),
                             ),
                           ),
-                            Container(
-                              child: Center(
-                                child: Text("Fiscal year"),
+                          Expanded(
+                            child: GestureDetector(
+                              onTap: () {
+                                _topTabIndex.value = 2;
+                              },
+                              child: ValueListenableBuilder(
+                                valueListenable: _topTabIndex,
+                                builder: (context, value, child) {
+                                  return Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 20),
+                                    decoration: BoxDecoration(
+                                        color: value == 2 ? Colors.blueGrey[50] : Colors.transparent,
+                                        borderRadius: BorderRadius.circular(16)),
+                                    child: Center(
+                                      child: Text(
+                                        "Fiscal year",
+                                        style: TextStyle(color: value == 2 ? Colors.blue : Colors.grey,
+                                            fontSize: 12),
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
-                            )
+                            ),
+                          ),
                         ],
                       ),
                           )),
