@@ -9,6 +9,8 @@ class HaibooksHomePage extends StatefulWidget {
 }
 
 class _HaibooksHomePageState extends State<HaibooksHomePage> {
+  ValueNotifier<int> _topTabIndex = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,11 +43,33 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                           ),
                         ],
                       )),
-                      Expanded(child: Row(
+                      Expanded(
+                          child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
+                          GestureDetector(
+                            onTap: () {
+                              _topTabIndex.value = 0;
+                            },
+                            child: ValueListenableBuilder(
+                              valueListenable: _topTabIndex,
+                              builder: (context, value, child) {
+                                return Container(
+                                  child: Center(
+                                    child: Text("Last month"),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
                           Container(
                             child: Center(
-                              child: Text("Last month"),
+                              child: Text("6 months"),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text("Fiscal year"),
                             ),
                           )
                         ],
