@@ -10,6 +10,7 @@ class HaibooksHomePage extends StatefulWidget {
 
 class _HaibooksHomePageState extends State<HaibooksHomePage> {
   ValueNotifier<int> _topTabIndex = ValueNotifier(0);
+  ValueNotifier<int> _bottomTabIndex = ValueNotifier(0);
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +46,10 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                       )),
                       Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                            child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
+                        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
                             Expanded(
                               child: GestureDetector(
                                 onTap: () {
@@ -65,8 +66,10 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                       child: Center(
                                         child: Text(
                                           "Last month",
-                                          style: TextStyle(color: value == 0 ? Colors.blue : Colors.grey,
-                                          fontSize: 12),
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: value == 0 ? Colors.blue : Colors.grey,
+                                              fontSize: 12),
                                         ),
                                       ),
                                     );
@@ -74,59 +77,63 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                 ),
                               ),
                             ),
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: () {
-                                _topTabIndex.value = 1;
-                              },
-                              child: ValueListenableBuilder(
-                                valueListenable: _topTabIndex,
-                                builder: (context, value, child) {
-                                  return Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 20),
-                                    decoration: BoxDecoration(
-                                        color: value == 1 ? Colors.blueGrey[50] : Colors.transparent,
-                                        borderRadius: BorderRadius.circular(16)),
-                                    child: Center(
-                                      child: Text(
-                                        "6 months",
-                                        style: TextStyle(color: value == 1 ? Colors.blue : Colors.grey,
-                                            fontSize: 12),
-                                      ),
-                                    ),
-                                  );
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  _topTabIndex.value = 1;
                                 },
+                                child: ValueListenableBuilder(
+                                  valueListenable: _topTabIndex,
+                                  builder: (context, value, child) {
+                                    return Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 20),
+                                      decoration: BoxDecoration(
+                                          color: value == 1 ? Colors.blueGrey[50] : Colors.transparent,
+                                          borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Text(
+                                          "6 months",
+                                          style: TextStyle(
+                                              color: value == 1 ? Colors.blue : Colors.grey,
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: () {
-                                _topTabIndex.value = 2;
-                              },
-                              child: ValueListenableBuilder(
-                                valueListenable: _topTabIndex,
-                                builder: (context, value, child) {
-                                  return Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 20),
-                                    decoration: BoxDecoration(
-                                        color: value == 2 ? Colors.blueGrey[50] : Colors.transparent,
-                                        borderRadius: BorderRadius.circular(16)),
-                                    child: Center(
-                                      child: Text(
-                                        "Fiscal year",
-                                        style: TextStyle(color: value == 2 ? Colors.blue : Colors.grey,
-                                            fontSize: 12),
-                                      ),
-                                    ),
-                                  );
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  _topTabIndex.value = 2;
                                 },
+                                child: ValueListenableBuilder(
+                                  valueListenable: _topTabIndex,
+                                  builder: (context, value, child) {
+                                    return Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 20),
+                                      decoration: BoxDecoration(
+                                          color: value == 2 ? Colors.blueGrey[50] : Colors.transparent,
+                                          borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Text(
+                                          "Fiscal year",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: value == 2 ? Colors.blue : Colors.grey,
+                                              fontSize: 12),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                          )),
+                          ],
+                        ),
+                      )),
                     ],
                   ),
                 ),
@@ -147,15 +154,42 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.dashboard,
-                        size: 20,
+                  child: GestureDetector(
+                    onTap: (){
+                      _bottomTabIndex.value  = 0;
+                    },
+                    child: ValueListenableBuilder<int>(
+                      valueListenable: _bottomTabIndex,
+                      builder: (context, value, child){
+                        return  Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.dashboard,
+                              size: 20,
+                              color: value == 0 ? Colors.blue : Colors.blueGrey,
+                            ),
+                            Siz
+                            Text("Dashboard",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+
+                                  fontSize: 12),),
+                          ],
+                        );
+                      },
+
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.dashboard,
+                            size: 20,
+                          ),
+                          Text("Dashboard"),
+                        ],
                       ),
-                      Text("Dashboard"),
-                    ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -165,17 +199,42 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.menu,
-                        size: 20,
+                  child: GestureDetector(
+                    onTap: (){
+                      _bottomTabIndex.value  = 1;
+                    },
+                    child: ValueListenableBuilder<int>(
+                      valueListenable: _bottomTabIndex,
+                      builder: (context, value, child){
+                        return  Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.menu,
+                              size: 20,
+                              color: value == 1 ? Colors.blue : Colors.blueGrey,
+                            ),
+                            Text("Menu",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12),),
+                          ],
+                        );
+                      },
+
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.menu,
+                            size: 20,
+                          ),
+                          Text("Menu"),
+                        ],
                       ),
-                      Text("Menu"),
-                    ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),
