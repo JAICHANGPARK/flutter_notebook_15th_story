@@ -148,18 +148,20 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                     SizedBox(
                       height: 16,
                     ),
-                    Expanded(flex: 15, child: ValueListenableBuilder<int>(
-                      builder: (context, value, child){
-                        if(value == 0){
-                          return Text("Last month page");
-                        }else if(value ==1 ){
-                          return Text("6 month page");
-                        }else{
-                          return Text("Fiscal year page");
-                        }
-                      },
-                        valueListenable: _topTabIndex,
-                        child: Placeholder())),
+                    Expanded(
+                        flex: 15,
+                        child: ValueListenableBuilder<int>(
+                            builder: (context, value, child) {
+                              if (value == 0) {
+                                return Text("Last month page");
+                              } else if (value == 1) {
+                                return Text("6 month page");
+                              } else {
+                                return Text("Fiscal year page");
+                              }
+                            },
+                            valueListenable: _topTabIndex,
+                            child: Placeholder())),
                   ],
                 );
               } else {
