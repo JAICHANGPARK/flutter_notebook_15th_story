@@ -26,6 +26,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                     Expanded(
                       flex: 3,
                       child: Container(
+                        margin: EdgeInsets.only(bottom: 4),
                         decoration: BoxDecoration(color: Colors.white, boxShadow: [
                           BoxShadow(color: Colors.blueGrey[400]!, offset: Offset(0, 4)),
                           BoxShadow(color: Colors.grey[200]!, offset: Offset(0, 6))
