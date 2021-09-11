@@ -211,6 +211,56 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(
                                               height: 16,
                                             ),
+                                            Padding(
+                                              padding: const EdgeInsets.all(8 - .0),
+                                              child: Column(
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Container(
+                                                        height: 32,
+                                                        width: 8,
+                                                        decoration: BoxDecoration(
+                                                            color: Colors.tealAccent,
+                                                            borderRadius: BorderRadius.circular(8)),
+                                                      ),
+                                                      SizedBox(
+                                                        width: 4,
+                                                      ),
+                                                      Text("Income"),
+                                                      Spacer(),
+                                                      Text("Expenses"),
+                                                      SizedBox(
+                                                        width: 4,
+                                                      ),
+                                                      Container(
+                                                        height: 32,
+                                                        width: 8,
+                                                        decoration: BoxDecoration(
+                                                            color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Text(
+                                                        "£ 3,460.24",
+                                                        style: TextStyle(
+                                                            fontSize: 16,
+                                                            color: Colors.tealAccent,
+                                                            fontWeight: FontWeight.bold),
+                                                      ),
+                                                      Spacer(),
+                                                      Text("£ 2,480.08",
+                                                        style: TextStyle(
+                                                            fontSize: 16,
+                                                            color: Colors.blue,
+                                                            fontWeight: FontWeight.bold),),
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ),
