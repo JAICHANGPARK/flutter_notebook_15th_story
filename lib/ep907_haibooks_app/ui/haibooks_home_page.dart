@@ -211,10 +211,32 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(
                                               height: 16,
                                             ),
-                                            
                                           ],
                                         ),
-                                      )
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.bar_chart),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Text(
+                                              "Banking",
+                                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                            ),
+                                            Spacer(),
+                                            IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right))
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
                                     ],
                                   ),
                                 );
