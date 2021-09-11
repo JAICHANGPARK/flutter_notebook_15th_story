@@ -159,11 +159,38 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                 return SingleChildScrollView(
                                   child: Column(
                                     children: [
-                                      Row(
-                                        children: [
-                                          Icon(Icons.bar_chart),
-                                          Text("Profit and Loss"),
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.bar_chart),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Text(
+                                              "Profit and Loss",
+                                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
+                                      Container(
+                                        height: 320,
+                                        decoration: BoxDecoration(color: Colors.white),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "£ 980.16",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                              ),
+                                            ),
+                                            Text("Net Profit")
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
