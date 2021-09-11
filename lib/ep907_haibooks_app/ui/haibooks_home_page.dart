@@ -178,7 +178,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                         height: 16,
                                       ),
                                       Container(
-                                        height: 320,
+                                        height: 420,
                                         width: double.infinity,
                                         decoration: BoxDecoration(color: Colors.white),
                                         child: Column(
@@ -189,17 +189,29 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                 fontSize: 28,
                                               ),
                                             ),
-
                                             Padding(
                                               padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Text("Net Profit",style: TextStyle(
-                                                fontSize: 12,
-                                              ),),
+                                              child: Text(
+                                                "Net Profit",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
+                                              ),
                                             ),
                                             Divider(
                                               indent: 16,
                                               endIndent: 16,
-                                            )
+                                            ),
+                                            SizedBox(
+                                              height: 240,
+                                              child: Container(
+                                                color: Colors.blue,
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 16,
+                                            ),
+                                            
                                           ],
                                         ),
                                       )
