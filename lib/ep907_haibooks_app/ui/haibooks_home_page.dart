@@ -156,7 +156,18 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                               if (value == 0) {
                                 return Text("Last month page");
                               } else if (value == 1) {
-                                return Text("6 month page");
+                                return SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Icon(Icons.bar_chart),
+                                          Text("Profit and Loss"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                );
                               } else {
                                 return Text("Fiscal year page");
                               }
