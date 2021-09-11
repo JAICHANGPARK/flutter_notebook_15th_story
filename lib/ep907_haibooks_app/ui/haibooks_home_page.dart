@@ -179,16 +179,27 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                       ),
                                       Container(
                                         height: 320,
+                                        width: double.infinity,
                                         decoration: BoxDecoration(color: Colors.white),
                                         child: Column(
                                           children: [
                                             Text(
                                               "£ 980.16",
                                               style: TextStyle(
-                                                fontSize: 24,
+                                                fontSize: 28,
                                               ),
                                             ),
-                                            Text("Net Profit")
+
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Text("Net Profit",style: TextStyle(
+                                                fontSize: 12,
+                                              ),),
+                                            ),
+                                            Divider(
+                                              indent: 16,
+                                              endIndent: 16,
+                                            )
                                           ],
                                         ),
                                       )
