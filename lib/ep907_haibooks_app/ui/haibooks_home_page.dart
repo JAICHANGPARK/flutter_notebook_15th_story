@@ -206,8 +206,8 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(
                                               height: 240,
                                               child: Container(
-                                                child:BarChart(
-                                                    BarChartData(),
+                                                child: BarChart(
+                                                  BarChartData(borderData: FlBorderData(show: false)),
                                                 ),
                                               ),
                                             ),
@@ -244,7 +244,9 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       ),
                                                     ],
                                                   ),
-                                                  SizedBox(height: 8,),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Row(
                                                     children: [
                                                       Text(
@@ -255,11 +257,13 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                             fontWeight: FontWeight.bold),
                                                       ),
                                                       Spacer(),
-                                                      Text("£ 2,480.08",
+                                                      Text(
+                                                        "£ 2,480.08",
                                                         style: TextStyle(
                                                             fontSize: 18,
                                                             color: Colors.blue,
-                                                            fontWeight: FontWeight.bold),),
+                                                            fontWeight: FontWeight.bold),
+                                                      ),
                                                     ],
                                                   ),
                                                 ],
