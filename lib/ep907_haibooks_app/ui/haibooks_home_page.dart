@@ -196,6 +196,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                 "Net Profit",
                                                 style: TextStyle(
                                                   fontSize: 12,
+                                                  color: Colors.grey,
                                                 ),
                                               ),
                                             ),
@@ -238,9 +239,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       ],
                                                     ),
                                                   ],
-                                                  gridData: FlGridData(
-                                                    show: false
-                                                  ),
+                                                  gridData: FlGridData(show: false),
                                                   titlesData: FlTitlesData(
                                                       rightTitles: SideTitles(showTitles: false),
                                                       topTitles: SideTitles(showTitles: false)),
