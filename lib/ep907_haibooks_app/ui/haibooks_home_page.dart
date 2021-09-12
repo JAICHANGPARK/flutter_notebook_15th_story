@@ -207,7 +207,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                               height: 240,
                                               child: Container(
                                                 child:BarChart(
-
+                                                    BarChartData(),
                                                 ),
                                               ),
                                             ),
