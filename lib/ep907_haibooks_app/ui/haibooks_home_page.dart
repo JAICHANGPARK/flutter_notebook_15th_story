@@ -252,8 +252,14 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       BarChartRodData(
                                                         y: 2100,colors: [Colors.blue]
                                                       )
-                                                    ]),
+                                                    ],),
                                                   ],
+                                                  axisTitleData: FlAxisTitleData(
+                                                    show: true,
+                                                    rightTitle: AxisTitle(
+                                                      showTitle: false
+                                                    )
+                                                  )
                                                 ),
                                               ),
                                             ),
