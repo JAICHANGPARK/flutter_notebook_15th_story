@@ -257,7 +257,10 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                   titlesData: FlTitlesData(
                                                     rightTitles: SideTitles(
                                                       showTitles: false
-                                                    )
+                                                    ),
+                                                      topTitles: SideTitles(
+                                                          showTitles: false
+                                                      )
                                                   ),
                                                   // axisTitleData: FlAxisTitleData(
                                                   //   show: true,
