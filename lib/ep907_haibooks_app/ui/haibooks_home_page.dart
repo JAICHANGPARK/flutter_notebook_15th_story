@@ -204,7 +204,9 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                               indent: 16,
                                               endIndent: 16,
                                             ),
-                                            SizedBox(height: 16,),
+                                            SizedBox(
+                                              height: 16,
+                                            ),
                                             SizedBox(
                                               height: 240,
                                               child: Padding(
@@ -244,46 +246,37 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                     ],
                                                     gridData: FlGridData(show: false),
                                                     titlesData: FlTitlesData(
-                                                      leftTitles: SideTitles(
-                                                        showTitles: true,
-
-                                                        getTextStyles: (context, value){
-                                                          return TextStyle(
-                                                              color: Colors.grey,
-                                                              fontSize: 12
-                                                          );
-                                                        },
-                                                        interval: 1000
-                                                      ),
-                                                      bottomTitles: SideTitles(
-                                                        showTitles: true,
-                                                        getTextStyles: (context, value){
-                                                          return TextStyle(
-                                                            color: Colors.grey,
-                                                            fontSize: 12
-                                                          );
-                                                        },
-                                                        getTitles: (v){
-                                                          switch(v.toInt()){
-                                                            case 0:
-                                                              return "Aug";
-                                                            case 1:
-                                                              return "Sep";
-                                                            case 2:
-                                                              return "Oct";
-                                                            case 3:
-                                                              return "Nov";
-                                                            case 4:
-                                                              return "Dec";
-                                                            case 5:
-                                                              return "Jan";
-                                                            case 6:
-                                                              return "Aug";
-                                                            default:
-                                                              return "??";
-                                                          }
-                                                        }
-                                                      ),
+                                                        leftTitles: SideTitles(
+                                                            showTitles: true,
+                                                            getTextStyles: (context, value) {
+                                                              return TextStyle(color: Colors.grey, fontSize: 12);
+                                                            },
+                                                            interval: 1000),
+                                                        bottomTitles: SideTitles(
+                                                            showTitles: true,
+                                                            getTextStyles: (context, value) {
+                                                              return TextStyle(color: Colors.grey, fontSize: 12);
+                                                            },
+                                                            getTitles: (v) {
+                                                              switch (v.toInt()) {
+                                                                case 0:
+                                                                  return "Aug";
+                                                                case 1:
+                                                                  return "Sep";
+                                                                case 2:
+                                                                  return "Oct";
+                                                                case 3:
+                                                                  return "Nov";
+                                                                case 4:
+                                                                  return "Dec";
+                                                                case 5:
+                                                                  return "Jan";
+                                                                case 6:
+                                                                  return "Aug";
+                                                                default:
+                                                                  return "??";
+                                                              }
+                                                            }),
                                                         rightTitles: SideTitles(showTitles: false),
                                                         topTitles: SideTitles(showTitles: false)),
                                                   ),
