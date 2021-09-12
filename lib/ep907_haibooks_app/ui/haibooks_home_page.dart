@@ -209,60 +209,48 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                 BarChartData(
                                                   borderData: FlBorderData(show: false),
                                                   barGroups: [
-                                                    BarChartGroupData(x: 0,
-                                                        barsSpace: 8,
-                                                        barRods: [
+                                                    BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                                                      BarChartRodData(y: 2000, colors: [Colors.teal]),
+                                                      BarChartRodData(y: 1500, colors: [Colors.blue])
+                                                    ]),
+                                                    BarChartGroupData(x: 1, barsSpace: 8, barRods: [
                                                       BarChartRodData(
-                                                        y: 2000,
-                                                        colors: [
-                                                          Colors.teal
-                                                        ]
+                                                        y: 3500, colors: [Colors.teal]
                                                       ),
                                                       BarChartRodData(
-                                                        y: 1500,
-                                                          colors: [
-                                                            Colors.blue
-                                                          ]
+                                                        y: 3000,colors: [Colors.blue]
                                                       )
                                                     ]),
-                                                    BarChartGroupData(x: 1, barRods: [
+                                                    BarChartGroupData(x: 2, barsSpace: 8, barRods: [
                                                       BarChartRodData(
-                                                        y: 3500,
+                                                        y: 1200, colors: [Colors.teal]
                                                       ),
                                                       BarChartRodData(
-                                                        y: 3000,
+                                                        y: 1900,colors: [Colors.blue]
                                                       )
                                                     ]),
-                                                    BarChartGroupData(x: 2, barRods: [
+                                                    BarChartGroupData(x: 3, barsSpace: 8, barRods: [
                                                       BarChartRodData(
-                                                        y: 1200,
+                                                        y: 2000, colors: [Colors.teal]
                                                       ),
                                                       BarChartRodData(
-                                                        y: 1900,
+                                                        y: 1500,colors: [Colors.blue]
                                                       )
                                                     ]),
-                                                    BarChartGroupData(x: 3, barRods: [
+                                                    BarChartGroupData(x: 4, barsSpace: 8, barRods: [
                                                       BarChartRodData(
-                                                        y: 2000,
+                                                        y: 3000, colors: [Colors.teal]
                                                       ),
                                                       BarChartRodData(
-                                                        y: 1500,
+                                                        y: 2000,colors: [Colors.blue]
                                                       )
                                                     ]),
-                                                    BarChartGroupData(x: 4, barRods: [
+                                                    BarChartGroupData(x: 5, barsSpace: 8, barRods: [
                                                       BarChartRodData(
-                                                        y: 3000,
+                                                        y: 3100, colors: [Colors.teal]
                                                       ),
                                                       BarChartRodData(
-                                                        y: 2000,
-                                                      )
-                                                    ]),
-                                                    BarChartGroupData(x: 5, barRods: [
-                                                      BarChartRodData(
-                                                        y: 3100,
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 2100,
+                                                        y: 2100,colors: [Colors.blue]
                                                       )
                                                     ]),
                                                   ],
