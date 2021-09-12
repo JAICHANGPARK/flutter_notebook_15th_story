@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class HaibooksHomePage extends StatefulWidget {
@@ -205,7 +206,9 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(
                                               height: 240,
                                               child: Container(
-                                                child:Bar,
+                                                child:BarChart(
+
+                                                ),
                                               ),
                                             ),
                                             SizedBox(
