@@ -242,6 +242,28 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                   ],
                                                   gridData: FlGridData(show: false),
                                                   titlesData: FlTitlesData(
+                                                    bottomTitles: SideTitles(
+                                                      getTitles: (v){
+                                                        switch(v.toInt()){
+                                                          case 0:
+                                                            return "Aug";
+                                                          case 1:
+                                                            return "Sep";
+                                                          case 2:
+                                                            return "Oct";
+                                                          case 3:
+                                                            return "Nov";
+                                                          case 4:
+                                                            return "Dec";
+                                                          case 5:
+                                                            return "AJan";
+                                                          case 6:
+                                                            return "Aug";
+                                                          default:
+                                                            return "??";
+                                                        }
+                                                      }
+                                                    ),
                                                       rightTitles: SideTitles(showTitles: false),
                                                       topTitles: SideTitles(showTitles: false)),
                                                 ),
