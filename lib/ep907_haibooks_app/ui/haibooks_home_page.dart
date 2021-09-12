@@ -246,14 +246,14 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       Text(
                                                         "£ 3,460.24",
                                                         style: TextStyle(
-                                                            fontSize: 16,
+                                                            fontSize: 18,
                                                             color: Colors.tealAccent,
                                                             fontWeight: FontWeight.bold),
                                                       ),
                                                       Spacer(),
                                                       Text("£ 2,480.08",
                                                         style: TextStyle(
-                                                            fontSize: 16,
+                                                            fontSize: 18,
                                                             color: Colors.blue,
                                                             fontWeight: FontWeight.bold),),
                                                     ],
