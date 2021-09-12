@@ -207,82 +207,86 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(height: 16,),
                                             SizedBox(
                                               height: 240,
-                                              child: BarChart(
-                                                BarChartData(
-                                                  borderData: FlBorderData(show: false),
-                                                  barGroups: [
-                                                    BarChartGroupData(x: 0, barsSpace: 8, barRods: [
-                                                      BarChartRodData(y: 2000, colors: [Colors.teal]),
-                                                      BarChartRodData(y: 1500, colors: [Colors.blue])
-                                                    ]),
-                                                    BarChartGroupData(x: 1, barsSpace: 8, barRods: [
-                                                      BarChartRodData(y: 3500, colors: [Colors.teal]),
-                                                      BarChartRodData(y: 3000, colors: [Colors.blue])
-                                                    ]),
-                                                    BarChartGroupData(x: 2, barsSpace: 8, barRods: [
-                                                      BarChartRodData(y: 1200, colors: [Colors.teal]),
-                                                      BarChartRodData(y: 1900, colors: [Colors.blue])
-                                                    ]),
-                                                    BarChartGroupData(x: 3, barsSpace: 8, barRods: [
-                                                      BarChartRodData(y: 2000, colors: [Colors.teal]),
-                                                      BarChartRodData(y: 1500, colors: [Colors.blue])
-                                                    ]),
-                                                    BarChartGroupData(x: 4, barsSpace: 8, barRods: [
-                                                      BarChartRodData(y: 3000, colors: [Colors.teal]),
-                                                      BarChartRodData(y: 2000, colors: [Colors.blue])
-                                                    ]),
-                                                    BarChartGroupData(
-                                                      x: 5,
-                                                      barsSpace: 8,
-                                                      barRods: [
-                                                        BarChartRodData(y: 3100, colors: [Colors.teal]),
-                                                        BarChartRodData(y: 2100, colors: [Colors.blue])
-                                                      ],
-                                                    ),
-                                                  ],
-                                                  gridData: FlGridData(show: false),
-                                                  titlesData: FlTitlesData(
-                                                    leftTitles: SideTitles(
-                                                      showTitles: true,
-                                                      getTextStyles: (context, value){
-                                                        return TextStyle(
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: BarChart(
+                                                  BarChartData(
+                                                    borderData: FlBorderData(show: false),
+                                                    barGroups: [
+                                                      BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                                                        BarChartRodData(y: 2000, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 1500, colors: [Colors.blue])
+                                                      ]),
+                                                      BarChartGroupData(x: 1, barsSpace: 8, barRods: [
+                                                        BarChartRodData(y: 3500, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 3000, colors: [Colors.blue])
+                                                      ]),
+                                                      BarChartGroupData(x: 2, barsSpace: 8, barRods: [
+                                                        BarChartRodData(y: 1200, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 1900, colors: [Colors.blue])
+                                                      ]),
+                                                      BarChartGroupData(x: 3, barsSpace: 8, barRods: [
+                                                        BarChartRodData(y: 2000, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 1500, colors: [Colors.blue])
+                                                      ]),
+                                                      BarChartGroupData(x: 4, barsSpace: 8, barRods: [
+                                                        BarChartRodData(y: 3000, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 2000, colors: [Colors.blue])
+                                                      ]),
+                                                      BarChartGroupData(
+                                                        x: 5,
+                                                        barsSpace: 8,
+                                                        barRods: [
+                                                          BarChartRodData(y: 3100, colors: [Colors.teal]),
+                                                          BarChartRodData(y: 2100, colors: [Colors.blue])
+                                                        ],
+                                                      ),
+                                                    ],
+                                                    gridData: FlGridData(show: false),
+                                                    titlesData: FlTitlesData(
+                                                      leftTitles: SideTitles(
+                                                        showTitles: true,
+
+                                                        getTextStyles: (context, value){
+                                                          return TextStyle(
+                                                              color: Colors.grey,
+                                                              fontSize: 12
+                                                          );
+                                                        },
+                                                        interval: 1000
+                                                      ),
+                                                      bottomTitles: SideTitles(
+                                                        showTitles: true,
+                                                        getTextStyles: (context, value){
+                                                          return TextStyle(
                                                             color: Colors.grey,
                                                             fontSize: 12
-                                                        );
-                                                      },
-                                                      interval: 1000
-                                                    ),
-                                                    bottomTitles: SideTitles(
-                                                      showTitles: true,
-                                                      getTextStyles: (context, value){
-                                                        return TextStyle(
-                                                          color: Colors.grey,
-                                                          fontSize: 12
-                                                        );
-                                                      },
-                                                      getTitles: (v){
-                                                        switch(v.toInt()){
-                                                          case 0:
-                                                            return "Aug";
-                                                          case 1:
-                                                            return "Sep";
-                                                          case 2:
-                                                            return "Oct";
-                                                          case 3:
-                                                            return "Nov";
-                                                          case 4:
-                                                            return "Dec";
-                                                          case 5:
-                                                            return "Jan";
-                                                          case 6:
-                                                            return "Aug";
-                                                          default:
-                                                            return "??";
+                                                          );
+                                                        },
+                                                        getTitles: (v){
+                                                          switch(v.toInt()){
+                                                            case 0:
+                                                              return "Aug";
+                                                            case 1:
+                                                              return "Sep";
+                                                            case 2:
+                                                              return "Oct";
+                                                            case 3:
+                                                              return "Nov";
+                                                            case 4:
+                                                              return "Dec";
+                                                            case 5:
+                                                              return "Jan";
+                                                            case 6:
+                                                              return "Aug";
+                                                            default:
+                                                              return "??";
+                                                          }
                                                         }
-                                                      }
-                                                    ),
-                                                      rightTitles: SideTitles(showTitles: false),
-                                                      topTitles: SideTitles(showTitles: false)),
+                                                      ),
+                                                        rightTitles: SideTitles(showTitles: false),
+                                                        topTitles: SideTitles(showTitles: false)),
+                                                  ),
                                                 ),
                                               ),
                                             ),
