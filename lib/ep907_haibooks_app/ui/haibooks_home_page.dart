@@ -259,6 +259,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                             fontWeight: FontWeight.bold),),
                                                     ],
                                                   ),
+                                                  SizedBox(height: 16,),
                                                 ],
                                               ),
                                             ),
