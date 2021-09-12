@@ -209,7 +209,9 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                 BarChartData(
                                                   borderData: FlBorderData(show: false),
                                                   barGroups: [
-                                                    BarChartGroupData(x: 0, barRods: [
+                                                    BarChartGroupData(x: 0,
+                                                        barsSpace: 8,
+                                                        barRods: [
                                                       BarChartRodData(
                                                         y: 2000,
                                                         colors: [
