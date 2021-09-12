@@ -243,6 +243,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                   gridData: FlGridData(show: false),
                                                   titlesData: FlTitlesData(
                                                     bottomTitles: SideTitles(
+                                                      showTitles: true,
                                                       getTitles: (v){
                                                         switch(v.toInt()){
                                                           case 0:
@@ -256,7 +257,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                           case 4:
                                                             return "Dec";
                                                           case 5:
-                                                            return "AJan";
+                                                            return "Jan";
                                                           case 6:
                                                             return "Aug";
                                                           default:
