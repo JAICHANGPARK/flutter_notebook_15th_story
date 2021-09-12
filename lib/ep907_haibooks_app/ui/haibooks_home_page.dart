@@ -179,7 +179,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                         height: 16,
                                       ),
                                       Container(
-                                        height: 420,
+                                        height: 430,
                                         width: double.infinity,
                                         decoration: BoxDecoration(color: Colors.white),
                                         child: Column(
@@ -204,6 +204,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                               indent: 16,
                                               endIndent: 16,
                                             ),
+                                            SizedBox(height: 16,),
                                             SizedBox(
                                               height: 240,
                                               child: BarChart(
