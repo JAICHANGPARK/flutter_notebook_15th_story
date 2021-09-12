@@ -212,7 +212,28 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                     BarChartGroupData(x: 0,barRods:[
                                                       BarChartRodData(y: 2000, ),
                                                       BarChartRodData(y: 1500, )
-                                                    ] )
+                                                    ] ),
+                                                    BarChartGroupData(x: 1,barRods:[
+                                                      BarChartRodData(y: 2000, ),
+                                                      BarChartRodData(y: 1500, )
+                                                    ] ),
+                                                    BarChartGroupData(x: 2,barRods:[
+                                                      BarChartRodData(y: 2000, ),
+                                                      BarChartRodData(y: 1500, )
+                                                    ] ),
+                                                    BarChartGroupData(x: 3,barRods:[
+                                                      BarChartRodData(y: 2000, ),
+                                                      BarChartRodData(y: 1500, )
+                                                    ] ),
+                                                    BarChartGroupData(x: 4,barRods:[
+                                                      BarChartRodData(y: 2000, ),
+                                                      BarChartRodData(y: 1500, )
+                                                    ] ),
+                                                    BarChartGroupData(x: 5,barRods:[
+                                                      BarChartRodData(y: 2000, ),
+                                                      BarChartRodData(y: 1500, )
+                                                    ] ),
+
                                                   ],
 
                                                 ),
