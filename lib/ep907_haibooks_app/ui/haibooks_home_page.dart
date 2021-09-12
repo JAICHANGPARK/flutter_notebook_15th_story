@@ -291,7 +291,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                               ),
                                             ),
                                             SizedBox(
-                                              height: 16,
+                                              height: 12,
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.all(8 - .0),
