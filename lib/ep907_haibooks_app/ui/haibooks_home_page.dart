@@ -241,6 +241,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       ),
                                                     ],
                                                   ),
+                                                  SizedBox(height: 8,),
                                                   Row(
                                                     children: [
                                                       Text(
