@@ -205,9 +205,13 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             ),
                                             SizedBox(
                                               height: 240,
-                                              child: Container(
-                                                child: BarChart(
-                                                  BarChartData(borderData: FlBorderData(show: false)),
+                                              child: BarChart(
+                                                BarChartData(
+                                                  borderData: FlBorderData(show: false),
+                                                  barGroups: [
+                                                    BarChartGroupData(x: 0,barRods: )
+                                                  ],
+
                                                 ),
                                               ),
                                             ),
