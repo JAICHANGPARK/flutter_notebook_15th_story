@@ -254,12 +254,17 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       )
                                                     ],),
                                                   ],
-                                                  axisTitleData: FlAxisTitleData(
-                                                    show: true,
-                                                    rightTitle: AxisTitle(
-                                                      showTitle: false
+                                                  titlesData: FlTitlesData(
+                                                    rightTitles: SideTitles(
+                                                      showTitles: false
                                                     )
-                                                  )
+                                                  ),
+                                                  // axisTitleData: FlAxisTitleData(
+                                                  //   show: true,
+                                                  //   rightTitle: AxisTitle(
+                                                  //     showTitle: false
+                                                  //   )
+                                                  // )
                                                 ),
                                               ),
                                             ),
