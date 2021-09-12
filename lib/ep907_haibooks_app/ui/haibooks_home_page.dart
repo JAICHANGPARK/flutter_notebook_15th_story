@@ -205,7 +205,7 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                             SizedBox(
                                               height: 240,
                                               child: Container(
-                                                color: Colors.blue,
+                                                child:Bar,
                                               ),
                                             ),
                                             SizedBox(
@@ -259,7 +259,6 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                             fontWeight: FontWeight.bold),),
                                                     ],
                                                   ),
-                                                  SizedBox(height: 16,),
                                                 ],
                                               ),
                                             ),
