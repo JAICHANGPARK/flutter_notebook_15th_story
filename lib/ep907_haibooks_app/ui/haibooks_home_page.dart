@@ -244,6 +244,12 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                   titlesData: FlTitlesData(
                                                     bottomTitles: SideTitles(
                                                       showTitles: true,
+                                                      getTextStyles: (context, value){
+                                                        return TextStyle(
+                                                          color: Colors.grey,
+                                                          fontSize: 12
+                                                        );
+                                                      },
                                                       getTitles: (v){
                                                         switch(v.toInt()){
                                                           case 0:
