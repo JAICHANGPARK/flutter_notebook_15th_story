@@ -214,60 +214,36 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       BarChartRodData(y: 1500, colors: [Colors.blue])
                                                     ]),
                                                     BarChartGroupData(x: 1, barsSpace: 8, barRods: [
-                                                      BarChartRodData(
-                                                        y: 3500, colors: [Colors.teal]
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 3000,colors: [Colors.blue]
-                                                      )
+                                                      BarChartRodData(y: 3500, colors: [Colors.teal]),
+                                                      BarChartRodData(y: 3000, colors: [Colors.blue])
                                                     ]),
                                                     BarChartGroupData(x: 2, barsSpace: 8, barRods: [
-                                                      BarChartRodData(
-                                                        y: 1200, colors: [Colors.teal]
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 1900,colors: [Colors.blue]
-                                                      )
+                                                      BarChartRodData(y: 1200, colors: [Colors.teal]),
+                                                      BarChartRodData(y: 1900, colors: [Colors.blue])
                                                     ]),
                                                     BarChartGroupData(x: 3, barsSpace: 8, barRods: [
-                                                      BarChartRodData(
-                                                        y: 2000, colors: [Colors.teal]
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 1500,colors: [Colors.blue]
-                                                      )
+                                                      BarChartRodData(y: 2000, colors: [Colors.teal]),
+                                                      BarChartRodData(y: 1500, colors: [Colors.blue])
                                                     ]),
                                                     BarChartGroupData(x: 4, barsSpace: 8, barRods: [
-                                                      BarChartRodData(
-                                                        y: 3000, colors: [Colors.teal]
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 2000,colors: [Colors.blue]
-                                                      )
+                                                      BarChartRodData(y: 3000, colors: [Colors.teal]),
+                                                      BarChartRodData(y: 2000, colors: [Colors.blue])
                                                     ]),
-                                                    BarChartGroupData(x: 5, barsSpace: 8, barRods: [
-                                                      BarChartRodData(
-                                                        y: 3100, colors: [Colors.teal]
-                                                      ),
-                                                      BarChartRodData(
-                                                        y: 2100,colors: [Colors.blue]
-                                                      )
-                                                    ],),
-                                                  ],
-                                                  titlesData: FlTitlesData(
-                                                    rightTitles: SideTitles(
-                                                      showTitles: false
+                                                    BarChartGroupData(
+                                                      x: 5,
+                                                      barsSpace: 8,
+                                                      barRods: [
+                                                        BarChartRodData(y: 3100, colors: [Colors.teal]),
+                                                        BarChartRodData(y: 2100, colors: [Colors.blue])
+                                                      ],
                                                     ),
-                                                      topTitles: SideTitles(
-                                                          showTitles: false
-                                                      )
+                                                  ],
+                                                  gridData: FlGridData(
+                                                    show: false
                                                   ),
-                                                  // axisTitleData: FlAxisTitleData(
-                                                  //   show: true,
-                                                  //   rightTitle: AxisTitle(
-                                                  //     showTitle: false
-                                                  //   )
-                                                  // )
+                                                  titlesData: FlTitlesData(
+                                                      rightTitles: SideTitles(showTitles: false),
+                                                      topTitles: SideTitles(showTitles: false)),
                                                 ),
                                               ),
                                             ),
