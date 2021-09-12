@@ -214,24 +214,24 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                       BarChartRodData(y: 1500, )
                                                     ] ),
                                                     BarChartGroupData(x: 1,barRods:[
-                                                      BarChartRodData(y: 2000, ),
-                                                      BarChartRodData(y: 1500, )
+                                                      BarChartRodData(y: 3500, ),
+                                                      BarChartRodData(y: 3000, )
                                                     ] ),
                                                     BarChartGroupData(x: 2,barRods:[
-                                                      BarChartRodData(y: 2000, ),
-                                                      BarChartRodData(y: 1500, )
+                                                      BarChartRodData(y: 1200, ),
+                                                      BarChartRodData(y: 1900, )
                                                     ] ),
                                                     BarChartGroupData(x: 3,barRods:[
                                                       BarChartRodData(y: 2000, ),
                                                       BarChartRodData(y: 1500, )
                                                     ] ),
                                                     BarChartGroupData(x: 4,barRods:[
-                                                      BarChartRodData(y: 2000, ),
-                                                      BarChartRodData(y: 1500, )
+                                                      BarChartRodData(y: 3000, ),
+                                                      BarChartRodData(y: 2000, )
                                                     ] ),
                                                     BarChartGroupData(x: 5,barRods:[
-                                                      BarChartRodData(y: 2000, ),
-                                                      BarChartRodData(y: 1500, )
+                                                      BarChartRodData(y: 3100, ),
+                                                      BarChartRodData(y: 2100, )
                                                     ] ),
 
                                                   ],
