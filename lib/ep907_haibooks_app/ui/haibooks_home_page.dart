@@ -242,6 +242,16 @@ class _HaibooksHomePageState extends State<HaibooksHomePage> {
                                                   ],
                                                   gridData: FlGridData(show: false),
                                                   titlesData: FlTitlesData(
+                                                    leftTitles: SideTitles(
+                                                      showTitles: true,
+                                                      getTextStyles: (context, value){
+                                                        return TextStyle(
+                                                            color: Colors.grey,
+                                                            fontSize: 12
+                                                        );
+                                                      },
+                                                      interval: 1000
+                                                    ),
                                                     bottomTitles: SideTitles(
                                                       showTitles: true,
                                                       getTextStyles: (context, value){
