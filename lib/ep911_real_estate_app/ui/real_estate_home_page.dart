@@ -56,6 +56,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 Text("Betterhomes."),
                               ],
                             ),
+                          ),
+                          Text("Exclusive, serviced, all bills included. City views"),
+                          Row(
+                            children: [
+                              Icon(Icons.bed_outlined),
+                              Text('2'),
+                              Icon(Icons.bathtub_outlined),
+                              Text("2"),
+                              Icon(Icons.apps),
+                              Text("2998"),
+                              Spacer(),
+                              Text("Villa")
+                            ],
                           )
                         ],
                       ))
