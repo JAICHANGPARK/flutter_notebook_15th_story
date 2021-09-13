@@ -19,7 +19,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         foregroundColor: Colors.grey,
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.tune))],
       ),
-
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Text("Dubai, Palm Jumeirah"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [Text("1,020 results"), Text("Newest")],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
