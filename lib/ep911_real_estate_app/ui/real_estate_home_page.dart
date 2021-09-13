@@ -47,15 +47,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg"),
                                     fit: BoxFit.cover)),
                           ),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("\$ 499,990"),
-                              Text("Betterhomes."),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("\$ 499,990"),
+                                Text("Betterhomes."),
+                              ],
+                            ),
                           )
                         ],
                       ))
