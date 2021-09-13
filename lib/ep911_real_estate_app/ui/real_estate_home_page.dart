@@ -23,6 +23,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("Dubai, Palm Jumeirah"),
               Row(
