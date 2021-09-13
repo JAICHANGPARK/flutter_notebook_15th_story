@@ -13,6 +13,10 @@ dependencies:
   badges: any
   fl_chart: any
 
+  pigeon: any
+  freezed: any
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
