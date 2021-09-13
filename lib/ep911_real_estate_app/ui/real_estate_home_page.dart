@@ -20,14 +20,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.tune))],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Text("Dubai, Palm Jumeirah"),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("1,020 results"), Text("Newest")],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Column(
+            children: [
+              Text("Dubai, Palm Jumeirah"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("1,020 results"), Text("Newest")],
+              )
+            ],
+          ),
         ),
       ),
     );
