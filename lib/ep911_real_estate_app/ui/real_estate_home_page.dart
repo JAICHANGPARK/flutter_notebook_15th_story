@@ -12,11 +12,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      drawer: Drawer(),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
         foregroundColor: Colors.grey,
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.tune))],
       ),
+
     );
   }
 }
