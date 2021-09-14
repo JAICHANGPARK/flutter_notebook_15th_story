@@ -80,9 +80,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           Text(
                             "${realEstateItem[index].title ?? ""}",
                           ),
-                          SizedBox(
-                            height: 16,
-                          ),
+                          SizedBox(height: 16),
                           Row(
                             children: [
                               Icon(
@@ -92,7 +90,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                               SizedBox(width: 4),
                               Text(
-                                '2',
+                                "${realEstateItem[index].rooms ?? 2}",
                                 style: TextStyle(color: Colors.grey),
                               ),
                               SizedBox(width: 8),
@@ -103,7 +101,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                               SizedBox(width: 4),
                               Text(
-                                "2",
+                                "${realEstateItem[index].bathroom ?? 2}",
                                 style: TextStyle(color: Colors.grey),
                               ),
                               SizedBox(width: 8),
