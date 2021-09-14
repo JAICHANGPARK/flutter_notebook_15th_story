@@ -112,12 +112,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                               SizedBox(width: 4),
                               Text(
-                                "2998",
+                                "${realEstateItem[index].block ?? 2}",
                                 style: TextStyle(color: Colors.grey),
                               ),
                               Spacer(),
                               Text(
-                                "Villa",
+                                "${realEstateItem[index].type ?? 2}",
                                 style: TextStyle(color: Colors.grey),
                               )
                             ],
