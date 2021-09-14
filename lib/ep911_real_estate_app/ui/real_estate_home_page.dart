@@ -59,9 +59,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
                                 image: DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg"),
-                                    fit: BoxFit.cover)),
+                                    image: NetworkImage(realEstateItem[index].img ?? ""), fit: BoxFit.cover)),
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 16),
@@ -69,11 +67,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "\$ 499,990",
+                                  "\$ ${realEstateItem[index].price ?? ""}",
                                   style: TextStyle(fontSize: 20),
                                 ),
                                 Text(
-                                  "Betterhomes.",
+                                  "${realEstateItem[index].vendor ?? ""}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ],
