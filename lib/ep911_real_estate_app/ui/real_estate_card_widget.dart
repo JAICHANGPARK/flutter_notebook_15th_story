@@ -28,7 +28,10 @@ class RealEstateCardWidget extends StatelessWidget {
                       borderRadius: BorderRadius.circular(24),
                     ),
                     child: Center(
-                      child: Text("${realEstate.tag}"),
+                      child: Text(
+                        "${realEstate.tag}",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ))
             ],
