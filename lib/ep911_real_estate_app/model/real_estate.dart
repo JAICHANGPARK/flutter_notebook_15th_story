@@ -21,3 +21,20 @@ class RealEstate {
     this.type,
   });
 }
+
+List<RealEstate> _realEstateItem = [
+
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
