@@ -63,7 +63,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ],
                             ),
                           ),
-
                           Text("Exclusive, serviced, all bills included. City views"),
                           SizedBox(
                             height: 16,
@@ -71,15 +70,23 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           Row(
                             children: [
                               Icon(Icons.bed_outlined),
+                              SizedBox(width: 4),
                               Text('2'),
+                              SizedBox(width: 8),
                               Icon(Icons.bathtub_outlined),
+                              SizedBox(width: 4),
                               Text("2"),
+                              SizedBox(width: 8),
                               Icon(Icons.apps),
+                              SizedBox(width: 4),
                               Text("2998"),
                               Spacer(),
                               Text("Villa")
                             ],
-                          )
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                         ],
                       ))
             ],
