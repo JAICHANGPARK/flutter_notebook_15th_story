@@ -54,7 +54,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               children: [
                                 Text(
                                   "\$ 499,990",
-                                  style: TextStyle(fontSize: 24),
+                                  style: TextStyle(fontSize: 20),
                                 ),
                                 Text(
                                   "Betterhomes.",
@@ -63,7 +63,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ],
                             ),
                           ),
+
                           Text("Exclusive, serviced, all bills included. City views"),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               Icon(Icons.bed_outlined),
