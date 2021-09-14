@@ -25,7 +25,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Dubai, Palm Jumeirah"),
+              Text(
+                "Dubai, Palm Jumeirah",
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [Text("1,020 results"), Text("Newest")],
@@ -69,19 +75,27 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.bed_outlined),
+                              Icon(Icons.bed_outlined,size: 20, color: Colors.grey,),
                               SizedBox(width: 4),
-                              Text('2'),
+                              Text('2',style: TextStyle(
+                                color: Colors.grey
+                              ),),
                               SizedBox(width: 8),
-                              Icon(Icons.bathtub_outlined),
+                              Icon(Icons.bathtub_outlined,size: 20, color: Colors.grey,),
                               SizedBox(width: 4),
-                              Text("2"),
+                              Text("2",style: TextStyle(
+                                  color: Colors.grey
+                              ),),
                               SizedBox(width: 8),
-                              Icon(Icons.apps),
+                              Icon(Icons.apps,size: 20, color: Colors.grey,),
                               SizedBox(width: 4),
-                              Text("2998"),
+                              Text("2998",style: TextStyle(
+                                  color: Colors.grey
+                              ),),
                               Spacer(),
-                              Text("Villa")
+                              Text("Villa",style: TextStyle(
+                                  color: Colors.grey
+                              ),)
                             ],
                           ),
                           SizedBox(
