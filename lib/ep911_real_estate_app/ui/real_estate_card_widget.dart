@@ -3,6 +3,7 @@ import 'package:flutter_notebook_15th_story/ep911_real_estate_app/model/real_est
 
 class RealEstateCardWidget extends StatelessWidget {
   final RealEstate realEstate;
+
   RealEstateCardWidget({Key? key, required this.realEstate}) : super(key: key);
 
   @override
@@ -17,7 +18,18 @@ class RealEstateCardWidget extends StatelessWidget {
               image: DecorationImage(image: NetworkImage(realEstate.img ?? ""), fit: BoxFit.cover)),
           child: Stack(
             children: [
-              
+              Positioned(
+                  left: 16,
+                  top: 16,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.orangeAccent,
+                    ),
+                    child: Center(
+                      child: Text("${realEstate.tag}"),
+                    ),
+                  ))
             ],
           ),
         ),
@@ -43,33 +55,21 @@ class RealEstateCardWidget extends StatelessWidget {
         SizedBox(height: 16),
         Row(
           children: [
-            Icon(
-              Icons.bed_outlined,
-              size: 20,
-              color: Colors.grey,
-            ),
+            Icon(Icons.bed_outlined, size: 20, color: Colors.grey),
             SizedBox(width: 4),
             Text(
               "${realEstate.rooms ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(width: 8),
-            Icon(
-              Icons.bathtub_outlined,
-              size: 20,
-              color: Colors.grey,
-            ),
+            Icon(Icons.bathtub_outlined, size: 20, color: Colors.grey),
             SizedBox(width: 4),
             Text(
               "${realEstate.bathroom ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(width: 8),
-            Icon(
-              Icons.apps,
-              size: 20,
-              color: Colors.grey,
-            ),
+            Icon(Icons.apps, size: 20, color: Colors.grey),
             SizedBox(width: 4),
             Text(
               "${realEstate.block ?? 2}",
@@ -82,9 +82,7 @@ class RealEstateCardWidget extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(
-          height: 16,
-        ),
+        SizedBox(height: 16),
       ],
     );
   }
