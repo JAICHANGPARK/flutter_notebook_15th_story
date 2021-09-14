@@ -77,7 +77,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ],
                             ),
                           ),
-                          Text("Exclusive, serviced, all bills included. City views"),
+                          Text(
+                            "${realEstateItem[index].title ?? ""}",
+                          ),
                           SizedBox(
                             height: 16,
                           ),
