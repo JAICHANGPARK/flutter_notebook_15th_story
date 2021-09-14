@@ -12,7 +12,7 @@ class RealEstateCardWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          height: 200,
+          height: 210,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               image: DecorationImage(image: NetworkImage(realEstate.img ?? ""), fit: BoxFit.cover)),
@@ -86,7 +86,7 @@ class RealEstateCardWidget extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 24),
       ],
     );
   }
