@@ -71,14 +71,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   style: TextStyle(fontSize: 20),
                                 ),
                                 Text(
-                                  "${realEstateItem[index].vendor ?? ""}",
+                                  realEstateItem[index].vendor ?? "",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ],
                             ),
                           ),
                           Text(
-                            "${realEstateItem[index].title ?? ""}",
+                            realEstateItem[index].title ?? "",
                           ),
                           SizedBox(height: 16),
                           Row(
