@@ -52,8 +52,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("\$ 499,990"),
-                                Text("Betterhomes."),
+                                Text(
+                                  "\$ 499,990",
+                                  style: TextStyle(fontSize: 24),
+                                ),
+                                Text(
+                                  "Betterhomes.",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               ],
                             ),
                           ),
