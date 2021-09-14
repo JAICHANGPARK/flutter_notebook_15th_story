@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep911_real_estate_app/model/real_estate.dart';
 
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({Key? key}) : super(key: key);
@@ -49,7 +50,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 height: 16,
               ),
               ...List.generate(
-                  10,
+                  realEstateItem.length,
                   (index) => Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
