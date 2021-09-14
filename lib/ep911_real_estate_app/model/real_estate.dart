@@ -22,7 +22,7 @@ class RealEstate {
   });
 }
 
-List<RealEstate> _realEstateItem = [
+List<RealEstate> realEstateItem = [
   RealEstate(
       tag: "PREMIUM",
       price: "499,990",
