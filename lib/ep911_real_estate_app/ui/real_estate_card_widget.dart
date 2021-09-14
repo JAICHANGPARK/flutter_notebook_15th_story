@@ -15,6 +15,11 @@ class RealEstateCardWidget extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               image: DecorationImage(image: NetworkImage(realEstate.img ?? ""), fit: BoxFit.cover)),
+          child: Stack(
+            children: [
+              
+            ],
+          ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 16),
