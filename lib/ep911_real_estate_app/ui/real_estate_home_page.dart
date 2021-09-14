@@ -53,9 +53,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
               ...List.generate(
                   realEstateItem.length,
-                  (index) => RealEstateCardWidget()
-
-    )
+                  (index) => RealEstateCardWidget(
+                        realEstate: realEstateItem[index],
+                      ))
             ],
           ),
         ),
