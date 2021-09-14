@@ -40,7 +40,7 @@ class RealEstateCardWidget extends StatelessWidget {
             children: [
               Text(
                 "\$ ${realEstate.price ?? ""}",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 18),
               ),
               Text(
                 realEstate.vendor ?? "",
