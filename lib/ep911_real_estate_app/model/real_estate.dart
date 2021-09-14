@@ -34,7 +34,7 @@ List<RealEstate> realEstateItem = [
       bathroom: 2,
       block: 2998),
   RealEstate(
-      tag: "PREMIUM",
+      tag: "FEATURED",
       price: "499,990",
       img: "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
       vendor: "Betterhomes.",
