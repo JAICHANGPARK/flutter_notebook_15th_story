@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep911_real_estate_app/model/real_estate.dart';
 
-
 class RealEstateCardWidget extends StatelessWidget {
-  RealEstateCardWidget({Key? key}) : super(key: key);
-  final RealEstate
+  final RealEstate realEstate;
+  RealEstateCardWidget({Key? key, required this.realEstate}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +14,7 @@ class RealEstateCardWidget extends StatelessWidget {
           height: 200,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(
-                  image: NetworkImage(realEstateItem[index].img ?? ""), fit: BoxFit.cover)),
+              image: DecorationImage(image: NetworkImage(realEstate.img ?? ""), fit: BoxFit.cover)),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 16),
@@ -24,18 +22,18 @@ class RealEstateCardWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "\$ ${realEstateItem[index].price ?? ""}",
+                "\$ ${realEstate.price ?? ""}",
                 style: TextStyle(fontSize: 20),
               ),
               Text(
-                realEstateItem[index].vendor ?? "",
+                realEstate.vendor ?? "",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
           ),
         ),
         Text(
-          realEstateItem[index].title ?? "",
+          realEstate.title ?? "",
         ),
         SizedBox(height: 16),
         Row(
@@ -47,7 +45,7 @@ class RealEstateCardWidget extends StatelessWidget {
             ),
             SizedBox(width: 4),
             Text(
-              "${realEstateItem[index].rooms ?? 2}",
+              "${realEstate.rooms ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(width: 8),
@@ -58,7 +56,7 @@ class RealEstateCardWidget extends StatelessWidget {
             ),
             SizedBox(width: 4),
             Text(
-              "${realEstateItem[index].bathroom ?? 2}",
+              "${realEstate.bathroom ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(width: 8),
@@ -69,12 +67,12 @@ class RealEstateCardWidget extends StatelessWidget {
             ),
             SizedBox(width: 4),
             Text(
-              "${realEstateItem[index].block ?? 2}",
+              "${realEstate.block ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             Spacer(),
             Text(
-              "${realEstateItem[index].type ?? 2}",
+              "${realEstate.type ?? 2}",
               style: TextStyle(color: Colors.grey),
             )
           ],
