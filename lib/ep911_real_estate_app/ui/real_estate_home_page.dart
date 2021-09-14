@@ -34,7 +34,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Text("1,020 results"), Text("Newest")],
+                children: [
+                  Text(
+                    "1,020 results",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  Text(
+                    "Newest",
+                    style: TextStyle(color: Colors.grey),
+                  )
+                ],
               ),
               SizedBox(
                 height: 16,
@@ -75,27 +84,43 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.bed_outlined,size: 20, color: Colors.grey,),
+                              Icon(
+                                Icons.bed_outlined,
+                                size: 20,
+                                color: Colors.grey,
+                              ),
                               SizedBox(width: 4),
-                              Text('2',style: TextStyle(
-                                color: Colors.grey
-                              ),),
+                              Text(
+                                '2',
+                                style: TextStyle(color: Colors.grey),
+                              ),
                               SizedBox(width: 8),
-                              Icon(Icons.bathtub_outlined,size: 20, color: Colors.grey,),
+                              Icon(
+                                Icons.bathtub_outlined,
+                                size: 20,
+                                color: Colors.grey,
+                              ),
                               SizedBox(width: 4),
-                              Text("2",style: TextStyle(
-                                  color: Colors.grey
-                              ),),
+                              Text(
+                                "2",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                               SizedBox(width: 8),
-                              Icon(Icons.apps,size: 20, color: Colors.grey,),
+                              Icon(
+                                Icons.apps,
+                                size: 20,
+                                color: Colors.grey,
+                              ),
                               SizedBox(width: 4),
-                              Text("2998",style: TextStyle(
-                                  color: Colors.grey
-                              ),),
+                              Text(
+                                "2998",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                               Spacer(),
-                              Text("Villa",style: TextStyle(
-                                  color: Colors.grey
-                              ),)
+                              Text(
+                                "Villa",
+                                style: TextStyle(color: Colors.grey),
+                              )
                             ],
                           ),
                           SizedBox(
