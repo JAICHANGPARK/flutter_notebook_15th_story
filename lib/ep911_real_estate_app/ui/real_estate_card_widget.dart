@@ -22,15 +22,15 @@ class RealEstateCardWidget extends StatelessWidget {
                   left: 16,
                   top: 16,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
-                      color: realEstate.tag == "PREMIUM" ? Colors.orangeAccent : Colors.lightGreenAccent,
+                      color: realEstate.tag == "PREMIUM" ? Colors.orangeAccent : Colors.green,
                       borderRadius: BorderRadius.circular(24),
                     ),
                     child: Center(
                       child: Text(
                         "${realEstate.tag}",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ))
