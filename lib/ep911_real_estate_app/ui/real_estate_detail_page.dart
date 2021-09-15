@@ -32,7 +32,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               right: 0,
               bottom: MediaQuery.of(context).size.height / 2,
             ),
-            Positioned(child: Container()),
+            Positioned(child: Container(
+              decoration: BoxDecoration(
+                
+              ),
+            )),
           ],
         ),
       ),
