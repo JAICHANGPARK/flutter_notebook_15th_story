@@ -43,7 +43,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                             ),
                           ),
-                        ))
+                        )),
+                    Positioned(child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.5)
+                          ),
+                          child: Icon(Icons.favorite_border, color: Colors.white,),
+                        )
+                      ],
+                    ))
                   ],
                 ),
               ),
