@@ -41,9 +41,11 @@ List<RealEstate> realEstateItem = [
       rooms: 2,
       bathroom: 2,
       sqft: 2998,
-    sellerName: "Esther Howard",
-    sellerSubtitle: "Betterhomes Real Estate",
-    detail: 
+      sellerName: "Esther Howard",
+      sellerSubtitle: "Betterhomes Real Estate",
+      detail:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+          "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   ),
   RealEstate(
       tag: "FEATURED",
