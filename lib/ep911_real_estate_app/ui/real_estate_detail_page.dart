@@ -19,8 +19,8 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
           children: [
             Positioned(
               child: Container(
-                color: Colors.green,
                 decoration: BoxDecoration(
+                    color: Colors.green,
                     image: DecorationImage(
                         image: NetworkImage(
                           widget.realEstate.img ?? "",
