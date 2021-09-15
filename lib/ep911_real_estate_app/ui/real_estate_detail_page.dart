@@ -16,7 +16,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned(child: Container(
+            color: Colors.green,
+          ), left: 0,top: 0, right: 0, bottom: MediaQuery.of(context).size.height / 3,),
+          Positioned(child: Container()),
         ],
       ),
     );
