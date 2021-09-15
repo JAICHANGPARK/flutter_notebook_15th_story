@@ -76,7 +76,7 @@ class RealEstateCardWidget extends StatelessWidget {
             Icon(Icons.apps, size: 20, color: Colors.grey),
             SizedBox(width: 4),
             Text(
-              "${realEstate.block ?? 2}",
+              "${realEstate.sqft ?? 2}",
               style: TextStyle(color: Colors.grey),
             ),
             Spacer(),
