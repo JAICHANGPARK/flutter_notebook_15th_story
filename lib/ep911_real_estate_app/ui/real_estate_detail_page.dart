@@ -54,22 +54,24 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                 color: Colors.black.withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
+                              padding: EdgeInsets.all(4),
                               child: Icon(
                                 Icons.favorite_border,
                                 color: Colors.white,
+                                size: 20,
                               ),
                             ),
                             SizedBox(
                               height: 8,
                             ),
-                            Container(
+                            Container( padding: EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 color: Colors.black.withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Icon(
-                                Icons.favorite_border,
-                                color: Colors.white,
+                                Icons.share,
+                                color: Colors.white,   size: 20,
                               ),
                             )
                           ],
