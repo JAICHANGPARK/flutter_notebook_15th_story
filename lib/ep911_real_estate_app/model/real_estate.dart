@@ -48,7 +48,7 @@ List<RealEstate> realEstateItem = [
       detail:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
           "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  ),
+      sellerProfile: "https://cdn.pixabay.com/photo/2016/07/22/16/54/portrait-1535266_960_720.jpg"),
   RealEstate(
       tag: "FEATURED",
       price: "499,990",
@@ -58,5 +58,11 @@ List<RealEstate> realEstateItem = [
       type: "Villa",
       rooms: 2,
       bathroom: 2,
-      sqft: 2998),
+      sqft: 2998,
+      sellerName: "Esther Howard",
+      sellerSubtitle: "Betterhomes Real Estate",
+      detail:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+          "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      sellerProfile: "https://cdn.pixabay.com/photo/2016/07/22/16/54/portrait-1535266_960_720.jpg"),
 ];
