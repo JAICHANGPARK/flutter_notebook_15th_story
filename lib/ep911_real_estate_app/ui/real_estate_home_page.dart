@@ -56,7 +56,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   realEstateItem.length,
                   (index) => GestureDetector(
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => RealEstateDetailPage()));
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => RealEstateDetailPage(
+                                    realEstate: realEstateItem[index],
+                                  )));
                         },
                         child: RealEstateCardWidget(
                           realEstate: realEstateItem[index],
