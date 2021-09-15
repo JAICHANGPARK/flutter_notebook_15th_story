@@ -53,9 +53,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
               ...List.generate(
                   realEstateItem.length,
-                  (index) => RealEstateCardWidget(
-                        realEstate: realEstateItem[index],
-                      ))
+                  (index) => GestureDetector(
+                    onTap: (){
+                      
+                    },
+                    child: RealEstateCardWidget(
+                          realEstate: realEstateItem[index],
+                        ),
+                  ))
             ],
           ),
         ),
