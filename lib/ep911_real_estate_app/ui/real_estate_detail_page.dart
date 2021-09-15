@@ -64,19 +64,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             SizedBox(
                               height: 8,
                             ),
-                            Container( padding: EdgeInsets.all(4),
+                            Container(
+                              padding: EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 color: Colors.black.withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Icon(
                                 Icons.share,
-                                color: Colors.white,   size: 20,
+                                color: Colors.white,
+                                size: 20,
                               ),
                             )
                           ],
                         )),
-
                     Positioned(
                         right: 16,
                         bottom: 72,
@@ -96,18 +97,23 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("${widget.realEstate.shots ?? "0"}"),
+                              Text(
+                                "${widget.realEstate.shots ?? "0"}",
+                                style: TextStyle(color: Colors.white),
+                              ),
                               SizedBox(
                                 width: 8,
                               ),
-                              Container( padding: EdgeInsets.all(4),
+                              Container(
+                                padding: EdgeInsets.all(4),
                                 decoration: BoxDecoration(
                                   color: Colors.black.withOpacity(0.5),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                                 child: Icon(
                                   Icons.share,
-                                  color: Colors.white,   size: 20,
+                                  color: Colors.white,
+                                  size: 20,
                                 ),
                               )
                             ],
