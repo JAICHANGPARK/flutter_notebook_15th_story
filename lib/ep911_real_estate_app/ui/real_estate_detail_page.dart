@@ -51,7 +51,9 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                  color: Colors.black.withOpacity(0.5), borderRadius: BorderRadius.circular(4)),
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
                               child: Icon(
                                 Icons.favorite_border,
                                 color: Colors.white,
@@ -62,7 +64,9 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                  color: Colors.black.withOpacity(0.5), borderRadius: BorderRadius.circular(4)),
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
                               child: Icon(
                                 Icons.favorite_border,
                                 color: Colors.white,
