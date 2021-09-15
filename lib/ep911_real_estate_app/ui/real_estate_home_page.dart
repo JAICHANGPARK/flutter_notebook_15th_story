@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep911_real_estate_app/model/real_estate.dart';
 
 import 'real_estate_card_widget.dart';
+import 'real_estate_detail_page.dart';
 
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({Key? key}) : super(key: key);
@@ -54,13 +55,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ...List.generate(
                   realEstateItem.length,
                   (index) => GestureDetector(
-                    onTap: (){
-                      
-                    },
-                    child: RealEstateCardWidget(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => RealEstateDetailPage()));
+                        },
+                        child: RealEstateCardWidget(
                           realEstate: realEstateItem[index],
                         ),
-                  ))
+                      ))
             ],
           ),
         ),
