@@ -13,6 +13,7 @@ class RealEstate {
   String? sellerProfile;
   String? sellerName;
   String? sellerSubtitle;
+  int? shots;
 
   RealEstate(
       {this.img,
@@ -27,7 +28,8 @@ class RealEstate {
       this.type,
       this.sellerProfile,
       this.sellerName,
-      this.sellerSubtitle});
+      this.sellerSubtitle,
+      this.shots});
 }
 
 List<RealEstate> realEstateItem = [
