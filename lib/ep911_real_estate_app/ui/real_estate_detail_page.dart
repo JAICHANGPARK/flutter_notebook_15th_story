@@ -20,11 +20,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             Positioned(
               child: Container(
                 color: Colors.green,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(
+                          widget.realEstate.img ?? "",
+                        ),
+                        fit: BoxFit.cover)),
               ),
               left: 0,
               top: 0,
               right: 0,
-              bottom: MediaQuery.of(context).size.height / 1.5,
+              bottom: MediaQuery.of(context).size.height / 2,
             ),
             Positioned(child: Container()),
           ],
