@@ -41,6 +41,9 @@ List<RealEstate> realEstateItem = [
       rooms: 2,
       bathroom: 2,
       sqft: 2998,
+    sellerName: "Esther Howard",
+    sellerSubtitle: "Betterhomes Real Estate",
+    detail: 
   ),
   RealEstate(
       tag: "FEATURED",
