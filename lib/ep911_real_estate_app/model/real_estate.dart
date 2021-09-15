@@ -4,9 +4,11 @@ class RealEstate {
   String? price;
   String? vendor;
   String? title;
+  String? detail;
+  
   int? rooms;
   int? bathroom;
-  int? block;
+  int? sqft;
   String? type;
 
   RealEstate({
@@ -17,7 +19,7 @@ class RealEstate {
     this.title,
     this.rooms,
     this.bathroom,
-    this.block,
+    this.sqft,
     this.type,
   });
 }
@@ -29,10 +31,11 @@ List<RealEstate> realEstateItem = [
       img: "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
       vendor: "Betterhomes.",
       title: "Exclusive, serviced, all bills included. City views",
+
       type: "Villa",
       rooms: 2,
       bathroom: 2,
-      block: 2998),
+      sqft: 2998),
   RealEstate(
       tag: "FEATURED",
       price: "499,990",
@@ -42,5 +45,5 @@ List<RealEstate> realEstateItem = [
       type: "Villa",
       rooms: 2,
       bathroom: 2,
-      block: 2998),
+      sqft: 2998),
 ];
