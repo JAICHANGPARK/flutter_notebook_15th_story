@@ -44,16 +44,32 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             ),
                           ),
                         )),
-                    Positioned(child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.5)
-                          ),
-                          child: Icon(Icons.favorite_border, color: Colors.white,),
-                        )
-                      ],
-                    ))
+                    Positioned(
+                        right: 16,
+                        top: 16,
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.5), borderRadius: BorderRadius.circular(4)),
+                              child: Icon(
+                                Icons.favorite_border,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.5), borderRadius: BorderRadius.circular(4)),
+                              child: Icon(
+                                Icons.favorite_border,
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ))
                   ],
                 ),
               ),
