@@ -14,13 +14,21 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(child: Container(
-            color: Colors.green,
-          ), left: 0,top: 0, right: 0, bottom: MediaQuery.of(context).size.height / 3,),
-          Positioned(child: Container()),
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              child: Container(
+                color: Colors.green,
+              ),
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: MediaQuery.of(context).size.height / 1.5,
+            ),
+            Positioned(child: Container()),
+          ],
+        ),
       ),
     );
   }
