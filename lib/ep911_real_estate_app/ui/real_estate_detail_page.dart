@@ -75,6 +75,43 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               ),
                             )
                           ],
+                        )),
+
+                    Positioned(
+                        right: 16,
+                        bottom: 72,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.all(4),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.camera_alt_outlined,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text("${widget.realEstate.shots ?? "0"}"),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Container( padding: EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.5),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Icon(
+                                  Icons.share,
+                                  color: Colors.white,   size: 20,
+                                ),
+                              )
+                            ],
+                          ),
                         ))
                   ],
                 ),
