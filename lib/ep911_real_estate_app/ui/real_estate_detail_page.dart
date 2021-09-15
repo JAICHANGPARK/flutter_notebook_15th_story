@@ -28,7 +28,22 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         fit: BoxFit.cover)),
                 child: Stack(
                   children: [
-                    
+                    Positioned(
+                        left: 16,
+                        top: 16,
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: widget.realEstate.tag == "PREMIUM" ? Colors.orangeAccent : Colors.green,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "${widget.realEstate.tag}",
+                              style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ))
                   ],
                 ),
               ),
