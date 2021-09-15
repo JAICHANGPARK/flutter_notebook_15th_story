@@ -26,6 +26,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           widget.realEstate.img ?? "",
                         ),
                         fit: BoxFit.cover)),
+                child: Stack(
+                  children: [
+                    
+                  ],
+                ),
               ),
               left: 0,
               top: 0,
