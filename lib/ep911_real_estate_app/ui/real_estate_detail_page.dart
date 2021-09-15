@@ -87,36 +87,36 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           padding: EdgeInsets.all(4),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.camera_alt_outlined,
-                                color: Colors.white,
-                                size: 20,
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                "${widget.realEstate.shots ?? "0"}",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Container(
-                                padding: EdgeInsets.all(4),
-                                decoration: BoxDecoration(
-                                  color: Colors.black.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                                child: Icon(
-                                  Icons.share,
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.camera_alt_outlined,
                                   color: Colors.white,
-                                  size: 20,
+                                  size: 14,
                                 ),
-                              )
-                            ],
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "${widget.realEstate.shots ?? "0"}",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                VerticalDivider(color: Colors.white, width: 4),
+                                Icon(
+                                  Icons.rotate_left,
+                                  color: Colors.white,
+                                  size: 14,
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "360",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ],
+                            ),
                           ),
                         ))
                   ],
