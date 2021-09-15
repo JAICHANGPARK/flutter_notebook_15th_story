@@ -80,7 +80,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         )),
                     Positioned(
                         right: 16,
-                        bottom: 72,
+                        bottom: 84,
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.black.withOpacity(0.5),
@@ -102,7 +102,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   "${widget.realEstate.shots ?? "0"}",
                                   style: TextStyle(color: Colors.white),
                                 ),
-                                VerticalDivider(color: Colors.white, width: 4),
+                                VerticalDivider(color: Colors.white, width: 12),
                                 Icon(
                                   Icons.rotate_left,
                                   color: Colors.white,
