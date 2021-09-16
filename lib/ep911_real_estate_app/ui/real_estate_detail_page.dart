@@ -214,24 +214,32 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     Spacer(),
                     Row(
                       children: [
-                        Text("\$ ${widget.realEstate.price}",style: TextStyle(
-                          fontSize: 21,
-                        ),),
+                        Text(
+                          "\$ ${widget.realEstate.price}",
+                          style: TextStyle(
+                            fontSize: 21,
+                          ),
+                        ),
                         Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.deepPurpleAccent,
-                            borderRadius: BorderRadius.circular(32)
+                            borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                           child: Row(
                             children: [
-                              Icon(Icons.mail_outline,color: Colors.white,),
-                              SizedBox(width: 4,),
-                              Text("Message",style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.white
-                              ),)
+                              Icon(
+                                Icons.mail_outline,
+                                color: Colors.white,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "Message",
+                                style: TextStyle(fontSize: 14, color: Colors.white),
+                              )
                             ],
                           ),
                         )
