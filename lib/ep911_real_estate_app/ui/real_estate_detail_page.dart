@@ -174,6 +174,31 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     Text(
                       "${widget.realEstate.detail}",
                       style: TextStyle(height: 2),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundImage: NetworkImage(widget.realEstate.sellerProfile ?? ""),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "${widget.realEstate.sellerName}",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text("${widget.realEstate.sellerSubtitle}",
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
