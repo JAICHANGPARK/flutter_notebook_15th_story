@@ -140,7 +140,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
+                    Text( "${widget.realEstate.shots ?? "0"}",)
                   ],
                 ),
               ),
