@@ -154,14 +154,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           "${widget.realEstate.rooms ?? 2} beds",
                           style: TextStyle(color: Colors.grey),
                         ),
-                        SizedBox(width: 8),
+                        SizedBox(width: 16),
                         Icon(Icons.bathtub_outlined, size: 20, color: Colors.grey),
                         SizedBox(width: 4),
                         Text(
                           "${widget.realEstate.bathroom ?? 2} baths",
                           style: TextStyle(color: Colors.grey),
                         ),
-                        SizedBox(width: 8),
+                        SizedBox(width: 16),
                         Icon(Icons.apps, size: 20, color: Colors.grey),
                         SizedBox(width: 4),
                         Text(
