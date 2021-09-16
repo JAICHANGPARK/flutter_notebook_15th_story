@@ -210,6 +210,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           ],
                         ),
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("\$ ${widget.realEstate.price}",style: TextStyle(
+                          fontSize: 21,
+                        ),),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurpleAccent
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
