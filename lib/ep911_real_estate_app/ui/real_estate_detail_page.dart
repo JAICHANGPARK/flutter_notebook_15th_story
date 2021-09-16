@@ -141,7 +141,10 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text( "${widget.realEstate.title ?? "0"}",)
+                    Text(
+                      widget.realEstate.title ?? "0",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    )
                   ],
                 ),
               ),
