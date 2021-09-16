@@ -171,6 +171,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                       ],
                     ),
                     SizedBox(height: 24),
+                    Text("${widget.realEstate.detail}",
+                      
+                      style: TextStyle(
+                      wordSpacing: 3
+                    ),)
                   ],
                 ),
               ),
