@@ -144,7 +144,33 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     Text(
                       widget.realEstate.title ?? "0",
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    )
+                    ),
+                    SizedBox(height: 16),
+                    Row(
+                      children: [
+                        Icon(Icons.bed_outlined, size: 20, color: Colors.grey),
+                        SizedBox(width: 4),
+                        Text(
+                          "${widget.realEstate.rooms ?? 2} beds",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        SizedBox(width: 8),
+                        Icon(Icons.bathtub_outlined, size: 20, color: Colors.grey),
+                        SizedBox(width: 4),
+                        Text(
+                          "${widget.realEstate.bathroom ?? 2} baths",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        SizedBox(width: 8),
+                        Icon(Icons.apps, size: 20, color: Colors.grey),
+                        SizedBox(width: 4),
+                        Text(
+                          "${widget.realEstate.sqft ?? 2} sqft",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 24),
                   ],
                 ),
               ),
