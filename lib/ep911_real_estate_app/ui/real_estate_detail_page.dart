@@ -196,7 +196,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   "${widget.realEstate.sellerName}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
-                                Text("${widget.realEstate.sellerSubtitle}",
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "${widget.realEstate.sellerSubtitle}",
                                 ),
                               ],
                             ),
