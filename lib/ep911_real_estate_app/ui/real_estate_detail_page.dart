@@ -187,15 +187,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             radius: 24,
                             backgroundImage: NetworkImage(widget.realEstate.sellerProfile ?? ""),
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                "${widget.realEstate.sellerName}",
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              Text("${widget.realEstate.sellerSubtitle}",
-                              ),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Text(
+                                  "${widget.realEstate.sellerName}",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Text("${widget.realEstate.sellerSubtitle}",
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       ),
