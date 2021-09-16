@@ -141,14 +141,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      height: 3,
-                      width: 24,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(16),
+                    Center(
+                      child: Container(
+                        height: 3,
+                        width: 24,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                       ),
                     ),
+                    SizedBox(height: 16),
                     Text(
                       widget.realEstate.title ?? "0",
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -181,7 +184,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     SizedBox(height: 24),
                     Text(
                       "${widget.realEstate.detail}",
-                      style: TextStyle(height: 2),
+                      style: TextStyle(height: 2, color: Colors.blueGrey),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
