@@ -126,19 +126,25 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   ],
                 ),
               ),
-
             ),
             Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: MediaQuery.of(context).size.height / 3,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                )),
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: MediaQuery.of(context).size.height / 3,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
