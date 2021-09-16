@@ -137,10 +137,11 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
                 ),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text( "${widget.realEstate.shots ?? "0"}",)
+                    Text( "${widget.realEstate.title ?? "0"}",)
                   ],
                 ),
               ),
