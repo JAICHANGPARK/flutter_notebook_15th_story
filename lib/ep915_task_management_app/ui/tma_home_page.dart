@@ -52,7 +52,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           Icon(
                             Icons.search,
                             size: 28,
-                            color: Colors.orange,
+                            color: Colors.orange[200],
                           ),
                           // SizedBox(height: 4,),
                           // CircleAvatar(
@@ -67,7 +67,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           Icon(
                             Icons.check_box_outlined,
                             size: 28,
-                            color: Colors.orange,
+                            color: Colors.orange[200],
                           ),
                           // SizedBox(height: 4,),
                           // CircleAvatar(
@@ -83,7 +83,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             child: Icon(
                               Icons.notifications_outlined,
                               size: 28,
-                              color: Colors.orange,
+                              color: Colors.orange[200],
                             ),
                           )
 
