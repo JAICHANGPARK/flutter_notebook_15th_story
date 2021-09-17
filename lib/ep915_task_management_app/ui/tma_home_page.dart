@@ -16,6 +16,29 @@ class _TmaHomePageState extends State<TmaHomePage> {
         child: Stack(
           children: [
             Positioned(
+                left: 8,
+                right: 8,
+                bottom: 0,
+                top: 0,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 18,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text("Hello,"),
+                          Text("Dreamwalker")
+                        ],
+                      )
+                    ],
+                  ),
+                )),
+            Positioned(
                 left: 16,
                 right: 16,
                 bottom: 8,
