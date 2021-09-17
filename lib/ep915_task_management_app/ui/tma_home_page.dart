@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class TmaHomePage extends StatefulWidget {
@@ -25,7 +26,6 @@ class _TmaHomePageState extends State<TmaHomePage> {
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(1, 2))]),
                   padding: EdgeInsets.symmetric(horizontal: 16),
-
                   child: Row(
                     children: [
                       Column(
@@ -36,7 +36,9 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             size: 28,
                             color: Colors.orange,
                           ),
-                          SizedBox(height: 4,),
+                          SizedBox(
+                            height: 4,
+                          ),
                           CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.orange,
@@ -51,6 +53,39 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             size: 28,
                             color: Colors.orange,
                           ),
+                          // SizedBox(height: 4,),
+                          // CircleAvatar(
+                          //   radius: 3,
+                          //   backgroundColor: Colors.orange,
+                          // )
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.check_box_outlined,
+                            size: 28,
+                            color: Colors.orange,
+                          ),
+                          // SizedBox(height: 4,),
+                          // CircleAvatar(
+                          //   radius: 3,
+                          //   backgroundColor: Colors.orange,
+                          // )
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Badge(
+                            child: Icon(
+                              Icons.check_box_outlined,
+                              size: 28,
+                              color: Colors.orange,
+                            ),
+                          )
+
                           // SizedBox(height: 4,),
                           // CircleAvatar(
                           //   radius: 3,
