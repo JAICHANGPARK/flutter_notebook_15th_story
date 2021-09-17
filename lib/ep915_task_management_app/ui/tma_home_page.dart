@@ -92,7 +92,8 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           //   backgroundColor: Colors.orange,
                           // )
                         ],
-                      )
+                      ),
+                      CircleAvatar(),
                     ],
                   ),
                 ))
