@@ -80,7 +80,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         children: [
                           Badge(
                             child: Icon(
-                              Icons.check_box_outlined,
+                              Icons.notifications_outlined,
                               size: 28,
                               color: Colors.orange,
                             ),
