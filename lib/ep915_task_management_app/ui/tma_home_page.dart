@@ -22,6 +22,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                   height: 64,
                   decoration: BoxDecoration(
                     color: Colors.blue,
+                    borderRadius: BorderRadius.circular(16)
                   ),
                 ))
           ],
