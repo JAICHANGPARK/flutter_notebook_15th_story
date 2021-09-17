@@ -19,7 +19,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                 left: 8,
                 right: 8,
                 bottom: 0,
-                top: 0,
+                top: 16,
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
