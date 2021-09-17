@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TmaHomePage extends StatefulWidget {
   const TmaHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,23 @@ class TmaHomePage extends StatefulWidget {
 class _TmaHomePageState extends State<TmaHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+                left: 16,
+                right: 16,
+                bottom: 16,
+                child: Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ))
+          ],
+        ),
+      ),
+    );
   }
 }
