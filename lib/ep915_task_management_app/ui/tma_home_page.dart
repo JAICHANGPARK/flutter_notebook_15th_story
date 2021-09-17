@@ -27,6 +27,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(1, 2))]),
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -93,7 +94,9 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           // )
                         ],
                       ),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 16,
+                      ),
                     ],
                   ),
                 ))
