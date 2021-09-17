@@ -27,6 +27,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                   child: Row(
                     children: [
                       Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.home,
