@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep911_real_estate_app/real_estate_app.dart';
+import 'ep915_task_management_app/task_management_app.dart';
 
-main() => runApp(RealEstateApp());
+main() => runApp(TaskManagementApp());
