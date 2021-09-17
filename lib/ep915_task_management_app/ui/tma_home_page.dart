@@ -36,8 +36,9 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             size: 28,
                             color: Colors.orange,
                           ),
+                          SizedBox(height: 4,),
                           CircleAvatar(
-                            radius: 4,
+                            radius: 3,
                             backgroundColor: Colors.orange,
                           )
                         ],
