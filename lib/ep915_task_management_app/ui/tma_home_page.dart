@@ -28,7 +28,11 @@ class _TmaHomePageState extends State<TmaHomePage> {
                     children: [
                       Column(
                         children: [
-                          Icon(Icons.home),
+                          Icon(
+                            Icons.home,
+                            size: 28,
+                            color: Colors.orange,
+                          ),
                           CircleAvatar(
                             radius: 4,
                             backgroundColor: Colors.orange,
