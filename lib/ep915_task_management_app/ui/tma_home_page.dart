@@ -42,6 +42,21 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             backgroundColor: Colors.orange,
                           )
                         ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.search,
+                            size: 28,
+                            color: Colors.orange,
+                          ),
+                          // SizedBox(height: 4,),
+                          // CircleAvatar(
+                          //   radius: 3,
+                          //   backgroundColor: Colors.orange,
+                          // )
+                        ],
                       )
                     ],
                   ),
