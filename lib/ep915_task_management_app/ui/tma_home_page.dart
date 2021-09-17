@@ -17,12 +17,18 @@ class _TmaHomePageState extends State<TmaHomePage> {
             Positioned(
                 left: 16,
                 right: 16,
-                bottom: 16,
+                bottom: 8,
                 child: Container(
                   height: 64,
                   decoration: BoxDecoration(
                     color: Colors.blue,
-                    borderRadius: BorderRadius.circular(16)
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.4),
+                        offset: Offset(1, 2)
+                      )
+                    ]
                   ),
                 ))
           ],
