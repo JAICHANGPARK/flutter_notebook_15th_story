@@ -24,6 +24,8 @@ class _TmaHomePageState extends State<TmaHomePage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(1, 2))]),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+
                   child: Row(
                     children: [
                       Column(
