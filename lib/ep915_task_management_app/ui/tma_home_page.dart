@@ -106,7 +106,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         height: 130,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
-                            itemCount: 10,
+                            itemCount: 3,
                             itemBuilder: (context, index) {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
