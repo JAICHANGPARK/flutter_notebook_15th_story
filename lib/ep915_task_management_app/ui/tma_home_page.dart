@@ -57,7 +57,9 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             Text("To"),
                             Text("Do"),
                             CircleAvatar(
+                              radius: 18,
                               backgroundColor: Colors.blue[200],
+                              child: Text("3"),
                             )
                           ],
                         ),
