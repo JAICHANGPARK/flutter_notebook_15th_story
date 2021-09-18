@@ -104,7 +104,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                             ),
                             Text(
-                              "Progress",
+                              " Progress",
                               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
                             ),
                             SizedBox(
