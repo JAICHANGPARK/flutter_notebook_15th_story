@@ -60,23 +60,24 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         ),
                       ),
                       SizedBox(
-                          height: 240,
-                          child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: 10,
-                              itemBuilder: (context, index) {
-                                return Padding(
-                                  padding: const EdgeInsets.only(right: 16),
-                                  child: Container(
-                                    width: MediaQuery.of(context).size.width - 100,
-                                    decoration: BoxDecoration(color: Colors.orangeAccent[100],
-                                    borderRadius: BorderRadius.circular(16)),
-                                    child: Center(
-                                      child: Text("$index"),
-                                    ),
+                        height: 240,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Container(
+                                  width: MediaQuery.of(context).size.width - 100,
+                                  decoration: BoxDecoration(
+                                      color: Colors.orangeAccent[100], borderRadius: BorderRadius.circular(16)),
+                                  child: Center(
+                                    child: Text("$index"),
                                   ),
-                                );
-                              })),
+                                ),
+                              );
+                            }),
+                      ),
                       Padding(
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
@@ -103,9 +104,22 @@ class _TmaHomePageState extends State<TmaHomePage> {
                       ),
                       SizedBox(
                         height: 130,
-                        child: Container(
-                          color: Colors.red,
-                        ),
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Container(
+                                  width: MediaQuery.of(context).size.width / 2.5,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
+                                  child: Center(
+                                    child: Text("$index"),
+                                  ),
+                                ),
+                              );
+                            }),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
