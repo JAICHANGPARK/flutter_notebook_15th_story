@@ -34,7 +34,17 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           Text("Hello,"),
                           Text("Dreamwalker")
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: [
+                          Text("4 New"),
+                          Text("tasks today"),
+                        ],
+                      ),
+                      SizedBox()
                     ],
                   ),
                 )),
