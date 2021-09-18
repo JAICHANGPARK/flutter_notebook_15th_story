@@ -31,8 +31,14 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           SizedBox(
                             width: 8,
                           ),
-                          Text("Hello,"),
-                          Text("Dreamwalker")
+                          Text("Hello,", style: TextStyle(
+                            
+                              fontSize: 16
+                          ),),
+                          Text(" Dreamwalker", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),)
                         ],
                       ),
                       Padding(
@@ -57,7 +63,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             Text("To"),
                             Text("Do"),
                             CircleAvatar(
-                              radius: 18,
+                              radius: 16,
                               backgroundColor: Colors.blue[100],
                               foregroundColor: Colors.black,
                               child: Text("3"),
@@ -78,7 +84,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             Text("In"),
                             Text("Progress"),
                             CircleAvatar(
-                              radius: 18,
+                              radius: 16,
                               backgroundColor: Colors.red[100],
                               foregroundColor: Colors.black,
                               child: Text("7"),
