@@ -112,8 +112,8 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                 padding: const EdgeInsets.only(right: 16),
                                 child: Container(
                                   width: MediaQuery.of(context).size.width / 2.5,
-                                  decoration: BoxDecoration(
-                                      color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
+                                  decoration:
+                                      BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
                                   child: Center(
                                     child: Text("$index"),
                                   ),
