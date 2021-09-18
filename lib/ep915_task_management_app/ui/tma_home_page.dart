@@ -32,7 +32,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             width: 8,
                           ),
                           Text("Hello,", style: TextStyle(
-                            
+
                               fontSize: 16
                           ),),
                           Text(" Dreamwalker", style: TextStyle(
@@ -45,8 +45,14 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
                           children: [
-                            Text("4 New"),
-                            Text("tasks today"),
+                            Text("4 New", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20
+                            ),),
+                            Text(" tasks today", style: TextStyle(
+                                fontSize: 20,
+                              fontWeight: FontWeight.w300,
+                            ),),
                           ],
                         ),
                       ),
