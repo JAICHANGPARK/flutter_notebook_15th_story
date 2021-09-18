@@ -120,11 +120,16 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         ),
                       ),
                       SizedBox(
-                        height: 130,
-                        child: Container(
-                          color: Colors.red,
-                        ),
-                      ),
+                          height: 80,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: Card(
+                              elevation: 4,
+                              child: Row(
+                                children: [],
+                              ),
+                            ),
+                          )),
                     ],
                   ),
                 )),
