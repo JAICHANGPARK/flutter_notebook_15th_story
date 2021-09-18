@@ -60,18 +60,21 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         ),
                       ),
                       SizedBox(
-                        height: 240,
-                        child: ListView.builder(itemBuilder: (context, index){
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.orangeAccent[100]
-                            ),
-                            child: Center(
-                              child: Text("$index"),
-                            ),
-                          );
-                        })
-                      ),
+                          height: 240,
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 12),
+                                  child: Container(
+                                    width: MediaQuery.of(context).size.width - 80,
+                                    decoration: BoxDecoration(color: Colors.orangeAccent[100]),
+                                    child: Center(
+                                      child: Text("$index"),
+                                    ),
+                                  ),
+                                );
+                              })),
                       Padding(
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
