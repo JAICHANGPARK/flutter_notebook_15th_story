@@ -66,8 +66,14 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
                           children: [
-                            Text("To"),
-                            Text("Do"),
+                            Text("To", style: TextStyle(
+                                fontWeight: FontWeight.w300,
+                                fontSize: 20
+                            ),),
+                            Text(" Do", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20
+                            ),),
                             CircleAvatar(
                               radius: 16,
                               backgroundColor: Colors.blue[100],
