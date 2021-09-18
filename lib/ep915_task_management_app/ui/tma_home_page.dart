@@ -61,9 +61,16 @@ class _TmaHomePageState extends State<TmaHomePage> {
                       ),
                       SizedBox(
                         height: 240,
-                        child: Container(
-                          color: Colors.red,
-                        ),
+                        child: ListView.builder(itemBuilder: (context, index){
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent[100]
+                            ),
+                            child: Center(
+                              child: Text("$index"),
+                            ),
+                          );
+                        })
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
