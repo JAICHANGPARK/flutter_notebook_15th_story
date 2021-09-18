@@ -58,7 +58,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             Text("Do"),
                             CircleAvatar(
                               radius: 18,
-                              backgroundColor: Colors.blue[200],
+                              backgroundColor: Colors.blue[100],
                               foregroundColor: Colors.black,
                               child: Text("3"),
                             )
@@ -66,7 +66,28 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         ),
                       ),
                       SizedBox(
-                        height: 160,
+                        height: 130,
+                        child: Container(
+                          color: Colors.red,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 24, bottom: 16),
+                        child: Row(
+                          children: [
+                            Text("In"),
+                            Text("Progress"),
+                            CircleAvatar(
+                              radius: 18,
+                              backgroundColor: Colors.red[100],
+                              foregroundColor: Colors.black,
+                              child: Text("7"),
+                            )
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 130,
                         child: Container(
                           color: Colors.red,
                         ),
