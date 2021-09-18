@@ -99,8 +99,15 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
                           children: [
-                            Text("In"),
-                            Text("Progress"),  SizedBox(
+                            Text(
+                              "In",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            Text(
+                              "Progress",
+                              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
+                            ),
+                            SizedBox(
                               width: 8,
                             ),
                             CircleAvatar(
