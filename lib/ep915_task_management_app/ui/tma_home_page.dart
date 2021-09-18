@@ -66,10 +66,11 @@ class _TmaHomePageState extends State<TmaHomePage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Padding(
-                                  padding: const EdgeInsets.only(right: 12),
+                                  padding: const EdgeInsets.only(right: 16),
                                   child: Container(
-                                    width: MediaQuery.of(context).size.width - 80,
-                                    decoration: BoxDecoration(color: Colors.orangeAccent[100]),
+                                    width: MediaQuery.of(context).size.width - 100,
+                                    decoration: BoxDecoration(color: Colors.orangeAccent[100],
+                                    borderRadius: BorderRadius.circular(16)),
                                     child: Center(
                                       child: Text("$index"),
                                     ),
