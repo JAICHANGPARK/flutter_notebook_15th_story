@@ -31,28 +31,31 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           SizedBox(
                             width: 8,
                           ),
-                          Text("Hello,", style: TextStyle(
-
-                              fontSize: 16
-                          ),),
-                          Text(" Dreamwalker", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),)
+                          Text(
+                            "Hello,",
+                            style: TextStyle(fontSize: 16),
+                          ),
+                          Text(
+                            " Dreamwalker",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                          )
                         ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
                           children: [
-                            Text("4 New", style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20
-                            ),),
-                            Text(" tasks today", style: TextStyle(
+                            Text(
+                              "4 New",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            Text(
+                              " tasks today",
+                              style: TextStyle(
                                 fontSize: 20,
-                              fontWeight: FontWeight.w300,
-                            ),),
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -66,14 +69,17 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         padding: const EdgeInsets.only(top: 24, bottom: 16),
                         child: Row(
                           children: [
-                            Text("To", style: TextStyle(
-                                fontWeight: FontWeight.w300,
-                                fontSize: 20
-                            ),),
-                            Text(" Do", style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20
-                            ),),
+                            Text(
+                              "To",
+                              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),
+                            ),
+                            Text(
+                              " Do",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
                             CircleAvatar(
                               radius: 16,
                               backgroundColor: Colors.blue[100],
@@ -94,7 +100,9 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         child: Row(
                           children: [
                             Text("In"),
-                            Text("Progress"),
+                            Text("Progress"),  SizedBox(
+                              width: 8,
+                            ),
                             CircleAvatar(
                               radius: 16,
                               backgroundColor: Colors.red[100],
