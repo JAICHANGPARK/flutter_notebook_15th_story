@@ -49,7 +49,19 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         child: Container(
                           color: Colors.red,
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 24, bottom: 16),
+                        child: Row(
+                          children: [
+                            Text("To"),
+                            Text("Do"),
+                            CircleAvatar(
+                              backgroundColor: Colors.blue[200],
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 )),
