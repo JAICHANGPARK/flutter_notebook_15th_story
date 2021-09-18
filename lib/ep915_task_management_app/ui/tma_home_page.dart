@@ -35,14 +35,14 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           Text("Dreamwalker")
                         ],
                       ),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Row(
-                        children: [
-                          Text("4 New"),
-                          Text("tasks today"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.only(top: 24, bottom: 16),
+                        child: Row(
+                          children: [
+                            Text("4 New"),
+                            Text("tasks today"),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         height: 240,
