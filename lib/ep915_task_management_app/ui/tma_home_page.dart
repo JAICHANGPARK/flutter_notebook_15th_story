@@ -17,7 +17,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
           children: [
             Positioned(
                 left: 8,
-                right: 8,
+                right: 0,
                 bottom: 0,
                 top: 16,
                 child: SingleChildScrollView(
