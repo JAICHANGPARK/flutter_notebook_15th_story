@@ -44,7 +44,12 @@ class _TmaHomePageState extends State<TmaHomePage> {
                           Text("tasks today"),
                         ],
                       ),
-                      SizedBox()
+                      SizedBox(
+                        height: 240,
+                        child: Container(
+                          color: Colors.red,
+                        ),
+                      )
                     ],
                   ),
                 )),
