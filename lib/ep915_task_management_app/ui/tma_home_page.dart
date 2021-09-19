@@ -117,15 +117,22 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             itemCount: taskItems[index].taskTags?.length ?? 0,
                                             itemBuilder: (context, index2) {
                                               return Padding(
-                                                padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8,),
+                                                padding: const EdgeInsets.only(
+                                                  right: 16,
+                                                  top: 8,
+                                                  bottom: 8,
+                                                ),
                                                 child: Container(
-                                                  decoration:
-                                                      BoxDecoration(color: taskItems[index].taskTags?[index2]?.color,
-                                                      borderRadius: BorderRadius.circular(16),
-                                                      ),
+                                                  decoration: BoxDecoration(
+                                                    color: taskItems[index].taskTags?[index2]?.color,
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
                                                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                                   child: Center(
-                                                    child: Text(taskItems[index].taskTags?[index2]?.tag ?? ""),
+                                                    child: Text(
+                                                      taskItems[index].taskTags?[index2]?.tag ?? "",
+                                                      style: TextStyle(color: Colors.white),
+                                                    ),
                                                   ),
                                                 ),
                                               );
