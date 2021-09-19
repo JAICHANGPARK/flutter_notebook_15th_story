@@ -9,5 +9,10 @@ List<Task> taskItems = [
       taskTags: [
         TaskTag(tag: "High", color: Colors.orange),
         TaskTag(tag: "5 Score", color: Colors.deepPurpleAccent),
-      ])
+      ],
+     taskRelate: TaskRelate(
+
+     )
+  ),
+
 ];
