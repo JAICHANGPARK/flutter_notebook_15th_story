@@ -103,7 +103,13 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             )
                                           ],
                                         ),
-                                      )
+                                      ),
+                                      Text(
+                                        taskItems[index].description ?? "Unknown Task Name",
+                                        style: TextStyle(
+                                          // fontSize: 13,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
