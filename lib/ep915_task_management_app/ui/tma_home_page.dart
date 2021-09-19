@@ -111,12 +111,21 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             ),
                                       ),
                                       SizedBox(
-                                        height: 24,
+                                        height: 48,
                                         child: ListView.builder(
-                                          scrollDirection: Axis.horizontal,
+                                            scrollDirection: Axis.horizontal,
                                             itemCount: taskItems[index].taskTags?.length ?? 0,
                                             itemBuilder: (context, index2) {
-                                              return Container();
+                                              return Padding(
+                                                padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                                                child: Container(
+                                                  decoration:
+                                                      BoxDecoration(color: taskItems[index].taskTags?[index2]?.color),
+                                                  child: Center(
+                                                    child: Text(taskItems[index].taskTags?[index2]?.tag ?? ""),
+                                                  ),
+                                                ),
+                                              );
                                             }),
                                       )
                                     ],
