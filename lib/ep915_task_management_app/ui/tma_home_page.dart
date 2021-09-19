@@ -66,6 +66,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                             scrollDirection: Axis.horizontal,
                             itemCount: taskItems.length,
                             itemBuilder: (context, index) {
+                              var profileLength = taskItems[index].taskRelate?.profileItems?.length ?? 0;
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
                                 child: Container(
@@ -142,8 +143,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                         height: 48,
                                         child: Stack(
                                           children: [
-                                            for (int i = 0; i < 4; i++)
-
+                                            for (int i = 0; i < profileLength; i++)
                                               Positioned(
                                                 left: i * 24,
                                                 top: 0,
@@ -153,7 +153,6 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                                       NetworkImage(taskItems[index].taskRelate?.profileItems?[i] ?? ""),
                                                 ),
                                               ),
-
                                           ],
                                         ),
                                       )
