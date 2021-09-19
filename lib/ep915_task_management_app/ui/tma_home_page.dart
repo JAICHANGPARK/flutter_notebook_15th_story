@@ -79,18 +79,26 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(taskItems[index].title ?? "Unknown Task Name",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                      ),),
+                                      Text(
+                                        taskItems[index].title ?? "Unknown Task Name",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
+                                      ),
                                       Row(
                                         children: [
                                           Icon(
                                             Icons.flag,
                                             color: Colors.red,
+                                            size: 18,
                                           ),
-                                          Text(taskItems[index].dueDateTime ?? "unknown")
+                                          Text(
+                                            taskItems[index].dueDateTime ?? "unknown",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                            ),
+                                          )
                                         ],
                                       )
                                     ],
