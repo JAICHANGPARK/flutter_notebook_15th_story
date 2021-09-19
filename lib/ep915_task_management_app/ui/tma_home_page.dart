@@ -121,7 +121,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                                 child: Container(
                                                   decoration:
                                                       BoxDecoration(color: taskItems[index].taskTags?[index2]?.color,
-                                                      borderRadius: BorderRadius.circular(24),
+                                                      borderRadius: BorderRadius.circular(16),
                                                       ),
                                                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                                   child: Center(
