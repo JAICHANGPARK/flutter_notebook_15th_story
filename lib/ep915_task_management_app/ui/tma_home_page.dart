@@ -77,7 +77,13 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   // ),
                                   child: Column(
                                     children: [
-                                      
+                                      Text(taskItems[index].title ?? "Unknown Task Name"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.flag, color: Colors.red,),
+                                          Text(taskItems[index].dueDateTime ?? "unknown")
+                                        ],
+                                      )
                                     ],
                                   ),
                                 ),
