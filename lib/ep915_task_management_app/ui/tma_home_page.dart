@@ -110,13 +110,15 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             // fontSize: 13,
                                             ),
                                       ),
-                                      ListView.builder(
-                                          itemCount:  taskItems[index].taskTags?.length ?? 0,
-
-                                          itemBuilder: (context, index2) {
-
-
-                                      })
+                                      SizedBox(
+                                        height: 24,
+                                        child: ListView.builder(
+                                          scrollDirection: Axis.horizontal,
+                                            itemCount: taskItems[index].taskTags?.length ?? 0,
+                                            itemBuilder: (context, index2) {
+                                              return Container();
+                                            }),
+                                      )
                                     ],
                                   ),
                                 ),
