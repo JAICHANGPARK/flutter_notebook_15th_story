@@ -75,7 +75,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   // child: Center(
                                   //   child: Text("$index"),
                                   // ),
-                                  padding: EdgeInsets.only(top: 16, right: 24, bottom: 16, left: 16),
+                                  padding: EdgeInsets.only(top: 16, right: 24, bottom: 8, left: 16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -139,15 +139,21 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             }),
                                       ),
                                       SizedBox(
-                                        height: 58,
+                                        height: 48,
                                         child: Stack(
                                           children: [
-                                            Positioned(
-                                              left: 0,
-                                              top: 0,
-                                              bottom: 0,
-                                              child: CircleAvatar(),
-                                            )
+                                            for (int i = 0; i < 4; i++)
+
+                                              Positioned(
+                                                left: i * 24,
+                                                top: 0,
+                                                bottom: 0,
+                                                child: CircleAvatar(
+                                                  backgroundImage:
+                                                      NetworkImage(taskItems[index].taskRelate?.profileItems?[i] ?? ""),
+                                                ),
+                                              ),
+
                                           ],
                                         ),
                                       )
