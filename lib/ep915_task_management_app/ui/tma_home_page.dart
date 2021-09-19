@@ -137,6 +137,19 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                                 ),
                                               );
                                             }),
+                                      ),
+                                      SizedBox(
+                                        height: 58,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: CircleAvatar(),
+                                            )
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
