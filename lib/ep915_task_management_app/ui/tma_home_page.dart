@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep915_task_management_app/mock/fake_task_data.dart';
 
 class TmaHomePage extends StatefulWidget {
   const TmaHomePage({Key? key}) : super(key: key);
@@ -63,7 +64,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         height: 240,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
-                            itemCount: 10,
+                            itemCount: taskItems.length,
                             itemBuilder: (context, index) {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
