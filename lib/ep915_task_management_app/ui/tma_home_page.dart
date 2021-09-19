@@ -153,6 +153,13 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                                       NetworkImage(taskItems[index].taskRelate?.profileItems?[i] ?? ""),
                                                 ),
                                               ),
+                                            Positioned(
+                                              child: Center(child: Text("+ ${taskItems[index].taskRelate?.counter ?? ""}")),
+                                              left: 32,
+                                              right: 0,
+                                              bottom: 0,
+                                              top: 0,
+                                            ),
                                           ],
                                         ),
                                       )
