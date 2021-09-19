@@ -72,8 +72,13 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   width: MediaQuery.of(context).size.width - 100,
                                   decoration: BoxDecoration(
                                       color: Colors.orangeAccent[100], borderRadius: BorderRadius.circular(16)),
-                                  child: Center(
-                                    child: Text("$index"),
+                                  // child: Center(
+                                  //   child: Text("$index"),
+                                  // ),
+                                  child: Column(
+                                    children: [
+                                      
+                                    ],
                                   ),
                                 ),
                               );
