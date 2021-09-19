@@ -75,9 +75,15 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   // child: Center(
                                   //   child: Text("$index"),
                                   // ),
+                                  padding: EdgeInsets.only(top: 16, right: 24, bottom: 16, left: 16),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(taskItems[index].title ?? "Unknown Task Name"),
+                                      Text(taskItems[index].title ?? "Unknown Task Name",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),),
                                       Row(
                                         children: [
                                           Icon(
