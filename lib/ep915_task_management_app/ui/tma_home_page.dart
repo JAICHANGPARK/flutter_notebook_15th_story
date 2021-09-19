@@ -86,20 +86,23 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                           fontSize: 20,
                                         ),
                                       ),
-                                      Row(
-                                        children: [
-                                          Icon(
-                                            Icons.flag,
-                                            color: Colors.red,
-                                            size: 18,
-                                          ),
-                                          Text(
-                                            taskItems[index].dueDateTime ?? "unknown",
-                                            style: TextStyle(
-                                              fontSize: 14,
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 12),
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.flag,
+                                              color: Colors.red,
+                                              size: 18,
                                             ),
-                                          )
-                                        ],
+                                            Text(
+                                              taskItems[index].dueDateTime ?? "unknown",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
