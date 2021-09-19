@@ -107,9 +107,16 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                       Text(
                                         taskItems[index].description ?? "Unknown Task Name",
                                         style: TextStyle(
-                                          // fontSize: 13,
-                                        ),
+                                            // fontSize: 13,
+                                            ),
                                       ),
+                                      ListView.builder(
+                                          itemCount:  taskItems[index].taskTags?.length ?? 0,
+
+                                          itemBuilder: (context, index2) {
+
+
+                                      })
                                     ],
                                   ),
                                 ),
