@@ -20,12 +20,14 @@ class _$TaskTearOff {
       {String? title,
       String? dueDateTime,
       String? description,
-      List<TaskTag?>? taskTags}) {
+      List<TaskTag?>? taskTags,
+      TaskRelate? taskRelate}) {
     return _Task(
       title: title,
       dueDateTime: dueDateTime,
       description: description,
       taskTags: taskTags,
+      taskRelate: taskRelate,
     );
   }
 }
@@ -39,6 +41,7 @@ mixin _$Task {
   String? get dueDateTime => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   List<TaskTag?>? get taskTags => throw _privateConstructorUsedError;
+  TaskRelate? get taskRelate => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $TaskCopyWith<Task> get copyWith => throw _privateConstructorUsedError;
@@ -52,7 +55,8 @@ abstract class $TaskCopyWith<$Res> {
       {String? title,
       String? dueDateTime,
       String? description,
-      List<TaskTag?>? taskTags});
+      List<TaskTag?>? taskTags,
+      TaskRelate? taskRelate});
 }
 
 /// @nodoc
@@ -69,6 +73,7 @@ class _$TaskCopyWithImpl<$Res> implements $TaskCopyWith<$Res> {
     Object? dueDateTime = freezed,
     Object? description = freezed,
     Object? taskTags = freezed,
+    Object? taskRelate = freezed,
   }) {
     return _then(_value.copyWith(
       title: title == freezed
@@ -87,6 +92,10 @@ class _$TaskCopyWithImpl<$Res> implements $TaskCopyWith<$Res> {
           ? _value.taskTags
           : taskTags // ignore: cast_nullable_to_non_nullable
               as List<TaskTag?>?,
+      taskRelate: taskRelate == freezed
+          ? _value.taskRelate
+          : taskRelate // ignore: cast_nullable_to_non_nullable
+              as TaskRelate?,
     ));
   }
 }
@@ -100,7 +109,8 @@ abstract class _$TaskCopyWith<$Res> implements $TaskCopyWith<$Res> {
       {String? title,
       String? dueDateTime,
       String? description,
-      List<TaskTag?>? taskTags});
+      List<TaskTag?>? taskTags,
+      TaskRelate? taskRelate});
 }
 
 /// @nodoc
@@ -118,6 +128,7 @@ class __$TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res>
     Object? dueDateTime = freezed,
     Object? description = freezed,
     Object? taskTags = freezed,
+    Object? taskRelate = freezed,
   }) {
     return _then(_Task(
       title: title == freezed
@@ -136,6 +147,10 @@ class __$TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res>
           ? _value.taskTags
           : taskTags // ignore: cast_nullable_to_non_nullable
               as List<TaskTag?>?,
+      taskRelate: taskRelate == freezed
+          ? _value.taskRelate
+          : taskRelate // ignore: cast_nullable_to_non_nullable
+              as TaskRelate?,
     ));
   }
 }
@@ -143,7 +158,12 @@ class __$TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Task with DiagnosticableTreeMixin implements _Task {
-  _$_Task({this.title, this.dueDateTime, this.description, this.taskTags});
+  _$_Task(
+      {this.title,
+      this.dueDateTime,
+      this.description,
+      this.taskTags,
+      this.taskRelate});
 
   @override
   final String? title;
@@ -153,10 +173,12 @@ class _$_Task with DiagnosticableTreeMixin implements _Task {
   final String? description;
   @override
   final List<TaskTag?>? taskTags;
+  @override
+  final TaskRelate? taskRelate;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'Task(title: $title, dueDateTime: $dueDateTime, description: $description, taskTags: $taskTags)';
+    return 'Task(title: $title, dueDateTime: $dueDateTime, description: $description, taskTags: $taskTags, taskRelate: $taskRelate)';
   }
 
   @override
@@ -167,7 +189,8 @@ class _$_Task with DiagnosticableTreeMixin implements _Task {
       ..add(DiagnosticsProperty('title', title))
       ..add(DiagnosticsProperty('dueDateTime', dueDateTime))
       ..add(DiagnosticsProperty('description', description))
-      ..add(DiagnosticsProperty('taskTags', taskTags));
+      ..add(DiagnosticsProperty('taskTags', taskTags))
+      ..add(DiagnosticsProperty('taskRelate', taskRelate));
   }
 
   @override
@@ -184,7 +207,10 @@ class _$_Task with DiagnosticableTreeMixin implements _Task {
                     .equals(other.description, description)) &&
             (identical(other.taskTags, taskTags) ||
                 const DeepCollectionEquality()
-                    .equals(other.taskTags, taskTags)));
+                    .equals(other.taskTags, taskTags)) &&
+            (identical(other.taskRelate, taskRelate) ||
+                const DeepCollectionEquality()
+                    .equals(other.taskRelate, taskRelate)));
   }
 
   @override
@@ -193,7 +219,8 @@ class _$_Task with DiagnosticableTreeMixin implements _Task {
       const DeepCollectionEquality().hash(title) ^
       const DeepCollectionEquality().hash(dueDateTime) ^
       const DeepCollectionEquality().hash(description) ^
-      const DeepCollectionEquality().hash(taskTags);
+      const DeepCollectionEquality().hash(taskTags) ^
+      const DeepCollectionEquality().hash(taskRelate);
 
   @JsonKey(ignore: true)
   @override
@@ -206,7 +233,8 @@ abstract class _Task implements Task {
       {String? title,
       String? dueDateTime,
       String? description,
-      List<TaskTag?>? taskTags}) = _$_Task;
+      List<TaskTag?>? taskTags,
+      TaskRelate? taskRelate}) = _$_Task;
 
   @override
   String? get title => throw _privateConstructorUsedError;
@@ -216,6 +244,8 @@ abstract class _Task implements Task {
   String? get description => throw _privateConstructorUsedError;
   @override
   List<TaskTag?>? get taskTags => throw _privateConstructorUsedError;
+  @override
+  TaskRelate? get taskRelate => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$TaskCopyWith<_Task> get copyWith => throw _privateConstructorUsedError;
