@@ -11,6 +11,11 @@ class TaskTag {
   TaskTag({this.tag, this.color});
 }
 
+class TaskRelate {
+  int? counter;
+  List<String>? profileItems;
+}
+
 @freezed
 class Task with _$Task {
   factory Task({
@@ -18,5 +23,6 @@ class Task with _$Task {
     String? dueDateTime,
     String? description,
     List<TaskTag?>? taskTags,
+    TaskRelate? taskRelate,
   }) = _Task;
 }
