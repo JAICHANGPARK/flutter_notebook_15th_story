@@ -10,9 +10,13 @@ List<Task> taskItems = [
         TaskTag(tag: "High", color: Colors.orange),
         TaskTag(tag: "5 Score", color: Colors.deepPurpleAccent),
       ],
-     taskRelate: TaskRelate(
-
-     )
-  ),
-
+      taskRelate: TaskRelate(
+        counter: 4,
+        profileItems: [
+          "https://cdn.pixabay.com/photo/2014/04/12/14/59/portrait-322470__340.jpg",
+          "https://cdn.pixabay.com/photo/2020/08/21/08/46/african-5505598__340.jpg",
+          "https://cdn.pixabay.com/photo/2017/04/06/19/34/girl-2209147__340.jpg",
+          "https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427__340.jpg"
+        ],
+      )),
 ];
