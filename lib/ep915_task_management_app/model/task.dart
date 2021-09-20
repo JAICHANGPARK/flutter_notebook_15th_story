@@ -6,16 +6,15 @@ import 'task_relate.dart';
 import 'task_tag.dart';
 
 part 'task.freezed.dart';
-
 part 'task.g.dart';
 
 @freezed
 class Task with _$Task {
   factory Task({
-    String? title,
+    @JsonKey(name: "title") String? title,
     String? dueDateTime,
     String? description,
-    List<TaskTag>? taskTags,
+    @Default([]) List<TaskTag>? taskTags,
     TaskRelate? taskRelate,
   }) = _Task;
 
