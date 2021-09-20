@@ -1,10 +1,14 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
+
+part 'task_relate.freezed.dart';
+part 'task_relate.g.dart'
+
 
 @freezed
-class TaskRelate {
-  int? _counter;
-  List<String>? profileItems;
+class TaskRelate with _$TaskRelate {
 
-  factory TaskRelate({this._counter, this.profileItems});
+  factory TaskRelate({int? counter, List<String>? profileItems}) = _TaskRelate;
+
+  factory TaskRelate.fromJson(Map<String, dynamic> json) => _$TaskRelateFromJson(json);
 }
