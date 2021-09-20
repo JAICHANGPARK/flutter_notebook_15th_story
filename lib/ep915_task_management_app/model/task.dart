@@ -15,7 +15,7 @@ class Task with _$Task {
     String? title,
     String? dueDateTime,
     String? description,
-    List<TaskTag?>? taskTags,
+    List<TaskTag>? taskTags,
     TaskRelate? taskRelate,
   }) = _Task;
 
