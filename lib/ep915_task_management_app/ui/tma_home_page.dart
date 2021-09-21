@@ -217,11 +217,10 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        Text(taskTodoItems[index].title,
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 24
-                                        ),),
+                                        Text(
+                                          taskTodoItems[index].title,
+                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                        ),
                                         Row(
                                           children: [
                                             Icon(
@@ -229,7 +228,13 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                               color: Colors.red,
                                               size: 14,
                                             ),
-                                            Text(taskTodoItems[index].dueDatetime),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
+                                            Text(
+                                              taskTodoItems[index].dueDatetime,
+                                              style: TextStyle(fontSize: 12),
+                                            ),
                                           ],
                                         )
                                       ],
