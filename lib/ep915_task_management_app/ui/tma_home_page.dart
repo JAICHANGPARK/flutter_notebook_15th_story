@@ -154,7 +154,8 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                                 ),
                                               ),
                                             Positioned(
-                                              child: Center(child: Text("+ ${taskItems[index].taskRelate?.counter ?? ""}")),
+                                              child: Center(
+                                                  child: Text("+ ${taskItems[index].taskRelate?.counter ?? ""}")),
                                               left: 32,
                                               right: 0,
                                               bottom: 0,
@@ -197,7 +198,7 @@ class _TmaHomePageState extends State<TmaHomePage> {
                         height: 130,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
-                            itemCount: 3,
+                            itemCount: taskTodoItems.length,
                             itemBuilder: (context, index) {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
@@ -205,9 +206,19 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                   width: MediaQuery.of(context).size.width / 2.5,
                                   decoration:
                                       BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
-                                  child: Center(
-                                    child: Text("$index"),
-                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                          Text(taskTodoItems[index].priority),
+                                          Text(taskTodoItems[index].title),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.flag, color: Colors.red, size: 14,),
+                                          Text(taskTodoItems[index].dueDatetime),
+                                        ],
+                                      )
+                                    ],
+                                  )
                                 ),
                               );
                             }),
