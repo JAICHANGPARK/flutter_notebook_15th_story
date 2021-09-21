@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep915_task_management_app/model/task.dart';
 import 'package:flutter_notebook_15th_story/ep915_task_management_app/model/task_relate.dart';
 import 'package:flutter_notebook_15th_story/ep915_task_management_app/model/task_tag.dart';
+import 'package:flutter_notebook_15th_story/ep915_task_management_app/model/task_to_do.dart';
 
 List<Task> taskItems = [
   Task(
@@ -38,4 +39,9 @@ List<Task> taskItems = [
           "https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427__340.jpg"
         ],
       )),
+];
+
+List<TaskTodo> taskTodoItems = [
+  TaskTodo(priority: "Urgent", title: "Redisain pay method", dueDatetime: "Sep 14, 2021"),
+  TaskTodo(priority: "Normal", title: "New icon version", dueDatetime: "Sep 16, 2021"),
 ];
