@@ -203,23 +203,33 @@ class _TmaHomePageState extends State<TmaHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
                                 child: Container(
-                                  width: MediaQuery.of(context).size.width / 2.5,
-                                  decoration:
-                                      BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                          Text(taskTodoItems[index].priority),
-                                          Text(taskTodoItems[index].title),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.flag, color: Colors.red, size: 14,),
-                                          Text(taskTodoItems[index].dueDatetime),
-                                        ],
-                                      )
-                                    ],
-                                  )
-                                ),
+                                    width: MediaQuery.of(context).size.width / 2.5,
+                                    decoration:
+                                        BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
+                                    padding: EdgeInsets.only(top: 16, bottom: 16, left: 8, right: 20),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          taskTodoItems[index].priority,
+                                          style: TextStyle(
+                                            color: taskTodoItems[index].priority == "Urgent" ? Colors.red : Colors.blue,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(taskTodoItems[index].title),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.flag,
+                                              color: Colors.red,
+                                              size: 14,
+                                            ),
+                                            Text(taskTodoItems[index].dueDatetime),
+                                          ],
+                                        )
+                                      ],
+                                    )),
                               );
                             }),
                       ),
