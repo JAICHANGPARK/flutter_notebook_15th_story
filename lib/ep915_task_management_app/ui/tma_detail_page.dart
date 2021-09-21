@@ -34,6 +34,9 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                           color: Colors.grey[200],
                           shape: BoxShape.circle,
                         ),
+                        child: Center(
+                          child: Icon(Icons.keyboard_arrow_left),
+                        ),
                       ),
                     ),
                   )),
@@ -48,10 +51,22 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                         color: Colors.grey[200],
                         shape: BoxShape.circle,
                       ),
+                      child: Center(
+                        child: Icon(Icons.edit_outlined),
+                      ),
                     ),
                   )),
                 ],
               ),
+            ),
+            Text(widget.task.title ?? ""),
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 12,
+                ),
+                Text("Created by dreamwalker \"Product Manager\"")
+              ],
             )
           ],
         ),
