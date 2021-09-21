@@ -217,7 +217,11 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        Text(taskTodoItems[index].title),
+                                        Text(taskTodoItems[index].title,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 24
+                                        ),),
                                         Row(
                                           children: [
                                             Icon(
