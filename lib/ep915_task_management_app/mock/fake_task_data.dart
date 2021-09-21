@@ -44,4 +44,5 @@ List<Task> taskItems = [
 List<TaskTodo> taskTodoItems = [
   TaskTodo(priority: "Urgent", title: "Redisain pay method", dueDatetime: "Sep 14, 2021"),
   TaskTodo(priority: "Normal", title: "New icon version", dueDatetime: "Sep 16, 2021"),
+  TaskTodo(priority: "Normal", title: "New icon version", dueDatetime: "Sep 16, 2021"),
 ];
