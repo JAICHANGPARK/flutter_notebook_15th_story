@@ -14,17 +14,41 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(child: Container(
-                  height: 32,
-                  width: 32,
-
-                ))
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      height: 32,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                  )),
+                  Expanded(child: Center(child: Text("Today task"))),
+                  Expanded(
+                      child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Container(
+                      height: 32,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                  )),
+                ],
+              ),
             )
           ],
         ),
