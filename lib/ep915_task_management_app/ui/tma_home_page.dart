@@ -1,6 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep915_task_management_app/mock/fake_task_data.dart';
+import 'package:flutter_notebook_15th_story/ep915_task_management_app/ui/tma_detail_page.dart';
 
 class TmaHomePage extends StatefulWidget {
   const TmaHomePage({Key? key}) : super(key: key);
@@ -69,102 +70,108 @@ class _TmaHomePageState extends State<TmaHomePage> {
                               var profileLength = taskItems[index].taskRelate?.profileItems?.length ?? 0;
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
-                                child: Container(
-                                  width: MediaQuery.of(context).size.width - 100,
-                                  decoration: BoxDecoration(
-                                      color: Colors.orangeAccent[100], borderRadius: BorderRadius.circular(16)),
-                                  // child: Center(
-                                  //   child: Text("$index"),
-                                  // ),
-                                  padding: EdgeInsets.only(top: 16, right: 24, bottom: 8, left: 16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        taskItems[index].title ?? "Unknown Task Name",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(builder: (context) => TmaDetailPage(task: taskItems[index])));
+                                  },
+                                  child: Container(
+                                    width: MediaQuery.of(context).size.width - 100,
+                                    decoration: BoxDecoration(
+                                        color: Colors.orangeAccent[100], borderRadius: BorderRadius.circular(16)),
+                                    // child: Center(
+                                    //   child: Text("$index"),
+                                    // ),
+                                    padding: EdgeInsets.only(top: 16, right: 24, bottom: 8, left: 16),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          taskItems[index].title ?? "Unknown Task Name",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 12),
-                                        child: Row(
-                                          children: [
-                                            Icon(
-                                              Icons.flag,
-                                              color: Colors.red,
-                                              size: 18,
-                                            ),
-                                            Text(
-                                              taskItems[index].dueDateTime ?? "unknown",
-                                              style: TextStyle(
-                                                fontSize: 14,
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 12),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                Icons.flag,
+                                                color: Colors.red,
+                                                size: 18,
                                               ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Text(
-                                        taskItems[index].description ?? "Unknown Task Name",
-                                        style: TextStyle(
-                                            // fontSize: 13,
-                                            ),
-                                      ),
-                                      SizedBox(
-                                        height: 48,
-                                        child: ListView.builder(
-                                            scrollDirection: Axis.horizontal,
-                                            itemCount: taskItems[index].taskTags?.length ?? 0,
-                                            itemBuilder: (context, index2) {
-                                              return Padding(
-                                                padding: const EdgeInsets.only(
-                                                  right: 16,
-                                                  top: 8,
-                                                  bottom: 8,
+                                              Text(
+                                                taskItems[index].dueDateTime ?? "unknown",
+                                                style: TextStyle(
+                                                  fontSize: 14,
                                                 ),
-                                                child: Container(
-                                                  decoration: BoxDecoration(
-                                                    color: taskItems[index].taskTags?[index2]?.color,
-                                                    borderRadius: BorderRadius.circular(16),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          taskItems[index].description ?? "Unknown Task Name",
+                                          style: TextStyle(
+                                              // fontSize: 13,
+                                              ),
+                                        ),
+                                        SizedBox(
+                                          height: 48,
+                                          child: ListView.builder(
+                                              scrollDirection: Axis.horizontal,
+                                              itemCount: taskItems[index].taskTags?.length ?? 0,
+                                              itemBuilder: (context, index2) {
+                                                return Padding(
+                                                  padding: const EdgeInsets.only(
+                                                    right: 16,
+                                                    top: 8,
+                                                    bottom: 8,
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                                  child: Center(
-                                                    child: Text(
-                                                      taskItems[index].taskTags?[index2]?.tag ?? "",
-                                                      style: TextStyle(color: Colors.white),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      color: taskItems[index].taskTags?[index2]?.color,
+                                                      borderRadius: BorderRadius.circular(16),
+                                                    ),
+                                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                    child: Center(
+                                                      child: Text(
+                                                        taskItems[index].taskTags?[index2]?.tag ?? "",
+                                                        style: TextStyle(color: Colors.white),
+                                                      ),
                                                     ),
                                                   ),
-                                                ),
-                                              );
-                                            }),
-                                      ),
-                                      SizedBox(
-                                        height: 48,
-                                        child: Stack(
-                                          children: [
-                                            for (int i = 0; i < profileLength; i++)
-                                              Positioned(
-                                                left: i * 24,
-                                                top: 0,
-                                                bottom: 0,
-                                                child: CircleAvatar(
-                                                  backgroundImage:
-                                                      NetworkImage(taskItems[index].taskRelate?.profileItems?[i] ?? ""),
-                                                ),
-                                              ),
-                                            Positioned(
-                                              child: Center(
-                                                  child: Text("+ ${taskItems[index].taskRelate?.counter ?? ""}")),
-                                              left: 32,
-                                              right: 0,
-                                              bottom: 0,
-                                              top: 0,
-                                            ),
-                                          ],
+                                                );
+                                              }),
                                         ),
-                                      )
-                                    ],
+                                        SizedBox(
+                                          height: 48,
+                                          child: Stack(
+                                            children: [
+                                              for (int i = 0; i < profileLength; i++)
+                                                Positioned(
+                                                  left: i * 24,
+                                                  top: 0,
+                                                  bottom: 0,
+                                                  child: CircleAvatar(
+                                                    backgroundImage: NetworkImage(
+                                                        taskItems[index].taskRelate?.profileItems?[i] ?? ""),
+                                                  ),
+                                                ),
+                                              Positioned(
+                                                child: Center(
+                                                    child: Text("+ ${taskItems[index].taskRelate?.counter ?? ""}")),
+                                                left: 32,
+                                                right: 0,
+                                                bottom: 0,
+                                                top: 0,
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               );
