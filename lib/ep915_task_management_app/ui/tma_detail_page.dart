@@ -13,6 +13,22 @@ class TmaDetailPage extends StatefulWidget {
 class _TmaDetailPageState extends State<TmaDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(child: Container(
+                  height: 32,
+                  width: 32,
+
+                ))
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
