@@ -204,11 +204,15 @@ class _TmaHomePageState extends State<TmaHomePage> {
                                 padding: const EdgeInsets.only(right: 16),
                                 child: Container(
                                     width: MediaQuery.of(context).size.width / 2.5,
-                                    decoration:
-                                        BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(16)),
-                                    padding: EdgeInsets.only(top: 16, bottom: 16, left: 8, right: 20),
+                                    decoration: BoxDecoration(
+                                        color: taskTodoItems[index].priority == "Urgent"
+                                            ? Colors.red[50]
+                                            : Colors.blue[50],
+                                        borderRadius: BorderRadius.circular(16)),
+                                    padding: EdgeInsets.only(top: 16, bottom: 16, left: 16, right: 20),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
                                         Text(
                                           taskTodoItems[index].priority,
