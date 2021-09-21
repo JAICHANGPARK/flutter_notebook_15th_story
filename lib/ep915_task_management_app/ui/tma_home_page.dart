@@ -71,10 +71,11 @@ class _TmaHomePageState extends State<TmaHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
                                 child: GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(builder: (context) => TmaDetailPage(task: taskItems[index])));
-                                  },
+                                  onTap: () => Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => TmaDetailPage(task: taskItems[index]),
+                                    ),
+                                  ),
                                   child: Container(
                                     width: MediaQuery.of(context).size.width - 100,
                                     decoration: BoxDecoration(
