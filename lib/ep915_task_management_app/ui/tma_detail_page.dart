@@ -25,12 +25,15 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                   Expanded(
                       child: Align(
                     alignment: Alignment.centerLeft,
-                    child: Container(
-                      height: 32,
-                      width: 32,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        shape: BoxShape.circle,
+                    child: InkWell(
+                      onTap: () => Navigator.of(context).pop(),
+                      child: Container(
+                        height: 32,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          shape: BoxShape.circle,
+                        ),
                       ),
                     ),
                   )),
