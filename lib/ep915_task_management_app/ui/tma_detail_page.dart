@@ -129,13 +129,11 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                       top: 0,
                       bottom: 0,
                       child: CircleAvatar(
-                        backgroundImage: NetworkImage(
-                            widget.task.taskRelate?.profileItems?[i] ?? ""),
+                        backgroundImage: NetworkImage(widget.task.taskRelate?.profileItems?[i] ?? ""),
                       ),
                     ),
                   Positioned(
-                    child: Center(
-                        child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
+                    child: Center(child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
                     left: 32,
                     right: 0,
                     bottom: 0,
