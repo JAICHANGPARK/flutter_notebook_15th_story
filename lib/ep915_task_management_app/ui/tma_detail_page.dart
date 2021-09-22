@@ -155,8 +155,7 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                       ),
                     Positioned(
                       child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
+                          alignment: Alignment.centerLeft, child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
                       left: 120,
                       right: 0,
                       bottom: 0,
@@ -164,7 +163,35 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Text("Subtask"),
+              Container(
+                  decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text("Interview with user"),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.flag,
+                                color: Colors.grey,
+                                size: 18,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "6 hours",
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                              )
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ))
             ],
           ),
         ),
