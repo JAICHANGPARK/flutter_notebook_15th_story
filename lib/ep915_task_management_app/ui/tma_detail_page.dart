@@ -176,7 +176,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
               ),
               Container(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[50],
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: Row(
                     children: [
                       Column(
@@ -219,7 +222,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
               ),
               Container(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[50],
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: Row(
                     children: [
                       Column(
@@ -256,7 +262,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                             });
                           })
                     ],
-                  ))
+                  )),
+              OutlinedButton.icon(
+                  onPressed: (){}, icon: Icon(Icons.add),
+                  label: Text("Add Subtask"),)
             ],
           ),
         ),
