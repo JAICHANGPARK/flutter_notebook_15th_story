@@ -70,13 +70,22 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 widget.task.title ?? "",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 12,
-                  ),
-                  Text("Created by dreamwalker \"Product Manager\"")
-                ],
+              SizedBox(
+                height: 12,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 12,
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Text("Created by dreamwalker \"Product Manager\"")
+                  ],
+                ),
               ),
               Text("${widget.task.description ?? ""}"
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
