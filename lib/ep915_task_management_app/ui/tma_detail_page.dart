@@ -12,6 +12,7 @@ class TmaDetailPage extends StatefulWidget {
 
 class _TmaDetailPageState extends State<TmaDetailPage> {
   bool _taskCheck = false;
+  bool _taskCheck2 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -242,7 +243,15 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                             ],
                           )
                         ],
-                      )
+                      ),
+                      Spacer(),
+                      Checkbox(
+                          value: _taskCheck2,
+                          onChanged: (b) {
+                            setState(() {
+                              _taskCheck2 = b ?? false;
+                            });
+                          })
                     ],
                   ))
             ],
