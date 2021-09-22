@@ -11,6 +11,8 @@ class TmaDetailPage extends StatefulWidget {
 }
 
 class _TmaDetailPageState extends State<TmaDetailPage> {
+  bool _taskCheck = false;
+
   @override
   Widget build(BuildContext context) {
     var profileLength = widget.task.taskRelate?.profileItems?.length ?? 0;
@@ -165,8 +167,11 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 ),
               ),
               Text("Subtask"),
+              SizedBox(
+                height: 8,
+              ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
                   child: Row(
                     children: [
@@ -174,6 +179,52 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Interview with user"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.flag,
+                                color: Colors.grey,
+                                size: 18,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "6 hours",
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                      Spacer(),
+                      Checkbox(
+                          value: _taskCheck,
+                          onChanged: (b) {
+                            setState(() {
+                              _taskCheck = b ?? false;
+                            });
+                          })
+                    ],
+                  )),
+              SizedBox(
+                height: 8,
+              ),
+              Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Interview with user"),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Icon(
