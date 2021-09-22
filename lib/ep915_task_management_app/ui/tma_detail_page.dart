@@ -167,6 +167,9 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 12,
+              ),
               Text("Subtask"),
               SizedBox(
                 height: 8,
