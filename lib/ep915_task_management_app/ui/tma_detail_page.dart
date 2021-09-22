@@ -70,7 +70,6 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 widget.task.title ?? "",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Row(
@@ -81,7 +80,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                     SizedBox(
                       width: 8,
                     ),
-                    Text("Created by dreamwalker \"Product Manager\"")
+                    Text(
+                      "Created by dreamwalker \"Product Manager\"",
+                      style: TextStyle(color: Colors.grey),
+                    )
                   ],
                 ),
               ),
@@ -136,6 +138,9 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                     }),
               ),
               SizedBox(
+                height: 12,
+              ),
+              SizedBox(
                 height: 48,
                 child: Stack(
                   children: [
@@ -149,8 +154,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                         ),
                       ),
                     Positioned(
-                      child: Center(child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
-                      left: 32,
+                      child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text("+ ${widget.task.taskRelate?.counter ?? ""}")),
+                      left: 120,
                       right: 0,
                       bottom: 0,
                       top: 0,
