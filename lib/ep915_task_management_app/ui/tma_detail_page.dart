@@ -26,7 +26,7 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.all(0.0),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Row(
                   children: [
                     Expanded(
@@ -278,8 +278,26 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 height: 8,
               ),
               Text("Attachment"),
-
-
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8)),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.file_copy_outlined,
+                          size: 14,
+                        ),
+                        Text(
+                          "User pinpoints.pdf",
+                          style: TextStyle(fontSize: 12),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
