@@ -71,6 +71,24 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
             Text("${widget.task.description ?? ""}"
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
                 "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.flag,
+                    color: Colors.red,
+                    size: 18,
+                  ),
+                  Text(
+                    widget.task.dueDateTime ?? "unknown",
+                    style: TextStyle(
+                      fontSize: 14,
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
