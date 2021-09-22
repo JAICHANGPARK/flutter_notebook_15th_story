@@ -26,7 +26,7 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.all(4.0),
+                padding: const EdgeInsets.all(0.0),
                 child: Row(
                   children: [
                     Expanded(
@@ -264,8 +264,22 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                     ],
                   )),
               OutlinedButton.icon(
-                  onPressed: (){}, icon: Icon(Icons.add),
-                  label: Text("Add Subtask"),)
+                onPressed: () {},
+                icon: Icon(
+                  Icons.add,
+                  size: 14,
+                ),
+                label: Text(
+                  "Add Subtask",
+                  style: TextStyle(fontSize: 12),
+                ),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text("Attachment"),
+
+
             ],
           ),
         ),
