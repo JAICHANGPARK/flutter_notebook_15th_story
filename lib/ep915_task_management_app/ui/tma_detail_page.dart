@@ -67,7 +67,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 ),
                 Text("Created by dreamwalker \"Product Manager\"")
               ],
-            )
+            ),
+            Text("${widget.task.description ?? ""}"
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
           ],
         ),
       ),
