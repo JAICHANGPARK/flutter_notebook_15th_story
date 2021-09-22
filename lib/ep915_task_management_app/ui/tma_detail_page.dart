@@ -61,7 +61,10 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 ],
               ),
             ),
-            Text(widget.task.title ?? ""),
+            Text(
+              widget.task.title ?? "",
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            ),
             Row(
               children: [
                 CircleAvatar(
