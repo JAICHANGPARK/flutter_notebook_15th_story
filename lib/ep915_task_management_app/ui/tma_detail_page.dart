@@ -18,6 +18,7 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
