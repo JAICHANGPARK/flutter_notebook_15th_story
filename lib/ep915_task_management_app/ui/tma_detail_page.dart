@@ -278,6 +278,9 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 height: 8,
               ),
               Text("Attachment"),
+              SizedBox(
+                height: 8,
+              ),
               Row(
                 children: [
                   Container(
@@ -291,6 +294,25 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                         ),
                         Text(
                           "User pinpoints.pdf",
+                          style: TextStyle(fontSize: 12),
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8)),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.file_copy_outlined,
+                          size: 14,
+                        ),
+                        Text(
+                          "Analysis.pdf",
                           style: TextStyle(fontSize: 12),
                         )
                       ],
