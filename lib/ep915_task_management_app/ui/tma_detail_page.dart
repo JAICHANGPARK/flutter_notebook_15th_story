@@ -80,11 +80,12 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                     color: Colors.red,
                     size: 18,
                   ),
+                  SizedBox(
+                    width: 4,
+                  ),
                   Text(
                     widget.task.dueDateTime ?? "unknown",
-                    style: TextStyle(
-                      fontSize: 14,
-                    ),
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
                   )
                 ],
               ),
