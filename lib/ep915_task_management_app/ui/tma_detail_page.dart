@@ -70,11 +70,9 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
                 widget.task.title ?? "",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
-                height: 12,
-              ),
+
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Row(
                   children: [
                     CircleAvatar(
