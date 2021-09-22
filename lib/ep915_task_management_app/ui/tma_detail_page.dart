@@ -166,10 +166,12 @@ class _TmaDetailPageState extends State<TmaDetailPage> {
               ),
               Text("Subtask"),
               Container(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(16)),
                   child: Row(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Interview with user"),
                           Row(
