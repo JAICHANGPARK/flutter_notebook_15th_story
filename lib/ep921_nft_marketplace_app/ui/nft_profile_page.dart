@@ -13,7 +13,7 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
               Row(
@@ -21,6 +21,9 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                 children: [IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
                 ],
+              ),
+              CircleAvatar(
+
               )
             ],
           ),
