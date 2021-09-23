@@ -18,17 +18,21 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
+                children: [
+                  IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
                 ],
               ),
               CircleAvatar(
                 radius: 48,
-                    backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2016/01/25/06/12/beijing-opera-1160109_960_720.jpg"),
-
+                backgroundImage:
+                    NetworkImage("https://cdn.pixabay.com/photo/2016/01/25/06/12/beijing-opera-1160109_960_720.jpg"),
               ),
               Text("Hello World"),
-              TextButton(onPressed: (){}, child: Text(""))
+              TextButton(
+                onPressed: () {},
+                child: Text("@unknown"),
+              )
             ],
           ),
         ),
