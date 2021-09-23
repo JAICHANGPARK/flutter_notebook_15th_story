@@ -12,12 +12,18 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [IconButton(onPressed: () {}, icon: Icon(Icons.arrow_left_outlined))],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
