@@ -23,6 +23,8 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                 ],
               ),
               CircleAvatar(
+                radius: 48,
+                    backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2016/01/25/06/12/beijing-opera-1160109_960_720.jpg"),
 
               )
             ],
