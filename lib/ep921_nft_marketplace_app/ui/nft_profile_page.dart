@@ -57,9 +57,10 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Text("hello@world.com", style: TextStyle(
-                    fontWeight: FontWeight.bold
-                  ),),
+                  child: Text(
+                    "hello@world.com",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
                 TabBar(
                   tabs: [
@@ -70,8 +71,23 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                       text: "Collections",
                     ),
                   ],
+                  labelColor: Colors.black,
+                  unselectedLabelColor: Colors.grey,
                   indicatorColor: Colors.black,
-                )
+                  indicatorWeight: 1,
+                ),
+                Expanded(
+                    child: TabBarView(
+                  children: [
+                    GridView.count(crossAxisCount: 2,
+                    children: List.generate(8, (index) => Container(color: Colors.pink,)),
+                    mainAxisSpacing: 8,),
+                    GridView.count(crossAxisCount: 2,
+                      children: [
+
+                      ],),
+                  ],
+                )),
               ],
             ),
           ),
