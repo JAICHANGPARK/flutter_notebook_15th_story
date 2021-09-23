@@ -27,7 +27,7 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                   ],
                 ),
                 CircleAvatar(
-                  radius: 48,
+                  radius: 44,
                   backgroundImage:
                       NetworkImage("https://cdn.pixabay.com/photo/2016/01/25/06/12/beijing-opera-1160109_960_720.jpg"),
                 ),
@@ -62,32 +62,57 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                TabBar(
-                  tabs: [
-                    Tab(
-                      text: "Creations",
-                    ),
-                    Tab(
-                      text: "Collections",
-                    ),
-                  ],
-                  labelColor: Colors.black,
-                  unselectedLabelColor: Colors.grey,
-                  indicatorColor: Colors.black,
-                  indicatorWeight: 1,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: TabBar(
+                    tabs: [
+                      Tab(
+                        text: "Creations",
+                      ),
+                      Tab(
+                        text: "Collections",
+                      ),
+                    ],
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey,
+                    indicatorColor: Colors.black,
+                    indicatorWeight: 1,
+                  ),
                 ),
                 Expanded(
-                    child: TabBarView(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TabBarView(
                   children: [
-                    GridView.count(crossAxisCount: 2,
-                    children: List.generate(8, (index) => Container(color: Colors.pink,)),
-                    mainAxisSpacing: 8,),
-                    GridView.count(crossAxisCount: 2,
-                      children: [
-
-                      ],),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          children: List.generate(
+                              8,
+                              (index) => Container(
+                                    decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                  )),
+                          mainAxisSpacing: 8,
+                          crossAxisSpacing: 8,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          children: List.generate(
+                              8,
+                              (index) => Container(
+                                    color: Colors.red,
+                                  )),
+                          mainAxisSpacing: 8,
+                          crossAxisSpacing: 8,
+                        ),
+                      ),
                   ],
-                )),
+                ),
+                    )),
               ],
             ),
           ),
