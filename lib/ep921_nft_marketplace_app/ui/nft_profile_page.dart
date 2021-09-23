@@ -28,7 +28,11 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                 backgroundImage:
                     NetworkImage("https://cdn.pixabay.com/photo/2016/01/25/06/12/beijing-opera-1160109_960_720.jpg"),
               ),
-              Text("Hello World"),
+              SizedBox(height: 16,),
+              Text(
+                "Hello World",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               TextButton(
                 onPressed: () {},
                 child: Text("@unknown"),
