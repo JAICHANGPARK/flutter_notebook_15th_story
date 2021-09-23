@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep915_task_management_app/task_management_app.dart';
+import 'package:flutter_notebook_15th_story/ep921_nft_marketplace_app/nft_marketplace_app.dart';
 
-main() => runApp(TaskManagementApp());
+main() => runApp(NFTMarketPlaceApp());
