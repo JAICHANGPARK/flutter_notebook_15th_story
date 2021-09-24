@@ -90,15 +90,20 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                           crossAxisCount: 2,
                           children: List.generate(
                               8,
-                              (index) => Container(
-                                    decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                            image: NetworkImage(
-                                                "https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg"),
-                                            fit: BoxFit.cover),
-                                        color: Colors.pink,
-                                        borderRadius: BorderRadius.circular(8)),
-                                  )),
+                              (index) => GestureDetector(
+                                onTap: (){
+                                  
+                                },
+                                child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.pink,
+                                          borderRadius: BorderRadius.circular(8)),
+                                    ),
+                              )),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                         ),
