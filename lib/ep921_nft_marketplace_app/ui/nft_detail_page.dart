@@ -28,15 +28,23 @@ class _NftDetailPageState extends State<NftDetailPage> {
                   child: Stack(
                     children: [
                       Positioned(
-                          top: 16,
-
-                          child:Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_left)),
-                              IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-                            ],
-                          ),)
+                        top: 16,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.keyboard_arrow_left),
+                              color: Colors.white,
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.more_vert),
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
