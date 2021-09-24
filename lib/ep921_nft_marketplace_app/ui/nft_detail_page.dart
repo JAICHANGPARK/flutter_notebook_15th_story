@@ -46,6 +46,15 @@ class _NftDetailPageState extends State<NftDetailPage> {
                             ),
                           ],
                         ),
+                      ),
+                      Positioned(
+                        right: 16,
+                        bottom: 16,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.transparent,
+                          child: Icon(Icons.favorite_border, color: Colors.pink,),
+                        ),
                       )
                     ],
                   ),
