@@ -81,9 +81,9 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                 ),
                 Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: TabBarView(
-                  children: [
+                  padding: const EdgeInsets.all(8.0),
+                  child: TabBarView(
+                    children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 8),
                         child: GridView.count(
@@ -91,7 +91,13 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                           children: List.generate(
                               8,
                               (index) => Container(
-                                    decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg"),
+                                            fit: BoxFit.cover),
+                                        color: Colors.pink,
+                                        borderRadius: BorderRadius.circular(8)),
                                   )),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
@@ -110,9 +116,9 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                           crossAxisSpacing: 8,
                         ),
                       ),
-                  ],
-                ),
-                    )),
+                    ],
+                  ),
+                )),
               ],
             ),
           ),
