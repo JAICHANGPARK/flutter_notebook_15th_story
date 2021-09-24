@@ -11,6 +11,12 @@ class NftDetailPage extends StatefulWidget {
 class _NftDetailPageState extends State<NftDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
