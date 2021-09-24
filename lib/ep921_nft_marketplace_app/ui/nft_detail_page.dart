@@ -29,6 +29,8 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     children: [
                       Positioned(
                         top: 16,
+                        left: 0,
+                        right: 0,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
