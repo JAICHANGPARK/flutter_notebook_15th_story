@@ -59,7 +59,7 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     ],
                   ),
                 ),
-                flex: 10,
+                flex: 14,
               ),
               Expanded(
                 child: Column(
