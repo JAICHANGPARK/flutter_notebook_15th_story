@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep921_nft_marketplace_app/ui/nft_detail_page.dart';
 
 class NFTProfilePage extends StatefulWidget {
   const NFTProfilePage({Key? key}) : super(key: key);
@@ -91,10 +92,11 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                           children: List.generate(
                               8,
                               (index) => GestureDetector(
-                                onTap: (){
-                                  
-                                },
-                                child: Container(
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => NftDetailPage()));
+                                    },
+                                    child: Container(
                                       decoration: BoxDecoration(
                                           image: DecorationImage(
                                               image: NetworkImage(
@@ -103,7 +105,7 @@ class _NFTProfilePageState extends State<NFTProfilePage> {
                                           color: Colors.pink,
                                           borderRadius: BorderRadius.circular(8)),
                                     ),
-                              )),
+                                  )),
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
                         ),
