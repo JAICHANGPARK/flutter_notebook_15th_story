@@ -14,7 +14,8 @@ class _NftDetailPageState extends State<NftDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
         ],
       ),
     );
