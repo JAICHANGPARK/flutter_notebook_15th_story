@@ -62,7 +62,29 @@ class _NftDetailPageState extends State<NftDetailPage> {
                 flex: 10,
               ),
               Expanded(
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text("Consume"),
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Text("Creator"),
+                            Text("Dreamwalker"),
+                          ],
+                        ),
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Text("Current bid"),
+                            Text("10000 ETH"),
+                          ],
+                        ),
+                      ],
+                    )
+                  ],
+                ),
                 flex: 11,
               ),
             ],
