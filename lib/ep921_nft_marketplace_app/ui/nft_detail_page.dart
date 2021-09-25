@@ -153,6 +153,7 @@ class _NftDetailPageState extends State<NftDetailPage> {
                             child: TabBar(
                               isScrollable: true,
                               labelColor: Colors.black,
+                              indicatorWeight: 1.5,
                               unselectedLabelColor: Colors.grey,
                               indicatorColor: Colors.black,
                               tabs: [
@@ -165,7 +166,18 @@ class _NftDetailPageState extends State<NftDetailPage> {
                           Expanded(
                             child: TabBarView(children: [
                               Container(),
-                              Container(),
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Column(
+                                    children: [
+                                      Text("Bid placed by Jenny"),
+                                      Text("May 4, 2021 at 14:27"),
+                                    ],
+                                  ),
+                                  Text("13.55 ETH")
+                                ],
+                              ),
                               Container(),
                             ]),
                           )
