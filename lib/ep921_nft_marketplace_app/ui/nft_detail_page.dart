@@ -144,10 +144,14 @@ class _NftDetailPageState extends State<NftDetailPage> {
                       height: 16,
                     ),
                     Expanded(child: Placeholder()),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Container(
-                      height: 48,
+                      height: 54,
                       decoration: BoxDecoration(
-                        color: Colors.pink[50],
+                        color: Colors.pink[100],
+                        borderRadius: BorderRadius.circular(12)
                       ),
                       child: Center(
                         child: Text(
