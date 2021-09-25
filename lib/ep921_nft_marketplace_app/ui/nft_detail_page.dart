@@ -185,13 +185,23 @@ class _NftDetailPageState extends State<NftDetailPage> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("Bid placed by Jenny"),
-                                          Text("May 4, 2021 at 14:27"),
+                                          Text(
+                                            "Bid placed by Jenny",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "May 4, 2021 at 14:27",
+                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          ),
                                         ],
                                       ),
                                     ),
                                     Spacer(),
-                                    Text("13.55 ETH")
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("13.55 ETH",
+                                        style: TextStyle(fontWeight: FontWeight.bold),),
+                                    )
                                   ],
                                 ),
                                 Container(),
