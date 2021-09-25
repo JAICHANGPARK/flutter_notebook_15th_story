@@ -143,7 +143,25 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     SizedBox(
                       height: 16,
                     ),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: DefaultTabController(
+                      length: 3,
+                      child: Column(
+                        children: [
+                          TabBar(
+                            tabs: [
+                              Tab(text: "info",),
+                              Tab(text: "info",),
+                              Tab(text: "info",)
+                            ],
+                          ),
+                          TabBarView(children: [
+                            Container(),
+                            Container(),
+                            Container(),
+                          ])
+                        ],
+                      ),
+                    )),
                     SizedBox(
                       height: 16,
                     ),
