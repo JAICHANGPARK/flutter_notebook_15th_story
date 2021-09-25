@@ -77,37 +77,50 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: Row(children: [
-                          CircleAvatar(),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Creator"),
-                                SizedBox(height: 8,),
-                                Text("Dreamwalker"),
-                              ],
+                        Expanded(
+                            child: Row(
+                          children: [
+                            CircleAvatar(),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Creator",
+                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("Dreamwalker"),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],)),
-                        Expanded(child: Row(children: [
-                          CircleAvatar(),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Current bid"),
-                                SizedBox(height: 8,),
-                                Text("10000 ETH"),
-                              ],
+                          ],
+                        )),
+                        Expanded(
+                            child: Row(
+                          children: [
+                            CircleAvatar(),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Current bid",
+                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("10000 ETH"),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],))
-
-
-
+                          ],
+                        ))
                       ],
                     ),
                     Text.rich(TextSpan(children: [
