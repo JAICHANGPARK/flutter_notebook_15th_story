@@ -93,7 +93,10 @@ class _NftDetailPageState extends State<NftDetailPage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  Text("Dreamwalker"),
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                                 ],
                               ),
                             ),
@@ -115,13 +118,19 @@ class _NftDetailPageState extends State<NftDetailPage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  Text("10000 ETH"),
+                                  Text(
+                                    "10000 ETH",
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                                 ],
                               ),
                             ),
                           ],
                         ))
                       ],
+                    ),
+                    SizedBox(
+                      height: 16,
                     ),
                     Text.rich(TextSpan(children: [
                       TextSpan(
@@ -131,9 +140,25 @@ class _NftDetailPageState extends State<NftDetailPage> {
                       TextSpan(
                           text: "I'm so proud of his work and accomplishments", style: TextStyle(color: Colors.grey)),
                     ])),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Expanded(child: Placeholder()),
+                    Container(
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.pink[50],
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Buy it now",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    )
                   ],
                 ),
-                flex: 11,
+                flex: 14,
               ),
             ],
           ),
