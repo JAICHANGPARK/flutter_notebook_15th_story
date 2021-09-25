@@ -68,18 +68,26 @@ class _NftDetailPageState extends State<NftDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Consume"),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Text(
+                        "Consume",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                     Row(
                       children: [
                         CircleAvatar(),
-                        Column(   crossAxisAlignment: CrossAxisAlignment.start,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Creator"),
                             Text("Dreamwalker"),
                           ],
                         ),
                         CircleAvatar(),
-                        Column(   crossAxisAlignment: CrossAxisAlignment.start,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Current bid"),
                             Text("10000 ETH"),
@@ -95,8 +103,6 @@ class _NftDetailPageState extends State<NftDetailPage> {
                       TextSpan(
                           text: "I'm so proud of his work and accomplishments", style: TextStyle(color: Colors.grey)),
                     ])),
-
-
                   ],
                 ),
                 flex: 11,
