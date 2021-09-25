@@ -35,7 +35,9 @@ class _NftDetailPageState extends State<NftDetailPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
                               icon: Icon(Icons.keyboard_arrow_left),
                               color: Colors.white,
                             ),
@@ -199,8 +201,10 @@ class _NftDetailPageState extends State<NftDetailPage> {
                                     Spacer(),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Text("13.55 ETH",
-                                        style: TextStyle(fontWeight: FontWeight.bold),),
+                                      child: Text(
+                                        "13.55 ETH",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
                                     )
                                   ],
                                 ),
