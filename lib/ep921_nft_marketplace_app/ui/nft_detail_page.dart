@@ -148,16 +148,19 @@ class _NftDetailPageState extends State<NftDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TabBar(
-                            isScrollable: true,
-                            labelColor: Colors.black,
-                            unselectedLabelColor: Colors.grey,
-                            indicatorColor: Colors.black,
-                            tabs: [
-                              Tab(text: "Info",),
-                              Tab(text: "Birds",),
-                              Tab(text: "History",)
-                            ],
+                          SizedBox(
+                            height: 32,
+                            child: TabBar(
+                              isScrollable: true,
+                              labelColor: Colors.black,
+                              unselectedLabelColor: Colors.grey,
+                              indicatorColor: Colors.black,
+                              tabs: [
+                                Tab(text: "Info",),
+                                Tab(text: "Birds",),
+                                Tab(text: "History",)
+                              ],
+                            ),
                           ),
                           Expanded(
                             child: TabBarView(children: [
@@ -173,7 +176,7 @@ class _NftDetailPageState extends State<NftDetailPage> {
                       height: 16,
                     ),
                     Container(
-                      height: 54,
+                      height: 48,
                       decoration: BoxDecoration(
                         color: Colors.pink[100],
                         borderRadius: BorderRadius.circular(12)
