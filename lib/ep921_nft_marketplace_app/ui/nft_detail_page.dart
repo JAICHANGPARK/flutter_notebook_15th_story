@@ -143,7 +143,8 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     SizedBox(
                       height: 16,
                     ),
-                    Expanded(child: DefaultTabController(
+                    Expanded(
+                        child: DefaultTabController(
                       length: 3,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -157,9 +158,15 @@ class _NftDetailPageState extends State<NftDetailPage> {
                               unselectedLabelColor: Colors.grey,
                               indicatorColor: Colors.black,
                               tabs: [
-                                Tab(text: "Info",),
-                                Tab(text: "Birds",),
-                                Tab(text: "History",)
+                                Tab(
+                                  text: "Info",
+                                ),
+                                Tab(
+                                  text: "Birds",
+                                ),
+                                Tab(
+                                  text: "History",
+                                )
                               ],
                             ),
                           ),
@@ -169,14 +176,21 @@ class _NftDetailPageState extends State<NftDetailPage> {
                               child: TabBarView(children: [
                                 Container(),
                                 Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    CircleAvatar(),
-                                    Column(
-                                      children: [
-                                        Text("Bid placed by Jenny"),
-                                        Text("May 4, 2021 at 14:27"),
-                                      ],
+                                    Center(child: CircleAvatar()),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("Bid placed by Jenny"),
+                                          Text("May 4, 2021 at 14:27"),
+                                        ],
+                                      ),
                                     ),
+                                    Spacer(),
                                     Text("13.55 ETH")
                                   ],
                                 ),
@@ -192,10 +206,7 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     ),
                     Container(
                       height: 48,
-                      decoration: BoxDecoration(
-                        color: Colors.pink[100],
-                        borderRadius: BorderRadius.circular(12)
-                      ),
+                      decoration: BoxDecoration(color: Colors.pink[100], borderRadius: BorderRadius.circular(12)),
                       child: Center(
                         child: Text(
                           "Buy it now",
