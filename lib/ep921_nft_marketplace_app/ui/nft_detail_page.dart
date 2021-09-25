@@ -66,19 +66,20 @@ class _NftDetailPageState extends State<NftDetailPage> {
               ),
               Expanded(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Consume"),
                     Row(
                       children: [
                         CircleAvatar(),
-                        Column(
+                        Column(   crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Creator"),
                             Text("Dreamwalker"),
                           ],
                         ),
                         CircleAvatar(),
-                        Column(
+                        Column(   crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Current bid"),
                             Text("10000 ETH"),
@@ -92,10 +93,10 @@ class _NftDetailPageState extends State<NftDetailPage> {
                           style: TextStyle(color: Colors.grey)),
                       TextSpan(text: "@Unknown", style: TextStyle(color: Colors.blue)),
                       TextSpan(
-                        text: "I'm so proud of his work and accomplishments",
-                          style: TextStyle( color: Colors.grey)
-                      ),
+                          text: "I'm so proud of his work and accomplishments", style: TextStyle(color: Colors.grey)),
                     ])),
+
+
                   ],
                 ),
                 flex: 11,
