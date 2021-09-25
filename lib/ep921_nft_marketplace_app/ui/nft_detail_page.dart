@@ -146,19 +146,26 @@ class _NftDetailPageState extends State<NftDetailPage> {
                     Expanded(child: DefaultTabController(
                       length: 3,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           TabBar(
+                            isScrollable: true,
+                            labelColor: Colors.black,
+                            unselectedLabelColor: Colors.grey,
+                            indicatorColor: Colors.black,
                             tabs: [
-                              Tab(text: "info",),
-                              Tab(text: "info",),
-                              Tab(text: "info",)
+                              Tab(text: "Info",),
+                              Tab(text: "Birds",),
+                              Tab(text: "History",)
                             ],
                           ),
-                          TabBarView(children: [
-                            Container(),
-                            Container(),
-                            Container(),
-                          ])
+                          Expanded(
+                            child: TabBarView(children: [
+                              Container(),
+                              Container(),
+                              Container(),
+                            ]),
+                          )
                         ],
                       ),
                     )),
