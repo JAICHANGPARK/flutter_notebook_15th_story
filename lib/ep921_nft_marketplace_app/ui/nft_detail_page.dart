@@ -83,7 +83,20 @@ class _NftDetailPageState extends State<NftDetailPage> {
                         ),
                       ],
                     ),
-                    Text.rich("So happy to share my second collab with my dear father")
+                    Text.rich(TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "So happy to share my second collab with my dear father",
+                        ),
+                        TextSpan(
+                          text: "@Unknown",
+                        ),
+                        TextSpan(
+                          text: "I'm so proud of his work and accomplishments",
+                        ),
+                      ]
+
+                    )),
                   ],
                 ),
                 flex: 11,
