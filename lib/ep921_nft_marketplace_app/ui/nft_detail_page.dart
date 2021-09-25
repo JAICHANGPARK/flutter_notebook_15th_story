@@ -53,7 +53,10 @@ class _NftDetailPageState extends State<NftDetailPage> {
                         child: CircleAvatar(
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.transparent,
-                          child: Icon(Icons.favorite_border, color: Colors.pink,),
+                          child: Icon(
+                            Icons.favorite_border,
+                            color: Colors.pink,
+                          ),
                         ),
                       )
                     ],
@@ -83,20 +86,16 @@ class _NftDetailPageState extends State<NftDetailPage> {
                         ),
                       ],
                     ),
-                    Text.rich(TextSpan(
-                      children: [
-                        TextSpan(
+                    Text.rich(TextSpan(children: [
+                      TextSpan(
                           text: "So happy to share my second collab with my dear father",
-                        ),
-                        TextSpan(
-                          text: "@Unknown",
-                        ),
-                        TextSpan(
-                          text: "I'm so proud of his work and accomplishments",
-                        ),
-                      ]
-
-                    )),
+                          style: TextStyle(fontSize: 13, color: Colors.grey)),
+                      TextSpan(text: "@Unknown", style: TextStyle(color: Colors.blue)),
+                      TextSpan(
+                        text: "I'm so proud of his work and accomplishments",
+                          style: TextStyle( color: Colors.grey)
+                      ),
+                    ])),
                   ],
                 ),
                 flex: 11,
