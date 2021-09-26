@@ -10,6 +10,13 @@ class NutritionHomePage extends StatefulWidget {
 class _NutritionHomePageState extends State<NutritionHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder(), flex: 14,),
+          Expanded(child: Placeholder(), flex: 2,)
+        ],
+      ),
+    );
   }
 }
