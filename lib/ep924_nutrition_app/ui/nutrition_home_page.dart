@@ -11,11 +11,17 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(), flex: 14,),
-          Expanded(child: Placeholder(), flex: 2,)
-        ],
+      body: SafeArea(
+
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 15,),
+            Expanded(child: Row(children:[
+
+
+            ],), flex: 2,)
+          ],
+        ),
       ),
     );
   }
