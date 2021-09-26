@@ -44,7 +44,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                             color: Colors.deepPurpleAccent[200]
                           ),
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Container(
+                          height: 160,
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
