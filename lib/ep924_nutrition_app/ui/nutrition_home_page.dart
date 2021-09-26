@@ -13,14 +13,26 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
     return Scaffold(
       body: SafeArea(
 
-        child: Column(
-          children: [
-            Expanded(child: Placeholder(), flex: 15,),
-            Expanded(child: Row(children:[
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Expanded(child: Placeholder(), flex: 15,),
+              Expanded(child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children:[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
 
+                    Icon(Icons.home, size: 28,),
+                    SizedBox(height: 4,)
+                    CircleAvatar(radius: 4,)
+                  ],)
 
-            ],), flex: 2,)
-          ],
+              ],), flex: 2,)
+            ],
+          ),
         ),
       ),
     );
