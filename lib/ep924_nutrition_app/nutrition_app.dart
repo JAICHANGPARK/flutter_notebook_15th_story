@@ -6,6 +6,8 @@ class NutritionApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialPage();
+    return MaterialApp(
+      home: NutritionHomePage(),
+    );
   }
 }
