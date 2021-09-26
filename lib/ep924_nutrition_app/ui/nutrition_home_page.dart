@@ -17,7 +17,37 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
           child: Column(
             children: [
               Expanded(
-                child: Placeholder(),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [Text("Today"), Text("Wed, 18 Aug")],
+                          ),
+                          Container(
+                            child: IconButton(
+                              icon: Icon(Icons.calendar_today_outlined),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurpleAccent[200]
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
                 flex: 15,
               ),
               Expanded(
