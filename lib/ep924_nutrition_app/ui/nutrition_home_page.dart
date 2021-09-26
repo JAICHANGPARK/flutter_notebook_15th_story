@@ -41,7 +41,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         child: Container(
                           height: 200,
                           decoration: BoxDecoration(
-                            color: Colors.deepPurpleAccent[200]
+                            color: Colors.deepPurpleAccent[200],
+                            borderRadius: BorderRadius.circular(24)
                           ),
                         ),
                       ),
@@ -50,7 +51,18 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         child: Container(
                           height: 160,
                           decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.white,
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey),
+                                  borderRadius: BorderRadius.circular(16)
+                                ),
+                              )),
+                              Expanded(child: Placeholder()),
+                            ],
                           ),
                         ),
                       ),
