@@ -26,9 +26,25 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                     children: [
 
                     Icon(Icons.home, size: 28,),
-                    SizedBox(height: 4,)
+                    SizedBox(height: 4,),
                     CircleAvatar(radius: 4,)
-                  ],)
+                  ],),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+
+                      Icon(Icons.search, size: 28,),
+                      SizedBox(height: 4,),
+                      // CircleAvatar(radius: 4,)
+                    ],),
+                  Container(
+                    child: IconButton(
+                      icon: Icon(Icons.qr_code_scanner), onPressed: () {  },
+                    ),
+                    decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent[100],
+                  ),
+                  )
 
               ],), flex: 2,)
             ],
