@@ -15,6 +15,7 @@ dependencies:
 
   pigeon: any
   freezed_annotation: any
+  percent_indicator: ^3.0.1
 
 dev_dependencies:
   flutter_test:
