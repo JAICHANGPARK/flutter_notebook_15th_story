@@ -102,7 +102,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             ),
                                           ),
                                           SizedBox(
-                                            width: 16,
+                                            width: 24,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -174,7 +174,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             ),
                                           ),
                                           SizedBox(
-                                            width: 16,
+                                            width: 24,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
