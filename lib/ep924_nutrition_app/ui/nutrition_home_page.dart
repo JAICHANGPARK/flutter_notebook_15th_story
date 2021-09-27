@@ -41,6 +41,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           height: 200,
                           decoration: BoxDecoration(
                               color: Colors.deepPurpleAccent[200], borderRadius: BorderRadius.circular(24)),
+                          child: Row(
+                            children: [
+                              Expanded(flex: 5, child: Placeholder()),
+                              Expanded(flex: 4, child: Placeholder()),
+                            ],
+                          ),
                         ),
                       ),
                       Padding(
