@@ -55,25 +55,42 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         bottom: 0,
                                         top: 0,
                                         child: CircularPercentIndicator(
-                                            radius: 170,
+                                          radius: 170,
                                           lineWidth: 6.0,
                                           animation: true,
                                           percent: 0.7,
+                                          circularStrokeCap: CircularStrokeCap.round,
+                                          progressColor: Colors.white,
                                           center: Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Container(
+                                              height: double.infinity,
+                                              width: double.infinity,
                                               decoration: BoxDecoration(
-                                                  color: Colors.deepPurpleAccent[100],
-                                                  shape: BoxShape.circle),
+                                                  color: Colors.deepPurpleAccent[100], shape: BoxShape.circle),
                                               padding: EdgeInsets.all(8),
                                               child: Container(
-                                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                                  color: Colors.deepPurpleAccent[200],),
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.deepPurpleAccent[200],
+                                                ),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: [
+                                                    Text("Remaining"),
+                                                    Text(
+                                                      "1,112",
+                                                      style: TextStyle(
+                                                        fontSize: 16,
+                                                      ),
+                                                    ),
+                                                    Text("kcal")
+                                                  ],
+                                                ),
                                               ),
                                             ),
                                           ),
-                                          circularStrokeCap: CircularStrokeCap.round,
-                                          progressColor: Colors.white,
                                         ),
                                       )
                                     ],
