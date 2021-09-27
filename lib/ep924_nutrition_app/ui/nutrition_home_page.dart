@@ -46,7 +46,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: Container(
-                          height: 160,
+                          height: 140,
                           decoration: BoxDecoration(
                             color: Colors.white,
                           ),
@@ -62,6 +62,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   ),
                                   padding: EdgeInsets.all(16),
                                   child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -79,7 +80,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       Row(
                                         children: [
                                           Container(
-                                            height: 64,
+                                            height: 48,
                                             width: 8,
                                             decoration: BoxDecoration(
                                               color: Colors.teal[100],
@@ -90,8 +91,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                                 Positioned(
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(8),
-                                                        color: Colors.teal),
+                                                        borderRadius: BorderRadius.circular(8), color: Colors.teal),
                                                   ),
                                                   top: 24,
                                                   left: 0,
@@ -101,12 +101,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                               ],
                                             ),
                                           ),
-                                          Column(children: [
-                                            
-                                          ],)
+                                          SizedBox(
+                                            width: 16,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "589",
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text("kcal"),
+                                            ],
+                                          )
                                         ],
                                       ),
-
                                     ],
                                   ),
                                 ),
