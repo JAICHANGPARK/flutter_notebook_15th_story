@@ -57,7 +57,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 padding: const EdgeInsets.only(right: 8),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(16)),
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
                                 ),
                               )),
                               Expanded(
