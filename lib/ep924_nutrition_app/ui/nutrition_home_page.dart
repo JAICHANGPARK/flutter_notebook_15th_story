@@ -50,8 +50,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        top: 0,
                                         child: CircularPercentIndicator(
-                                          radius: 120.0,
+
                                           lineWidth: 13.0,
                                           animation: true,
                                           percent: 0.7,
