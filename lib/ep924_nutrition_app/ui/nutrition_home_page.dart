@@ -40,7 +40,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         child: Container(
                           height: 200,
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                               color: Colors.deepPurpleAccent[200], borderRadius: BorderRadius.circular(24)),
                           child: Row(
@@ -55,18 +55,20 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         bottom: 0,
                                         top: 0,
                                         child: CircularPercentIndicator(
-                                            radius: 160,
-                                          lineWidth: 4.0,
+                                            radius: 170,
+                                          lineWidth: 6.0,
                                           animation: true,
                                           percent: 0.7,
                                           center: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(16.0),
                                             child: Container(
                                               decoration: BoxDecoration(
                                                   color: Colors.deepPurpleAccent[100],
                                                   shape: BoxShape.circle),
+                                              padding: EdgeInsets.all(8),
                                               child: Container(
-                                                decoration: BoxDecoration(shape: BoxShape.circle),
+                                                decoration: BoxDecoration(shape: BoxShape.circle,
+                                                  color: Colors.deepPurpleAccent[400],),
                                               ),
                                             ),
                                           ),
