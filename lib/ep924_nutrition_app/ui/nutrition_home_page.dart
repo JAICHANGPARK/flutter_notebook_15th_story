@@ -94,9 +94,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [Icon(Icons.home, size: 28),
-                          SizedBox(height: 4),
-                          CircleAvatar(radius: 4)],
+                        children: [Icon(Icons.home, size: 28), SizedBox(height: 4), CircleAvatar(radius: 4)],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -111,32 +109,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           icon: Icon(Icons.qr_code_scanner),
                           onPressed: () {},
                         ),
-                        decoration:
-                            BoxDecoration(color: Colors.deepPurpleAccent[100], borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurpleAccent[100],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.bar_chart,
-                            size: 28,
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
+                          Icon(Icons.bar_chart, size: 28),
+                          SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.person,
-                            size: 28,
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
+                          Icon(Icons.person, size: 28),
+                          SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
                       ),
