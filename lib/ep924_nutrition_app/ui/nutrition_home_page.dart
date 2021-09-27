@@ -60,6 +60,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                     border: Border.all(color: Colors.grey),
                                     borderRadius: BorderRadius.circular(16),
                                   ),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                              
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               )),
                               Expanded(
@@ -67,7 +76,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 padding: const EdgeInsets.only(left: 8),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(16)),
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
                                 ),
                               )),
                             ],
