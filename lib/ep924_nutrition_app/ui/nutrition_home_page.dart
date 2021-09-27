@@ -79,7 +79,16 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       Row(
                                         children: [
                                           Container(
+                                            height: 64,
+                                              width: 12,
+                                              decoration: BoxDecoration(
+                                                color: Colors.teal[100]
+                                              ),
+                                              child: Stack(
+                                                children: [
 
+                                                ],
+                                              ),
                                           )],
                                       )
                                     ],
