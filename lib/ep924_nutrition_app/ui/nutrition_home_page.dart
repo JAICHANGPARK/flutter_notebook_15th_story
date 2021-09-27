@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class NutritionHomePage extends StatefulWidget {
   const NutritionHomePage({Key? key}) : super(key: key);
@@ -44,7 +45,30 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                               color: Colors.deepPurpleAccent[200], borderRadius: BorderRadius.circular(24)),
                           child: Row(
                             children: [
-                              Expanded(flex: 5, child: Placeholder()),
+                              Expanded(
+                                  flex: 5,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: CircularPercentIndicator(
+                                          radius: 120.0,
+                                          lineWidth: 13.0,
+                                          animation: true,
+                                          percent: 0.7,
+                                          center: Container(
+                                            decoration: BoxDecoration(
+                                                color: Colors.deepPurpleAccent[100],
+                                                shape: BoxShape.circle),
+                                            child: Container(
+                                              decoration: BoxDecoration(shape: BoxShape.circle),
+                                            ),
+                                          ),
+                                          circularStrokeCap: CircularStrokeCap.round,
+                                          progressColor: Colors.purple,
+                                        ),
+                                      )
+                                    ],
+                                  )),
                               Expanded(flex: 4, child: Placeholder()),
                             ],
                           ),
