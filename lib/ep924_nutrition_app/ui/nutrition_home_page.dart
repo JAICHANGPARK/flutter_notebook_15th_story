@@ -64,7 +64,17 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   child: Column(
                                     children: [
                                       Row(
-                                        children: [Text("Intaked"), Text("🍕")],
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            "Intaked",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "🍕",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          )
+                                        ],
                                       ),
                                     ],
                                   ),
