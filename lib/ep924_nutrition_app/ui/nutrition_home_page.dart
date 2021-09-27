@@ -125,75 +125,76 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                               )),
                               Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.only(right: 8),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.grey),
-                                        borderRadius: BorderRadius.circular(16),
-                                      ),
-                                      padding: EdgeInsets.all(16),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                padding: const EdgeInsets.only(right: 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: EdgeInsets.all(16),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                "Borned",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                              ),
-                                              Text(
-                                                "🔥",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                              )
-                                            ],
+                                          Text(
+                                            "Borned",
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                           ),
-                                          Row(
-                                            children: [
-                                              Container(
-                                                height: 48,
-                                                width: 8,
-                                                decoration: BoxDecoration(
-                                                  color: Colors.teal[100],
-                                                  borderRadius: BorderRadius.circular(8),
-                                                ),
-                                                child: Stack(
-                                                  children: [
-                                                    Positioned(
-                                                      child: Container(
-                                                        decoration: BoxDecoration(
-                                                            borderRadius: BorderRadius.circular(8), color: Colors.teal),
-                                                      ),
-                                                      top: 24,
-                                                      left: 0,
-                                                      right: 0,
-                                                      bottom: 0,
-                                                    )
-                                                  ],
-                                                ),
-                                              ),
-                                              SizedBox(
-                                                width: 16,
-                                              ),
-                                              Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "589",
-                                                    style: TextStyle(
-                                                      fontSize: 20,
-                                                      fontWeight: FontWeight.bold,
-                                                    ),
-                                                  ),
-                                                  Text("kcal"),
-                                                ],
-                                              )
-                                            ],
-                                          ),
+                                          Text(
+                                            "🔥",
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                          )
                                         ],
                                       ),
-                                    ),
-                                  )),
+                                      Row(
+                                        children: [
+                                          Container(
+                                            height: 48,
+                                            width: 8,
+                                            decoration: BoxDecoration(
+                                              color: Colors.deepOrange[100],
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            child: Stack(
+                                              children: [
+                                                Positioned(
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        borderRadius: BorderRadius.circular(8),
+                                                        color: Colors.deepOrange),
+                                                  ),
+                                                  top: 24,
+                                                  left: 0,
+                                                  right: 0,
+                                                  bottom: 0,
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 16,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "738",
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text("kcal"),
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )),
                             ],
                           ),
                         ),
