@@ -68,14 +68,20 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         children: [
                                           Text(
                                             "Intaked",
-                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                           ),
                                           Text(
                                             "🍕",
-                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                           )
                                         ],
                                       ),
+                                      Row(
+                                        children: [
+                                          Container(
+
+                                          )],
+                                      )
                                     ],
                                   ),
                                 ),
