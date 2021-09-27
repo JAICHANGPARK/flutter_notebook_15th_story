@@ -80,16 +80,27 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         children: [
                                           Container(
                                             height: 64,
-                                              width: 12,
-                                              decoration: BoxDecoration(
-                                                color: Colors.teal[100]
-                                              ),
-                                              child: Stack(
-                                                children: [
-
-                                                ],
-                                              ),
-                                          )],
+                                            width: 12,
+                                            decoration: BoxDecoration(
+                                              color: Colors.teal[100],
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            child: Stack(
+                                              children: [
+                                                Positioned(
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                  ),
+                                                  left: 0,
+                                                  right: 0,
+                                                  bottom: 0,
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
                                       )
                                     ],
                                   ),
