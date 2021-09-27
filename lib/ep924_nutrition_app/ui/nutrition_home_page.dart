@@ -55,13 +55,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           ),
                           child: Row(
                             children: [
-                              Expanded(child: Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey),
-                                  borderRadius: BorderRadius.circular(16)
+                              Expanded(child: Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(16)
+                                  ),
                                 ),
                               )),
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.grey),
+                                      borderRadius: BorderRadius.circular(16)
+                                  ),
+                                ),
+                              )),
                             ],
                           ),
                         ),
