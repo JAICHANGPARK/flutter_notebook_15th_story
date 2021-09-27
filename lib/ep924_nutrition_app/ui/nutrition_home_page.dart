@@ -68,7 +68,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                               padding: EdgeInsets.all(8),
                                               child: Container(
                                                 decoration: BoxDecoration(shape: BoxShape.circle,
-                                                  color: Colors.deepPurpleAccent[400],),
+                                                  color: Colors.deepPurpleAccent[200],),
                                               ),
                                             ),
                                           ),
