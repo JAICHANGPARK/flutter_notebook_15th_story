@@ -35,15 +35,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           )
                         ],
                       ),
-
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         child: Container(
                           height: 200,
                           decoration: BoxDecoration(
-                            color: Colors.deepPurpleAccent[200],
-                            borderRadius: BorderRadius.circular(24)
-                          ),
+                              color: Colors.deepPurpleAccent[200], borderRadius: BorderRadius.circular(24)),
                         ),
                       ),
                       Padding(
@@ -51,26 +48,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         child: Container(
                           height: 160,
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                            color: Colors.white,
                           ),
                           child: Row(
                             children: [
-                              Expanded(child: Padding(
+                              Expanded(
+                                  child: Padding(
                                 padding: const EdgeInsets.only(right: 8),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.grey),
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
+                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(16)),
                                 ),
                               )),
-                              Expanded(child: Padding(
+                              Expanded(
+                                  child: Padding(
                                 padding: const EdgeInsets.only(left: 8),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey),
-                                      borderRadius: BorderRadius.circular(16)
-                                  ),
+                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(16)),
                                 ),
                               )),
                             ],
@@ -99,29 +94,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.home,
-                            size: 28,
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          CircleAvatar(
-                            radius: 4,
-                          )
-                        ],
+                        children: [Icon(Icons.home, size: 28),
+                          SizedBox(height: 4),
+                          CircleAvatar(radius: 4)],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.search,
-                            size: 28,
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
+                          Icon(Icons.search, size: 28),
+                          SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
                       ),
