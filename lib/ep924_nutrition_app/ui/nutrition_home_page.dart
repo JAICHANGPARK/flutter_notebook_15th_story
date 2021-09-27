@@ -78,14 +78,21 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                   children: [
-                                                    Text("Remaining"),
                                                     Text(
-                                                      "1,112",
-                                                      style: TextStyle(
-                                                        fontSize: 16,
+                                                      "Remaining",
+                                                      style: TextStyle(color: Colors.white),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(8.0),
+                                                      child: Text(
+                                                        "1,112",
+                                                        style: TextStyle(fontSize: 23, color: Colors.white),
                                                       ),
                                                     ),
-                                                    Text("kcal")
+                                                    Text(
+                                                      "kcal",
+                                                      style: TextStyle(color: Colors.white),
+                                                    )
                                                   ],
                                                 ),
                                               ),
