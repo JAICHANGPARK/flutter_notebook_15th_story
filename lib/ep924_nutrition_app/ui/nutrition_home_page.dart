@@ -55,20 +55,23 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         bottom: 0,
                                         top: 0,
                                         child: CircularPercentIndicator(
-
-                                          lineWidth: 13.0,
+                                            radius: 160,
+                                          lineWidth: 4.0,
                                           animation: true,
                                           percent: 0.7,
-                                          center: Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.deepPurpleAccent[100],
-                                                shape: BoxShape.circle),
+                                          center: Padding(
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Container(
-                                              decoration: BoxDecoration(shape: BoxShape.circle),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.deepPurpleAccent[100],
+                                                  shape: BoxShape.circle),
+                                              child: Container(
+                                                decoration: BoxDecoration(shape: BoxShape.circle),
+                                              ),
                                             ),
                                           ),
                                           circularStrokeCap: CircularStrokeCap.round,
-                                          progressColor: Colors.purple,
+                                          progressColor: Colors.white,
                                         ),
                                       )
                                     ],
