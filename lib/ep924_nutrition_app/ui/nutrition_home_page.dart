@@ -106,12 +106,38 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       )
                                     ],
                                   )),
-                              SizedBox(width: 24,),
+                              SizedBox(
+                                width: 24,
+                              ),
                               Expanded(
                                   flex: 4,
                                   child: Column(
                                     children: [
-                                      Expanded(child: Column(
+                                      Expanded(
+                                          child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Carbs",
+                                            style: TextStyle(
+                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: LinearPercentIndicator(
+                                              padding: EdgeInsets.zero,
+                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              progressColor: Colors.white,
+                                              percent: 0.5,
+                                            ),
+                                          ),
+                                          Text("14 / 323g",
+                                            style: TextStyle(
+                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),),
+                                        ],
+                                      )),
+                                      Expanded(
+                                          child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Carbs"),
@@ -123,19 +149,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           Text("14 / 323g"),
                                         ],
                                       )),
-                                      Expanded(child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("Carbs"),
-                                          LinearPercentIndicator(
-                                            backgroundColor: Colors.white.withOpacity(0.2),
-                                            progressColor: Colors.white,
-                                            percent: 0.5,
-                                          ),
-                                          Text("14 / 323g"),
-                                        ],
-                                      )),
-                                      Expanded(child: Column(
+                                      Expanded(
+                                          child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Carbs"),
