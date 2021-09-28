@@ -42,7 +42,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   color: Colors.grey,
                                 ),
                               ),
-                              SizedBox(height: 4,),
+                              SizedBox(
+                                height: 4,
+                              ),
                               Text(
                                 "Wed, 18 Aug",
                                 style: TextStyle(
@@ -53,6 +55,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                             ],
                           ),
                           Container(
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurple[50]
+                            ),
                             child: IconButton(
                               icon: Icon(Icons.calendar_today_outlined),
                               onPressed: () {},
