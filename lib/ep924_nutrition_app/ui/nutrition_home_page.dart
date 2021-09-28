@@ -422,13 +422,17 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       ],
                                     ),
 
-
-
-
-                                  ],
-                                ),
-                                Column(
-                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 34,
+                                          width: 34,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[50]
+                                          ),
+                                        )
+                                      ],
+                                    )
 
                                   ],
                                 ),
