@@ -386,64 +386,66 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                CircularPercentIndicator(
-                                  radius: 32,
-                                  percent: 0.6,
-                                  lineWidth: 4,
-                                  progressColor: Colors.teal,
-                                  backgroundColor: Colors.teal[100]!,
-                                ),
-                                IntrinsicHeight(
-                                  child: VerticalDivider(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Expanded(
-                              child: Column(
+                        child: IntrinsicHeight(
+                          child: Row(
+                            children: [
+                              Column(
                                 children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        "Breakfast",
-                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
-                                      ),
-                                      Text(
-                                        "407 kcal",
-                                        style: TextStyle(color: Colors.grey),
-                                      )
-                                    ],
+                                  CircularPercentIndicator(
+                                    radius: 32,
+                                    percent: 0.6,
+                                    lineWidth: 4,
+                                    progressColor: Colors.teal,
+                                    backgroundColor: Colors.teal[100]!,
                                   ),
-                                  Row(
-                                    children: [
-                                      Container(
-                                        height: 48,
-                                        width: 48,
-                                        decoration: BoxDecoration(color: Colors.blue[50]),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [Text("Espresso coffee"), Text("30 ml")],
-                                        ),
-                                      )
-                                    ],
+                                  IntrinsicHeight(
+                                    child: VerticalDivider(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
                                   )
                                 ],
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Breakfast",
+                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                                        ),
+                                        Text(
+                                          "407 kcal",
+                                          style: TextStyle(color: Colors.grey),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(color: Colors.blue[50]),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [Text("Espresso coffee"), Text("30 ml")],
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
