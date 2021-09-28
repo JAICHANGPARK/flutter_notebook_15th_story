@@ -386,56 +386,57 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Container(
-                          child: IntrinsicHeight(
-                            child: Row(
+                        child: Row(
+                          children: [
+                            Column(
                               children: [
-                                Column(
-                                  children: [
-                                    CircularPercentIndicator(
-                                      radius: 32,
-                                      percent: 0.6,
-                                      lineWidth: 4,
-                                      progressColor: Colors.teal,
-                                      backgroundColor: Colors.teal[100]!,
-                                    ),
-                                    VerticalDivider()
-                                  ],
+                                CircularPercentIndicator(
+                                  radius: 32,
+                                  percent: 0.6,
+                                  lineWidth: 4,
+                                  progressColor: Colors.teal,
+                                  backgroundColor: Colors.teal[100]!,
                                 ),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Expanded(
-                                  child: Column(
+                                IntrinsicHeight(
+                                  child: VerticalDivider(
+                                    color: Colors.grey,
+                                    width: 1.5,
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            "Breakfast",
-                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
-                                          ),
-                                          Text(
-                                            "407 kcal",
-                                            style: TextStyle(color: Colors.grey),
-                                          )
-                                        ],
+                                      Text(
+                                        "Breakfast",
+                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                                       ),
-                                      Row(
-                                        children: [
-                                          Container(
-                                            height: 34,
-                                            width: 34,
-                                            decoration: BoxDecoration(color: Colors.blue[50]),
-                                          )
-                                        ],
+                                      Text(
+                                        "407 kcal",
+                                        style: TextStyle(color: Colors.grey),
                                       )
                                     ],
                                   ),
-                                ),
-                              ],
+                                  Row(
+                                    children: [
+                                      Container(
+                                        height: 34,
+                                        width: 34,
+                                        decoration: BoxDecoration(color: Colors.blue[50]),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ),
                     ],
