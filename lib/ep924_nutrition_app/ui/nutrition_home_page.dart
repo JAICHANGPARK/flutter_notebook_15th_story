@@ -387,36 +387,53 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  CircularPercentIndicator(
-                                    radius: 32,
-                                    percent: 0.6,
-                                    lineWidth: 4,
-                                    progressColor: Colors.teal,
-                                    backgroundColor: Colors.teal[100]!,
-                                  ),
-                                  SizedBox(width: 16,),
-                                  Text(
-                                    "Breakfast",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black
+                          decoration: BoxDecoration(color: Colors.grey),
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Column(
+                                  children: [
+                                    CircularPercentIndicator(
+                                      radius: 32,
+                                      percent: 0.6,
+                                      lineWidth: 4,
+                                      progressColor: Colors.teal,
+                                      backgroundColor: Colors.teal[100]!,
                                     ),
-                                  ),
-                                  Spacer(),
-                                  Text(
-                                    "407 kcal",
-                                    style: TextStyle(color: Colors.grey),
-                                  )
-                                ],
-                              )
-                            ],
+                                    VerticalDivider()
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Breakfast",
+                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "407 kcal",
+                                          style: TextStyle(color: Colors.grey),
+                                        )
+                                      ],
+                                    ),
+
+
+
+
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
