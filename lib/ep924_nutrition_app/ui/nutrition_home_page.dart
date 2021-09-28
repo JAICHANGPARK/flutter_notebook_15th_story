@@ -425,6 +425,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         )
                                       ],
                                     ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
                                     Row(
                                       children: [
                                         Container(
