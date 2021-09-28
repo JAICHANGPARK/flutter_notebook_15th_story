@@ -390,6 +390,34 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircularPercentIndicator(
+                                    radius: 32,
+                                    percent: 0.6,
+                                    lineWidth: 4,
+                                    progressColor: Colors.teal,
+                                    backgroundColor: Colors.teal[100]!,
+                                  ),
+                                  SizedBox(width: 16,),
+                                  Text(
+                                    "Breakfast",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "407 kcal",
+                                    style: TextStyle(color: Colors.grey),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],
