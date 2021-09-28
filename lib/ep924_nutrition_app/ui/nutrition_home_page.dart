@@ -33,7 +33,23 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [Text("Today"), Text("Wed, 18 Aug")],
+                            children: [
+                              Text(
+                                "Today",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Text(
+                                "Wed, 18 Aug",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              )
+                            ],
                           ),
                           Container(
                             child: IconButton(
@@ -135,7 +151,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             "200 / 323g",
                                             style: TextStyle(
                                               fontSize: 14,
-                                              fontWeight: FontWeight.bold,
+                                              fontWeight: FontWeight.w300,
                                               color: Colors.white,
                                             ),
                                           ),
@@ -166,7 +182,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             "100 / 129g",
                                             style: TextStyle(
                                               fontSize: 14,
-                                              fontWeight: FontWeight.bold,
+                                              fontWeight: FontWeight.w300,
                                               color: Colors.white,
                                             ),
                                           ),
@@ -190,13 +206,13 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                               padding: EdgeInsets.zero,
                                               backgroundColor: Colors.white.withOpacity(0.2),
                                               progressColor: Colors.white,
-                                              percent: 0.5,
+                                              percent: 24 / 85,
                                             ),
                                           ),
                                           Text(
-                                            "14 / 323g",
+                                            "14 / 85g",
                                             style: TextStyle(
-                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                                fontSize: 14, fontWeight: FontWeight.w300, color: Colors.white),
                                           ),
                                         ],
                                       )),
