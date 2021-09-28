@@ -417,7 +417,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       children: [
                                         Text(
                                           "Breakfast",
-                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                                          style: TextStyle(fontWeight: FontWeight.bold,
+                                              color: Colors.black,
+                                          fontSize: 16),
                                         ),
                                         Text(
                                           "407 kcal",
@@ -433,7 +435,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         Container(
                                           height: 48,
                                           width: 48,
-                                          decoration: BoxDecoration(color: Colors.blue[50]),
+                                          decoration: BoxDecoration(color: Colors.blue[50],
+                                          borderRadius: BorderRadius.circular(8)),
+                                          child: Center(child: Text("☕",
+                                          style: TextStyle(
+                                            fontSize: 24
+                                          ),),),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
