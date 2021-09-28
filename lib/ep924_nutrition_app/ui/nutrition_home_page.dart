@@ -115,6 +115,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         children: [
                                           Text("Carbs"),
                                           LinearPercentIndicator(
+                                            
                                             backgroundColor: Colors.white.withOpacity(0.2),
                                             progressColor: Colors.white,
                                             percent: 0.5,
