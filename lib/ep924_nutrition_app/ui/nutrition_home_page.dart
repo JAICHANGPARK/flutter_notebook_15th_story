@@ -387,7 +387,6 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: Container(
-                          decoration: BoxDecoration(color: Colors.grey),
                           child: IntrinsicHeight(
                             child: Row(
                               children: [
@@ -406,35 +405,36 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 SizedBox(
                                   width: 8,
                                 ),
-                                Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                          "Breakfast",
-                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
-                                        ),
-                                        Spacer(),
-                                        Text(
-                                          "407 kcal",
-                                          style: TextStyle(color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-
-                                    Row(
-                                      children: [
-                                        Container(
-                                          height: 34,
-                                          width: 34,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue[50]
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Breakfast",
+                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                                           ),
-                                        )
-                                      ],
-                                    )
+                                          Text(
+                                            "407 kcal",
+                                            style: TextStyle(color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
 
-                                  ],
+                                      Row(
+                                        children: [
+                                          Container(
+                                            height: 34,
+                                            width: 34,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue[50]
+                                            ),
+                                          )
+                                        ],
+                                      )
+
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
