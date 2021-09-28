@@ -427,9 +427,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   Row(
                                     children: [
                                       Container(
-                                        height: 34,
-                                        width: 34,
+                                        height: 48,
+                                        width: 48,
                                         decoration: BoxDecoration(color: Colors.blue[50]),
+                                      ),
+                                      Column(
+                                        children: [
+                                          Text("Espresso coffee"),
+                                          Text("30 ml")
+                                        ],
                                       )
                                     ],
                                   )
