@@ -42,6 +42,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   color: Colors.grey,
                                 ),
                               ),
+                              SizedBox(height: 4,),
                               Text(
                                 "Wed, 18 Aug",
                                 style: TextStyle(
