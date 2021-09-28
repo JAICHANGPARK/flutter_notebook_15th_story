@@ -47,8 +47,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         child: Container(
                           height: 200,
                           padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                              color: Colors.deepPurpleAccent[200], borderRadius: BorderRadius.circular(24)),
+                          decoration: BoxDecoration(color: purpleColor, borderRadius: BorderRadius.circular(24)),
                           child: Row(
                             children: [
                               Expanded(
@@ -67,18 +66,19 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           percent: 0.7,
                                           circularStrokeCap: CircularStrokeCap.round,
                                           progressColor: Colors.white,
+                                          backgroundColor: Colors.white.withOpacity(0.2),
                                           center: Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Container(
                                               height: double.infinity,
                                               width: double.infinity,
-                                              decoration: BoxDecoration(
-                                                  color: Colors.deepPurpleAccent[100], shape: BoxShape.circle),
+                                              decoration:
+                                                  BoxDecoration(color: purpleLightColor, shape: BoxShape.circle),
                                               padding: EdgeInsets.all(8),
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   shape: BoxShape.circle,
-                                                  color: Colors.deepPurpleAccent[200],
+                                                  color:purpleColor
                                                 ),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.center,
