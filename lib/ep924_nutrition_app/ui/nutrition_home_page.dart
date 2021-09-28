@@ -324,7 +324,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            "Borned",
+                                            "Burned",
                                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                           ),
                                           Text(
