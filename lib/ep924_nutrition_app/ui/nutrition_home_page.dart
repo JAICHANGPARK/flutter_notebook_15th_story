@@ -128,60 +128,78 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                               padding: EdgeInsets.zero,
                                               backgroundColor: Colors.white.withOpacity(0.2),
                                               progressColor: Colors.white,
-                                              percent: 200/323,
+                                              percent: 200 / 323,
                                             ),
                                           ),
-                                          Text("200 / 323g",
+                                          Text(
+                                            "200 / 323g",
                                             style: TextStyle(
-                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),),
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
                                         ],
                                       )),
                                       Expanded(
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Proteins",
-                                                style: TextStyle(
-                                                    fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                              ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: LinearPercentIndicator(
-                                                  padding: EdgeInsets.zero,
-                                                  backgroundColor: Colors.white.withOpacity(0.2),
-                                                  progressColor: Colors.white,
-                                                  percent: 100/129,
-                                                ),
-                                              ),
-                                              Text("100 / 129g",
-                                                style: TextStyle(
-                                                    fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),),
-                                            ],
-                                          )),
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Proteins",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: LinearPercentIndicator(
+                                              padding: EdgeInsets.zero,
+                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              progressColor: Colors.white,
+                                              percent: 100 / 129,
+                                            ),
+                                          ),
+                                          Text(
+                                            "100 / 129g",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      )),
                                       Expanded(
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Carbs",
-                                                style: TextStyle(
-                                                    fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                              ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: LinearPercentIndicator(
-                                                  padding: EdgeInsets.zero,
-                                                  backgroundColor: Colors.white.withOpacity(0.2),
-                                                  progressColor: Colors.white,
-                                                  percent: 0.5,
-                                                ),
-                                              ),
-                                              Text("14 / 323g",
-                                                style: TextStyle(
-                                                    fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),),
-                                            ],
-                                          )),
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Fats",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: LinearPercentIndicator(
+                                              padding: EdgeInsets.zero,
+                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              progressColor: Colors.white,
+                                              percent: 0.5,
+                                            ),
+                                          ),
+                                          Text(
+                                            "14 / 323g",
+                                            style: TextStyle(
+                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                          ),
+                                        ],
+                                      )),
                                     ],
                                   )),
                             ],
