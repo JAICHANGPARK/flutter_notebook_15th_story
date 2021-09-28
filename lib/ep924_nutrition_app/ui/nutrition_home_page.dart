@@ -415,7 +415,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           SizedBox(height: 4),
                           CircleAvatar(
                             radius: 4,
-                            color: purpleColor,
+                            backgroundColor: purpleColor,
                           )
                         ],
                       ),
