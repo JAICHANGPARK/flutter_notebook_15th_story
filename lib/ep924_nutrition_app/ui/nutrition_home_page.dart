@@ -106,6 +106,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       )
                                     ],
                                   )),
+                              SizedBox(width: 24,),
                               Expanded(
                                   flex: 4,
                                   child: Column(
