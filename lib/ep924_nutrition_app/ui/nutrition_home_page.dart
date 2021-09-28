@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class NutritionHomePage extends StatefulWidget {
   const NutritionHomePage({Key? key}) : super(key: key);
@@ -76,10 +77,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                                   BoxDecoration(color: purpleLightColor, shape: BoxShape.circle),
                                               padding: EdgeInsets.all(8),
                                               child: Container(
-                                                decoration: BoxDecoration(
-                                                  shape: BoxShape.circle,
-                                                  color:purpleColor
-                                                ),
+                                                decoration: BoxDecoration(shape: BoxShape.circle, color: purpleColor),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -108,7 +106,48 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       )
                                     ],
                                   )),
-                              Expanded(flex: 4, child: Placeholder()),
+                              Expanded(
+                                  flex: 4,
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Carbs"),
+                                          LinearPercentIndicator(
+                                            backgroundColor: Colors.white.withOpacity(0.2),
+                                            progressColor: Colors.white,
+                                            percent: 0.5,
+                                          ),
+                                          Text("14 / 323g"),
+                                        ],
+                                      )),
+                                      Expanded(child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Carbs"),
+                                          LinearPercentIndicator(
+                                            backgroundColor: Colors.white.withOpacity(0.2),
+                                            progressColor: Colors.white,
+                                            percent: 0.5,
+                                          ),
+                                          Text("14 / 323g"),
+                                        ],
+                                      )),
+                                      Expanded(child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Carbs"),
+                                          LinearPercentIndicator(
+                                            backgroundColor: Colors.white.withOpacity(0.2),
+                                            progressColor: Colors.white,
+                                            percent: 0.5,
+                                          ),
+                                          Text("14 / 323g"),
+                                        ],
+                                      )),
+                                    ],
+                                  )),
                             ],
                           ),
                         ),
