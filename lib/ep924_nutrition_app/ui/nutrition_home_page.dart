@@ -431,11 +431,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         width: 48,
                                         decoration: BoxDecoration(color: Colors.blue[50]),
                                       ),
-                                      Column(
-                                        children: [
-                                          Text("Espresso coffee"),
-                                          Text("30 ml")
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [Text("Espresso coffee"), Text("30 ml")],
+                                        ),
                                       )
                                     ],
                                   )
