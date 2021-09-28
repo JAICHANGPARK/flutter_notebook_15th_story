@@ -47,7 +47,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         child: Container(
                           height: 200,
-                          padding: EdgeInsets.all(8),
+                          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                           decoration: BoxDecoration(color: purpleColor, borderRadius: BorderRadius.circular(24)),
                           child: Row(
                             children: [
