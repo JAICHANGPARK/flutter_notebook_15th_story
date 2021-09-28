@@ -55,12 +55,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                             ],
                           ),
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.deepPurple[50]
-                            ),
+                            decoration:
+                                BoxDecoration(color: Colors.deepPurple[50], borderRadius: BorderRadius.circular(8)),
                             child: IconButton(
                               icon: Icon(Icons.calendar_today_outlined),
                               onPressed: () {},
+                              color: purpleColor,
                             ),
                           )
                         ],
@@ -406,12 +406,27 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [Icon(Icons.home, size: 28), SizedBox(height: 4), CircleAvatar(radius: 4)],
+                        children: [
+                          Icon(
+                            Icons.home,
+                            size: 28,
+                            color: purpleColor,
+                          ),
+                          SizedBox(height: 4),
+                          CircleAvatar(
+                            radius: 4,
+                            color: purpleColor,
+                          )
+                        ],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.search, size: 28),
+                          Icon(
+                            Icons.search,
+                            size: 28,
+                            color: purpleColor,
+                          ),
                           SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
@@ -422,14 +437,18 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                           onPressed: () {},
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.deepPurpleAccent[100],
+                          color: purpleColor,
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.bar_chart, size: 28),
+                          Icon(
+                            Icons.bar_chart,
+                            size: 28,
+                            color: purpleColor,
+                          ),
                           SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
@@ -437,7 +456,11 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.person, size: 28),
+                          Icon(
+                            Icons.person,
+                            size: 28,
+                            color: purpleColor,
+                          ),
                           SizedBox(height: 4),
                           // CircleAvatar(radius: 4,)
                         ],
