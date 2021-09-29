@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../nutrition_app.dart';
 
-
 class NutritionCalendarPage extends StatefulWidget {
   const NutritionCalendarPage({Key? key}) : super(key: key);
 
@@ -15,10 +14,10 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 decoration: BoxDecoration(
@@ -31,7 +30,18 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
                   },
                   color: purpleColor,
                 ),
-              )
+              ),
+              SizedBox(height: 16,),
+              Text(
+                "Today",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+              ),
+              Text(
+                "Web, 18 Aug",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+              SizedBox(height: 16,),
             ],
           ),
         ),
