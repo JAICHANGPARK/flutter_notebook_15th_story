@@ -264,7 +264,7 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
                                     MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "Breakfast",
+                                        "Lunch",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             color: Colors.black,
@@ -356,46 +356,6 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(
-                                    height: 16,
-                                  ),
-                                  Row(
-                                    children: [
-                                      Container(
-                                        height: 48,
-                                        width: 48,
-                                        decoration: BoxDecoration(
-                                            color: Colors.yellow[50],
-                                            borderRadius:
-                                            BorderRadius.circular(8)),
-                                        child: Center(
-                                          child: Text(
-                                            "🍳",
-                                            style: TextStyle(fontSize: 24),
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Eggs",
-                                              style: TextStyle(
-                                                  fontWeight:
-                                                  FontWeight.bold),
-                                            ),
-                                            SizedBox(
-                                              height: 4,
-                                            ),
-                                            Text("100 g")
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  )
                                 ],
                               ),
                             ),
@@ -411,7 +371,7 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
                 
                 children: [
                   Expanded(child: Column()),
-                  
+
                 ],
               ))
              
