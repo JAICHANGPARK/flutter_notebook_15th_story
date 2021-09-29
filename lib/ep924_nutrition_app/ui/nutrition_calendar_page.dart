@@ -44,7 +44,7 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
               ),
               SizedBox(height: 24,),
               Expanded(
-                  flex: 4,
+                  flex: 10,
                   child: SingleChildScrollView(
                     child: Column(
                 children:[
@@ -410,7 +410,8 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
               Expanded(child: Row(
                 
                 children: [
-
+                  Expanded(child: Column()),
+                  
                 ],
               ))
              
