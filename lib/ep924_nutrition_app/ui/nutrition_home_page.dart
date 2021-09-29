@@ -55,8 +55,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                             ],
                           ),
                           Container(
-                            decoration:
-                                BoxDecoration(color: Colors.deepPurple[50], borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(
+                                color: Colors.deepPurple[50],
+                                borderRadius: BorderRadius.circular(8)),
                             child: IconButton(
                               icon: Icon(Icons.calendar_today_outlined),
                               onPressed: () {},
@@ -69,8 +70,11 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         child: Container(
                           height: 200,
-                          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
-                          decoration: BoxDecoration(color: purpleColor, borderRadius: BorderRadius.circular(24)),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 12, horizontal: 24),
+                          decoration: BoxDecoration(
+                              color: purpleColor,
+                              borderRadius: BorderRadius.circular(24)),
                           child: Row(
                             children: [
                               Expanded(
@@ -87,37 +91,51 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           lineWidth: 6.0,
                                           animation: true,
                                           percent: 0.7,
-                                          circularStrokeCap: CircularStrokeCap.round,
+                                          circularStrokeCap:
+                                              CircularStrokeCap.round,
                                           progressColor: Colors.white,
-                                          backgroundColor: Colors.white.withOpacity(0.2),
+                                          backgroundColor:
+                                              Colors.white.withOpacity(0.2),
                                           center: Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Container(
                                               height: double.infinity,
                                               width: double.infinity,
-                                              decoration:
-                                                  BoxDecoration(color: purpleLightColor, shape: BoxShape.circle),
+                                              decoration: BoxDecoration(
+                                                  color: purpleLightColor,
+                                                  shape: BoxShape.circle),
                                               padding: EdgeInsets.all(8),
                                               child: Container(
-                                                decoration: BoxDecoration(shape: BoxShape.circle, color: purpleColor),
+                                                decoration: BoxDecoration(
+                                                    shape: BoxShape.circle,
+                                                    color: purpleColor),
                                                 child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
                                                   children: [
                                                     Text(
                                                       "Remaining",
-                                                      style: TextStyle(color: Colors.white),
+                                                      style: TextStyle(
+                                                          color: Colors.white),
                                                     ),
                                                     Padding(
-                                                      padding: const EdgeInsets.all(8.0),
+                                                      padding:
+                                                          const EdgeInsets.all(
+                                                              8.0),
                                                       child: Text(
                                                         "1,112",
-                                                        style: TextStyle(fontSize: 23, color: Colors.white),
+                                                        style: TextStyle(
+                                                            fontSize: 23,
+                                                            color:
+                                                                Colors.white),
                                                       ),
                                                     ),
                                                     Text(
                                                       "kcal",
-                                                      style: TextStyle(color: Colors.white),
+                                                      style: TextStyle(
+                                                          color: Colors.white),
                                                     )
                                                   ],
                                                 ),
@@ -137,18 +155,23 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                     children: [
                                       Expanded(
                                           child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Carbs",
                                             style: TextStyle(
-                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            padding: const EdgeInsets.symmetric(
+                                                vertical: 4),
                                             child: LinearPercentIndicator(
                                               padding: EdgeInsets.zero,
-                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              backgroundColor:
+                                                  Colors.white.withOpacity(0.2),
                                               progressColor: Colors.white,
                                               percent: 200 / 323,
                                             ),
@@ -165,7 +188,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       )),
                                       Expanded(
                                           child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Proteins",
@@ -176,10 +200,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            padding: const EdgeInsets.symmetric(
+                                                vertical: 4),
                                             child: LinearPercentIndicator(
                                               padding: EdgeInsets.zero,
-                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              backgroundColor:
+                                                  Colors.white.withOpacity(0.2),
                                               progressColor: Colors.white,
                                               percent: 100 / 129,
                                             ),
@@ -196,7 +222,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                       )),
                                       Expanded(
                                           child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Fats",
@@ -207,10 +234,12 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            padding: const EdgeInsets.symmetric(
+                                                vertical: 4),
                                             child: LinearPercentIndicator(
                                               padding: EdgeInsets.zero,
-                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              backgroundColor:
+                                                  Colors.white.withOpacity(0.2),
                                               progressColor: Colors.white,
                                               percent: 24 / 85,
                                             ),
@@ -218,7 +247,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           Text(
                                             "14 / 85g",
                                             style: TextStyle(
-                                                fontSize: 14, fontWeight: FontWeight.w300, color: Colors.white),
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white),
                                           ),
                                         ],
                                       )),
@@ -247,18 +278,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   ),
                                   padding: EdgeInsets.all(16),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
                                             "Intaked",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
                                           ),
                                           Text(
                                             "🍕",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
                                           )
                                         ],
                                       ),
@@ -269,14 +306,18 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             width: 8,
                                             decoration: BoxDecoration(
                                               color: Colors.teal[100],
-                                              borderRadius: BorderRadius.circular(8),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
                                             ),
                                             child: Stack(
                                               children: [
                                                 Positioned(
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(8), color: Colors.teal),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8),
+                                                        color: Colors.teal),
                                                   ),
                                                   top: 24,
                                                   left: 0,
@@ -290,7 +331,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             width: 24,
                                           ),
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 "589",
@@ -318,18 +360,24 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   ),
                                   padding: EdgeInsets.all(16),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
                                             "Burned",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
                                           ),
                                           Text(
                                             "🔥",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
                                           )
                                         ],
                                       ),
@@ -340,15 +388,19 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             width: 8,
                                             decoration: BoxDecoration(
                                               color: Colors.deepOrange[100],
-                                              borderRadius: BorderRadius.circular(8),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
                                             ),
                                             child: Stack(
                                               children: [
                                                 Positioned(
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(8),
-                                                        color: Colors.deepOrange),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8),
+                                                        color:
+                                                            Colors.deepOrange),
                                                   ),
                                                   top: 24,
                                                   left: 0,
@@ -362,7 +414,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             width: 24,
                                           ),
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 "738",
@@ -386,7 +439,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: IntrinsicHeight(
+                        child: Flexible(
                           child: Row(
                             children: [
                               Column(
@@ -413,13 +466,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 child: Column(
                                   children: [
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           "Breakfast",
-                                          style: TextStyle(fontWeight: FontWeight.bold,
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
                                               color: Colors.black,
-                                          fontSize: 16),
+                                              fontSize: 16),
                                         ),
                                         Text(
                                           "407 kcal",
@@ -435,18 +490,26 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                         Container(
                                           height: 48,
                                           width: 48,
-                                          decoration: BoxDecoration(color: Colors.blue[50],
-                                          borderRadius: BorderRadius.circular(8)),
-                                          child: Center(child: Text("☕",
-                                          style: TextStyle(
-                                            fontSize: 24
-                                          ),),),
+                                          decoration: BoxDecoration(
+                                              color: Colors.blue[50],
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              "☕",
+                                              style: TextStyle(fontSize: 24),
+                                            ),
+                                          ),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [Text("Espresso coffee"), Text("30 ml")],
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Espresso coffee"),
+                                              Text("30 ml")
+                                            ],
                                           ),
                                         )
                                       ],
