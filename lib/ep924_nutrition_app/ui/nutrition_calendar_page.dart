@@ -14,7 +14,20 @@ class _NutritionCalendarPageState extends State<NutritionCalendarPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.deepPurple[50],
+                borderRadius: BorderRadius.circular(8)),
+            child: IconButton(
+              icon: Icon(Icons.calendar_today_outlined),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>
+                        NutritionCalendarPage()));
+              },
+              color: purpleColor,
+            ),
+          )
         ],
       ),
     );
