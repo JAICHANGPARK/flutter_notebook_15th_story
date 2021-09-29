@@ -452,10 +452,11 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                     progressColor: Colors.teal,
                                     backgroundColor: Colors.teal[100]!,
                                   ),
+                                  SizedBox(height: 8,),
                                   Expanded(
                                     child: VerticalDivider(
                                       color: Colors.grey,
-                                      width: 1.5,
+                                      width: 2,
                                     ),
                                   )
                                 ],
