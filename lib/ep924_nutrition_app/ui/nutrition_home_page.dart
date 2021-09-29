@@ -512,7 +512,13 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text("Espresso coffee"),
+                                              Text(
+                                                "Espresso coffee",
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              SizedBox(height: 4,),
                                               Text("30 ml")
                                             ],
                                           ),
@@ -528,7 +534,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           height: 48,
                                           width: 48,
                                           decoration: BoxDecoration(
-                                              color: Colors.blue[50],
+                                              color: Colors.brown[50],
                                               borderRadius:
                                                   BorderRadius.circular(8)),
                                           child: Center(
@@ -544,7 +550,10 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text("Croissant"),
+                                              Text("Croissant" , style: TextStyle(
+                                              fontWeight:
+                                              FontWeight.bold),),
+                                              SizedBox(height: 4,),
                                               Text("100 g")
                                             ],
                                           ),
@@ -560,7 +569,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           height: 48,
                                           width: 48,
                                           decoration: BoxDecoration(
-                                              color: Colors.blue[50],
+                                              color: Colors.yellow[50],
                                               borderRadius:
                                                   BorderRadius.circular(8)),
                                           child: Center(
@@ -576,7 +585,10 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text("Eggs"),
+                                              Text("Eggs", style: TextStyle(
+                                                  fontWeight:
+                                                  FontWeight.bold),),
+                                              SizedBox(height: 4,),
                                               Text("100 g")
                                             ],
                                           ),
