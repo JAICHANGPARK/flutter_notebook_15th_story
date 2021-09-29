@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
+import 'nutrition_calendar_page.dart';
+
 class NutritionHomePage extends StatefulWidget {
   const NutritionHomePage({Key? key}) : super(key: key);
 
@@ -60,7 +62,11 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 borderRadius: BorderRadius.circular(8)),
                             child: IconButton(
                               icon: Icon(Icons.calendar_today_outlined),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) =>
+                                        NutritionCalendarPage()));
+                              },
                               color: purpleColor,
                             ),
                           )
@@ -518,7 +524,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                                     fontWeight:
                                                         FontWeight.bold),
                                               ),
-                                              SizedBox(height: 4,),
+                                              SizedBox(
+                                                height: 4,
+                                              ),
                                               Text("30 ml")
                                             ],
                                           ),
@@ -550,10 +558,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text("Croissant" , style: TextStyle(
-                                              fontWeight:
-                                              FontWeight.bold),),
-                                              SizedBox(height: 4,),
+                                              Text(
+                                                "Croissant",
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              SizedBox(
+                                                height: 4,
+                                              ),
                                               Text("100 g")
                                             ],
                                           ),
@@ -585,10 +598,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text("Eggs", style: TextStyle(
-                                                  fontWeight:
-                                                  FontWeight.bold),),
-                                              SizedBox(height: 4,),
+                                              Text(
+                                                "Eggs",
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              SizedBox(
+                                                height: 4,
+                                              ),
                                               Text("100 g")
                                             ],
                                           ),
