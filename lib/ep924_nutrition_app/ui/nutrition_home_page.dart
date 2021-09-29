@@ -542,8 +542,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                             crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                             children: [
-                                              Text("Espresso coffee"),
-                                              Text("30 ml")
+                                              Text("Croissant"),
+                                              Text("100 g")
                                             ],
                                           ),
                                         )
