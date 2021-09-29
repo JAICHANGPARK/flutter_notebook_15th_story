@@ -452,7 +452,9 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                     progressColor: Colors.teal,
                                     backgroundColor: Colors.teal[100]!,
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Expanded(
                                     child: VerticalDivider(
                                       color: Colors.grey,
@@ -528,7 +530,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           decoration: BoxDecoration(
                                               color: Colors.blue[50],
                                               borderRadius:
-                                              BorderRadius.circular(8)),
+                                                  BorderRadius.circular(8)),
                                           child: Center(
                                             child: Text(
                                               "🥐",
@@ -540,7 +542,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text("Croissant"),
                                               Text("100 g")
@@ -560,7 +562,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           decoration: BoxDecoration(
                                               color: Colors.blue[50],
                                               borderRadius:
-                                              BorderRadius.circular(8)),
+                                                  BorderRadius.circular(8)),
                                           child: Center(
                                             child: Text(
                                               "🍳",
@@ -572,7 +574,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text("Eggs"),
                                               Text("100 g")
