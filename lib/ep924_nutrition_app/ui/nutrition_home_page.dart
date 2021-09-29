@@ -548,6 +548,38 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                           ),
                                         )
                                       ],
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                              color: Colors.blue[50],
+                                              borderRadius:
+                                              BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              "🍳",
+                                              style: TextStyle(fontSize: 24),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Eggs"),
+                                              Text("100 g")
+                                            ],
+                                          ),
+                                        )
+                                      ],
                                     )
                                   ],
                                 ),
