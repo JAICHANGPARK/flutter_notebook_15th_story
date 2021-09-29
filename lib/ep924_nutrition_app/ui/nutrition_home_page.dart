@@ -531,7 +531,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                               BorderRadius.circular(8)),
                                           child: Center(
                                             child: Text(
-                                              "☕",
+                                              "🥐",
                                               style: TextStyle(fontSize: 24),
                                             ),
                                           ),
