@@ -439,10 +439,11 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Flexible(
+                        child: IntrinsicHeight(
                           child: Row(
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   CircularPercentIndicator(
                                     radius: 32,
@@ -451,7 +452,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                     progressColor: Colors.teal,
                                     backgroundColor: Colors.teal[100]!,
                                   ),
-                                  IntrinsicHeight(
+                                  Expanded(
                                     child: VerticalDivider(
                                       color: Colors.grey,
                                       width: 1.5,
