@@ -446,7 +446,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   CircularPercentIndicator(
-                                    radius: 32,
+                                    radius: 26,
                                     percent: 0.6,
                                     lineWidth: 4,
                                     progressColor: Colors.teal,
@@ -456,7 +456,8 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                                   Expanded(
                                     child: VerticalDivider(
                                       color: Colors.grey,
-                                      width: 2,
+                                      width: 3,
+                                      thickness: 1.5,
                                     ),
                                   )
                                 ],
