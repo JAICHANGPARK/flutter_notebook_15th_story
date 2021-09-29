@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
+import '../nutrition_app.dart';
 import 'nutrition_calendar_page.dart';
+
 
 class NutritionHomePage extends StatefulWidget {
   const NutritionHomePage({Key? key}) : super(key: key);
@@ -12,11 +14,6 @@ class NutritionHomePage extends StatefulWidget {
 }
 
 class _NutritionHomePageState extends State<NutritionHomePage> {
-  /// 101 95 177 65 5f b1
-  /// 110 105 182  6e 69 b6
-
-  Color purpleColor = Color(0xff655fb1);
-  Color purpleLightColor = Color(0xff6e69b6);
 
   @override
   Widget build(BuildContext context) {
