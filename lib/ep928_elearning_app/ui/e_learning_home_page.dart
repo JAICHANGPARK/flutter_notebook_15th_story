@@ -22,6 +22,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     Expanded(child: Align(
                       alignment: Alignment.centerLeft,
                       child: PhysicalModel(
+                          shape: BoxShape.circle,
                         color: Colors.black.withOpacity(0.2),
                         elevation: 2,
                         child: Container(
