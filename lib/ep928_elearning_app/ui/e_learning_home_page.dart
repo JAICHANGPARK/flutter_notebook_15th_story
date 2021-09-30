@@ -57,16 +57,36 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   children: [
                     Expanded(
                         child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Colors.red[200],
+                            borderRadius: BorderRadius.circular(16)),
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(16)),
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
                             padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                            color: Colors.red[200],
-                            borderRadius: BorderRadius.circular(16)),
-                    ),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(color: Colors.grey[300]!),
+                                borderRadius: BorderRadius.circular(16)),
+                          ),
                         )),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
                   ],
                 ),
                 flex: 2,
