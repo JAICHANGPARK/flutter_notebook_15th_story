@@ -11,6 +11,8 @@ class ELearningHomePage extends StatefulWidget {
 class _ELearningHomePageState extends State<ELearningHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
