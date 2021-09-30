@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ELearningHomePage extends StatefulWidget {
   const ELearningHomePage({Key? key}) : super(key: key);
 
@@ -15,13 +14,21 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: Placeholder(),
+              flex: 1,
+            ),
+            Expanded(
+              child: SingleChildScrollView(),
+              flex: 10,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
           ],
         ),
       ),
-
     );
   }
 }
