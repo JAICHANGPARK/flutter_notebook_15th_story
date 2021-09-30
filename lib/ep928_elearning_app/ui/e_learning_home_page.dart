@@ -40,10 +40,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Center(
                             child: Text(
                       "Course Detail",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17
-                      ),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                     ))),
                     Expanded(child: Container()),
                   ],
@@ -52,10 +50,25 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
               ),
               Expanded(
                 child: SingleChildScrollView(),
-                flex: 10,
+                flex: 12,
               ),
               Expanded(
-                child: Placeholder(),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                            color: Colors.red[200],
+                            borderRadius: BorderRadius.circular(16)),
+                    ),
+                        )),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
                 flex: 2,
               ),
             ],
