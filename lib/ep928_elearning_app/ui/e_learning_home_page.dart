@@ -19,26 +19,33 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
               Expanded(
                 child: Row(
                   children: [
-                    Expanded(child: Align(
+                    Expanded(
+                        child: Align(
                       alignment: Alignment.centerLeft,
                       child: PhysicalModel(
-                          shape: BoxShape.circle,
+                        shape: BoxShape.circle,
                         color: Colors.black.withOpacity(0.2),
-                        elevation: 2,
+                        elevation: 1,
                         child: Container(
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle
-                          ),
+                              color: Colors.white, shape: BoxShape.circle),
                           padding: EdgeInsets.all(4),
-                          child: Center(child: Icon(Icons.arrow_back_ios)),
+                          child: Center(child: Icon(Icons.keyboard_arrow_left)),
                         ),
                       ),
                     )),
-                    Expanded(child: Center(child: Text("Course Detail"))),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        child: Center(
+                            child: Text(
+                      "Course Detail",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17
+                      ),
+                    ))),
+                    Expanded(child: Container()),
                   ],
                 ),
                 flex: 1,
