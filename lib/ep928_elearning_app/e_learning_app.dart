@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ELearingApp extends StatelessWidget {
-  const ELearingApp({Key? key}) : super(key: key);
+import 'ui/e_learning_home_page.dart';
+
+class ELearningApp extends StatelessWidget {
+  const ELearningApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      home: ELearningHomePage(),
     );
   }
 }
