@@ -70,7 +70,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               Positioned(
                                 left: 0,
                                 right: 0,
-                                bottom: 8,
+                                bottom: 16,
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
