@@ -49,7 +49,32 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                 flex: 1,
               ),
               Expanded(
-                child: SingleChildScrollView(),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.all(8),
+                        ),
+                        height: 280,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 8,
+                              child: Row(
+                                children: [],
+                              ),
+
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
                 flex: 12,
               ),
               Expanded(
@@ -78,8 +103,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             ),
                             Text(
                               "Chapters",
-                              style: TextStyle(color: Colors.white,
-                                  fontSize: 12),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 12),
                             )
                           ],
                         ),
@@ -116,7 +141,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             ),
                             Text(
                               "Semester",
-                              style: TextStyle(color: Colors.black, fontSize: 12),
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 12),
                             )
                           ],
                         ),
@@ -153,7 +179,8 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             ),
                             Text(
                               "Duration",
-                              style: TextStyle(color: Colors.black, fontSize: 12),
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 12),
                             )
                           ],
                         ),
