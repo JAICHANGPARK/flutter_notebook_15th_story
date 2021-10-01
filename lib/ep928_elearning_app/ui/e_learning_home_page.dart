@@ -52,54 +52,68 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      Container(
-                        height: 280,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              left: 0,
-                              right: 0,
-                              bottom: 8,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    radius: 15,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 8),
-                                    child: Text(
-                                      ":",
-                                      style: TextStyle(color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 280,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg"),
+                                  fit: BoxFit.cover)),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 8,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 15,
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                      child: Text("08"),
                                     ),
-                                  ),
-                                  CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    radius: 15,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 8),
-                                    child: Text(
-                                      ":",
-                                      style: TextStyle(color: Colors.white),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8),
+                                      child: Text(
+                                        ":",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
                                     ),
-                                  ),
-                                  CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    radius: 15,
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
+                                    CircleAvatar(
+                                      radius: 15,
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                      child: Text("32"),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8),
+                                      child: Text(
+                                        ":",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      radius: 15,
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                      child: Text(
+                                        "10",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
