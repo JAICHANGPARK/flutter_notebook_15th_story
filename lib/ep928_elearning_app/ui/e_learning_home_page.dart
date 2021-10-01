@@ -142,7 +142,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text("Science and Technology",style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 24,
                           fontWeight: FontWeight.bold
                         ),),
                       ),
