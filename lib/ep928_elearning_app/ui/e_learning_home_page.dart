@@ -51,6 +51,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -120,18 +121,31 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.orangeAccent[100],
-                            borderRadius: BorderRadius.circular(4)
-                          ),
+                              color: Colors.orangeAccent[100],
+                              borderRadius: BorderRadius.circular(4)),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text("4.0"),
-                              Icon(Icons.star, color: Colors.orangeAccent,),
+                              Text("4.0",style: TextStyle(
+                                fontSize: 12
+                              ),),
+                              Icon(
+                                Icons.star,
+                                color: Colors.orangeAccent,
+                                size: 14,
+                              ),
                             ],
                           ),
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Science and Technology",style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),),
+                      ),
                     ],
                   ),
                 ),
