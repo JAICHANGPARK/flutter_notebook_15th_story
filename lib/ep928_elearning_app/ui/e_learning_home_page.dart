@@ -49,7 +49,9 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                 flex: 1,
               ),
               Expanded(
-                child: SingleChildScrollView(),
+                child: SingleChildScrollView(
+
+                ),
                 flex: 12,
               ),
               Expanded(
@@ -61,8 +63,16 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       child: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                            color: Colors.red[200],
+                            color: Colors.red[300],
                             borderRadius: BorderRadius.circular(16)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("13",style: TextStyle(fontSize: 18, color: Colors.white),),
+                            SizedBox(height: 8,),
+                            Text("Chapters", style: TextStyle(color: Colors.white),)
+                          ],
+                        ),
                       ),
                     )),
                     Expanded(
@@ -78,15 +88,15 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                     )),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            padding: const EdgeInsets.all(8),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(color: Colors.grey[300]!),
-                                borderRadius: BorderRadius.circular(16)),
-                          ),
-                        )),
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(16)),
+                      ),
+                    )),
                   ],
                 ),
                 flex: 2,
