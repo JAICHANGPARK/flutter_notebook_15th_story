@@ -121,15 +121,18 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.orangeAccent[100],
+                              color: Colors.orange[50],
                               borderRadius: BorderRadius.circular(4)),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text("4.0",style: TextStyle(
-                                fontSize: 12
-                              ),),
+                              Text(
+                                "4.0",
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.bold),
+                              ),
                               Icon(
                                 Icons.star,
                                 color: Colors.orangeAccent,
@@ -141,10 +144,11 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Science and Technology",style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold
-                        ),),
+                        child: Text(
+                          "Science and Technology",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),
