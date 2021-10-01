@@ -67,7 +67,6 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               child: Row(
                                 children: [],
                               ),
-
                             )
                           ],
                         ),
