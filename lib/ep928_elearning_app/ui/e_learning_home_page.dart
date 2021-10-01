@@ -53,11 +53,12 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   child: Column(
                     children: [
                       Container(
+                        height: 280,
+                        width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.red,
-                          borderRadius: BorderRadius.all(8),
+                          borderRadius: BorderRadius.circular(8),
                         ),
-                        height: 280,
                         child: Stack(
                           children: [
                             Positioned(
@@ -65,7 +66,17 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               right: 0,
                               bottom: 8,
                               child: Row(
-                                children: [],
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  CircleAvatar(backgroundColor: Colors.white,
+                                  radius: 15,),
+                                  Text(":"),
+                                  CircleAvatar(backgroundColor: Colors.white,
+                                    radius: 15,),
+                                  Text(":"),
+                                  CircleAvatar(backgroundColor: Colors.white,
+                                    radius: 15,),
+                                ],
                               ),
                             )
                           ],
