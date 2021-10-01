@@ -68,14 +68,34 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  CircleAvatar(backgroundColor: Colors.white,
-                                  radius: 15,),
-                                  Text(":"),
-                                  CircleAvatar(backgroundColor: Colors.white,
-                                    radius: 15,),
-                                  Text(":"),
-                                  CircleAvatar(backgroundColor: Colors.white,
-                                    radius: 15,),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 15,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 8),
+                                    child: Text(
+                                      ":",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 15,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 8),
+                                    child: Text(
+                                      ":",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 15,
+                                  ),
                                 ],
                               ),
                             )
