@@ -55,7 +55,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          height: 280,
+                          height: 240,
                           width: double.infinity,
                           decoration: BoxDecoration(
                               color: Colors.red,
@@ -112,6 +112,22 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                   ],
                                 ),
                               )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orangeAccent[100],
+                            borderRadius: BorderRadius.circular(4)
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text("4.0"),
+                              Icon(Icons.star, color: Colors.orangeAccent,),
                             ],
                           ),
                         ),
