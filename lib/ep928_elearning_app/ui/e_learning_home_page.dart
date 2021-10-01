@@ -68,8 +68,10 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           children: [
                             Text(
                               "13",
-                              style:
-                                  TextStyle(fontSize: 24, color: Colors.white),
+                              style: TextStyle(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               height: 8,
@@ -94,14 +96,13 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text.rich(
-                                TextSpan(
-
-                                    children: [
+                            Text.rich(TextSpan(children: [
                               TextSpan(
                                 text: "04",
-                                style:
-                                    TextStyle(fontSize: 24, color: Colors.red),
+                                style: TextStyle(
+                                    fontSize: 24,
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold),
                               ),
                               TextSpan(
                                 text: "th",
@@ -132,21 +133,20 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text.rich(
-                                TextSpan(
-
-                                    children: [
-                                      TextSpan(
-                                        text: "56",
-                                        style:
-                                        TextStyle(fontSize: 24, color: Colors.red),
-                                      ),
-                                      TextSpan(
-                                        text: "hrs",
-                                        style:
-                                        TextStyle(fontSize: 12, color: Colors.grey),
-                                      )
-                                    ])),
+                            Text.rich(TextSpan(children: [
+                              TextSpan(
+                                text: "56",
+                                style: TextStyle(
+                                    fontSize: 24,
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              TextSpan(
+                                text: "hrs",
+                                style:
+                                    TextStyle(fontSize: 12, color: Colors.grey),
+                              )
+                            ])),
                             SizedBox(
                               height: 8,
                             ),
