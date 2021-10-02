@@ -95,109 +95,231 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          height: 240,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
-                                  image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg"),
-                                  fit: BoxFit.cover)),
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 0,
-                                right: 0,
-                                bottom: 16,
-                                child: ValueListenableBuilder<CourseLeftTime>(
-                                  valueListenable: courseLeftTime,
-                                  builder: (context, value, child) {
-                                    return Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [BoxShadow(color: Colors.grey, offset: Offset(0, 1))]),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 240,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg"),
+                                        fit: BoxFit.cover)),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 16,
+                                      child: ValueListenableBuilder<CourseLeftTime>(
+                                        valueListenable: courseLeftTime,
+                                        builder: (context, value, child) {
+                                          return Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 15,
+                                                backgroundColor: Colors.white,
+                                                foregroundColor: Colors.black,
+                                                child: Text(value.hour! < 10 ? "0${value.hour}" : "${value.hour}"),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                child: Text(
+                                                  ":",
+                                                  style: TextStyle(color: Colors.white),
+                                                ),
+                                              ),
+                                              CircleAvatar(
+                                                radius: 15,
+                                                backgroundColor: Colors.white,
+                                                foregroundColor: Colors.black,
+                                                child: Text("${value.minute}"),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                child: Text(
+                                                  ":",
+                                                  style: TextStyle(color: Colors.white),
+                                                ),
+                                              ),
+                                              CircleAvatar(
+                                                radius: 15,
+                                                backgroundColor: Colors.white,
+                                                foregroundColor: Colors.black,
+                                                child: Text(
+                                                  "${value.second}",
+                                                ),
+                                              ),
+                                            ],
+                                          );
+                                        },
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 15,
+                                              backgroundColor: Colors.white,
+                                              foregroundColor: Colors.black,
+                                              child: Text("08"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                                              child: Text(
+                                                ":",
+                                                style: TextStyle(color: Colors.white),
+                                              ),
+                                            ),
+                                            CircleAvatar(
+                                              radius: 15,
+                                              backgroundColor: Colors.white,
+                                              foregroundColor: Colors.black,
+                                              child: Text("32"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                                              child: Text(
+                                                ":",
+                                                style: TextStyle(color: Colors.white),
+                                              ),
+                                            ),
+                                            CircleAvatar(
+                                              radius: 15,
+                                              backgroundColor: Colors.white,
+                                              foregroundColor: Colors.black,
+                                              child: Text(
+                                                "10",
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        CircleAvatar(
-                                          radius: 15,
-                                          backgroundColor: Colors.white,
-                                          foregroundColor: Colors.black,
-                                          child: Text(value.hour! < 10 ? "0${value.hour}" : "${value.hour}"),
+                                        Text(
+                                          "4.0",
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                                          child: Text(
-                                            ":",
-                                            style: TextStyle(color: Colors.white),
-                                          ),
-                                        ),
-                                        CircleAvatar(
-                                          radius: 15,
-                                          backgroundColor: Colors.white,
-                                          foregroundColor: Colors.black,
-                                          child: Text("${value.minute}"),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                                          child: Text(
-                                            ":",
-                                            style: TextStyle(color: Colors.white),
-                                          ),
-                                        ),
-                                        CircleAvatar(
-                                          radius: 15,
-                                          backgroundColor: Colors.white,
-                                          foregroundColor: Colors.black,
-                                          child: Text(
-                                            "${value.second}",
-                                          ),
+                                        Icon(
+                                          Icons.star,
+                                          color: Colors.orangeAccent,
+                                          size: 14,
                                         ),
                                       ],
-                                    );
-                                  },
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Science and Technology",
+                                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
+                                  Row(
                                     children: [
                                       CircleAvatar(
-                                        radius: 15,
-                                        backgroundColor: Colors.white,
-                                        foregroundColor: Colors.black,
-                                        child: Text("08"),
+                                        radius: 16,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: Text(
-                                          ":",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
+                                      SizedBox(
+                                        width: 8,
                                       ),
-                                      CircleAvatar(
-                                        radius: 15,
-                                        backgroundColor: Colors.white,
-                                        foregroundColor: Colors.black,
-                                        child: Text("32"),
+                                      Text(
+                                        "Currently Bid",
+                                        style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: Text(
-                                          ":",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
+                                      SizedBox(
+                                        width: 3,
                                       ),
-                                      CircleAvatar(
-                                        radius: 15,
-                                        backgroundColor: Colors.white,
-                                        foregroundColor: Colors.black,
-                                        child: Text(
-                                          "10",
-                                        ),
-                                      ),
+                                      Text(
+                                        "5.4 ETH",
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                      )
                                     ],
                                   ),
-                                ),
-                              )
-                            ],
-                          ),
+                                  Divider(
+                                    height: 24,
+                                  ),
+                                  Row(
+                                    children: [
+                                      SizedBox(
+                                        height: 48,
+                                        width: 48,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                                child: Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.black,
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(color: Colors.red),
+                                                  image: DecorationImage(
+                                                      image: NetworkImage(
+                                                        "https://cdn.pixabay.com/photo/2021/03/05/21/43/lizard-6072391_960_720.jpg",
+                                                      ),
+                                                      fit: BoxFit.cover)),
+                                            )),
+                                            Positioned(
+                                                right: 0,
+                                                top: 0,
+                                                child: CircleAvatar(
+                                                  radius: 8,
+                                                  child: Icon(
+                                                    Icons.done,
+                                                    size: 12,
+                                                  ),
+                                                  foregroundColor: Colors.white,
+                                                  backgroundColor: Colors.green,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Course Instructor",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Dr, Hasan Rahman",
+                                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                            ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       Padding(
@@ -205,80 +327,17 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    "4.0",
-                                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                                  ),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.orangeAccent,
-                                    size: 14,
-                                  ),
-                                ],
-                              ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Text("About Course"),
                             ),
                             Text(
-                              "Science and Technology",
-                              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                            ),
-                            Row(
-                              children: [
-                                CircleAvatar(
-                                  radius: 16,
-                                ),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Text(
-                                  "Currently Bid",
-                                  style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
-                                ),
-                                SizedBox(
-                                  width: 3,
-                                ),
-                                Text(
-                                  "5.4 ETH",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                                )
-                              ],
-                            ),
-                            Divider(),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 48,
-                                  width: 48,
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                          child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.red),
-                                        ),
-                                      )),
-                                      Positioned(
-                                          child: CircleAvatar(
-                                        radius: 4,
-                                        child: Icon(Icons.done),
-                                        foregroundColor: Colors.white,
-                                        backgroundColor: Colors.green,
-                                      )),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            )
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                    " Ut enim ad minim veniam, quis nostrud exercitation"),
                           ],
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ),
