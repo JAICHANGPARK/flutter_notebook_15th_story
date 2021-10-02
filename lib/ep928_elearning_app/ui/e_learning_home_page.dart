@@ -232,39 +232,53 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 CircleAvatar(
                                   radius: 16,
                                 ),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text(
                                   "Currently Bid",
                                   style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
                                 ),
-                                SizedBox(width: 3,),
+                                SizedBox(
+                                  width: 3,
+                                ),
                                 Text(
                                   "5.4 ETH",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 )
                               ],
                             ),
                             Divider(),
                             Row(
                               children: [
-                                SizedBox(height: 48,width: 48,
-                                child: Stack(
-                                  children: [
-                                    Positioned(child: CircleAvatar(child: Icon(Icons.done),
-                                    foregroundColor: Colors.white,
-                                    backgroundColor: Colors.green,))
-                                  ],
-                                ),)
+                                SizedBox(
+                                  height: 48,
+                                  width: 48,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                          child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          shape: BoxShape.circle,
+                                          border: Border.all(color: Colors.red),
+                                        ),
+                                      )),
+                                      Positioned(
+                                          child: CircleAvatar(
+                                        radius: 4,
+                                        child: Icon(Icons.done),
+                                        foregroundColor: Colors.white,
+                                        backgroundColor: Colors.green,
+                                      )),
+                                    ],
+                                  ),
+                                )
                               ],
                             )
                           ],
                         ),
                       ),
-
-
                     ],
                   ),
                 ),
