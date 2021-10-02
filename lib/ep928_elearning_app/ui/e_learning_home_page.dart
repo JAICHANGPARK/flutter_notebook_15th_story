@@ -202,32 +202,61 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                "4.0",
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    "4.0",
+                                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 14,
+                                  ),
+                                ],
                               ),
-                              Icon(
-                                Icons.star,
-                                color: Colors.orangeAccent,
-                                size: 14,
-                              ),
-                            ],
-                          ),
+                            ),
+                            Text(
+                              "Science and Technology",
+                              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                            ),
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 16,
+                                ),
+                                SizedBox(width: 8,),
+                                Text(
+                                  "Currently Bid",
+                                  style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
+                                ),
+                                SizedBox(width: 3,),
+                                Text(
+                                  "5.4 ETH",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                  ),
+                                )
+                              ],
+                            ),
+                            Divider(),
+                            Row(
+                              children: [
+
+                              ],
+                            )
+                          ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          "Science and Technology",
-                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                        ),
-                      ),
+
+
                     ],
                   ),
                 ),
