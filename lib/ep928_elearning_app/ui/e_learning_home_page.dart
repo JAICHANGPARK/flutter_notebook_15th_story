@@ -329,12 +329,21 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                           children: [
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 8),
-                              child: Text("About Course"),
+                              child: Text(
+                                "About Course",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
                             ),
                             Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                                    " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                    " Ut enim ad minim veniam, quis nostrud exercitation"),
+                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                              " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                              " Ut enim ad minim veniam, quis nostrud exercitation",
+                              style: TextStyle(
+                                fontSize: 12,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
                       )
