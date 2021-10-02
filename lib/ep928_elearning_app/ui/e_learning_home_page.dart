@@ -2,7 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+class CourseLeftTime {
+  int? hour;
+  int? minute;
+  int? second;
 
+  CourseLeftTime(this.hour, this.minute, this.second);
+}
 
 class ELearningHomePage extends StatefulWidget {
   const ELearningHomePage({Key? key}) : super(key: key);
@@ -17,6 +23,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
   int hour = 0;
   int minute = 0;
   int second = 0;
+  ValueNotifier<CourseLeftTime> courseLeftTime = ValueNotifier(CourseLeftTime(0, 0, 0));
 
   /// 1 second =  1
   /// 1 minute = 60 s
@@ -33,6 +40,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       second = leftTime % 60;
       minute = minute % 60;
       print("2: hour: $hour, minute : $minute, second: $second");
+
       leftTime--;
     });
   }
