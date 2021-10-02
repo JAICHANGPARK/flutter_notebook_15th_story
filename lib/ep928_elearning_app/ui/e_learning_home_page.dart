@@ -112,44 +112,88 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 left: 0,
                                 right: 0,
                                 bottom: 16,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 15,
-                                      backgroundColor: Colors.white,
-                                      foregroundColor: Colors.black,
-                                      child: Text("08"),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                                      child: Text(
-                                        ":",
-                                        style: TextStyle(color: Colors.white),
+                                child: ValueListenableBuilder<CourseLeftTime>(
+                                  valueListenable: courseLeftTime,
+                                  builder: (context, value, child){
+                                    return  Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 15,
+                                          backgroundColor: Colors.white,
+                                          foregroundColor: Colors.black,
+                                          child: Text("${value.hour}"),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                                          child: Text(
+                                            ":",
+                                            style: TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                        CircleAvatar(
+                                          radius: 15,
+                                          backgroundColor: Colors.white,
+                                          foregroundColor: Colors.black,
+                                          child: Text("${value.minute}"),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                                          child: Text(
+                                            ":",
+                                            style: TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                        CircleAvatar(
+                                          radius: 15,
+                                          backgroundColor: Colors.white,
+                                          foregroundColor: Colors.black,
+                                          child: Text(
+                                            "${value.second}",
+                                          ),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 15,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Text("08"),
                                       ),
-                                    ),
-                                    CircleAvatar(
-                                      radius: 15,
-                                      backgroundColor: Colors.white,
-                                      foregroundColor: Colors.black,
-                                      child: Text("32"),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                                      child: Text(
-                                        ":",
-                                        style: TextStyle(color: Colors.white),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Text(
+                                          ":",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
                                       ),
-                                    ),
-                                    CircleAvatar(
-                                      radius: 15,
-                                      backgroundColor: Colors.white,
-                                      foregroundColor: Colors.black,
-                                      child: Text(
-                                        "10",
+                                      CircleAvatar(
+                                        radius: 15,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Text("32"),
                                       ),
-                                    ),
-                                  ],
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Text(
+                                          ":",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                        radius: 15,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Text(
+                                          "10",
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               )
                             ],
