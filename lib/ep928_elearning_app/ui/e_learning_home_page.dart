@@ -8,6 +8,14 @@ class ELearningHomePage extends StatefulWidget {
 }
 
 class _ELearningHomePageState extends State<ELearningHomePage> {
+  Timer? courseTimer;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
