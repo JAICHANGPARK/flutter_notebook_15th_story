@@ -40,7 +40,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
       second = leftTime % 60;
       minute = minute % 60;
       print("2: hour: $hour, minute : $minute, second: $second");
-      courseLeftTime.value..hour = hour..minute = minute..second=second;
+      courseLeftTime.value = CourseLeftTime(hour, minute, second);
       leftTime--;
     });
   }
