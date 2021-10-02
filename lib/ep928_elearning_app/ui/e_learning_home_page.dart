@@ -114,15 +114,15 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                 bottom: 16,
                                 child: ValueListenableBuilder<CourseLeftTime>(
                                   valueListenable: courseLeftTime,
-                                  builder: (context, value, child){
-                                    return  Row(
+                                  builder: (context, value, child) {
+                                    return Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         CircleAvatar(
                                           radius: 15,
                                           backgroundColor: Colors.white,
                                           foregroundColor: Colors.black,
-                                          child: Text("${value.hour}"),
+                                          child: Text(value.hour! < 10 ? "0${value.hour}" : "${value.hour}"),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.symmetric(horizontal: 8),
