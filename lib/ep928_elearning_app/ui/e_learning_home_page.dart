@@ -1,4 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+
+
 
 class ELearningHomePage extends StatefulWidget {
   const ELearningHomePage({Key? key}) : super(key: key);
@@ -9,13 +13,37 @@ class ELearningHomePage extends StatefulWidget {
 
 class _ELearningHomePageState extends State<ELearningHomePage> {
   Timer? courseTimer;
+  int leftTime = 3624;
+  int hour = 0;
+  int minute = 0;
+  int second = 0;
+
+  /// 1 second =  1
+  /// 1 minute = 60 s
+  /// 60 minutes = 1hours = 60 * 60 s = 3600
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
 
-    
+    courseTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      minute = leftTime ~/ 60;
+      hour = minute ~/ 60;
+      print("1: minute : $minute, hour: $hour");
+      second = leftTime % 60;
+      minute = minute % 60;
+      print("2: hour: $hour, minute : $minute, second: $second");
+      leftTime--;
+    });
   }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    courseTimer?.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,8 +65,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Container(
                           height: 38,
                           width: 38,
-                          decoration: BoxDecoration(
-                              color: Colors.white, shape: BoxShape.circle),
+                          decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                           padding: EdgeInsets.all(4),
                           child: Center(child: Icon(Icons.keyboard_arrow_left)),
                         ),
@@ -48,8 +75,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         child: Center(
                             child: Text(
                       "Course Detail",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                     ))),
                     Expanded(child: Container()),
                   ],
@@ -70,8 +96,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(8),
                               image: DecorationImage(
-                                  image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg"),
+                                  image: NetworkImage("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg"),
                                   fit: BoxFit.cover)),
                           child: Stack(
                             children: [
@@ -89,8 +114,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                       child: Text("08"),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 8),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
                                       child: Text(
                                         ":",
                                         style: TextStyle(color: Colors.white),
@@ -103,8 +127,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                                       child: Text("32"),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 8),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
                                       child: Text(
                                         ":",
                                         style: TextStyle(color: Colors.white),
@@ -128,18 +151,14 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          decoration: BoxDecoration(
-                              color: Colors.orange[50],
-                              borderRadius: BorderRadius.circular(4)),
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Text(
                                 "4.0",
-                                style: TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                               ),
                               Icon(
                                 Icons.star,
@@ -154,8 +173,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Science and Technology",
-                          style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ],
@@ -171,26 +189,20 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                            color: Colors.red[300],
-                            borderRadius: BorderRadius.circular(16)),
+                        decoration: BoxDecoration(color: Colors.red[300], borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               "13",
-                              style: TextStyle(
-                                  fontSize: 24,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               height: 8,
                             ),
                             Text(
                               "Chapters",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 12),
+                              style: TextStyle(color: Colors.white, fontSize: 12),
                             )
                           ],
                         ),
@@ -202,24 +214,18 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       child: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(color: Colors.grey[300]!),
-                            borderRadius: BorderRadius.circular(16)),
+                            color: Colors.white, border: Border.all(color: Colors.grey[300]!), borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text.rich(TextSpan(children: [
                               TextSpan(
                                 text: "04",
-                                style: TextStyle(
-                                    fontSize: 24,
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 24, color: Colors.red, fontWeight: FontWeight.bold),
                               ),
                               TextSpan(
                                 text: "th",
-                                style:
-                                    TextStyle(fontSize: 12, color: Colors.grey),
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
                               )
                             ])),
                             SizedBox(
@@ -227,8 +233,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             ),
                             Text(
                               "Semester",
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 12),
+                              style: TextStyle(color: Colors.black, fontSize: 12),
                             )
                           ],
                         ),
@@ -240,24 +245,18 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       child: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(color: Colors.grey[300]!),
-                            borderRadius: BorderRadius.circular(16)),
+                            color: Colors.white, border: Border.all(color: Colors.grey[300]!), borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text.rich(TextSpan(children: [
                               TextSpan(
                                 text: "56",
-                                style: TextStyle(
-                                    fontSize: 24,
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 24, color: Colors.red, fontWeight: FontWeight.bold),
                               ),
                               TextSpan(
                                 text: "hrs",
-                                style:
-                                    TextStyle(fontSize: 12, color: Colors.grey),
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
                               )
                             ])),
                             SizedBox(
@@ -265,8 +264,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             ),
                             Text(
                               "Duration",
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 12),
+                              style: TextStyle(color: Colors.black, fontSize: 12),
                             )
                           ],
                         ),
