@@ -203,6 +203,7 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(4)),
@@ -249,7 +250,14 @@ class _ELearningHomePageState extends State<ELearningHomePage> {
                             Divider(),
                             Row(
                               children: [
-
+                                SizedBox(height: 48,width: 48,
+                                child: Stack(
+                                  children: [
+                                    Positioned(child: CircleAvatar(child: Icon(Icons.done),
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.green,))
+                                  ],
+                                ),)
                               ],
                             )
                           ],
