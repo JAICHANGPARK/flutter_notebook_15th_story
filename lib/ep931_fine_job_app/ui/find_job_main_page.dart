@@ -12,6 +12,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Stack(
           children: [
@@ -76,6 +77,13 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                             ],
                           ),
                         ),
+                      ),
+                    ),
+                    Container(
+                      height: 140,
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(6)
                       ),
                     )
                   ],
