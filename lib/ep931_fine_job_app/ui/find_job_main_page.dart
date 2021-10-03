@@ -81,19 +81,21 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                     ),
                     Container(
                       height: 140,
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(6)
-                      ),
+                      decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(6)),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 24),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Jobs for you"),
-                          Text("See all(15)")
+                          Text(
+                            "Jobs for you",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
+                          Text(
+                            "See all(15)",
+                            style: TextStyle(fontWeight: FontWeight.w300),
+                          )
                         ],
                       ),
                     )
