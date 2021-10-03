@@ -23,22 +23,22 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                     Row(
                       children: [
                         SizedBox(
-                          height: 20,
+                          height: 16,
                           width: 38,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
-                                height: 3,
+                                height: 2,
                                 color: Colors.black,
                               ),
                               Container(
-                                height: 3,
+                                height: 2,
                                 color: Colors.black,
                               ),
                               Container(
-                                height: 3,
+                                height: 2,
                                 width: 16,
                                 color: Colors.black,
                               )
