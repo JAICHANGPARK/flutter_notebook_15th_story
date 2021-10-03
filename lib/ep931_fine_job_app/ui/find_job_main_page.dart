@@ -57,7 +57,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         height: 48,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(24)
                           ),
                           child: Row(
