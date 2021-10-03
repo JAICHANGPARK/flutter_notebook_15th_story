@@ -16,7 +16,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
           children: [
             Positioned(
               child: PhysicalModel(
-                elevation: 3,
+                elevation: 5,
                 color: Colors.black.withOpacity(0.4),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
@@ -30,6 +30,21 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),
                       )),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Icon(Icons.home),
+                            Container(
+                              height: 6,
+                              child: Colors.green,
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               left: 0,
