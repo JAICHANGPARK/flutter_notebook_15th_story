@@ -98,7 +98,12 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    Expanded(child: SingleChildScrollView(child: Column(
+                      children: [
+                        Placeholder()
+                      ],
+                    ),))
                   ],
                 ),
               ),
