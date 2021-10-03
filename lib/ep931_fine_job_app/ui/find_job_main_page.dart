@@ -44,8 +44,29 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                               )
                             ],
                           ),
+                        ),
+                        Spacer(),
+                        CircleAvatar(
+                          radius: 16,
                         )
                       ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: SizedBox(
+                        height: 48,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(24)
+                          ),
+                          child: Row(
+                            children: [
+
+                            ],
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
