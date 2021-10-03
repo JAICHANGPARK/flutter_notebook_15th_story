@@ -35,10 +35,43 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                       Expanded(
                         child: Column(
                           children: [
-                            Icon(Icons.home),
+                            Icon(Icons.home, color: Colors.green,),
                             Container(
                               height: 6,
                               color: Colors.green,
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Icon(Icons.home, color: Colors.green,),
+                            Container(
+                              height: 6,
+                              color: Colors.green,
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Icon(Icons.notifications, color: Colors.grey,),
+                            Container(
+                              height: 6,
+                              color: Colors.transparent,
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Icon(Icons.person, color: Colors.grey,),
+                            Container(
+                              height: 6,
+                              color: Colors.transparent,
                             )
                           ],
                         ),
