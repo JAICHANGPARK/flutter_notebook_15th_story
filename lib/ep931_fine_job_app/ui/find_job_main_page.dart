@@ -41,7 +41,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.home, color: Colors.green,),
-                            SizedBox(height: 16,),
+                            SizedBox(height: 8,),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
@@ -56,9 +56,13 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         child: Column(
                           children: [
                             Icon(Icons.favorite, color: Colors.grey,),
-                            Container(
-                              height: 6,
-                              color: Colors.transparent,
+                            SizedBox(height: 8,),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Container(
+                                height: 6,
+                                color: Colors.transparent,
+                              ),
                             )
                           ],
                         ),
