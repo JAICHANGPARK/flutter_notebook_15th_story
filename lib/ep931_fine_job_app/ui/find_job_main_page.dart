@@ -38,7 +38,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                             Icon(Icons.home),
                             Container(
                               height: 6,
-                              child: Colors.green,
+                              color: Colors.green,
                             )
                           ],
                         ),
