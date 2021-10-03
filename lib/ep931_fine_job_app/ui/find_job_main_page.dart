@@ -15,14 +15,22 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
         child: Stack(
           children: [
             Positioned(
-              child: Container(
-                height: 64,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(24),
-                      topRight: Radius.circular(24),
-                    )),
+              child: PhysicalModel(
+                elevation: 3,
+                color: Colors.black.withOpacity(0.4),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24),
+                ),
+                child: Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
+                      )),
+                ),
               ),
               left: 0,
               right: 0,
