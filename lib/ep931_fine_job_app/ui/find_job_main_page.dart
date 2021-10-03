@@ -56,13 +56,23 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                       child: SizedBox(
                         height: 48,
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(24)
-                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24)),
                           child: Row(
                             children: [
-
+                              Expanded(
+                                  child: TextField(
+                                decoration: InputDecoration(
+                                  icon: Icon(Icons.search),
+                                  border: InputBorder.none,
+                                  hintText: "Search job here...",
+                                ),
+                              )),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.filter_alt),
+                                color: Colors.grey,
+                              )
                             ],
                           ),
                         ),
