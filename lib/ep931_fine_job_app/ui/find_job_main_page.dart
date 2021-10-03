@@ -53,7 +53,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
+                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.favorite, color: Colors.grey,),
                             SizedBox(height: 8,),
@@ -68,7 +68,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
+                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.notifications, color: Colors.grey,),
                             Container(
@@ -79,7 +79,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
+                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.person, color: Colors.grey,),
                             Container(
