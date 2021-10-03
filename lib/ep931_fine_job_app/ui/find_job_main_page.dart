@@ -16,6 +16,46 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
         child: Stack(
           children: [
             Positioned(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 20,
+                          width: 38,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                height: 3,
+                                color: Colors.black,
+                              ),
+                              Container(
+                                height: 3,
+                                color: Colors.black,
+                              ),
+                              Container(
+                                height: 3,
+                                width: 16,
+                                color: Colors.black,
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              left: 0,
+              bottom: 0,
+              top: 0,
+              right: 0,
+            ),
+            Positioned(
               child: PhysicalModel(
                 elevation: 5,
                 color: Colors.black.withOpacity(0.4),
@@ -33,15 +73,19 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                       )),
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
-
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.home, color: Colors.green,),
-                            SizedBox(height: 8,),
+                            Icon(
+                              Icons.home,
+                              color: Colors.green,
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
@@ -53,10 +97,16 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.favorite, color: Colors.grey,),
-                            SizedBox(height: 8,),
+                            Icon(
+                              Icons.favorite,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
@@ -68,10 +118,16 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.notifications, color: Colors.grey,),
-                            SizedBox(height: 8,),
+                            Icon(
+                              Icons.notifications,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
@@ -83,10 +139,16 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column( mainAxisAlignment: MainAxisAlignment.center,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.person, color: Colors.grey,),
-                            SizedBox(height: 8,),
+                            Icon(
+                              Icons.person,
+                              color: Colors.grey,
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
