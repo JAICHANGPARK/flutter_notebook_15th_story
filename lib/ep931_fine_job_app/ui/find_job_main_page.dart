@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FindJobMainPage extends StatefulWidget {
@@ -30,15 +31,23 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),
                       )),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
+
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.home, color: Colors.green,),
-                            Container(
-                              height: 6,
-                              color: Colors.green,
+                            SizedBox(height: 16,),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Container(
+                                height: 4,
+                                color: Colors.green,
+                              ),
                             )
                           ],
                         ),
@@ -46,10 +55,10 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                       Expanded(
                         child: Column(
                           children: [
-                            Icon(Icons.home, color: Colors.green,),
+                            Icon(Icons.favorite, color: Colors.grey,),
                             Container(
                               height: 6,
-                              color: Colors.green,
+                              color: Colors.transparent,
                             )
                           ],
                         ),
