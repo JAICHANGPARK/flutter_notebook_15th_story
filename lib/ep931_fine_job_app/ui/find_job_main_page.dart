@@ -60,7 +60,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
-                                height: 6,
+                                height: 4,
                                 color: Colors.transparent,
                               ),
                             )
@@ -72,7 +72,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                           children: [
                             Icon(Icons.notifications, color: Colors.grey,),
                             Container(
-                              height: 6,
+                              height: 4,
                               color: Colors.transparent,
                             )
                           ],
@@ -83,7 +83,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                           children: [
                             Icon(Icons.person, color: Colors.grey,),
                             Container(
-                              height: 6,
+                              height: 4,
                               color: Colors.transparent,
                             )
                           ],
