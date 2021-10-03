@@ -85,6 +85,17 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         color: Colors.teal,
                         borderRadius: BorderRadius.circular(6)
                       ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Jobs for you"),
+                          Text("See all(15)")
+                        ],
+                      ),
                     )
                   ],
                 ),
