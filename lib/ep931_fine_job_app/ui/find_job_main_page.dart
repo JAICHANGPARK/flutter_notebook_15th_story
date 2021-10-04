@@ -107,15 +107,52 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                             .map((e) => Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Card(
-                                    child: Row(
-                                      children: [
-                                        Image.network(
-                                          "${e.img}",
-                                          height: 64,
-                                          width: 64,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ],
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Image.network(
+                                            "${e.img}",
+                                            height: 52,
+                                            width: 52,
+                                            fit: BoxFit.cover,
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("${e.title}"),
+                                                    IconButton(
+                                                      onPressed: () {},
+                                                      icon: e.isFavorite ?? false ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
+                                                      color: e.isFavorite ?? false ? Colors.green : Colors.grey,
+                                                    )
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(Icons.location_on),
+                                                    Text("${e.location}"),
+                                                    Text("${e.uploadDate}"),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.indigo
+                                                      ),
+                                                      child: Text(e.timeType ?? "unknown"),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ))
