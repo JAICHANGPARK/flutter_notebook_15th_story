@@ -11,7 +11,7 @@ class JobHomeWidget extends StatefulWidget {
 class _JobHomeWidgetState extends State<JobHomeWidget> {
   @override
   Widget build(BuildContext context) {
-    return    Padding(
+    return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
@@ -57,12 +57,12 @@ class _JobHomeWidgetState extends State<JobHomeWidget> {
                   children: [
                     Expanded(
                         child: TextField(
-                          decoration: InputDecoration(
-                            icon: Icon(Icons.search),
-                            border: InputBorder.none,
-                            hintText: "Search job here...",
-                          ),
-                        )),
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        border: InputBorder.none,
+                        hintText: "Search job here...",
+                      ),
+                    )),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.filter_alt),
@@ -119,97 +119,94 @@ class _JobHomeWidgetState extends State<JobHomeWidget> {
           ),
           Expanded(
               child: SingleChildScrollView(
-                child: Column(
-                  children: jobItems
-                      .map((e) => Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 4),
-                    child: SizedBox(
-                      width: double.infinity,
-                      child: Card(
-                        elevation: 4,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 8),
-                                child: Image.network(
-                                  "${e.img}",
-                                  height: 52,
-                                  width: 52,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            "${e.title}",
-                                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                                          ),
-                                          IconButton(
-                                            iconSize: 16,
-                                            onPressed: () {},
-                                            icon: e.isFavorite ?? false
-                                                ? Icon(Icons.favorite)
-                                                : Icon(Icons.favorite_border),
-                                            color: e.isFavorite ?? false ? Colors.green : Colors.grey,
-                                          )
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 12),
-                                        child: Row(
-                                          children: [
-                                            Icon(
-                                              Icons.location_on,
-                                              size: 14,
-                                            ),
-                                            Text(
-                                              "${e.location}",
-                                              style: TextStyle(fontSize: 13),
-                                            ),
-                                            Spacer(),
-                                            Text(
-                                              "${e.uploadDate}",
-                                              style: TextStyle(fontSize: 11, color: Colors.grey),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Row(
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.indigo, borderRadius: BorderRadius.circular(24)),
-                                            padding: EdgeInsets.all(8),
-                                            child: Text(
-                                              e.timeType ?? "unknown",
-                                              style: TextStyle(color: Colors.white),
-                                            ),
-                                          )
-                                        ],
-                                      )
-                                    ],
+            child: Column(
+              children: jobItems
+                  .map((e) => Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Card(
+                            elevation: 4,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: Image.network(
+                                      "${e.img}",
+                                      height: 52,
+                                      width: 52,
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                ),
-                              )
-                            ],
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "${e.title}",
+                                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                              ),
+                                              IconButton(
+                                                iconSize: 16,
+                                                onPressed: () {},
+                                                icon: e.isFavorite ?? false ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
+                                                color: e.isFavorite ?? false ? Colors.green : Colors.grey,
+                                              )
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 12),
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.location_on,
+                                                  size: 14,
+                                                ),
+                                                Text(
+                                                  "${e.location}",
+                                                  style: TextStyle(fontSize: 13),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  "${e.uploadDate}",
+                                                  style: TextStyle(fontSize: 11, color: Colors.grey),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Row(
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(24)),
+                                                padding: EdgeInsets.all(8),
+                                                child: Text(
+                                                  e.timeType ?? "unknown",
+                                                  style: TextStyle(color: Colors.white),
+                                                ),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                  ))
-                      .toList(),
-                ),
-              ))
+                      ))
+                  .toList(),
+            ),
+          ))
         ],
       ),
     );
