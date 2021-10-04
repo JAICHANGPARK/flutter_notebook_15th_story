@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep931_fine_job_app/mock/jobs.dart';
 
+import 'components/job_favorite_widget.dart';
 import 'components/job_home_widget.dart';
 
 class FindJobMainPage extends StatefulWidget {
@@ -26,6 +27,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                 index: _pageIndex,
                 children: [
                   JobHomeWidget(),
+                  JobFavoriteWidget(),
                 ],
               ),
               left: 0,
@@ -54,24 +56,31 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.home,
-                              color: Colors.green,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Container(
-                                height: 4,
-                                color: Colors.green,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _pageIndex = 0;
+                            });
+                          },
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.home,
+                                color: _pageIndex == 0 ? Colors.green : Colors.grey,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Container(
+                                  height: 4,
+                                  color: _pageIndex == 0 ? Colors.green : Colors.transparent,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
