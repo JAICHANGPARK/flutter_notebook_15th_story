@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep931_fine_job_app/mock/jobs.dart';
 
 class JobHomeWidget extends StatefulWidget {
   const JobHomeWidget({Key? key}) : super(key: key);
