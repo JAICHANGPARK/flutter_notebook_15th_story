@@ -105,11 +105,13 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                       child: Column(
                         children: jobItems
                             .map((e) => Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
                                   child: Card(
+                                    elevation: 4,
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Image.network(
                                             "${e.img}",
@@ -120,6 +122,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Row(
                                                   children: [
