@@ -28,6 +28,16 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                 children: [
                   JobHomeWidget(),
                   JobFavoriteWidget(),
+                  Container(
+                    child: Center(
+                      child: Text("noti page"),
+                    ),
+                  ),
+                  Container(
+                    child: Center(
+                      child: Text("account page"),
+                    ),
+                  )
                 ],
               ),
               left: 0,
@@ -97,9 +107,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                                 Icons.favorite,
                                 color: _pageIndex == 1 ? Colors.green : Colors.grey,
                               ),
-                              SizedBox(
-                                height: 8,
-                              ),
+                              SizedBox(height: 8),
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 16),
                                 child: Container(
@@ -112,45 +120,59 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.notifications,
-                              color: Colors.grey,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Container(
-                                height: 4,
-                                color: Colors.transparent,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _pageIndex = 2;
+                            });
+                          },
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.notifications,
+                                color: _pageIndex == 2 ? Colors.green : Colors.grey,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Container(
+                                  height: 4,
+                                  color: _pageIndex == 2 ? Colors.green : Colors.transparent,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.person,
-                              color: Colors.grey,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Container(
-                                height: 4,
-                                color: Colors.transparent,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _pageIndex = 3;
+                            });
+                          },
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.person,
+                                color: _pageIndex == 3 ? Colors.green : Colors.grey,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Container(
+                                  height: 4,
+                                  color: _pageIndex == 3 ? Colors.green : Colors.transparent,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
