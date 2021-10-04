@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep931_fine_job_app/mock/jobs.dart';
 
+import 'components/job_home_widget.dart';
+
 class FindJobMainPage extends StatefulWidget {
   const FindJobMainPage({Key? key}) : super(key: key);
 
@@ -23,8 +25,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
               child: IndexedStack(
                 index: _pageIndex,
                 children: [
-
-
+                  JobHomeWidget(),
                 ],
               ),
               left: 0,
