@@ -84,24 +84,31 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.favorite,
-                              color: Colors.grey,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Container(
-                                height: 4,
-                                color: Colors.transparent,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _pageIndex = 1;
+                            });
+                          },
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.favorite,
+                                color: _pageIndex == 1 ? Colors.green : Colors.grey,
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Container(
+                                  height: 4,
+                                  color: _pageIndex == 1 ? Colors.green : Colors.transparent,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
