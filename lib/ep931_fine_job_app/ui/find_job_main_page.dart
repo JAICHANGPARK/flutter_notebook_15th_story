@@ -113,21 +113,29 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                                       child: Row(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Image.network(
-                                            "${e.img}",
-                                            height: 52,
-                                            width: 52,
-                                            fit: BoxFit.cover,
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 8),
+                                            child: Image.network(
+                                              "${e.img}",
+                                              height: 52,
+                                              width: 52,
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.symmetric(horizontal: 16),
                                             child: Column(
-                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                   children: [
-                                                    Text("${e.title}"),
+                                                    Text(
+                                                      "${e.title}",
+                                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                                    ),
                                                     IconButton(
+                                                      iconSize: 16,
                                                       onPressed: () {},
                                                       icon: e.isFavorite ?? false ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
                                                       color: e.isFavorite ?? false ? Colors.green : Colors.grey,
@@ -144,9 +152,7 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                                                 Row(
                                                   children: [
                                                     Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.indigo
-                                                      ),
+                                                      decoration: BoxDecoration(color: Colors.indigo),
                                                       child: Text(e.timeType ?? "unknown"),
                                                     )
                                                   ],
