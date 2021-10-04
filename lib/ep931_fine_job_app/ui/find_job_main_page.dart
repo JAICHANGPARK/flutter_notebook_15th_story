@@ -82,7 +82,20 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                     ),
                     Container(
                       height: 140,
-                      decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(6)),
+                      width: double.infinity,
+                      decoration: BoxDecoration(color: Colors.teal,
+
+                          borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Looking for Job Open Big\nOpportunity",style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white
+                          ),)
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 24),
