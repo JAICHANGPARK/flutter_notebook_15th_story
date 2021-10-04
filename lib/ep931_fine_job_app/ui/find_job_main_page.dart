@@ -103,16 +103,23 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                     Expanded(
                         child: SingleChildScrollView(
                       child: Column(
-                        children: jobItems.map((e) => Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Card(
-                            child: Row(
-                              children: [
-
-                              ],
-                            ),
-                          ),
-                        )).toList(),
+                        children: jobItems
+                            .map((e) => Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Card(
+                                    child: Row(
+                                      children: [
+                                        Image.network(
+                                          "${e.img}",
+                                          height: 64,
+                                          width: 64,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ))
+                            .toList(),
                       ),
                     ))
                   ],
