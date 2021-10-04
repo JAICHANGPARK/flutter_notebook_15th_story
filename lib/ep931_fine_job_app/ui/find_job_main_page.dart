@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep931_fine_job_app/mock/jobs.dart';
 
 class FindJobMainPage extends StatefulWidget {
   const FindJobMainPage({Key? key}) : super(key: key);
@@ -99,11 +100,21 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         ],
                       ),
                     ),
-                    Expanded(child: SingleChildScrollView(child: Column(
-                      children: [
-                        Placeholder()
-                      ],
-                    ),))
+                    Expanded(
+                        child: SingleChildScrollView(
+                      child: Column(
+                        children: jobItems.map((e) => Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Card(
+                            child: Row(
+                              children: [
+
+                              ],
+                            ),
+                          ),
+                        )).toList(),
+                      ),
+                    ))
                   ],
                 ),
               ),
