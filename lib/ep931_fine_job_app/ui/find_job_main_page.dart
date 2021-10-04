@@ -106,61 +106,86 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                         children: jobItems
                             .map((e) => Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 4),
-                                  child: Card(
-                                    elevation: 4,
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(top: 8),
-                                            child: Image.network(
-                                              "${e.img}",
-                                              height: 52,
-                                              width: 52,
-                                              fit: BoxFit.cover,
+                                  child: SizedBox(
+                                    width: double.infinity,
+                                    child: Card(
+                                      elevation: 4,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(top: 8),
+                                              child: Image.network(
+                                                "${e.img}",
+                                                height: 52,
+                                                width: 52,
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 16),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            Expanded(
+                                              child: Padding(
+                                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text(
-                                                      "${e.title}",
-                                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                                    Row(
+                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                      children: [
+                                                        Text(
+                                                          "${e.title}",
+                                                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                                        ),
+                                                        IconButton(
+                                                          iconSize: 16,
+                                                          onPressed: () {},
+                                                          icon: e.isFavorite ?? false ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
+                                                          color: e.isFavorite ?? false ? Colors.green : Colors.grey,
+                                                        )
+                                                      ],
                                                     ),
-                                                    IconButton(
-                                                      iconSize: 16,
-                                                      onPressed: () {},
-                                                      icon: e.isFavorite ?? false ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
-                                                      color: e.isFavorite ?? false ? Colors.green : Colors.grey,
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12),
+                                                      child: Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.location_on,
+                                                            size: 14,
+                                                          ),
+                                                          Text(
+                                                            "${e.location}",
+                                                            style: TextStyle(fontSize: 13),
+                                                          ),
+                                                          Spacer(),
+                                                          Text(
+                                                            "${e.uploadDate}",
+                                                            style: TextStyle(fontSize: 11, color: Colors.grey),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          decoration: BoxDecoration(color: Colors.indigo,
+                                                          borderRadius: BorderRadius.circular(24)
+                                                          ),
+                                                          padding: EdgeInsets.all(8),
+                                                          
+                                                          child: Text(e.timeType ?? "unknown",style: TextStyle(
+                                                            color: Colors.white
+                                                          ),),
+                                                        )
+                                                      ],
                                                     )
                                                   ],
                                                 ),
-                                                Row(
-                                                  children: [
-                                                    Icon(Icons.location_on),
-                                                    Text("${e.location}"),
-                                                    Text("${e.uploadDate}"),
-                                                  ],
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Container(
-                                                      decoration: BoxDecoration(color: Colors.indigo),
-                                                      child: Text(e.timeType ?? "unknown"),
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          )
-                                        ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
