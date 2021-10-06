@@ -57,6 +57,11 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                       topLeft: Radius.circular(24),
                     ),
                   ),
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
                 )),
           ],
         ),
