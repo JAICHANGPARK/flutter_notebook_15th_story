@@ -24,6 +24,7 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                 top: 0,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.share))
