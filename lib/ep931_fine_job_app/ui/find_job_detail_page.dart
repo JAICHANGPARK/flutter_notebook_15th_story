@@ -154,11 +154,24 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                       SizedBox(
                         height: 4,
                       ),
-                      Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: Colors.grey
-                      ),)
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                        style: TextStyle(fontSize: 13, color: Colors.grey),
+                      ),
+                      Spacer(),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        child: Center(
+                          child: Text(
+                            "APPLY NOW",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 )),
