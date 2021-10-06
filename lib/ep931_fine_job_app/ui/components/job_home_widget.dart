@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep931_fine_job_app/mock/jobs.dart';
+import 'package:flutter_notebook_15th_story/ep931_fine_job_app/ui/find_job_detail_page.dart';
 
 import 'job_component.dart';
 
@@ -127,8 +128,14 @@ class _JobHomeWidgetState extends State<JobHomeWidget> {
                         padding: const EdgeInsets.symmetric(vertical: 4),
                         child: SizedBox(
                             width: double.infinity,
-                            child: JobComponent(
-                              job: e,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => FindJobDetailPage(job: e)));
+                              },
+                              child: JobComponent(
+                                job: e,
+                              ),
                             )),
                       ))
                   .toList(),
