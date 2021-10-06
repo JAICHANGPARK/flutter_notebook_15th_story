@@ -28,15 +28,11 @@ class _FindJobMainPageState extends State<FindJobMainPage> {
                 children: [
                   JobHomeWidget(),
                   JobFavoriteWidget(),
-                  Container(
-                    child: Center(
-                      child: Text("noti page"),
-                    ),
+                  Center(
+                    child: Text("noti page"),
                   ),
-                  Container(
-                    child: Center(
-                      child: Text("account page"),
-                    ),
+                  Center(
+                    child: Text("account page"),
                   )
                 ],
               ),
