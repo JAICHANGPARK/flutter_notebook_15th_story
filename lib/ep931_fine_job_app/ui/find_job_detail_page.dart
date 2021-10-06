@@ -57,6 +57,7 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                       topLeft: Radius.circular(24),
                     ),
                   ),
+                  padding: EdgeInsets.only(left: 16, right: 16, top: 24, bottom: 24),
                   child: Column(
                     children: [
                       Row(
