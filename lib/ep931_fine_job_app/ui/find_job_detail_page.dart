@@ -22,13 +22,19 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                 right: 0,
                 bottom: MediaQuery.of(context).size.height / 2,
                 top: 0,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.share))
-                  ],
+                child: Container(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/07/29/00/08/photographer-865295_960_720.jpg"),
+                          fit: BoxFit.cover)),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                      IconButton(onPressed: () {}, icon: Icon(Icons.share))
+                    ],
+                  ),
                 )),
           ],
         ),
