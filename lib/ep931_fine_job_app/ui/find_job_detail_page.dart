@@ -36,6 +36,19 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                     ],
                   ),
                 )),
+            Positioned(
+                left: 0,
+                right: 0,
+                bottom: MediaQuery.of(context).size.height / 1.5,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(16),
+                      topLeft: Radius.circular(16),
+                    ),
+                  ),
+                )),
           ],
         ),
       ),
