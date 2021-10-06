@@ -73,11 +73,35 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 16,),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              size: 12,
+                            ),
+                            Text("Abohar, Punjab"),
+                          ],
+                        ),
+                      ),
                       Row(
                         children: [
-                          Icon(Icons.location_on,size: 12,),
-                          Text("Abohar, Punjab"),
+                          Expanded(
+                            child: Column(
+                              children: [Text("Type"), Text("Full time")],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              children: [Text("Type"), Text("Full time")],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              children: [Text("Salary"), Text("15,000")],
+                            ),
+                          )
                         ],
                       )
                     ],
