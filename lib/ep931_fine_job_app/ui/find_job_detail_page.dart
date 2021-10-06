@@ -59,6 +59,7 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                   ),
                   padding: EdgeInsets.only(left: 16, right: 16, top: 24, bottom: 24),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,23 +91,69 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Type"), Text("Full time")],
+                              children: [
+                                Text(
+                                  "Type",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Full time",
+                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                                )
+                              ],
                             ),
                           ),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Type"), Text("Full time")],
+                              children: [
+                                Text(
+                                  "Type",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Full time",
+                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                                )
+                              ],
                             ),
                           ),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Salary"), Text("15,000")],
+                              children: [
+                                Text(
+                                  "Salary",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "15,000",
+                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                                )
+                              ],
                             ),
                           )
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      Text(
+                        "Job description",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
                     ],
                   ),
                 )),
