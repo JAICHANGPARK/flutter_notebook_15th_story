@@ -31,15 +31,23 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-                      IconButton(onPressed: () {}, icon: Icon(Icons.share))
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.arrow_back),
+                        color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.share),
+                        color: Colors.white,
+                      )
                     ],
                   ),
                 )),
             Positioned(
                 left: 0,
                 right: 0,
-              bottom: 0,
+                bottom: 0,
                 top: MediaQuery.of(context).size.height / 3.2,
                 child: Container(
                   decoration: BoxDecoration(
