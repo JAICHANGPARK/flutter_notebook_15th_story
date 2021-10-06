@@ -73,9 +73,11 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                           ),
                         ],
                       ),
+                      SizedBox(height: 16,),
                       Row(
                         children: [
-                          
+                          Icon(Icons.location_on,size: 12,),
+                          Text("Abohar, Punjab"),
                         ],
                       )
                     ],
