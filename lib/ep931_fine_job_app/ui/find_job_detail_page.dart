@@ -89,16 +89,19 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                         children: [
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [Text("Type"), Text("Full time")],
                             ),
                           ),
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [Text("Type"), Text("Full time")],
                             ),
                           ),
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [Text("Salary"), Text("15,000")],
                             ),
                           )
