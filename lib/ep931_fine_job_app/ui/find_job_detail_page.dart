@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep931_fine_job_app/model/job.dart';
 
 
 class FindJobDetailPage extends StatefulWidget {
-  const FindJobDetailPage({Key? key}) : super(key: key);
+  Job job;
+   FindJobDetailPage({Key? key}) : super(key: key);
 
   @override
   _FindJobDetailPageState createState() => _FindJobDetailPageState();
