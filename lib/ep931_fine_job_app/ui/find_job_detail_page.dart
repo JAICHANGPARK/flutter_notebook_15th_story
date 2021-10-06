@@ -63,8 +63,19 @@ class _FindJobDetailPageState extends State<FindJobDetailPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Job relative heading"),
-                          Text("4 week ago"),
+                          Text(
+                            "Job relative heading",
+                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "4 week ago",
+                            style: TextStyle(fontSize: 12),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          
                         ],
                       )
                     ],
