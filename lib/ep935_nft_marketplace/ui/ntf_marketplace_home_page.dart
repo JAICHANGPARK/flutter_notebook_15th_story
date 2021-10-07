@@ -19,6 +19,15 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
           index: _pageIndex,
           children: [
             NtfMarketplaceExplorePage(),
+            Container(child: Center(
+              child: Text("Search"),
+            ),),
+            Container(child: Center(
+              child: Text("Favorite"),
+            ),),
+            Container(child: Center(
+              child: Text("Wallet"),
+            ),),
           ],
         ),
       ),
