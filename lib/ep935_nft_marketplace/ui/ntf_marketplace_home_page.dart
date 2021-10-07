@@ -38,7 +38,7 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.search),
+                    Icon(Icons.favorite_border),
                     Text("Search"),
                   ],
                 ),
@@ -47,8 +47,8 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.search),
-                    Text("Search"),
+                    Icon(Icons.account_balance_wallet_outlined),
+                    Text("Wallet"),
                   ],
                 ),
               )
