@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ntf_marketplace_explore_page.dart';
+
 class NftMarketplaceHomePage extends StatefulWidget {
   const NftMarketplaceHomePage({Key? key}) : super(key: key);
 
@@ -16,7 +18,7 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
         child: IndexedStack(
           index: _pageIndex,
           children: [
-
+            NtfMarketplaceExplorePage(),
           ],
         ),
       ),
