@@ -16,12 +16,41 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
           height: 64,
           child: Row(
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.explore),
-                  Text("Explore"),
-                ],
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.explore),
+                    Text("Explore"),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.search),
+                    Text("Search"),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.search),
+                    Text("Search"),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.search),
+                    Text("Search"),
+                  ],
+                ),
               )
             ],
           ),
