@@ -71,7 +71,7 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                 ),
                 Expanded(
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         _pageIndex = 1;
                       });
@@ -79,19 +79,34 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.search),
-                        Text("Search"),
+                        Icon(
+                          Icons.search,
+                          color: _pageIndex == 1 ? Colors.black : Colors.grey,
+                        ),
+                        Text(
+                          "Search",
+                          style: TextStyle(
+                            color: _pageIndex == 1 ? Colors.black : Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.favorite_border),
-                      Text("Search"),
-                    ],
+                  child: GestureDetector(
+                    onTap: (){
+                      setState(() {
+                        _pageIndex = 2;
+                      });
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.favorite_border),
+                        Text("Search"),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
