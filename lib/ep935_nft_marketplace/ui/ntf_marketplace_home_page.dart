@@ -127,8 +127,14 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.account_balance_wallet_outlined),
-                        Text("Wallet"),
+                        Icon(Icons.account_balance_wallet_outlined,
+                          color: _pageIndex == 3 ? Colors.black : Colors.grey,
+                        ),
+                        Text("Wallet",
+
+                          style: TextStyle(
+                            color: _pageIndex == 3 ? Colors.black : Colors.grey,
+                          ),),
                       ],
                     ),
                   ),
