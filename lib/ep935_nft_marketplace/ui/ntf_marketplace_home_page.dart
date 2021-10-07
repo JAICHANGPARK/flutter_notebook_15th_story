@@ -11,7 +11,13 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          child: Row(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }
