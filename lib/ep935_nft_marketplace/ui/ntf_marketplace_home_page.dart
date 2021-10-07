@@ -13,8 +13,17 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
+          height: 64,
           child: Row(
-            children: [],
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.explore),
+                  Text("Explore"),
+                ],
+              )
+            ],
           ),
         ),
       ),
