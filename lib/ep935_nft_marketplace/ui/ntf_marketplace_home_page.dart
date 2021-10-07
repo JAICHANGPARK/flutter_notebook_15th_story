@@ -103,8 +103,13 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.favorite_border),
-                        Text("Search"),
+                        Icon(Icons.favorite_border,
+                          color: _pageIndex == 2 ? Colors.black : Colors.grey,),
+                        Text("Favorite",
+                          style: TextStyle(
+                            color: _pageIndex == 2 ? Colors.black : Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
