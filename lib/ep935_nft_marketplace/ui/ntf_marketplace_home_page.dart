@@ -11,6 +11,7 @@ class NftMarketplaceHomePage extends StatefulWidget {
 
 class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,15 +20,21 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
           index: _pageIndex,
           children: [
             NtfMarketplaceExplorePage(),
-            Container(child: Center(
-              child: Text("Search"),
-            ),),
-            Container(child: Center(
-              child: Text("Favorite"),
-            ),),
-            Container(child: Center(
-              child: Text("Wallet"),
-            ),),
+            Container(
+              child: Center(
+                child: Text("Search"),
+              ),
+            ),
+            Container(
+              child: Center(
+                child: Text("Favorite"),
+              ),
+            ),
+            Container(
+              child: Center(
+                child: Text("Wallet"),
+              ),
+            ),
           ],
         ),
       ),
@@ -39,21 +46,43 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
             child: Row(
               children: [
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.explore),
-                      Text("Explore"),
-                    ],
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _pageIndex = 0;
+                      });
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.explore,
+                          color: _pageIndex == 0 ? Colors.black : Colors.grey,
+                        ),
+                        Text(
+                          "Explore",
+                          style: TextStyle(
+                            color: _pageIndex == 0 ? Colors.black : Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.search),
-                      Text("Search"),
-                    ],
+                  child: GestureDetector(
+                    onTap: (){
+                      setState(() {
+                        _pageIndex = 1;
+                      });
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.search),
+                        Text("Search"),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
