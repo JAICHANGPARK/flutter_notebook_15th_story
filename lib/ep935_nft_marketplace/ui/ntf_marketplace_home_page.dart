@@ -95,7 +95,7 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                 ),
                 Expanded(
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         _pageIndex = 2;
                       });
@@ -103,9 +103,12 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.favorite_border,
-                          color: _pageIndex == 2 ? Colors.black : Colors.grey,),
-                        Text("Favorite",
+                        Icon(
+                          Icons.favorite_border,
+                          color: _pageIndex == 2 ? Colors.black : Colors.grey,
+                        ),
+                        Text(
+                          "Favorite",
                           style: TextStyle(
                             color: _pageIndex == 2 ? Colors.black : Colors.grey,
                           ),
@@ -115,12 +118,19 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.account_balance_wallet_outlined),
-                      Text("Wallet"),
-                    ],
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _pageIndex = 3;
+                      });
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.account_balance_wallet_outlined),
+                        Text("Wallet"),
+                      ],
+                    ),
                   ),
                 )
               ],
