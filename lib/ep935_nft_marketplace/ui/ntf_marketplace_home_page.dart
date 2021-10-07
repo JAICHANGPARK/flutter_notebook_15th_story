@@ -21,16 +21,19 @@ class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
           children: [
             NtfMarketplaceExplorePage(),
             Container(
+              color: Colors.blue,
               child: Center(
                 child: Text("Search"),
               ),
             ),
             Container(
+              color: Colors.red,
               child: Center(
                 child: Text("Favorite"),
               ),
             ),
             Container(
+              color: Colors.brown,
               child: Center(
                 child: Text("Wallet"),
               ),
