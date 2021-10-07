@@ -8,9 +8,18 @@ class NftMarketplaceHomePage extends StatefulWidget {
 }
 
 class _NftMarketplaceHomePageState extends State<NftMarketplaceHomePage> {
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: IndexedStack(
+          index: _pageIndex,
+          children: [
+
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: SizedBox(
           height: 64,
