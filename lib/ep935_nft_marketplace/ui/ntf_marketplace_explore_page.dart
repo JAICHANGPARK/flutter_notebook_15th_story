@@ -108,7 +108,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
-                        _tabIndex = 3;
+                        _tabIndex = 2;
                       });
                     },
                     child: Column(
@@ -119,7 +119,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
-                            color: _tabIndex ==3 ? Colors.black : Colors.grey,
+                            color: _tabIndex ==2 ? Colors.black : Colors.grey,
                           ),
                         ),
                         SizedBox(
@@ -129,7 +129,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                           height: 2,
                           width: 16,
                           decoration: BoxDecoration(
-                              color: _tabIndex == 3? Colors.black : Colors.transparent),
+                              color: _tabIndex == 2? Colors.black : Colors.transparent),
                         )
                       ],
                     ),
@@ -140,7 +140,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
-                        _tabIndex = 4;
+                        _tabIndex = 3;
                       });
                     },
                     child: Column(
@@ -151,7 +151,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 18,
-                            color: _tabIndex == 4 ? Colors.black : Colors.grey,
+                            color: _tabIndex == 3 ? Colors.black : Colors.grey,
                           ),
                         ),
                         SizedBox(
@@ -161,7 +161,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                           height: 2,
                           width: 16,
                           decoration: BoxDecoration(
-                              color: _tabIndex == 4 ? Colors.black : Colors.transparent),
+                              color: _tabIndex == 3 ? Colors.black : Colors.transparent),
                         )
                       ],
                     ),
