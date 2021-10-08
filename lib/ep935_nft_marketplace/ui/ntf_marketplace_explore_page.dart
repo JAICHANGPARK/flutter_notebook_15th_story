@@ -37,10 +37,16 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
               children: [
                 Column(
                   children: [
-                    Text("Popular"),
+                    Text(
+                      "Popular",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Container(
                       height: 2,
-                      width: 8,
+                      width: 16,
                       decoration: BoxDecoration(color: Colors.black),
                     )
                   ],
