@@ -71,82 +71,98 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "On sale",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _tabIndex = 1;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "On sale",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: _tabIndex == 1 ? Colors.black : Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(
+                            color: _tabIndex == 1 ? Colors.black : Colors.transparent),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Best sale",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _tabIndex = 3;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Best sale",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: _tabIndex ==3 ? Colors.black : Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(
+                            color: _tabIndex == 3? Colors.black : Colors.transparent),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Newest",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Popular",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _tabIndex = 4;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Newest",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18,
+                          color: _tabIndex == 4 ? Colors.black : Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(
+                            color: _tabIndex == 4 ? Colors.black : Colors.transparent),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
