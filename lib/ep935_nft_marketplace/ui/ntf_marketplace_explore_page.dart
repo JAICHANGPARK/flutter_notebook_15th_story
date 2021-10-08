@@ -40,7 +40,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
               scrollDirection: Axis.horizontal,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
@@ -171,7 +171,33 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
             ),
           ),
         ),
-        Expanded(child: Placeholder())
+        Expanded(child: IndexedStack(index: _tabIndex,
+        children: [
+          Container(
+            color: Colors.blue,
+            child: Center(
+              child: Text("Popular "),
+            ),
+          ),
+          Container(
+            color: Colors.red,
+            child: Center(
+              child: Text("On sale "),
+            ),
+          ),
+          Container(
+            color: Colors.green,
+            child: Center(
+              child: Text("Best Sale "),
+            ),
+          ),
+          Container(
+            color: Colors.orange,
+            child: Center(
+              child: Text("Newest "),
+            ),
+          )
+        ],))
       ],
     );
   }
