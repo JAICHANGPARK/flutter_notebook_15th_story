@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NtfMarketplaceExplorePage extends StatefulWidget {
@@ -22,9 +23,9 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
               Expanded(
                   child: Center(
                       child: Text(
-                "Live Auction 🔥",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ))),
+                        "Live Auction 🔥",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ))),
               IconButton(onPressed: () {}, icon: Icon(Icons.notifications_outlined))
             ],
           ),
@@ -34,23 +35,108 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
           child: Container(
             color: Colors.blue,
             child: ListView(
+              scrollDirection: Axis.horizontal,
               children: [
-                Column(
-                  children: [
-                    Text(
-                      "Popular",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
-                )
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
