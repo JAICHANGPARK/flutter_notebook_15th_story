@@ -13,7 +13,12 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Row(
+          children: [
+            CircleAvatar(),
+            Text("Live Auction 🔥")
+          ],
+        )
       ],
     );
   }
