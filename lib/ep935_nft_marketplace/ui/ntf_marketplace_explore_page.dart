@@ -9,6 +9,8 @@ class NtfMarketplaceExplorePage extends StatefulWidget {
 }
 
 class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,9 +25,9 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
               Expanded(
                   child: Center(
                       child: Text(
-                        "Live Auction 🔥",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ))),
+                "Live Auction 🔥",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ))),
               IconButton(onPressed: () {}, icon: Icon(Icons.notifications_outlined))
             ],
           ),
@@ -37,22 +39,34 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Popular",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      height: 2,
-                      width: 16,
-                      decoration: BoxDecoration(color: Colors.black),
-                    )
-                  ],
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _tabIndex = 0;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: _tabIndex == 0 ? Colors.black : Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        height: 2,
+                        width: 16,
+                        decoration: BoxDecoration(
+                          color: _tabIndex == 0 ? Colors.black : Colors.transparent),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Padding(
