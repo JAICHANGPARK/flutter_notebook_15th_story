@@ -16,7 +16,8 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
         Row(
           children: [
             CircleAvatar(),
-            Text("Live Auction 🔥")
+            Text("Live Auction 🔥"),
+            IconButton(onPressed: (){}, icon: Icon(Icons.notifications_outlined))
           ],
         )
       ],
