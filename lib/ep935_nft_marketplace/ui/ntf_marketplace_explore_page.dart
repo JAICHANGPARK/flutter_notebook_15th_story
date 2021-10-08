@@ -61,7 +61,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Popular",
+                      "On sale",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     SizedBox(
@@ -81,7 +81,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Popular",
+                      "Best sale",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     SizedBox(
@@ -101,7 +101,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Popular",
+                      "Newest",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     SizedBox(
