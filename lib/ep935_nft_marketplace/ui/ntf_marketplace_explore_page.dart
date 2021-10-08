@@ -72,7 +72,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
@@ -104,7 +104,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
@@ -136,7 +136,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
