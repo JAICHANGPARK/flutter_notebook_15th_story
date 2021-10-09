@@ -167,10 +167,7 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: Text(
                 "Trending artist",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
             ),
             Text(
@@ -181,42 +178,62 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
               ),
             ),
             Card(
-              child: Row(
-                children: [
-                  SizedBox(
-                    height: 48,
-                    width: 48,
-                    child: Stack(
-                      children: [
-                        Center(
-                          child: CircleAvatar(
-                            backgroundColor: Colors.pink,
-                          ),
-                        ),
-                        Positioned(
-                          child: CircleAvatar(
-                            radius: 8,
-                            child: Icon(
-                              Icons.check,
-                              size: 12,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      height: 48,
+                      width: 48,
+                      child: Stack(
+                        children: [
+                          Center(
+                            child: CircleAvatar(
+                              backgroundColor: Colors.pink,
                             ),
-                            foregroundColor: Colors.white,
                           ),
-                          right: 0,
-                          bottom: 0,
-                        )
-                      ],
+                          Positioned(
+                            child: CircleAvatar(
+                              radius: 8,
+                              child: Icon(
+                                Icons.check,
+                                size: 12,
+                              ),
+                              foregroundColor: Colors.white,
+                            ),
+                            right: 0,
+                            bottom: 0,
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Anantha Herman"),
-                      Text("@ananherman"),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Anantha Herman"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("@ananherman"),
+                        ],
+                      ),
+                    ),
+                    Spacer(),
+                    Container(
+                      height: 64,
 
-                    ],
-                  )
-                ],
+                      color: Colors.black,
+                      padding: EdgeInsets.symmetric(horizontal: 24),
+                      child: Center(
+                        child: Text("Following",style: TextStyle(
+                          color: Colors.white
+                        ),),
+                      ),
+                    )
+                  ],
+                ),
               ),
             )
           ],
