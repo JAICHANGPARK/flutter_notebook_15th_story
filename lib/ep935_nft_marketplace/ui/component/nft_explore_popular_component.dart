@@ -19,20 +19,21 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
               child: Stack(
                 children: [
                   Positioned(
-                    left: 16,
+                      left: 16,
                       top: 16,
                       right: 16,
                       child: Column(
-                    children: [
+                        children: [
                           Container(
                             decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: NetworkImage()
-                              )
-                            ),
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2021/04/29/05/04/"
+                                            "desert-6215516_960_720.jpg"),
+                                    fit: BoxFit.cover)),
                           )
-                    ],
-                  ))
+                        ],
+                      ))
                 ],
               ),
             ),
