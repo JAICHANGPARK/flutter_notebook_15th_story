@@ -83,9 +83,7 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
                               "Dreamwalker",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w600
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -97,8 +95,7 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                               child: Center(
                                 child: Text(
                                   "Place a Bid",
-                                  style: TextStyle(color: Colors.white,
-                                      fontWeight: FontWeight.w600),
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
@@ -106,19 +103,21 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                         ],
                       ),
                     ),
-                    Positioned(child: Container(
-                      color: Colors.white,
-                      padding: EdgeInsets.all(8),
-                      child: Column(
-                        children: [
-                          Text("Current bid"),
-                          Text("1.34 ETH"),
-                          Text("22h : 45m : 56s")
-                        ],
+                    Positioned(
+                      child: Container(
+                        color: Colors.white,
+                        padding: EdgeInsets.all(8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Current bid"),
+                            Text("1.34 ETH"),
+                            Text("22h : 45m : 56s"),
+                          ],
+                        ),
                       ),
-                    ),
-                    right: 0,
-                    top: 120,
+                      right: 0,
+                      top: 120,
                     )
                   ],
                 ),
