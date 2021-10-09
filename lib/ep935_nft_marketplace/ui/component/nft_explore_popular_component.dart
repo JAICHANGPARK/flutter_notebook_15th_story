@@ -104,20 +104,32 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                       ),
                     ),
                     Positioned(
-                      child: Container(
-                        color: Colors.white,
-                        padding: EdgeInsets.all(8),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Current bid"),
-                            Text("1.34 ETH"),
-                            Text("22h : 45m : 56s"),
-                          ],
+                      child: Card(
+                        margin: EdgeInsets.zero,
+                        child: Container(
+                          color: Colors.white,
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Current bid",style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 12
+                              ),),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4,
+                                bottom: 8),
+                                child: Text("1.34 ETH",style: TextStyle(
+                                  fontWeight: FontWeight.bold
+                                ),),
+                              ),
+                              Text("22h : 45m : 56s"),
+                            ],
+                          ),
                         ),
                       ),
-                      right: 0,
-                      top: 120,
+                      right: 16,
+                      top: 180,
                     )
                   ],
                 ),
