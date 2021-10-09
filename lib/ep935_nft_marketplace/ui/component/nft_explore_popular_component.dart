@@ -31,45 +31,72 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                               height: 200,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2021/04/29/05/04/"
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2021/04/29/05/04/"
                                           "desert-6215516_960_720.jpg"),
                                       fit: BoxFit.cover)),
                             ),
-                            SizedBox(height: 8,),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Text(
                               "Sky on the ring",
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                             ),
-                            SizedBox(height: 4,),
+                            SizedBox(
+                              height: 4,
+                            ),
                             Text("5 Edition art")
                           ],
                         )),
                     Positioned(
-
-                        left: 16,
-                        bottom: 16,
-                        right: 16,
-                        child: Row(children: [
-                              SizedBox(
-                                height: 48,
-                                width: 48,
-                                child: Stack(
-                                  children: [
-                                    Center(
-                                      child: CircleAvatar(
-                                              backgroundColor: Colors.pink,
-                                      ),
-                                    ),
-                                    Positioned(child: CircleAvatar(radius: 8,
-                                    child: Icon(Icons.check,),
-                                    foregroundColor: Colors.white,),
-                                    right: 0,
-                                    bottom: 0,)
-                                  ],
+                      left: 16,
+                      bottom: 16,
+                      right: 16,
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            height: 48,
+                            width: 48,
+                            child: Stack(
+                              children: [
+                                Center(
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.pink,
+                                  ),
                                 ),
-                              )
-                    ],))
+                                Positioned(
+                                  child: CircleAvatar(
+                                    radius: 8,
+                                    child: Icon(
+                                      Icons.check,
+                                      size: 12,
+                                    ),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                  right: 0,
+                                  bottom: 0,
+                                )
+                              ],
+                            ),
+                          ),
+                          Text(
+                            "Dreamwalker",
+                          ),
+                          Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 0,
+                                left: 24),
+                                child: Container(
+                                  height: 52,
+                            color: Colors.black,
+                            child: Center(
+                                child: Text("Place a Bid"),
+                            ),
+                          ),
+                              ))
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
