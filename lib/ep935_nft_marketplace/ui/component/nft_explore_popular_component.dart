@@ -44,7 +44,32 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                             SizedBox(height: 4,),
                             Text("5 Edition art")
                           ],
-                        ))
+                        )),
+                    Positioned(
+
+                        left: 16,
+                        bottom: 16,
+                        right: 16,
+                        child: Row(children: [
+                              SizedBox(
+                                height: 48,
+                                width: 48,
+                                child: Stack(
+                                  children: [
+                                    Center(
+                                      child: CircleAvatar(
+                                              backgroundColor: Colors.pink,
+                                      ),
+                                    ),
+                                    Positioned(child: CircleAvatar(radius: 8,
+                                    child: Icon(Icons.check,),
+                                    foregroundColor: Colors.white,),
+                                    right: 0,
+                                    bottom: 0,)
+                                  ],
+                                ),
+                              )
+                    ],))
                   ],
                 ),
               ),
