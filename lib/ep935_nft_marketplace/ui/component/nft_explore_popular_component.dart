@@ -105,6 +105,20 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                           ))
                         ],
                       ),
+                    ),
+                    Positioned(child: Container(
+                      color: Colors.white,
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        children: [
+                          Text("Current bid"),
+                          Text("1.34 ETH"),
+                          Text("22h : 45m : 56s")
+                        ],
+                      ),
+                    ),
+                    right: 0,
+                    top: 120,
                     )
                   ],
                 ),
