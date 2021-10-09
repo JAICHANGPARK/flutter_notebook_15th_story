@@ -112,16 +112,16 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Current bid",style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 12
-                              ),),
+                              Text(
+                                "Current bid",
+                                style: TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
                               Padding(
-                                padding: const EdgeInsets.only(top: 4,
-                                bottom: 8),
-                                child: Text("1.34 ETH",style: TextStyle(
-                                  fontWeight: FontWeight.bold
-                                ),),
+                                padding: const EdgeInsets.only(top: 4, bottom: 8),
+                                child: Text(
+                                  "1.34 ETH",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               ),
                               Text("22h : 45m : 56s"),
                             ],
@@ -133,6 +133,30 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                     )
                   ],
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.black,
+                    radius: 16,
+                    child: Text("1"),
+                    foregroundColor: Colors.white,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("20"),
+                  ),
+                  Spacer(),
+                  CircleAvatar(
+                    radius: 12,
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.white,
+                    child: Icon(Icons.arrow_forward),
+                  )
+                ],
               ),
             )
           ],
