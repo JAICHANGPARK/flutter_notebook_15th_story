@@ -79,21 +79,26 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                               ],
                             ),
                           ),
-                          Text(
-                            "Dreamwalker",
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Dreamwalker",
+                            ),
                           ),
                           Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.only(right: 0,
-                                left: 24),
-                                child: Container(
-                                  height: 52,
-                            color: Colors.black,
-                            child: Center(
-                                child: Text("Place a Bid"),
+                            padding: const EdgeInsets.only(right: 0, left: 24),
+                            child: Container(
+                              height: 52,
+                              color: Colors.black,
+                              child: Center(
+                                child: Text(
+                                  "Place a Bid",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                ),
+                              ),
                             ),
-                          ),
-                              ))
+                          ))
                         ],
                       ),
                     )
