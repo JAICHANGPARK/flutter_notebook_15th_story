@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep935_nft_marketplace/ui/component/nft_explore_popular_component.dart';
 
 class NtfMarketplaceExplorePage extends StatefulWidget {
   const NtfMarketplaceExplorePage({Key? key}) : super(key: key);
@@ -173,12 +174,7 @@ class _NtfMarketplaceExplorePageState extends State<NtfMarketplaceExplorePage> {
         ),
         Expanded(child: IndexedStack(index: _tabIndex,
         children: [
-          Container(
-            color: Colors.blue,
-            child: Center(
-              child: Text("Popular "),
-            ),
-          ),
+          NftExplorePopularComponent(),
           Container(
             color: Colors.red,
             child: Center(
