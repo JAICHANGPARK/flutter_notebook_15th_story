@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NftExplorePopularComponent extends StatefulWidget {
   const NftExplorePopularComponent({Key? key}) : super(key: key);
 
@@ -19,9 +18,21 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
             child: Card(
               child: Stack(
                 children: [
-                  Positioned(child: Column(children: [
-                    
-                  ],))
+                  Positioned(
+                    left: 16,
+                      top: 16,
+                      right: 16,
+                      child: Column(
+                    children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage()
+                              )
+                            ),
+                          )
+                    ],
+                  ))
                 ],
               ),
             ),
