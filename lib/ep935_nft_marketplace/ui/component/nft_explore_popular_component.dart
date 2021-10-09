@@ -14,6 +14,7 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 360,
@@ -154,7 +155,66 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                     radius: 12,
                     foregroundColor: Colors.black,
                     backgroundColor: Colors.white,
-                    child: Icon(Icons.arrow_forward),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      size: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Text(
+                "Trending artist",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16
+                ),
+              ),
+            ),
+            Text(
+              "Popular artist on marketplace",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  SizedBox(
+                    height: 48,
+                    width: 48,
+                    child: Stack(
+                      children: [
+                        Center(
+                          child: CircleAvatar(
+                            backgroundColor: Colors.pink,
+                          ),
+                        ),
+                        Positioned(
+                          child: CircleAvatar(
+                            radius: 8,
+                            child: Icon(
+                              Icons.check,
+                              size: 12,
+                            ),
+                            foregroundColor: Colors.white,
+                          ),
+                          right: 0,
+                          bottom: 0,
+                        )
+                      ],
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Anantha Herman"),
+                      Text("@ananherman"),
+
+                    ],
                   )
                 ],
               ),
