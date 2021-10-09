@@ -83,6 +83,9 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
                               "Dreamwalker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600
+                              ),
                             ),
                           ),
                           Expanded(
@@ -94,7 +97,8 @@ class _NftExplorePopularComponentState extends State<NftExplorePopularComponent>
                               child: Center(
                                 child: Text(
                                   "Place a Bid",
-                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                  style: TextStyle(color: Colors.white,
+                                      fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
