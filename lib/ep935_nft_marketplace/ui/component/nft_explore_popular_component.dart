@@ -11,6 +11,23 @@ class NftExplorePopularComponent extends StatefulWidget {
 class _NftExplorePopularComponentState extends State<NftExplorePopularComponent> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: 360,
+            child: Card(
+              child: Stack(
+                children: [
+                  Positioned(child: Column(children: [
+                    
+                  ],))
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
