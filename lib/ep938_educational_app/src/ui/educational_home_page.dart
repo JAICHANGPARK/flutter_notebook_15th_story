@@ -24,6 +24,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                     valueListenable: _pageIndex,
                     builder: (context, value, child) {
                       return IndexedStack(
+                        index: value,
                         children: [
                           Stack(
                             children: [
@@ -124,23 +125,36 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                       ),
                     ),
                     Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            height: 2,
-                            width: 20,
-                            decoration: BoxDecoration(color: Colors.pink),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 4),
-                            child: Icon(Icons.chat_outlined, color: Colors.pink),
-                          ),
-                          Text(
-                            "Chat",
-                            style: TextStyle(color: Colors.pink, fontSize: 12),
-                          )
-                        ],
+                      child: GestureDetector(
+                        onTap: () {
+                          _pageIndex.value = 1;
+                        },
+                        child: ValueListenableBuilder<int>(
+                          valueListenable: _pageIndex,
+                          builder: (context, value, child) {
+                            return Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: 2,
+                                  width: 20,
+                                  decoration: BoxDecoration(color: value == 1 ? Colors.pink : Colors.transparent),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: Icon(
+                                    Icons.chat_outlined,
+                                    color: value == 1 ? Colors.pink : Colors.grey,
+                                  ),
+                                ),
+                                Text(
+                                  "Message",
+                                  style: TextStyle(color: value == 1 ? Colors.pink : Colors.transparent, fontSize: 12),
+                                )
+                              ],
+                            );
+                          },
+                        ),
                       ),
                     ),
                     Expanded(
