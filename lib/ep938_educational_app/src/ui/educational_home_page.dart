@@ -23,18 +23,25 @@ with TickerProviderStateMixin{
               SizedBox(
                   height: 64,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         height: 3,
-                        width: 32,
+                        width: 20,
                         decoration: BoxDecoration(
                           color: Colors.pink
                         ),
                       ),
-                      Icon(Icons.home_outlined),
-                      Text("Home")
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4),
+                        child: Icon(Icons.home_outlined,  color: Colors.pink),
+                      ),
+                      Text("Home",style: TextStyle(
+                          color: Colors.pink
+                      ),)
                     ],
                   )
                 ],
