@@ -21,7 +21,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                   child: Stack(
                     children: [
                       Positioned(
-                        child: Placeholder(),
+                        child: Container(),
                         left: 0,
                         right: 0,
                         top: 0,
@@ -31,19 +31,22 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                         child: SingleChildScrollView(
                           child: Column(
                             children: [
-                              Row(
-                                children: [
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.menu),
-                                  ),
-                                  Spacer(),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.search),
-                                  ),
-                                  CircleAvatar(radius: 16,)
-                                ],
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                child: Row(
+                                  children: [
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.menu),
+                                    ),
+                                    Spacer(),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.search),
+                                    ),
+                                    CircleAvatar(radius: 16,)
+                                  ],
+                                ),
                               ),
 
                             ],
@@ -59,79 +62,86 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
               SizedBox(
                 height: 64,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 3,
-                          width: 20,
-                          decoration: BoxDecoration(color: Colors.pink),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Icon(Icons.home_outlined, color: Colors.pink),
-                        ),
-                        Text(
-                          "Home",
-                          style: TextStyle(color: Colors.pink, fontSize: 12),
-                        )
-                      ],
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 2,
+                            width: 20,
+                            decoration: BoxDecoration(color: Colors.pink),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Icon(Icons.home_outlined, color: Colors.pink),
+                          ),
+                          Text(
+                            "Home",
+                            style: TextStyle(color: Colors.pink, fontSize: 12),
+                          )
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 3,
-                          width: 20,
-                          decoration: BoxDecoration(color: Colors.pink),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Icon(Icons.home_outlined, color: Colors.pink),
-                        ),
-                        Text(
-                          "Chat",
-                          style: TextStyle(color: Colors.pink, fontSize: 12),
-                        )
-                      ],
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 2,
+                            width: 20,
+                            decoration: BoxDecoration(color: Colors.pink),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Icon(Icons.chat_outlined, color: Colors.pink),
+                          ),
+                          Text(
+                            "Chat",
+                            style: TextStyle(color: Colors.pink, fontSize: 12),
+                          )
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 3,
-                          width: 20,
-                          decoration: BoxDecoration(color: Colors.pink),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Icon(Icons.home_outlined, color: Colors.pink),
-                        ),
-                        Text(
-                          "Notification",
-                          style: TextStyle(color: Colors.pink, fontSize: 12),
-                        )
-                      ],
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 2,
+                            width: 20,
+                            decoration: BoxDecoration(color: Colors.pink),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Icon(Icons.notifications_outlined, color: Colors.pink),
+                          ),
+                          Text(
+                            "Notification",
+                            style: TextStyle(color: Colors.pink, fontSize: 12),
+                          )
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 3,
-                          width: 20,
-                          decoration: BoxDecoration(color: Colors.pink),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Icon(Icons.home_outlined, color: Colors.pink),
-                        ),
-                        Text(
-                          "Bookmark",
-                          style: TextStyle(color: Colors.pink, fontSize: 12),
-                        )
-                      ],
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 2,
+                            width: 20,
+                            decoration: BoxDecoration(color: Colors.pink),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Icon(Icons.bookmark_outline, color: Colors.pink),
+                          ),
+                          Text(
+                            "Bookmark",
+                            style: TextStyle(color: Colors.pink, fontSize: 12),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
