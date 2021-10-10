@@ -91,23 +91,36 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                 child: Row(
                   children: [
                     Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            height: 2,
-                            width: 20,
-                            decoration: BoxDecoration(color: Colors.pink),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 4),
-                            child: Icon(Icons.home_outlined, color: Colors.pink),
-                          ),
-                          Text(
-                            "Home",
-                            style: TextStyle(color: Colors.pink, fontSize: 12),
-                          )
-                        ],
+                      child: GestureDetector(
+                        onTap: () {
+                          _pageIndex.value = 0;
+                        },
+                        child: ValueListenableBuilder<int>(
+                          valueListenable: _pageIndex,
+                          builder: (context, value, child) {
+                            return Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: 2,
+                                  width: 20,
+                                  decoration: BoxDecoration(color: value == 0 ? Colors.pink : Colors.transparent),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: Icon(
+                                    Icons.home_outlined,
+                                    color: value == 0 ? Colors.pink : Colors.grey,
+                                  ),
+                                ),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(color: value == 0 ? Colors.pink : Colors.transparent, fontSize: 12),
+                                )
+                              ],
+                            );
+                          },
+                        ),
                       ),
                     ),
                     Expanded(
