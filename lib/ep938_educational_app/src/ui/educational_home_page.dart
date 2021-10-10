@@ -8,6 +8,8 @@ class EducationalHomePage extends StatefulWidget {
 }
 
 class _EducationalHomePageState extends State<EducationalHomePage> with TickerProviderStateMixin {
+  ValueNotifier<int> _pageIndex = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,46 +20,71 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
             children: [
               Expanded(
                   flex: 20,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        child: Container(),
-                        left: 0,
-                        right: 0,
-                        top: 0,
-                        bottom: 0,
-                      ),
-                      Positioned(
-                        child: SingleChildScrollView(
-                          child: Column(
+                  child: ValueListenableBuilder<int>(
+                    valueListenable: _pageIndex,
+                    builder: (context, value, child) {
+                      return IndexedStack(
+                        children: [
+                          Stack(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 8),
-                                child: Row(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(Icons.menu),
-                                    ),
-                                    Spacer(),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(Icons.search),
-                                    ),
-                                    CircleAvatar(radius: 16,)
-                                  ],
-                                ),
+                              Positioned(
+                                child: Container(),
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
                               ),
-
+                              Positioned(
+                                child: SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Row(
+                                          children: [
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.menu),
+                                            ),
+                                            Spacer(),
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.search),
+                                            ),
+                                            CircleAvatar(
+                                              radius: 16,
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
+                              )
                             ],
                           ),
-                        ),
-                        left: 0,
-                        right: 0,
-                        top: 0,
-                        bottom: 0,
-                      )
-                    ],
+                          Container(
+                            child: Center(
+                              child: Text("Chat"),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text("Notification"),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text("Bookmark"),
+                            ),
+                          )
+                        ],
+                      );
+                    },
                   )),
               SizedBox(
                 height: 64,
