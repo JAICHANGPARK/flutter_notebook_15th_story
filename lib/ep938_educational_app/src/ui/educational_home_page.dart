@@ -14,14 +14,25 @@ with TickerProviderStateMixin{
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(
-                flex:20,child: Placeholder()),
-            Expanded(
-                flex: 3,
-                child: Placeholder())
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Column(
+            children: [
+              Expanded(
+                  flex:20,child: Placeholder()),
+              SizedBox(
+                  height: 64,
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+
+                    ],
+                  )
+                ],
+              ),)
+            ],
+          ),
         ),
       ),
     );
