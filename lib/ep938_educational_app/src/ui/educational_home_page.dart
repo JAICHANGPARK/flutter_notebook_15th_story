@@ -26,7 +26,15 @@ with TickerProviderStateMixin{
                 children: [
                   Column(
                     children: [
-
+                      Container(
+                        height: 3,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          color: Colors.pink
+                        ),
+                      ),
+                      Icon(Icons.home_outlined),
+                      Text("Home")
                     ],
                   )
                 ],
