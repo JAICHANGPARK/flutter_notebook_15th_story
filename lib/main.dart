@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_15th_story/ep935_nft_marketplace/nft_marketplace_app.dart';
+import 'ep938_educational_app/educational_app.dart';
 
-main() => runApp(NftMarketPlaceApp());
+main() => runApp(EducationalApp());
