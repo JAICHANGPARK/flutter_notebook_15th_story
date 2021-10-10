@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'src/ui/educational_home_page.dart';
+
 
 class EducationalApp extends StatelessWidget {
   const EducationalApp({Key? key}) : super(key: key);
@@ -7,7 +9,9 @@ class EducationalApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      routes: {
+        "/":(context)=>EducationalHomePage()
+      },
     );
   }
 }
