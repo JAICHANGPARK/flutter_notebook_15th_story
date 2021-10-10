@@ -116,7 +116,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                 ),
                                 Text(
                                   "Home",
-                                  style: TextStyle(color: value == 0 ? Colors.pink : Colors.transparent, fontSize: 12),
+                                  style: TextStyle(
+                                    color: value == 0 ? Colors.pink : Colors.transparent,
+                                    fontSize: 10,
+                                  ),
                                 )
                               ],
                             );
@@ -149,7 +152,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                 ),
                                 Text(
                                   "Message",
-                                  style: TextStyle(color: value == 1 ? Colors.pink : Colors.transparent, fontSize: 12),
+                                  style: TextStyle(
+                                    color: value == 1 ? Colors.pink : Colors.transparent,
+                                    fontSize: 10,
+                                  ),
                                 )
                               ],
                             );
@@ -182,7 +188,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                 ),
                                 Text(
                                   "Notifications",
-                                  style: TextStyle(color: value == 2 ? Colors.pink : Colors.transparent, fontSize: 12),
+                                  style: TextStyle(
+                                    color: value == 2 ? Colors.pink : Colors.transparent,
+                                    fontSize: 10,
+                                  ),
                                 )
                               ],
                             );
