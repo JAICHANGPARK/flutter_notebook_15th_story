@@ -43,6 +43,63 @@ with TickerProviderStateMixin{
                           color: Colors.pink
                       ),)
                     ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 20,
+                        decoration: BoxDecoration(
+                            color: Colors.pink
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4),
+                        child: Icon(Icons.home_outlined,  color: Colors.pink),
+                      ),
+                      Text("Chat",style: TextStyle(
+                          color: Colors.pink
+                      ),)
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 20,
+                        decoration: BoxDecoration(
+                            color: Colors.pink
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4),
+                        child: Icon(Icons.home_outlined,  color: Colors.pink),
+                      ),
+                      Text("Notification",style: TextStyle(
+                          color: Colors.pink
+                      ),)
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 20,
+                        decoration: BoxDecoration(
+                            color: Colors.pink
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4),
+                        child: Icon(Icons.home_outlined,  color: Colors.pink),
+                      ),
+                      Text("Bookmark",style: TextStyle(
+                          color: Colors.pink
+                      ),)
+                    ],
                   )
                 ],
               ),)
