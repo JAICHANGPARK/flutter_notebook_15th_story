@@ -10,7 +10,7 @@ class EducationalApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: Colors.grey[100]
+        scaffoldBackgroundColor: Colors.grey[200]
       ),
       routes: {
         "/":(context)=>EducationalHomePage()
