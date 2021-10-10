@@ -16,8 +16,11 @@ with TickerProviderStateMixin{
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder())
+            Expanded(
+                flex:20,child: Placeholder()),
+            Expanded(
+                flex: 3,
+                child: Placeholder())
           ],
         ),
       ),
