@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class EducationalHomePage extends StatefulWidget {
@@ -36,6 +37,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                 bottom: 0,
                               ),
                               Positioned(
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
                                 child: SingleChildScrollView(
                                   child: Column(
                                     children: [
@@ -58,13 +63,46 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           ],
                                         ),
                                       ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Container(
+                                          height: 160,
+                                          decoration: BoxDecoration(
+                                            color: Colors.pink,
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(16),
+                                              topRight: Radius.circular(16),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: SizedBox(
+                                          height: 42,
+                                          child: ListView(
+                                            scrollDirection: Axis.horizontal,
+                                            children: [
+                                              Container(
+                                                padding: EdgeInsets.symmetric(horizontal: 12),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.pink,
+                                                  borderRadius: BorderRadius.circular(8)
+                                                ),
+                                                child: Center(
+                                                  child: Text("All topic", style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 12
+                                                  ),),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
-                                left: 0,
-                                right: 0,
-                                top: 0,
-                                bottom: 0,
                               )
                             ],
                           ),
