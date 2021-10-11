@@ -85,16 +85,35 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           child: ListView(
                                             scrollDirection: Axis.horizontal,
                                             children: [
-                                              Container(
-                                                padding: EdgeInsets.symmetric(horizontal: 12),
-                                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                                child: Center(
-                                                  child: Text(
-                                                    "All topic",
-                                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 8),
+                                                child: Container(
+                                                  padding: EdgeInsets.symmetric(horizontal: 12),
+                                                  decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "All topic",
+                                                      style: TextStyle(color: Colors.white, fontSize: 12),
+                                                    ),
                                                   ),
                                                 ),
-                                              )
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 8),
+                                                child: Container(
+                                                  padding: EdgeInsets.symmetric(horizontal: 12),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "UX/UI Design",
+                                                      style: TextStyle(color: Colors.black, fontSize: 12),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
