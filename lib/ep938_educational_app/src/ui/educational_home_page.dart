@@ -10,6 +10,7 @@ class EducationalHomePage extends StatefulWidget {
 
 class _EducationalHomePageState extends State<EducationalHomePage> with TickerProviderStateMixin {
   ValueNotifier<int> _pageIndex = ValueNotifier(0);
+  ValueNotifier<int> _subTabIndex = ValueNotifier(0);
 
   @override
   Widget build(BuildContext context) {
@@ -79,42 +80,103 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
                                         child: SizedBox(
                                           height: 42,
                                           child: ListView(
                                             scrollDirection: Axis.horizontal,
                                             children: [
-                                              Padding(
-                                                padding: const EdgeInsets.only(right: 8),
-                                                child: Container(
-                                                  padding: EdgeInsets.symmetric(horizontal: 12),
-                                                  decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                                  child: Center(
-                                                    child: Text(
-                                                      "All topic",
-                                                      style: TextStyle(color: Colors.white, fontSize: 12),
+                                              GestureDetector(
+                                                onTap: (){
+                                                  _subTabIndex.value = 0;
+                                                },
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(right: 8),
+                                                  child: Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                                    decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "All topic",
+                                                        style: TextStyle(color: Colors.white, fontSize: 12),
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.only(right: 8),
-                                                child: Container(
-                                                  padding: EdgeInsets.symmetric(horizontal: 12),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(8),
+                                              GestureDetector(
+                                                onTap: (){
+                                                  _subTabIndex.value = 1;
+                                                },
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(right: 8),
+                                                  child: Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "UX/UI Design",
+                                                        style: TextStyle(color: Colors.black, fontSize: 12),
+                                                      ),
+                                                    ),
                                                   ),
-                                                  child: Center(
-                                                    child: Text(
-                                                      "UX/UI Design",
-                                                      style: TextStyle(color: Colors.black, fontSize: 12),
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onTap: (){
+                                                  _subTabIndex.value = 2;
+                                                },
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(right: 8),
+                                                  child: Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "Web Development",
+                                                        style: TextStyle(color: Colors.black, fontSize: 12),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onTap: (){
+                                                  _subTabIndex.value = 3;
+                                                },
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(right: 8),
+                                                  child: Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 12),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "Flutter Development",
+                                                        style: TextStyle(color: Colors.black, fontSize: 12),
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
+                                        child: SizedBox(
+                                          height: 240,
+                                          child: Container(
+                                            color: Colors.blue,
                                           ),
                                         ),
                                       )
