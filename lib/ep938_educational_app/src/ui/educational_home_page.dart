@@ -72,6 +72,8 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             borderRadius: BorderRadius.only(
                                               topLeft: Radius.circular(16),
                                               topRight: Radius.circular(16),
+                                              bottomLeft: Radius.circular(4),
+                                              bottomRight: Radius.circular(4),
                                             ),
                                           ),
                                         ),
@@ -85,15 +87,12 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             children: [
                                               Container(
                                                 padding: EdgeInsets.symmetric(horizontal: 12),
-                                                decoration: BoxDecoration(
-                                                  color: Colors.pink,
-                                                  borderRadius: BorderRadius.circular(8)
-                                                ),
+                                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
                                                 child: Center(
-                                                  child: Text("All topic", style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 12
-                                                  ),),
+                                                  child: Text(
+                                                    "All topic",
+                                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                                  ),
                                                 ),
                                               )
                                             ],
