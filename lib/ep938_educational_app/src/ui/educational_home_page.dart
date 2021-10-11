@@ -80,26 +80,28 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           padding: EdgeInsets.all(16),
                                           child: Row(
                                             children: [
-                                              SizedBox(height: 84, width: 120,),
+                                              SizedBox(
+                                                height: 84,
+                                                width: 120,
+                                              ),
                                               Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text('What you want to\nlearn today?',style:
-                                                    TextStyle(
-                                                      fontSize: 24
-                                                    ),),
+                                                  Text(
+                                                    'What you want to\nlearn today?',
+                                                    style: TextStyle(fontSize: 24),
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    padding: const EdgeInsets.symmetric(vertical: 16),
                                                     child: Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.deepPurpleAccent
-                                                      ),
-                                                      padding: EdgeInsets.symmetric(vertical: 8,horizontal: 16),
+                                                      decoration: BoxDecoration(color: Colors.deepPurpleAccent,
+                                                      borderRadius: BorderRadius.circular(8)),
+                                                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                                                       child: Center(
-                                                        child: Text("Start lesson",style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 16
-                                                        ),),
+                                                        child: Text(
+                                                          "Start lesson",
+                                                          style: TextStyle(color: Colors.white, fontSize: 16),
+                                                        ),
                                                       ),
                                                     ),
                                                   )
