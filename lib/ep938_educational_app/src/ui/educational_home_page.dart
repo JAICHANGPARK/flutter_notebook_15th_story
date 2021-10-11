@@ -250,20 +250,38 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                             child: Padding(
                                                               padding: const EdgeInsets.all(8.0),
                                                               child: Column(
+                                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                                 children: [
-                                                                  Expanded(
-                                                                    child: Image.network(
-
-                                                                        "https://cdn.pixabay.com/photo/2021/01/29/08/09/doodles-5960094_960_720.jpg"),
+                                                                  SizedBox(
+                                                                    height: 120,
+                                                                    child: Center(
+                                                                      child: Image.network(
+                                                                        "https://cdn.pixabay.com/photo/2021/01/29/08/09/doodles-5960094_960_720.jpg",
+                                                                        fit: BoxFit.cover,
+                                                                      ),
+                                                                    ),
                                                                   ),
-                                                                  Text("Best Web Development Course"),
-                                                                  Text("for Beginners"),
+                                                                  SizedBox(height: 8,),
+                                                                  Text(
+                                                                    "Best Web Development Course",
+                                                                    style: TextStyle(fontSize: 12),
+                                                                  ),
+                                                                  Text(
+                                                                    "for Beginners",
+                                                                    style: TextStyle(fontSize: 12),
+                                                                  ),
                                                                   Row(
                                                                     children: [
                                                                       Icon(Icons.access_time),
                                                                       Text("2 hr 10 mins"),
                                                                       Spacer(),
-
+                                                                      IconButton(
+                                                                        onPressed: () {},
+                                                                        icon: Icon(
+                                                                          Icons.bookmark_border,
+                                                                        ),
+                                                                        color: Colors.pink,
+                                                                      )
                                                                     ],
                                                                   )
                                                                 ],
