@@ -176,6 +176,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 child: Padding(
                                                   padding: const EdgeInsets.only(right: 8),
                                                   child: ValueListenableBuilder(
+                                                    valueListenable: _subTabIndex,
                                                     builder: (BuildContext context, value, Widget? child) {
                                                       return Container(
                                                         padding: EdgeInsets.symmetric(horizontal: 12),
@@ -194,8 +195,6 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                         ),
                                                       );
                                                     },
-                                                    valueListenable: _subTabIndex,
-
                                                   ),
                                                 ),
                                               ),
@@ -205,18 +204,26 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 },
                                                 child: Padding(
                                                   padding: const EdgeInsets.only(right: 8),
-                                                  child: Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 12),
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(8),
-                                                    ),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "Flutter Development",
-                                                        style: TextStyle(color: Colors.black, fontSize: 12),
-                                                      ),
-                                                    ),
+                                                  child: ValueListenableBuilder(
+                                                    valueListenable: _subTabIndex,
+                                                    builder: (BuildContext context, value, Widget? child) {
+                                                      return Container(
+                                                        padding: EdgeInsets.symmetric(horizontal: 12),
+                                                        decoration: BoxDecoration(
+                                                          color: value == 3 ? Colors.pink : Colors.white,
+                                                          borderRadius: BorderRadius.circular(8),
+                                                        ),
+                                                        child: Center(
+                                                          child: Text(
+                                                            "Flutter Development",
+                                                            style: TextStyle(
+                                                              color: value == 3 ? Colors.white : Colors.black,
+                                                              fontSize: 12,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
                                                   ),
                                                 ),
                                               ),
