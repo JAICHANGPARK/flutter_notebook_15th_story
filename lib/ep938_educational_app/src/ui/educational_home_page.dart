@@ -77,6 +77,30 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                               bottomRight: Radius.circular(4),
                                             ),
                                           ),
+                                          padding: EdgeInsets.all(16),
+                                          child: Row(
+                                            children: [
+                                              SizedBox(height: 84, width: 120,),
+                                              Column(
+                                                children: [
+                                                  Text('What you want to\nlearn today?',style:
+                                                    TextStyle(
+                                                      fontSize: 24
+                                                    ),),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.deepPurpleAccent
+                                                    ),
+                                                    child: Center(
+                                                      child: Text("Start lesson",style: TextStyle(
+                                                        color: Colors.white
+                                                      ),),
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Padding(
@@ -245,11 +269,65 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                       scrollDirection: Axis.horizontal,
                                                       children: [
                                                         SizedBox(
-                                                          width: MediaQuery.of(context).size.width / 1.5,
+                                                          width: MediaQuery.of(context).size.width / 1.3,
                                                           child: Card(
                                                             child: Padding(
                                                               padding: const EdgeInsets.all(8.0),
                                                               child: Column(
+                                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                children: [
+                                                                  SizedBox(
+                                                                    height: 120,
+                                                                    width: double.infinity,
+                                                                    child: Image.network(
+                                                                      "https://cdn.pixabay.com/photo/2021/01/29/08/09/doodles-5960094_960_720.jpg",
+                                                                      fit: BoxFit.fill,
+                                                                    ),
+                                                                  ),
+                                                                  SizedBox(
+                                                                    height: 8,
+                                                                  ),
+                                                                  Text(
+                                                                    "Best Web Development Course",
+                                                                    style: TextStyle(fontSize: 12),
+                                                                  ),
+                                                                  Text(
+                                                                    "for Beginners",
+                                                                    style: TextStyle(fontSize: 12),
+                                                                  ),
+                                                                  Row(
+                                                                    children: [
+                                                                      Icon(
+                                                                        Icons.access_time,
+                                                                        size: 12,
+                                                                      ),
+                                                                      Text(
+                                                                        "2 hr 10 mins",
+                                                                        style: TextStyle(fontSize: 12),
+                                                                      ),
+                                                                      Spacer(),
+                                                                      IconButton(
+                                                                        onPressed: () {},
+                                                                        icon: Icon(
+                                                                          Icons.bookmark_border,
+                                                                        ),
+                                                                        color: Colors.pink,
+                                                                      )
+                                                                    ],
+                                                                  )
+                                                                ],
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: MediaQuery.of(context).size.width / 1.3,
+                                                          child: Card(
+                                                            child: Padding(
+                                                              padding: const EdgeInsets.all(8.0),
+                                                              child: Column(
+                                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                                 children: [
                                                                   SizedBox(
@@ -261,7 +339,9 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                                       ),
                                                                     ),
                                                                   ),
-                                                                  SizedBox(height: 8,),
+                                                                  SizedBox(
+                                                                    height: 8,
+                                                                  ),
                                                                   Text(
                                                                     "Best Web Development Course",
                                                                     style: TextStyle(fontSize: 12),
@@ -272,8 +352,14 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                                   ),
                                                                   Row(
                                                                     children: [
-                                                                      Icon(Icons.access_time),
-                                                                      Text("2 hr 10 mins"),
+                                                                      Icon(
+                                                                        Icons.access_time,
+                                                                        size: 12,
+                                                                      ),
+                                                                      Text(
+                                                                        "2 hr 10 mins",
+                                                                        style: TextStyle(fontSize: 12),
+                                                                      ),
                                                                       Spacer(),
                                                                       IconButton(
                                                                         onPressed: () {},
