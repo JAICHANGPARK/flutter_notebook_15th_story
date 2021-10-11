@@ -87,25 +87,48 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             scrollDirection: Axis.horizontal,
                                             children: [
                                               GestureDetector(
-                                                onTap: (){
+                                                onTap: () {
                                                   _subTabIndex.value = 0;
                                                 },
                                                 child: Padding(
                                                   padding: const EdgeInsets.only(right: 8),
-                                                  child: Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 12),
-                                                    decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "All topic",
-                                                        style: TextStyle(color: Colors.white, fontSize: 12),
+                                                  child: ValueListenableBuilder(
+                                                    valueListenable: _subTabIndex,
+                                                    builder: (BuildContext context, int value, Widget? child) {
+                                                      return Container(
+                                                        padding: EdgeInsets.symmetric(horizontal: 12),
+                                                        decoration: BoxDecoration(
+                                                            color: value == 0 ? Colors.pink : Colors.white,
+                                                            borderRadius: BorderRadius.circular(8)),
+                                                        child: Center(
+                                                          child: Text(
+                                                            "All topic",
+                                                            style: TextStyle(
+                                                              color: value == 0 ? Colors.white : Colors.black,
+                                                              fontSize: 12,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                    child: Container(
+                                                      padding: EdgeInsets.symmetric(horizontal: 12),
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.pink,
+                                                        borderRadius: BorderRadius.circular(8),
+                                                      ),
+                                                      child: Center(
+                                                        child: Text(
+                                                          "All topic",
+                                                          style: TextStyle(color: Colors.white, fontSize: 12),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                               GestureDetector(
-                                                onTap: (){
+                                                onTap: () {
                                                   _subTabIndex.value = 1;
                                                 },
                                                 child: Padding(
@@ -126,7 +149,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 ),
                                               ),
                                               GestureDetector(
-                                                onTap: (){
+                                                onTap: () {
                                                   _subTabIndex.value = 2;
                                                 },
                                                 child: Padding(
@@ -147,7 +170,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 ),
                                               ),
                                               GestureDetector(
-                                                onTap: (){
+                                                onTap: () {
                                                   _subTabIndex.value = 3;
                                                 },
                                                 child: Padding(
@@ -171,14 +194,33 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           ),
                                         ),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
-                                        child: SizedBox(
-                                          height: 240,
-                                          child: Container(
-                                            color: Colors.blue,
-                                          ),
-                                        ),
+                                      ValueListenableBuilder(
+                                        valueListenable: _subTabIndex,
+                                        builder: (BuildContext context, int value, Widget? child) {
+                                          return IndexedStack(
+                                            index: value,
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
+                                                child: SizedBox(
+                                                  height: 240,
+                                                  child: Container(
+                                                    color: Colors.blue,
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
+                                                child: SizedBox(
+                                                  height: 240,
+                                                  child: Container(
+                                                    color: Colors.red,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          );
+                                        },
                                       )
                                     ],
                                   ),
