@@ -82,19 +82,25 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             children: [
                                               SizedBox(height: 84, width: 120,),
                                               Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text('What you want to\nlearn today?',style:
                                                     TextStyle(
                                                       fontSize: 24
                                                     ),),
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.deepPurpleAccent
-                                                    ),
-                                                    child: Center(
-                                                      child: Text("Start lesson",style: TextStyle(
-                                                        color: Colors.white
-                                                      ),),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.deepPurpleAccent
+                                                      ),
+                                                      padding: EdgeInsets.symmetric(vertical: 8,horizontal: 16),
+                                                      child: Center(
+                                                        child: Text("Start lesson",style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 16
+                                                        ),),
+                                                      ),
                                                     ),
                                                   )
                                                 ],
