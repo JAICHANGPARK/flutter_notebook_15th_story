@@ -133,16 +133,37 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 },
                                                 child: Padding(
                                                   padding: const EdgeInsets.only(right: 8),
-                                                  child: Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 12),
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(8),
-                                                    ),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "UX/UI Design",
-                                                        style: TextStyle(color: Colors.black, fontSize: 12),
+                                                  child: ValueListenableBuilder(
+                                                    builder: (BuildContext context, value, Widget? child) {
+                                                      return Container(
+                                                        padding: EdgeInsets.symmetric(horizontal: 12),
+                                                        decoration: BoxDecoration(
+                                                          color: value == 1 ? Colors.pink : Colors.white,
+                                                          borderRadius: BorderRadius.circular(8),
+                                                        ),
+                                                        child: Center(
+                                                          child: Text(
+                                                            "UX/UI Design",
+                                                            style: TextStyle(
+                                                              color: value == 1 ? Colors.white : Colors.black,
+                                                              fontSize: 12,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                    valueListenable: _subTabIndex,
+                                                    child: Container(
+                                                      padding: EdgeInsets.symmetric(horizontal: 12),
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.white,
+                                                        borderRadius: BorderRadius.circular(8),
+                                                      ),
+                                                      child: Center(
+                                                        child: Text(
+                                                          "UX/UI Design",
+                                                          style: TextStyle(color: Colors.black, fontSize: 12),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
@@ -154,18 +175,27 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                 },
                                                 child: Padding(
                                                   padding: const EdgeInsets.only(right: 8),
-                                                  child: Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 12),
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(8),
-                                                    ),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "Web Development",
-                                                        style: TextStyle(color: Colors.black, fontSize: 12),
-                                                      ),
-                                                    ),
+                                                  child: ValueListenableBuilder(
+                                                    builder: (BuildContext context, value, Widget? child) {
+                                                      return Container(
+                                                        padding: EdgeInsets.symmetric(horizontal: 12),
+                                                        decoration: BoxDecoration(
+                                                          color: value == 2 ? Colors.pink : Colors.white,
+                                                          borderRadius: BorderRadius.circular(8),
+                                                        ),
+                                                        child: Center(
+                                                          child: Text(
+                                                            "Web Development",
+                                                            style: TextStyle(
+                                                              color: value == 2 ? Colors.white : Colors.black,
+                                                              fontSize: 12,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                    valueListenable: _subTabIndex,
+
                                                   ),
                                                 ),
                                               ),
