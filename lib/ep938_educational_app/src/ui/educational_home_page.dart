@@ -240,11 +240,39 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                               Padding(
                                                 padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
                                                 child: SizedBox(
-                                                  height: 240,
-                                                  child: Container(
-                                                    color: Colors.blue,
-                                                  ),
-                                                ),
+                                                    height: 240,
+                                                    child: ListView(
+                                                      scrollDirection: Axis.horizontal,
+                                                      children: [
+                                                        SizedBox(
+                                                          width: MediaQuery.of(context).size.width / 1.5,
+                                                          child: Card(
+                                                            child: Padding(
+                                                              padding: const EdgeInsets.all(8.0),
+                                                              child: Column(
+                                                                children: [
+                                                                  Expanded(
+                                                                    child: Image.network(
+
+                                                                        "https://cdn.pixabay.com/photo/2021/01/29/08/09/doodles-5960094_960_720.jpg"),
+                                                                  ),
+                                                                  Text("Best Web Development Course"),
+                                                                  Text("for Beginners"),
+                                                                  Row(
+                                                                    children: [
+                                                                      Icon(Icons.access_time),
+                                                                      Text("2 hr 10 mins"),
+                                                                      Spacer(),
+
+                                                                    ],
+                                                                  )
+                                                                ],
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
