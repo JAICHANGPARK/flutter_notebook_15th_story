@@ -34,7 +34,6 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                       decoration: BoxDecoration(
                           color: Colors.white, borderRadius: BorderRadius.circular(4), border: Border.all(color: Colors.grey)),
                       child: Icon(Icons.clear),
-
                     ),
                   ),
                   Container(
@@ -42,24 +41,47 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                     width: 84,
                     decoration: BoxDecoration(
                       color: Colors.pink,
-
                     ),
                   ),
                   Text("Dreamwalker"),
                   Text("Dreamwalker@flutter.dev"),
-                  SizedBox(height: 24,),
-                  Row(
-                    children: [
-                      Container(
-                        height: 38,
-                        width: 38,
-                        decoration: BoxDecoration(color: Colors.white),
-                        child: Icon(Icons.person_outline),
-                      ),
-                      Text("My profile")
-                    ],
+                  SizedBox(
+                    height: 24,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.person_outline),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("My profile")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.person_outline),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("My courese")
+                      ],
+                    ),
                   )
-
                 ],
               ),
               left: 16,
