@@ -94,8 +94,8 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                   Padding(
                                                     padding: const EdgeInsets.symmetric(vertical: 16),
                                                     child: Container(
-                                                      decoration: BoxDecoration(color: Colors.deepPurpleAccent,
-                                                      borderRadius: BorderRadius.circular(8)),
+                                                      decoration: BoxDecoration(
+                                                          color: Colors.deepPurpleAccent, borderRadius: BorderRadius.circular(8)),
                                                       padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                                                       child: Center(
                                                         child: Text(
@@ -398,6 +398,18 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             ],
                                           );
                                         },
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          children: [
+                                            Text("Top Mentors for you"),
+                                            Text("View all",style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey
+                                            ),)
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
