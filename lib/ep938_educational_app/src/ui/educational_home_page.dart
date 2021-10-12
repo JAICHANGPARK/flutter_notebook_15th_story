@@ -90,7 +90,75 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                         SizedBox(
                           width: 16,
                         ),
-                        Text("My courese")
+                        Text("My courses")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.bookmark_border),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("Saves courses")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.share_outlined),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("Invate friends")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.supervisor_account_outlined),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("Help & supports")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.settings_outlinedg),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("Settings")
                       ],
                     ),
                   )
