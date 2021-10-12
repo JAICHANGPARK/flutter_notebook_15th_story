@@ -20,6 +20,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
         child: Stack(
           children: [
             Positioned(
+              left: 16,
+              right: 0,
+              top: 24,
+              bottom: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -179,9 +183,13 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                       ],
                     ),
                   ),
+                  Spacer(),
                   Container(
+                    width: 120,
+                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                     decoration: BoxDecoration(
                       color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Row(
                       children: [
@@ -189,16 +197,16 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                           Icons.logout_outlined,
                           color: Colors.white,
                         ),
-                        Text("Logout")
+                        Text(
+                          "Logout",
+                          style: TextStyle(color: Colors.white),
+                        )
                       ],
                     ),
                   )
                 ],
               ),
-              left: 16,
-              right: 0,
-              top: 24,
-              bottom: 0,
+
             ),
             AnimatedPositioned(
               left: isDrawerOpen ? 240 : 0,
