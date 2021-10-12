@@ -29,7 +29,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
             AnimatedPositioned(
               left: isDrawerOpen ? 240 : 0,
               top: isDrawerOpen ? 120 : 0,
-              right: isDrawerOpen ? -80: 0,
+              right: isDrawerOpen ? -80 : 0,
               bottom: 0,
               duration: Duration(milliseconds: 250),
               child: Padding(
@@ -56,11 +56,10 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           top: 0,
                                           bottom: 0,
                                           child: Container(
-
-                                            decoration:BoxDecoration(
+                                            decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(8),
                                               color: isDrawerOpen ? Colors.white : Colors.grey[200],
-                                            ) ,
+                                            ),
                                             child: SingleChildScrollView(
                                               child: Column(
                                                 children: [
@@ -118,7 +117,8 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                                 padding: const EdgeInsets.symmetric(vertical: 16),
                                                                 child: Container(
                                                                   decoration: BoxDecoration(
-                                                                      color: Colors.deepPurpleAccent, borderRadius: BorderRadius.circular(8)),
+                                                                      color: Colors.deepPurpleAccent,
+                                                                      borderRadius: BorderRadius.circular(8)),
                                                                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                                                                   child: Center(
                                                                     child: Text(
