@@ -432,6 +432,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                       bottomRight: Radius.circular(4),
                                                       bottomLeft: Radius.circular(4),
                                                     )),
+                                                padding: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
                                                 child: Row(
                                                   children: [
                                                     Container(
@@ -440,6 +441,15 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                       decoration: BoxDecoration(
                                                         color: Colors.grey
                                                       ),
+                                                    ),
+                                                    Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Text("Dreamwalker",style: TextStyle(
+                                                          fontWeight: FontWeight.bold
+                                                        ),),
+                                                        Text("Flutter Dev")
+                                                      ],
                                                     )
                                                   ],
                                                 ),
