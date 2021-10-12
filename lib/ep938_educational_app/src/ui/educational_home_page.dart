@@ -20,11 +20,28 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
         child: Stack(
           children: [
             Positioned(
-              child: Placeholder(),
-              left: 0,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isDrawerOpen = false;
+                      });
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white, borderRadius: BorderRadius.circular(4), border: Border.all(color: Colors.grey)),
+                      child: Icon(Icons.clear),
+                    ),
+                  )
+                ],
+              ),
+              left: 16,
               right: 0,
+              top: 24,
               bottom: 0,
-              top: 0,
             ),
             AnimatedPositioned(
               left: isDrawerOpen ? 240 : 0,
