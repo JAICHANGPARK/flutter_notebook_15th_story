@@ -417,15 +417,24 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                       ),
                                       SizedBox(
                                         height: 100,
-                                        child: ListView(
-                                          scrollDirection: Axis.horizontal,
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.blue,
-                                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(16))),
-                                            )
-                                          ],
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: ListView(
+                                            scrollDirection: Axis.horizontal,
+                                            children: [
+                                              Container(
+                                                width: MediaQuery.of(context).size.width / 1.5,
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.only(
+                                                      topLeft: Radius.circular(16),
+                                                      topRight: Radius.circular(16),
+                                                      bottomRight: Radius.circular(4),
+                                                      bottomLeft: Radius.circular(4),
+                                                    )),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],
