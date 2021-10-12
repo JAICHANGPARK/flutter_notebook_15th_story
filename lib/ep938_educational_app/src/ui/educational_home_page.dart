@@ -404,27 +404,26 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                         child: Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text("Top Mentors for you",style: TextStyle(
-                                              fontSize: 20
-                                            ),),
-                                            Text("View all",style: TextStyle(
-                                              fontSize: 12,
-                                              color: Colors.grey
-                                            ),)
+                                            Text(
+                                              "Top Mentors for you",
+                                              style: TextStyle(fontSize: 20),
+                                            ),
+                                            Text(
+                                              "View all",
+                                              style: TextStyle(fontSize: 12, color: Colors.grey),
+                                            )
                                           ],
                                         ),
                                       ),
                                       SizedBox(
                                         height: 100,
                                         child: ListView(
+                                          scrollDirection: Axis.horizontal,
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                                borderRadius: BorderRadius.only(
-                                                  topLeft: Radius.circular(16)
-                                                )
-                                              ),
+                                                  color: Colors.blue,
+                                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(16))),
                                             )
                                           ],
                                         ),
