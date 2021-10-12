@@ -432,16 +432,14 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                       bottomRight: Radius.circular(4),
                                                       bottomLeft: Radius.circular(4),
                                                     )),
-                                                padding: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                                 child: Row(
                                                   children: [
                                                     Container(
                                                       height: 48,
                                                       width: 48,
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.grey[200],
-                                                        borderRadius: BorderRadius.circular(8)
-                                                      ),
+                                                      decoration:
+                                                          BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                                                     ),
                                                     Padding(
                                                       padding: const EdgeInsets.all(8.0),
@@ -449,10 +447,13 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                         mainAxisAlignment: MainAxisAlignment.center,
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
-                                                          Text("Dreamwalker",style: TextStyle(
-                                                            fontWeight: FontWeight.bold
-                                                          ),),
-                                                          SizedBox(height: 4,),
+                                                          Text(
+                                                            "Dreamwalker",
+                                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                                          ),
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
                                                           Text("Flutter Dev")
                                                         ],
                                                       ),
@@ -461,15 +462,22 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                     Column(
                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                       children: [
-                                                        Icon(Icons.arrow_downward_outlined),
-                                                        SizedBox(height: 8,),
-                                                        Icon(Icons.chat_outlined)
+                                                        Icon(
+                                                          Icons.arrow_downward_outlined,
+                                                          color: Colors.pink,
+                                                        ),
+                                                        SizedBox(
+                                                          height: 8,
+                                                        ),
+                                                        Icon(
+                                                          Icons.chat_outlined,
+                                                          color: Colors.pink,
+                                                        )
                                                       ],
                                                     )
                                                   ],
                                                 ),
                                               ),
-
                                             ],
                                           ),
                                         ),
