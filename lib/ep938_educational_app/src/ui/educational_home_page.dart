@@ -418,7 +418,14 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                         height: 100,
                                         child: ListView(
                                           children: [
-                                            
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(16)
+                                                )
+                                              ),
+                                            )
                                           ],
                                         ),
                                       )
