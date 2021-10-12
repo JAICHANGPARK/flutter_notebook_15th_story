@@ -36,7 +36,12 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                     child: Container(
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          color: Colors.white, borderRadius: BorderRadius.circular(4), border: Border.all(color: Colors.grey)),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                      ),
                       child: Icon(Icons.clear),
                     ),
                   ),
@@ -206,7 +211,6 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                   )
                 ],
               ),
-
             ),
             AnimatedPositioned(
               left: isDrawerOpen ? 240 : 0,
