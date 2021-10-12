@@ -272,7 +272,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                               Padding(
                                                 padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
                                                 child: SizedBox(
-                                                    height: 240,
+                                                    height: 220,
                                                     child: ListView(
                                                       scrollDirection: Axis.horizontal,
                                                       children: [
@@ -286,7 +286,7 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                                 children: [
                                                                   SizedBox(
-                                                                    height: 120,
+                                                                    height: 80,
                                                                     width: double.infinity,
                                                                     child: Image.network(
                                                                       "https://cdn.pixabay.com/photo/2021/01/29/08/09/doodles-5960094_960_720.jpg",
@@ -402,8 +402,11 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text("Top Mentors for you"),
+                                            Text("Top Mentors for you",style: TextStyle(
+                                              fontSize: 20
+                                            ),),
                                             Text("View all",style: TextStyle(
                                               fontSize: 12,
                                               color: Colors.grey
