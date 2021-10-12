@@ -153,12 +153,43 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                          child: Icon(Icons.settings_outlinedg),
+                          child: Icon(Icons.settings_outlined),
                         ),
                         SizedBox(
                           width: 16,
                         ),
                         Text("Settings")
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                          child: Icon(Icons.info_outline),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text("About us")
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.logout_outlined,
+                          color: Colors.white,
+                        ),
+                        Text("Logout")
                       ],
                     ),
                   )
