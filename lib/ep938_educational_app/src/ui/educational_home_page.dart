@@ -425,14 +425,26 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                               Container(
                                                 width: MediaQuery.of(context).size.width / 1.5,
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue,
+                                                    color: Colors.white,
                                                     borderRadius: BorderRadius.only(
                                                       topLeft: Radius.circular(16),
                                                       topRight: Radius.circular(16),
                                                       bottomRight: Radius.circular(4),
                                                       bottomLeft: Radius.circular(4),
                                                     )),
-                                              )
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      height: 48,
+                                                      width: 48,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+
                                             ],
                                           ),
                                         ),
