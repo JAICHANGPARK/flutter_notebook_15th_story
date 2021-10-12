@@ -413,6 +413,14 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                             ),)
                                           ],
                                         ),
+                                      ),
+                                      SizedBox(
+                                        height: 100,
+                                        child: ListView(
+                                          children: [
+                                            
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
