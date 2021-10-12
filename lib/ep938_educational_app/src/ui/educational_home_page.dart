@@ -27,8 +27,8 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
               top: 0,
             ),
             AnimatedPositioned(
-              left: isDrawerOpen ? 160 : 0,
-              top: isDrawerOpen ? 64 : 0,
+              left: isDrawerOpen ? 240 : 0,
+              top: isDrawerOpen ? 120 : 0,
               right: isDrawerOpen ? -80: 0,
               bottom: 0,
               duration: Duration(milliseconds: 250),
@@ -49,14 +49,18 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                   Stack(
                                     children: [
                                       Transform.rotate(
-                                        angle: isDrawerOpen ? -0.1 : 0,
+                                        angle: isDrawerOpen ? -0.12 : 0,
                                         child: Positioned(
                                           left: 0,
                                           right: 0,
                                           top: 0,
                                           bottom: 0,
                                           child: Container(
-                                            color: isDrawerOpen ? Colors.white : Colors.grey[200],
+
+                                            decoration:BoxDecoration(
+                                              borderRadius: BorderRadius.circular(8),
+                                              color: isDrawerOpen ? Colors.white : Colors.grey[200],
+                                            ) ,
                                             child: SingleChildScrollView(
                                               child: Column(
                                                 children: [
