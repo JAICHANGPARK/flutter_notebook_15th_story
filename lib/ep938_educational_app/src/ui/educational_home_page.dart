@@ -445,11 +445,13 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                     Padding(
                                                       padding: const EdgeInsets.all(8.0),
                                                       child: Column(
+                                                        mainAxisAlignment: MainAxisAlignment.center,
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
                                                           Text("Dreamwalker",style: TextStyle(
                                                             fontWeight: FontWeight.bold
                                                           ),),
+                                                          SizedBox(height: 4,),
                                                           Text("Flutter Dev")
                                                         ],
                                                       ),
