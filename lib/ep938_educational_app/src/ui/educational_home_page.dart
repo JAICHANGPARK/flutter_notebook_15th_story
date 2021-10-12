@@ -422,60 +422,122 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                           child: ListView(
                                             scrollDirection: Axis.horizontal,
                                             children: [
-                                              Container(
-                                                width: MediaQuery.of(context).size.width / 1.5,
-                                                decoration: BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius: BorderRadius.only(
-                                                      topLeft: Radius.circular(16),
-                                                      topRight: Radius.circular(16),
-                                                      bottomRight: Radius.circular(4),
-                                                      bottomLeft: Radius.circular(4),
-                                                    )),
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                                child: Row(
-                                                  children: [
-                                                    Container(
-                                                      height: 48,
-                                                      width: 48,
-                                                      decoration:
-                                                          BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                                                    ),
-                                                    Padding(
-                                                      padding: const EdgeInsets.all(8.0),
-                                                      child: Column(
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 8),
+                                                child: Container(
+                                                  width: MediaQuery.of(context).size.width / 1.5,
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.only(
+                                                        topLeft: Radius.circular(16),
+                                                        topRight: Radius.circular(16),
+                                                        bottomRight: Radius.circular(4),
+                                                        bottomLeft: Radius.circular(4),
+                                                      )),
+                                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                  child: Row(
+                                                    children: [
+                                                      Container(
+                                                        height: 48,
+                                                        width: 48,
+                                                        decoration:
+                                                            BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                                                      ),
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(8.0),
+                                                        child: Column(
+                                                          mainAxisAlignment: MainAxisAlignment.center,
+                                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                                          children: [
+                                                            Text(
+                                                              "Dreamwalker",
+                                                              style: TextStyle(fontWeight: FontWeight.bold),
+                                                            ),
+                                                            SizedBox(
+                                                              height: 4,
+                                                            ),
+                                                            Text("Flutter Dev")
+                                                          ],
+                                                        ),
+                                                      ),
+                                                      Spacer(),
+                                                      Column(
                                                         mainAxisAlignment: MainAxisAlignment.center,
-                                                        crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
-                                                          Text(
-                                                            "Dreamwalker",
-                                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                                          Icon(
+                                                            Icons.arrow_downward_outlined,
+                                                            color: Colors.pink,
                                                           ),
                                                           SizedBox(
-                                                            height: 4,
+                                                            height: 8,
                                                           ),
-                                                          Text("Flutter Dev")
+                                                          Icon(
+                                                            Icons.chat_outlined,
+                                                            color: Colors.pink,
+                                                          )
                                                         ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 8),
+                                                child: Container(
+                                                  width: MediaQuery.of(context).size.width / 1.5,
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.only(
+                                                        topLeft: Radius.circular(16),
+                                                        topRight: Radius.circular(16),
+                                                        bottomRight: Radius.circular(4),
+                                                        bottomLeft: Radius.circular(4),
+                                                      )),
+                                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                  child: Row(
+                                                    children: [
+                                                      Container(
+                                                        height: 48,
+                                                        width: 48,
+                                                        decoration:
+                                                        BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                                                       ),
-                                                    ),
-                                                    Spacer(),
-                                                    Column(
-                                                      mainAxisAlignment: MainAxisAlignment.center,
-                                                      children: [
-                                                        Icon(
-                                                          Icons.arrow_downward_outlined,
-                                                          color: Colors.pink,
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(8.0),
+                                                        child: Column(
+                                                          mainAxisAlignment: MainAxisAlignment.center,
+                                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                                          children: [
+                                                            Text(
+                                                              "Dreamwalker",
+                                                              style: TextStyle(fontWeight: FontWeight.bold),
+                                                            ),
+                                                            SizedBox(
+                                                              height: 4,
+                                                            ),
+                                                            Text("Flutter Dev")
+                                                          ],
                                                         ),
-                                                        SizedBox(
-                                                          height: 8,
-                                                        ),
-                                                        Icon(
-                                                          Icons.chat_outlined,
-                                                          color: Colors.pink,
-                                                        )
-                                                      ],
-                                                    )
-                                                  ],
+                                                      ),
+                                                      Spacer(),
+                                                      Column(
+                                                        mainAxisAlignment: MainAxisAlignment.center,
+                                                        children: [
+                                                          Icon(
+                                                            Icons.arrow_downward_outlined,
+                                                            color: Colors.pink,
+                                                          ),
+                                                          SizedBox(
+                                                            height: 8,
+                                                          ),
+                                                          Icon(
+                                                            Icons.chat_outlined,
+                                                            color: Colors.pink,
+                                                          )
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                             ],
