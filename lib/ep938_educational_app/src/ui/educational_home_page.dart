@@ -442,13 +442,22 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                         color: Colors.grey
                                                       ),
                                                     ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(8.0),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Text("Dreamwalker",style: TextStyle(
+                                                            fontWeight: FontWeight.bold
+                                                          ),),
+                                                          Text("Flutter Dev")
+                                                        ],
+                                                      ),
+                                                    ),
                                                     Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
                                                       children: [
-                                                        Text("Dreamwalker",style: TextStyle(
-                                                          fontWeight: FontWeight.bold
-                                                        ),),
-                                                        Text("Flutter Dev")
+                                                        Icon(Icons.arrow_downward_outlined),
+                                                        Icon(Icons.chat_outlined)
                                                       ],
                                                     )
                                                   ],
