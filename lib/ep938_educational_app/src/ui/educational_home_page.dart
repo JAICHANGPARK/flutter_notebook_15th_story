@@ -456,9 +456,12 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                         ],
                                                       ),
                                                     ),
+                                                    Spacer(),
                                                     Column(
+                                                      mainAxisAlignment: MainAxisAlignment.center,
                                                       children: [
                                                         Icon(Icons.arrow_downward_outlined),
+                                                        SizedBox(height: 8,),
                                                         Icon(Icons.chat_outlined)
                                                       ],
                                                     )
