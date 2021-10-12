@@ -439,7 +439,8 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                                                       height: 48,
                                                       width: 48,
                                                       decoration: BoxDecoration(
-                                                        color: Colors.grey
+                                                        color: Colors.grey[200],
+                                                        borderRadius: BorderRadius.circular(8)
                                                       ),
                                                     ),
                                                     Padding(
