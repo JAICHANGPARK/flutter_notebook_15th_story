@@ -34,8 +34,32 @@ class _EducationalHomePageState extends State<EducationalHomePage> with TickerPr
                       decoration: BoxDecoration(
                           color: Colors.white, borderRadius: BorderRadius.circular(4), border: Border.all(color: Colors.grey)),
                       child: Icon(Icons.clear),
+
                     ),
+                  ),
+                  Container(
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+
+                    ),
+                  ),
+                  Text("Dreamwalker"),
+                  Text("Dreamwalker@flutter.dev"),
+                  SizedBox(height: 24,),
+                  Row(
+                    children: [
+                      Container(
+                        height: 38,
+                        width: 38,
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Icon(Icons.person_outline),
+                      ),
+                      Text("My profile")
+                    ],
                   )
+
                 ],
               ),
               left: 16,
