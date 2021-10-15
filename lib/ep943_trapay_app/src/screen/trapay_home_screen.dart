@@ -21,6 +21,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
             child: Padding(
               padding: const EdgeInsets.only(left: 12, top: 12, bottom: 0),
               child: Column(
+
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12),
@@ -85,9 +86,14 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       Spacer(),
-                      IconButton(onPressed: () {}, icon: Icon(Icons.filter_list))
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.filter_list),
+                        color: Colors.grey,
+                      )
                     ],
                   ),
+                  Text("Last 10 Days"),
                 ],
               ),
             ),
