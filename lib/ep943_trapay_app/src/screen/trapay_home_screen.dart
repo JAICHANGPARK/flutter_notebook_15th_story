@@ -16,6 +16,22 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.apps),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "Services",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "Chatting",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "Groups",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "More",
           )
         ],
       ),
