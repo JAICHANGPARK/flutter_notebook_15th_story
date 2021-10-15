@@ -34,14 +34,26 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                           padding: EdgeInsets.all(12),
                           child: Icon(Icons.qr_code),
                         ),
-                        SizedBox(width: 12,),
-                        Text("Scan To Pay",style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold
-                        ),),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Text(
+                          "Scan To Pay",
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
                         Spacer(),
                         CircleAvatar()
                       ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: SizedBox(
+                      height: 160,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
                     ),
                   )
                 ],
