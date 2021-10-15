@@ -46,7 +46,6 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                       ],
                     ),
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     child: SizedBox(
@@ -55,6 +54,16 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                         color: Colors.blue,
                       ),
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Text("Services"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See More"),
+                        style: TextButton.styleFrom(primary: Colors.grey),
+                      ),
+                    ],
                   )
                 ],
               ),
