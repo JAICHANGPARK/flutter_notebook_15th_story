@@ -10,6 +10,15 @@ class TrapayHomeScreen extends StatefulWidget {
 class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: "Home",
+          )
+        ],
+      ),
+    );
   }
 }
