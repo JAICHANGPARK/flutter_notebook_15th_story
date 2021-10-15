@@ -15,6 +15,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: bottomTabIndex,
+        type: BottomNavigationBarType.fixed,
         onTap: (idx) {
           setState(() {
             bottomTabIndex = idx;
