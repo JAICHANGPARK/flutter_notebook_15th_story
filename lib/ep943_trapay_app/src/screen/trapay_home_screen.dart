@@ -24,7 +24,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
           ),
           Container(
             child: Center(
-              child: Text("Catting"),
+              child: Text("Chatting"),
             ),
           ),
           Container(
