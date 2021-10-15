@@ -57,7 +57,11 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                   ),
                   Row(
                     children: [
-                      Text("Services"),
+                      Text(
+                        "Services",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      Spacer(),
                       TextButton(
                         onPressed: () {},
                         child: Text("See More"),
@@ -68,11 +72,21 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: SizedBox(
-                      height: 64,
+                      height: 72,
                       child: Container(
                         color: Colors.blue,
                       ),
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "History",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      Spacer(),
+                      IconButton(onPressed: () {}, icon: Icon(Icons.filter_list))
+                    ],
                   ),
                 ],
               ),
