@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep938_educational_app/educational_app.dart';
+import 'ep943_trapay_app/trapay_app.dart';
 
-main() => runApp(EducationalApp());
+main() => runApp(TrapayApp());
