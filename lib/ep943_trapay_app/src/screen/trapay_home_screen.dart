@@ -64,7 +64,16 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                         style: TextButton.styleFrom(primary: Colors.grey),
                       ),
                     ],
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: SizedBox(
+                      height: 64,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
