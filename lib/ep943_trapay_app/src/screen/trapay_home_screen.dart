@@ -8,10 +8,20 @@ class TrapayHomeScreen extends StatefulWidget {
 }
 
 class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
+  int bottomTabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: bottomTabIndex,
+        onTap: (idx) {
+          setState(() {
+            bottomTabIndex = idx;
+          });
+        },
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.apps),
