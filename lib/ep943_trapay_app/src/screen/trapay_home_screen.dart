@@ -16,6 +16,10 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: bottomTabIndex,
         type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: TextStyle(fontSize: 10),
+        selectedFontSize: 10,
+        unselectedLabelStyle: TextStyle(fontSize: 10),
+        unselectedFontSize: 10,
         onTap: (idx) {
           setState(() {
             bottomTabIndex = idx;
