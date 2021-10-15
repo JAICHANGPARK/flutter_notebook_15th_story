@@ -21,7 +21,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
             child: Padding(
               padding: const EdgeInsets.only(left: 12, top: 12, bottom: 0),
               child: Column(
-
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12),
@@ -94,6 +94,17 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                     ],
                   ),
                   Text("Last 10 Days"),
+                  Column(
+                    children: List.generate(10, (index) => Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 7),
+                      child: SizedBox(
+                        height: 64,
+                        child: Container(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    )),
+                  )
                 ],
               ),
             ),
