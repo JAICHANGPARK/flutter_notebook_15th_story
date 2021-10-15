@@ -94,16 +94,19 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                     ],
                   ),
                   Text("Last 10 Days"),
-                  Column(
-                    children: List.generate(10, (index) => Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 7),
-                      child: SizedBox(
-                        height: 64,
-                        child: Container(
-                          color: Colors.grey,
+                  Padding(
+                    padding: const EdgeInsets.only(right: 12),
+                    child: Column(
+                      children: List.generate(10, (index) => Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 7),
+                        child: SizedBox(
+                          height: 64,
+                          child: Container(
+                            color: Colors.grey,
+                          ),
                         ),
-                      ),
-                    )),
+                      )),
+                    ),
                   )
                 ],
               ),
