@@ -16,7 +16,38 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
       body: IndexedStack(
         index: bottomTabIndex,
         children: [
-          Placeholder(),
+          SafeArea(
+              child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 12, top: 12, bottom: 0),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 12),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.yellow,
+                          ),
+                          padding: EdgeInsets.all(12),
+                          child: Icon(Icons.qr_code),
+                        ),
+                        SizedBox(width: 12,),
+                        Text("Scan To Pay",style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
+                        ),),
+                        Spacer(),
+                        CircleAvatar()
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          )),
           Container(
             child: Center(
               child: Text("Services"),
