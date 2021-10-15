@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep943_trapay_app/src/screen/Trapay_home_screen.dart';
 
 
 class TrapayApp extends StatelessWidget {
@@ -6,6 +7,8 @@ class TrapayApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: TrapayHomeScreen(),
+    );
   }
 }
