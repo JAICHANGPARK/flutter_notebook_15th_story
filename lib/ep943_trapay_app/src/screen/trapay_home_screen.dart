@@ -13,6 +13,32 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: IndexedStack(
+        index: bottomTabIndex,
+        children: [
+          Placeholder(),
+          Container(
+            child: Center(
+              child: Text("Services"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("Catting"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("groups"),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("Mores"),
+            ),
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: bottomTabIndex,
         type: BottomNavigationBarType.fixed,
