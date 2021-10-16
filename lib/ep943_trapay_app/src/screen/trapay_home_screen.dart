@@ -60,7 +60,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                             return Padding(
                               padding: const EdgeInsets.only(right: 12),
                               child: Container(
-                                width: MediaQuery.of(context).size.width / 2,
+                                width: MediaQuery.of(context).size.width / 2.2,
                                 padding: EdgeInsets.all(16),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
