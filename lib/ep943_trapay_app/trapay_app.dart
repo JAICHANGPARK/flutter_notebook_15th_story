@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_15th_story/ep943_trapay_app/src/screen/trapay_home_screen.dart';
 import "package:flutter_localizations/flutter_localizations.dart";
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class TrapayApp extends StatelessWidget {
   const TrapayApp({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class TrapayApp extends StatelessWidget {
     return MaterialApp(
       restorationScopeId: "trapayApp",
       localizationsDelegates: [
-        // AppLocalizations.delegate, // Add this line
+        AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
