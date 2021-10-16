@@ -76,10 +76,12 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                           size: 32,
                                           color: index % 2 == 0 ? Colors.black : Colors.white,
                                         ),
-                                        Text("*** *** *123",
-                                        style: TextStyle(
-                                          color: index % 2 == 0 ? Colors.black : Colors.white,
-                                        ),),
+                                        Text(
+                                          "*** *** *123",
+                                          style: TextStyle(
+                                            color: index % 2 == 0 ? Colors.black : Colors.white,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     SizedBox(
@@ -87,16 +89,21 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                     ),
                                     Text(
                                       "5360 EGP",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18,
-                                        color: index % 2 == 0 ? Colors.black : Colors.white,),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                        color: index % 2 == 0 ? Colors.black : Colors.white,
+                                      ),
                                     ),
                                     SizedBox(
                                       height: 8,
                                     ),
                                     Text(
                                       "Credit Card",
-                                      style: TextStyle(fontSize: 12,
-                                        color: index % 2 == 0 ? Colors.black : Colors.white,),
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: index % 2 == 0 ? Colors.black : Colors.white,
+                                      ),
                                     )
                                   ],
                                 ),
