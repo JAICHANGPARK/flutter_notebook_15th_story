@@ -8,6 +8,7 @@ class TrapayApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      restorationScopeId: "trapayApp",
       home: TrapayHomeScreen(),
     );
   }
