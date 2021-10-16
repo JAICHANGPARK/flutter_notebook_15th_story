@@ -73,7 +73,9 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                         Icon(LineIcons.mastercardCreditCard),
                                         Text("*** *** *123"),
                                       ],
-                                    )
+                                    ),
+                                    Text("5360 EGP"),
+                                    Text("Credit Card")
                                   ],
                                 ),
                               ),
