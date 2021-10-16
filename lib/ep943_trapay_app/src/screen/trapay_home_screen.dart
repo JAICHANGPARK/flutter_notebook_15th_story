@@ -76,7 +76,10 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                           size: 32,
                                           color: index % 2 == 0 ? Colors.black : Colors.white,
                                         ),
-                                        Text("*** *** *123"),
+                                        Text("*** *** *123",
+                                        style: TextStyle(
+                                          color: index % 2 == 0 ? Colors.black : Colors.white,
+                                        ),),
                                       ],
                                     ),
                                     SizedBox(
