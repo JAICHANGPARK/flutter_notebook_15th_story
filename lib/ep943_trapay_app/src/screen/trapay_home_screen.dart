@@ -78,7 +78,11 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                       ],
                                     ),
                                     SizedBox(height: 16,),
-                                    Text("5360 EGP"),
+                                    Text("5360 EGP",style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18
+                                    ),),
+                                    SizedBox(height: 8,),
                                     Text("Credit Card")
                                   ],
                                 ),
