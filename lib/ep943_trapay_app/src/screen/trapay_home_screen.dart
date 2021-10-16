@@ -193,7 +193,10 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                 child: SizedBox(
                                   height: 64,
                                   child: Container(
-                                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
                                     child: Row(
                                       children: [
                                         Container(
@@ -201,14 +204,21 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                           width: 48,
                                           decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
                                         ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              "Shein Clothos",
-                                              style: TextStyle(fontWeight: FontWeight.bold),
-                                            ),
-                                            Text("23 Feb 2021")
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Shein Clothos",
+                                                style: TextStyle(fontWeight: FontWeight.bold),
+                                              ),
+                                              SizedBox(
+                                                height: 4,
+                                              ),
+                                              Text("23 Feb 2021")
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),
