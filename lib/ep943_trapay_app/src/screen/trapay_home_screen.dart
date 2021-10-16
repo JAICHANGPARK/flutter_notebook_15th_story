@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
 class TrapayHomeScreen extends StatefulWidget {
@@ -63,29 +64,35 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                 width: MediaQuery.of(context).size.width / 2.2,
                                 padding: EdgeInsets.all(16),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: index % 2 == 0 ? Colors.white : Colors.black
-                                ),
+                                    borderRadius: BorderRadius.circular(8), color: index % 2 == 0 ? Colors.grey[100] : Colors.black),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Icon(LineIcons.mastercardCreditCard,
-                                        size: 32,),
+                                        Icon(
+                                          index % 2 == 0 ? LineIcons.mastercardCreditCard : LineIcons.visaCreditCard,
+                                          size: 32,
+                                          color: index % 2 == 0 ? Colors.black : Colors.white,
+                                        ),
                                         Text("*** *** *123"),
                                       ],
                                     ),
-                                    SizedBox(height: 16,),
-                                    Text("5360 EGP",style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18
-                                    ),),
-                                    SizedBox(height: 8,),
-                                    Text("Credit Card",style: TextStyle(
-                                      fontSize: 12
-                                    ),)
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Text(
+                                      "5360 EGP",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "Credit Card",
+                                      style: TextStyle(fontSize: 12),
+                                    )
                                   ],
                                 ),
                               ),
