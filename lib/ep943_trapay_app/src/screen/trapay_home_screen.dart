@@ -53,12 +53,12 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                     child: SizedBox(
                       height: 160,
                       child: Container(
-                        color: Colors.blue,
+                        // color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 8),
+                              padding: const EdgeInsets.only(right: 12),
                               child: Container(
                                 width: MediaQuery.of(context).size.width / 2,
                                 padding: EdgeInsets.all(16),
@@ -67,13 +67,17 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                   color: Colors.white
                                 ),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Icon(LineIcons.mastercardCreditCard),
+                                        Icon(LineIcons.mastercardCreditCard,
+                                        size: 32,),
                                         Text("*** *** *123"),
                                       ],
                                     ),
+                                    SizedBox(height: 16,),
                                     Text("5360 EGP"),
                                     Text("Credit Card")
                                   ],
