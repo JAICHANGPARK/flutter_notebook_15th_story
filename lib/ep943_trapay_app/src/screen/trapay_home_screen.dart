@@ -189,20 +189,23 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                       children: List.generate(
                           10,
                           (index) => Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 7),
+                                padding: const EdgeInsets.symmetric(vertical: 6),
                                 child: SizedBox(
-                                  height: 64,
+                                  height: 52,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                     child: Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 48,
-                                          width: 48,
-                                          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                        Center(
+                                          child: Container(
+                                            height: 48,
+                                            width: 48,
+                                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                          ),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
@@ -220,7 +223,8 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                               Text("23 Feb 2021")
                                             ],
                                           ),
-                                        )
+                                        ),
+                                        Text("-152EGP")
                                       ],
                                     ),
                                   ),
