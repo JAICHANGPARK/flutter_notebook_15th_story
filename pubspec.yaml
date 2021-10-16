@@ -17,6 +17,9 @@ dependencies:
   freezed_annotation: any
   percent_indicator: ^3.4.0
 
+  flutter_localizations: # Add this line
+    sdk: flutter         # Add this line
+  intl: ^0.17.0 # Add this line
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -27,6 +30,7 @@ dev_dependencies:
   json_serializable: any
 
 flutter:
+  generate: true # Add this line
   uses-material-design: true
 
 
