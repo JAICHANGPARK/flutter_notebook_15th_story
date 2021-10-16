@@ -64,7 +64,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                 padding: EdgeInsets.all(16),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white
+                                  color: index % 2 == 0 ? Colors.white : Colors.black
                                 ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,7 +83,9 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                       fontSize: 18
                                     ),),
                                     SizedBox(height: 8,),
-                                    Text("Credit Card")
+                                    Text("Credit Card",style: TextStyle(
+                                      fontSize: 12
+                                    ),)
                                   ],
                                 ),
                               ),
