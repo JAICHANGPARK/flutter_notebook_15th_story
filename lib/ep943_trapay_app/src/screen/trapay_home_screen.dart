@@ -139,7 +139,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index){
                             return Padding(
-                              padding: const EdgeInsets.fromLTRB(0,8,8,12),
+                              padding: const EdgeInsets.fromLTRB(0,8,8,8),
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[100],
