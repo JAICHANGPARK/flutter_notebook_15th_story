@@ -11,7 +11,7 @@ class TrapayApp extends StatelessWidget {
     return MaterialApp(
       restorationScopeId: "trapayApp",
       localizationsDelegates: [
-        AppLocalizations.delegate, // Add this line
+        // AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
