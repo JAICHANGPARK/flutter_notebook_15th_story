@@ -53,6 +53,16 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                       height: 160,
                       child: Container(
                         color: Colors.blue,
+                        child: ListView.builder(itemBuilder: (context, index){
+                          return Container(
+                            decoration: BoxDecoration(),
+                            child: Column(
+                              children: [],
+                            ),
+                          );
+                        },
+                        itemCount: 4,
+                        ),
                       ),
                     ),
                   ),
