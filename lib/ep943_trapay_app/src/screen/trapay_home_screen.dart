@@ -224,7 +224,12 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                             ],
                                           ),
                                         ),
-                                        Text("-152EGP")
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text("-152EGP",
+                                            style: TextStyle(fontWeight: FontWeight.bold),),
+                                        )
                                       ],
                                     ),
                                   ),
