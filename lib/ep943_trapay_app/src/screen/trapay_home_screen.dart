@@ -150,6 +150,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                     CircleAvatar(
                                       child: Icon(Icons.upload_rounded),
                                     ),
+                                    SizedBox(width: 12,)
                                     Text("Transfar")
                                   ],
                                 ),
