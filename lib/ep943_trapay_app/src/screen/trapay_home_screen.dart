@@ -150,6 +150,8 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                   children: [
                                     CircleAvatar(
                                       radius: 16,
+                                      backgroundColor: Colors.blue[100],
+                                      foregroundColor: Colors.blueAccent,
                                       child: Icon(Icons.upload_rounded,
                                       size: 18,),
                                     ),
