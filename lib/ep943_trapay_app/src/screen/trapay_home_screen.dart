@@ -55,20 +55,19 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                         color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index){
-                          return Padding(
-
-                            adding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width / 2,
-                              decoration: BoxDecoration(),
-                              child: Column(
-                                children: [],
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 8),
+                              child: Container(
+                                width: MediaQuery.of(constext).size.width / 2,
+                                decoration: BoxDecoration(),
+                                child: Column(
+                                  children: [],
+                                ),
                               ),
-                            ),
-                          );
-                        },
-                        itemCount: 4,
+                            );
+                          },
+                          itemCount: 4,
                         ),
                       ),
                     ),
@@ -114,15 +113,17 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                   Padding(
                     padding: const EdgeInsets.only(right: 12),
                     child: Column(
-                      children: List.generate(10, (index) => Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 7),
-                        child: SizedBox(
-                          height: 64,
-                          child: Container(
-                            color: Colors.grey,
-                          ),
-                        ),
-                      )),
+                      children: List.generate(
+                          10,
+                          (index) => Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 7),
+                                child: SizedBox(
+                                  height: 64,
+                                  child: Container(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              )),
                     ),
                   )
                 ],
