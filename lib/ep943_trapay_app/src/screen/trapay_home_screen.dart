@@ -137,14 +137,11 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                         // color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index){
+                          itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.fromLTRB(0,8,8,8),
+                              padding: const EdgeInsets.fromLTRB(0, 8, 8, 8),
                               child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                 padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                 child: Row(
                                   children: [
@@ -152,18 +149,22 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                       radius: 16,
                                       backgroundColor: Colors.blue[100],
                                       foregroundColor: Colors.blueAccent,
-                                      child: Icon(Icons.upload_rounded,
-                                      size: 18,),
+                                      child: Icon(
+                                        Icons.upload_rounded,
+                                        size: 18,
+                                      ),
                                     ),
-                                    SizedBox(width: 8,),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Text("Transfar")
                                   ],
                                 ),
                               ),
                             );
-
-                        },
-                        itemCount: 4,),
+                          },
+                          itemCount: 4,
+                        ),
                       ),
                     ),
                   ),
@@ -192,7 +193,25 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                 child: SizedBox(
                                   height: 64,
                                   child: Container(
-                                    color: Colors.grey,
+                                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                              "Shein Clothos",
+                                              style: TextStyle(fontWeight: FontWeight.bold),
+                                            ),
+                                            Text("23 Feb 2021")
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               )),
