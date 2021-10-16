@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class TrapayHomeScreen extends StatefulWidget {
   const TrapayHomeScreen({Key? key}) : super(key: key);
@@ -59,10 +60,21 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                             return Padding(
                               padding: const EdgeInsets.only(right: 8),
                               child: Container(
-                                width: MediaQuery.of(constext).size.width / 2,
-                                decoration: BoxDecoration(),
+                                width: MediaQuery.of(context).size.width / 2,
+                                padding: EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.white
+                                ),
                                 child: Column(
-                                  children: [],
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(LineIcons.mastercardCreditCard),
+                                        Text("*** *** *123"),
+                                      ],
+                                    )
+                                  ],
                                 ),
                               ),
                             );
