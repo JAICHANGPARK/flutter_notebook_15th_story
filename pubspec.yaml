@@ -1,7 +1,7 @@
 name: flutter_notebook_15th_story
 description: A new Flutter project.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.2+3
+version: 1.0.3+4
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -15,12 +15,12 @@ dependencies:
 
   pigeon: any
   freezed_annotation: any
-  percent_indicator: ^3.0.1
+  percent_indicator: ^3.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  analyzer: ^2.4.0
+  analyzer: ^2.6.0
   flutter_lints: ^1.0.4
   freezed: any
   build_runner: any
