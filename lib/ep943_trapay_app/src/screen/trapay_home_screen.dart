@@ -134,7 +134,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                     child: SizedBox(
                       height: 64,
                       child: Container(
-                        color: Colors.blue,
+                        // color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index){
@@ -145,12 +145,15 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                                   color: Colors.grey[100],
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                 child: Row(
                                   children: [
                                     CircleAvatar(
-                                      child: Icon(Icons.upload_rounded),
+                                      radius: 16,
+                                      child: Icon(Icons.upload_rounded,
+                                      size: 18,),
                                     ),
-                                    SizedBox(width: 12,)
+                                    SizedBox(width: 8,),
                                     Text("Transfar")
                                   ],
                                 ),
