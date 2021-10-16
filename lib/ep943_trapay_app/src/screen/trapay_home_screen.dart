@@ -132,14 +132,28 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: SizedBox(
-                      height: 72,
+                      height: 64,
                       child: Container(
                         color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index){
-                            return Row(
-                              children: [],
+                            return Padding(
+                              padding: const EdgeInsets.fromLTRB(0,8,8,12),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(
+                                      child: Icon(Icons.upload_rounded),
+                                    ),
+                                    Text("Transfar")
+                                  ],
+                                ),
+                              ),
                             );
 
                         },
