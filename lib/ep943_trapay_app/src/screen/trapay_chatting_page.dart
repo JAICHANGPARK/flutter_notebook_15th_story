@@ -18,7 +18,11 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
             child: Row(
               children: [
                 Text("Chatting"),
-                IconButton(onPressed: (){}, icon: Icon(Icons.search))
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.search),
+                ),
               ],
             ),
           )
