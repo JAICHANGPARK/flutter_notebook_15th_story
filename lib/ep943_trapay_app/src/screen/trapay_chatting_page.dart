@@ -10,15 +10,20 @@ class TrapayChattingPage extends StatefulWidget {
 class _TrapayChattingPageState extends State<TrapayChattingPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Text("Chatting"),
-            IconButton(onPressed: (){}, icon: Icon(Icons.search))
-          ],
-        )
-      ],
+    return SafeArea(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Text("Chatting"),
+                IconButton(onPressed: (){}, icon: Icon(Icons.search))
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
