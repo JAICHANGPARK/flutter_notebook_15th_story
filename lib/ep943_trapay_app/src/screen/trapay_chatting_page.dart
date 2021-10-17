@@ -37,7 +37,18 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
               ],
             ),
           ),
-          
+          Text("Pinned"),
+          SizedBox(
+            height: 48,
+            child: ListView.builder(itemBuilder: (context, index){
+              if(index == 0) return CircleAvatar();
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(),
+              );
+            }),
+          )
+
         ],
       ),
     );
