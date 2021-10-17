@@ -26,14 +26,45 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                 ),
                 Spacer(),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    showSearch(
+                      context: context,
+                      delegate: _SearchDelegate(),
+                    );
+                  },
                   icon: Icon(Icons.search),
                 ),
               ],
             ),
-          )
+          ),
+          
         ],
       ),
     );
+  }
+}
+
+class _SearchDelegate extends SearchDelegate {
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    return [];
+  }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    // TODO: implement buildLeading
+    return Container();
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    return Container();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    return Container();
   }
 }
