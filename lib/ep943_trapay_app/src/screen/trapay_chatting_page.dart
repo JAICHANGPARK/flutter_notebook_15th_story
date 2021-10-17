@@ -12,6 +12,7 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -46,7 +47,7 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                 itemBuilder: (context, index) {
                   if (index == 0) return CircleAvatar();
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: CircleAvatar(),
                   );
                 }),
