@@ -17,7 +17,13 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                Text("Chatting"),
+                Text(
+                  "Chatting",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 Spacer(),
                 IconButton(
                   onPressed: () {},
