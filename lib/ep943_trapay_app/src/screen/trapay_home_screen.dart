@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep943_trapay_app/src/screen/trapay_chatting_page.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -246,11 +247,7 @@ class _TrapayHomeScreenState extends State<TrapayHomeScreen> {
               child: Text("Services"),
             ),
           ),
-          Container(
-            child: Center(
-              child: Text("Chatting"),
-            ),
-          ),
+          TrapayChattingPage(),
           Container(
             child: Center(
               child: Text("groups"),
