@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class TrapayChattingPage extends StatefulWidget {
   const TrapayChattingPage({Key? key}) : super(key: key);
@@ -38,20 +39,54 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
               ],
             ),
           ),
-          Text("Pinned"),
           SizedBox(
-            height: 48,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  if (index == 0) return CircleAvatar();
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: CircleAvatar(),
-                  );
-                }),
-          )
+            height: 16,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Pinned",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 52,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 8),
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    if (index == 0) {
+                      return CircleAvatar(
+                        backgroundColor: Colors.grey,
+                        foregroundColor: Colors.black,
+                        child: Icon(LineIcons.commentDots),
+                      );
+                    }
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: CircleAvatar(),
+                    );
+                  }),
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Chats",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
         ],
       ),
     );
