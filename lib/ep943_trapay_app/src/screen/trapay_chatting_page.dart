@@ -87,6 +87,13 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
               ),
             ),
           ),
+          Expanded(child: ListView.separated(
+              itemCount: 10,
+              itemBuilder: (context, index){
+            return Row();
+          },
+          separatorBuilder: (context, index)=>Divider(),
+          ),)
         ],
       ),
     );
