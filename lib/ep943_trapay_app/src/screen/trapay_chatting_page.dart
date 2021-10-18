@@ -90,7 +90,18 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
           Expanded(child: ListView.separated(
               itemCount: 10,
               itemBuilder: (context, index){
-            return Row();
+            return Row(
+              children: [
+                CircleAvatar(),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Dreamwalker"),
+                    Text("How about development Flutter?")
+                  ],
+                )
+              ],
+            );
           },
           separatorBuilder: (context, index)=>Divider(),
           ),)
