@@ -8,5 +8,11 @@ List<TrapayChat> trapayChatItems = [
       isRead: true,
       msgTime: "12:30",
       newMsgCount: 0),
-  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 2)
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 2),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 2),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 0),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 5),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 0),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 2),
+  TrapayChat(name: "Dreamwalker", message: "How about development Flutter?", isRead: true, msgTime: "12:30", newMsgCount: 4)
 ];
