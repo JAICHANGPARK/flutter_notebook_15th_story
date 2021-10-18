@@ -119,6 +119,7 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                                   "${chatData.name}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
+                                SizedBox(width: 8,),
                                 (chatData.newMsgCount ?? 0) > 0 ? CircleAvatar(
                                   radius: 8,
                                   backgroundColor: Colors.red,
