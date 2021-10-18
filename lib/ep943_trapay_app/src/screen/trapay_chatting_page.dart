@@ -153,6 +153,7 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                                     ? Icon(
                                         Icons.check,
                                         color: Colors.green,
+                                        size: 12,
                                       )
                                     : Container()
                               ],
