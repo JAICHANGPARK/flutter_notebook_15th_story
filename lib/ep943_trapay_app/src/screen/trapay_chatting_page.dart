@@ -102,21 +102,46 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                       Center(
                           child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: CircleAvatar(),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            chatData.avatarImg ?? "${chatData.name?.substring(0, 2)}",
+                          ),
+                        ),
                       )),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              "Dreamwalker",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                            Row(
+                              children: [
+                                Text(
+                                  "${chatData.name}",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                (chatData.newMsgCount ?? 0) > 0 ? CircleAvatar(
+                                  radius: 8,
+                                  backgroundColor: Colors.red,
+                                  foregroundColor: Colors.white,
+                                  child: Center(
+                                    child: Text("${chatData.newMsgCount}",style: TextStyle(
+                                      fontSize: 10
+                                    ),),
+                                  ),
+                                ) : Container()
+                              ],
                             ),
-                            SizedBox(height: 4,),
-                            Text("How about development Flutter?",
-                              style: TextStyle(fontWeight: FontWeight.normal,
-                              color: Colors.grey),),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "${chatData.message}",
+                                  style: TextStyle(fontWeight: FontWeight.normal, color: Colors.grey),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
