@@ -203,34 +203,23 @@ class _$_Job implements _Job {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Job &&
-            (identical(other.img, img) ||
-                const DeepCollectionEquality().equals(other.img, img)) &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Job &&
+            (identical(other.img, img) || other.img == img) &&
+            (identical(other.title, title) || other.title == title) &&
             (identical(other.location, location) ||
-                const DeepCollectionEquality()
-                    .equals(other.location, location)) &&
+                other.location == location) &&
             (identical(other.timeType, timeType) ||
-                const DeepCollectionEquality()
-                    .equals(other.timeType, timeType)) &&
+                other.timeType == timeType) &&
             (identical(other.isFavorite, isFavorite) ||
-                const DeepCollectionEquality()
-                    .equals(other.isFavorite, isFavorite)) &&
+                other.isFavorite == isFavorite) &&
             (identical(other.uploadDate, uploadDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.uploadDate, uploadDate)));
+                other.uploadDate == uploadDate));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(img) ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(location) ^
-      const DeepCollectionEquality().hash(timeType) ^
-      const DeepCollectionEquality().hash(isFavorite) ^
-      const DeepCollectionEquality().hash(uploadDate);
+  int get hashCode => Object.hash(
+      runtimeType, img, title, location, timeType, isFavorite, uploadDate);
 
   @JsonKey(ignore: true)
   @override
@@ -248,17 +237,17 @@ abstract class _Job implements Job {
       String? uploadDate}) = _$_Job;
 
   @override
-  String get img => throw _privateConstructorUsedError;
+  String get img;
   @override
-  String? get title => throw _privateConstructorUsedError;
+  String? get title;
   @override
-  String? get location => throw _privateConstructorUsedError;
+  String? get location;
   @override
-  String? get timeType => throw _privateConstructorUsedError;
+  String? get timeType;
   @override
-  bool? get isFavorite => throw _privateConstructorUsedError;
+  bool? get isFavorite;
   @override
-  String? get uploadDate => throw _privateConstructorUsedError;
+  String? get uploadDate;
   @override
   @JsonKey(ignore: true)
   _$JobCopyWith<_Job> get copyWith => throw _privateConstructorUsedError;

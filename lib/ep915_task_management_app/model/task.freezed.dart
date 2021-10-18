@@ -36,7 +36,7 @@ class _$TaskTearOff {
     );
   }
 
-  Task fromJson(Map<String, Object> json) {
+  Task fromJson(Map<String, Object?> json) {
     return Task.fromJson(json);
   }
 }
@@ -227,31 +227,21 @@ class _$_Task with DiagnosticableTreeMixin implements _Task {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Task &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Task &&
+            (identical(other.title, title) || other.title == title) &&
             (identical(other.dueDateTime, dueDateTime) ||
-                const DeepCollectionEquality()
-                    .equals(other.dueDateTime, dueDateTime)) &&
+                other.dueDateTime == dueDateTime) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality()
-                    .equals(other.description, description)) &&
-            (identical(other.taskTags, taskTags) ||
-                const DeepCollectionEquality()
-                    .equals(other.taskTags, taskTags)) &&
+                other.description == description) &&
+            const DeepCollectionEquality().equals(other.taskTags, taskTags) &&
             (identical(other.taskRelate, taskRelate) ||
-                const DeepCollectionEquality()
-                    .equals(other.taskRelate, taskRelate)));
+                other.taskRelate == taskRelate));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(dueDateTime) ^
-      const DeepCollectionEquality().hash(description) ^
-      const DeepCollectionEquality().hash(taskTags) ^
-      const DeepCollectionEquality().hash(taskRelate);
+  int get hashCode => Object.hash(runtimeType, title, dueDateTime, description,
+      const DeepCollectionEquality().hash(taskTags), taskRelate);
 
   @JsonKey(ignore: true)
   @override
@@ -276,15 +266,15 @@ abstract class _Task implements Task {
 
   @override
   @JsonKey(name: "title")
-  String? get title => throw _privateConstructorUsedError;
+  String? get title;
   @override
-  String? get dueDateTime => throw _privateConstructorUsedError;
+  String? get dueDateTime;
   @override
-  String? get description => throw _privateConstructorUsedError;
+  String? get description;
   @override
-  List<TaskTag>? get taskTags => throw _privateConstructorUsedError;
+  List<TaskTag>? get taskTags;
   @override
-  TaskRelate? get taskRelate => throw _privateConstructorUsedError;
+  TaskRelate? get taskRelate;
   @override
   @JsonKey(ignore: true)
   _$TaskCopyWith<_Task> get copyWith => throw _privateConstructorUsedError;

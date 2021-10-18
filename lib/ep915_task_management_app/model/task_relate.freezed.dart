@@ -28,7 +28,7 @@ class _$TaskRelateTearOff {
     );
   }
 
-  TaskRelate fromJson(Map<String, Object> json) {
+  TaskRelate fromJson(Map<String, Object?> json) {
     return TaskRelate.fromJson(json);
   }
 }
@@ -149,20 +149,16 @@ class _$_TaskRelate with DiagnosticableTreeMixin implements _TaskRelate {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _TaskRelate &&
-            (identical(other.counter, counter) ||
-                const DeepCollectionEquality()
-                    .equals(other.counter, counter)) &&
-            (identical(other.profileItems, profileItems) ||
-                const DeepCollectionEquality()
-                    .equals(other.profileItems, profileItems)));
+        (other.runtimeType == runtimeType &&
+            other is _TaskRelate &&
+            (identical(other.counter, counter) || other.counter == counter) &&
+            const DeepCollectionEquality()
+                .equals(other.profileItems, profileItems));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(counter) ^
-      const DeepCollectionEquality().hash(profileItems);
+  int get hashCode => Object.hash(
+      runtimeType, counter, const DeepCollectionEquality().hash(profileItems));
 
   @JsonKey(ignore: true)
   @override
@@ -183,9 +179,9 @@ abstract class _TaskRelate implements TaskRelate {
       _$_TaskRelate.fromJson;
 
   @override
-  int? get counter => throw _privateConstructorUsedError;
+  int? get counter;
   @override
-  List<String>? get profileItems => throw _privateConstructorUsedError;
+  List<String>? get profileItems;
   @override
   @JsonKey(ignore: true)
   _$TaskRelateCopyWith<_TaskRelate> get copyWith =>

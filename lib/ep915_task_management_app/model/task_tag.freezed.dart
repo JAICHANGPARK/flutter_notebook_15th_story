@@ -33,7 +33,7 @@ class _$TaskTagTearOff {
     );
   }
 
-  TaskTag fromJson(Map<String, Object> json) {
+  TaskTag fromJson(Map<String, Object?> json) {
     return TaskTag.fromJson(json);
   }
 }
@@ -161,18 +161,14 @@ class _$_TaskTag with DiagnosticableTreeMixin implements _TaskTag {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _TaskTag &&
-            (identical(other.tag, tag) ||
-                const DeepCollectionEquality().equals(other.tag, tag)) &&
-            (identical(other.color, color) ||
-                const DeepCollectionEquality().equals(other.color, color)));
+        (other.runtimeType == runtimeType &&
+            other is _TaskTag &&
+            (identical(other.tag, tag) || other.tag == tag) &&
+            (identical(other.color, color) || other.color == color));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(tag) ^
-      const DeepCollectionEquality().hash(color);
+  int get hashCode => Object.hash(runtimeType, tag, color);
 
   @JsonKey(ignore: true)
   @override
@@ -194,11 +190,11 @@ abstract class _TaskTag implements TaskTag {
 
   @override
   @JsonKey(name: "tag")
-  String? get tag => throw _privateConstructorUsedError;
+  String? get tag;
   @override
   @ColorSerialiser()
   @JsonKey()
-  Color get color => throw _privateConstructorUsedError;
+  Color get color;
   @override
   @JsonKey(ignore: true)
   _$TaskTagCopyWith<_TaskTag> get copyWith =>

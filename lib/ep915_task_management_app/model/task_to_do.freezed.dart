@@ -32,7 +32,7 @@ class _$TaskTodoTearOff {
     );
   }
 
-  TaskTodo fromJson(Map<String, Object> json) {
+  TaskTodo fromJson(Map<String, Object?> json) {
     return TaskTodo.fromJson(json);
   }
 }
@@ -164,23 +164,17 @@ class _$_TaskTodo with DiagnosticableTreeMixin implements _TaskTodo {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _TaskTodo &&
+        (other.runtimeType == runtimeType &&
+            other is _TaskTodo &&
             (identical(other.priority, priority) ||
-                const DeepCollectionEquality()
-                    .equals(other.priority, priority)) &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
+                other.priority == priority) &&
+            (identical(other.title, title) || other.title == title) &&
             (identical(other.dueDatetime, dueDatetime) ||
-                const DeepCollectionEquality()
-                    .equals(other.dueDatetime, dueDatetime)));
+                other.dueDatetime == dueDatetime));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(priority) ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(dueDatetime);
+  int get hashCode => Object.hash(runtimeType, priority, title, dueDatetime);
 
   @JsonKey(ignore: true)
   @override
@@ -202,11 +196,11 @@ abstract class _TaskTodo implements TaskTodo {
   factory _TaskTodo.fromJson(Map<String, dynamic> json) = _$_TaskTodo.fromJson;
 
   @override
-  String get priority => throw _privateConstructorUsedError;
+  String get priority;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get dueDatetime => throw _privateConstructorUsedError;
+  String get dueDatetime;
   @override
   @JsonKey(ignore: true)
   _$TaskTodoCopyWith<_TaskTodo> get copyWith =>
