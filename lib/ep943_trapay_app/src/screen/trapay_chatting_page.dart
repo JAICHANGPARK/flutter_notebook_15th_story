@@ -110,6 +110,7 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                               "Dreamwalker",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
+                            SizedBox(height: 4,),
                             Text("How about development Flutter?"),
                           ],
                         ),
