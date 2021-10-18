@@ -96,7 +96,8 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Center(child: Padding(
+                      Center(
+                          child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: CircleAvatar(),
                       )),
@@ -104,7 +105,13 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("Dreamwalker"), Text("How about development Flutter?")],
+                          children: [
+                            Text(
+                              "Dreamwalker",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text("How about development Flutter?"),
+                          ],
                         ),
                       ),
                       Spacer(),
