@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_15th_story/ep943_trapay_app/src/data/fake_chat.dart';
+import 'package:flutter_notebook_15th_story/ep943_trapay_app/src/model/trapay_chat.dart';
 import 'package:line_icons/line_icons.dart';
 
 class TrapayChattingPage extends StatefulWidget {
@@ -89,8 +91,9 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
           ),
           Expanded(
             child: ListView.separated(
-              itemCount: 10,
+              itemCount: trapayChatItems.length,
               itemBuilder: (context, index) {
+                TrapayChat chatData = trapayChatItems[index];
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
