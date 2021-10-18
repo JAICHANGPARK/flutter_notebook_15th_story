@@ -119,17 +119,22 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                                   "${chatData.name}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(width: 8,),
-                                (chatData.newMsgCount ?? 0) > 0 ? CircleAvatar(
-                                  radius: 8,
-                                  backgroundColor: Colors.red,
-                                  foregroundColor: Colors.white,
-                                  child: Center(
-                                    child: Text("${chatData.newMsgCount}",style: TextStyle(
-                                      fontSize: 10
-                                    ),),
-                                  ),
-                                ) : Container()
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                (chatData.newMsgCount ?? 0) > 0
+                                    ? CircleAvatar(
+                                        radius: 8,
+                                        backgroundColor: Colors.red,
+                                        foregroundColor: Colors.white,
+                                        child: Center(
+                                          child: Text(
+                                            "${chatData.newMsgCount}",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        ),
+                                      )
+                                    : Container()
                               ],
                             ),
                             SizedBox(
@@ -141,6 +146,15 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                                   "${chatData.message}",
                                   style: TextStyle(fontWeight: FontWeight.normal, color: Colors.grey),
                                 ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                (chatData.isRead ?? false)
+                                    ? Icon(
+                                        Icons.check,
+                                        color: Colors.green,
+                                      )
+                                    : Container()
                               ],
                             ),
                           ],
