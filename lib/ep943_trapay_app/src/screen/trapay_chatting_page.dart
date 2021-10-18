@@ -96,7 +96,10 @@ class _TrapayChattingPageState extends State<TrapayChattingPage> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Center(child: CircleAvatar()),
+                      Center(child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: CircleAvatar(),
+                      )),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
