@@ -15,6 +15,7 @@ dependencies:
 
   pigeon: any
   freezed_annotation: any
+  json_annotation: ^4.3.0
   percent_indicator: ^3.4.0
 
   flutter_localizations: # Add this line
