@@ -9,6 +9,7 @@ class GroceriesMainPage extends StatefulWidget {
 
 class _GroceriesMainPageState extends State<GroceriesMainPage> {
   final ValueNotifier<int> _bottomTabIdx = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,21 +51,26 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(child: Placeholder()),
             ],
           ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx){
+        onTap: (idx) {
           _bottomTabIdx.value = idx;
         },
-        items: [BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Shops"),
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Shops"),
           BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "Buy"),
           BottomNavigationBarItem(icon: Icon(Icons.markunread_mailbox_outlined), label: "Send"),
           BottomNavigationBarItem(icon: Icon(Icons.verified_outlined), label: "Offers"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile")],
+          BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile")
+        ],
       ),
     );
   }
