@@ -40,21 +40,55 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
                         )),
                     Expanded(
                         child: Align(
-                      alignment: Alignment.centerRight,
-                      child: CircleAvatar(
-                        radius: 18,
-                        backgroundColor: Colors.grey,
-                        foregroundColor: Colors.black,
-                        child: Text("D"),
-                      ),
-                    )),
+                          alignment: Alignment.centerRight,
+                          child: CircleAvatar(
+                            radius: 18,
+                            backgroundColor: Colors.grey,
+                            foregroundColor: Colors.black,
+                            child: Text("D"),
+                          ),
+                        )),
                   ],
                 ),
               ),
               SizedBox(
                 height: 16,
               ),
-              Expanded(child: Placeholder()),
+              Expanded(child: ValueListenableBuilder<int>(
+                valueListenable: _bottomTabIdx,
+                builder: (context, pageIndex, child) {
+                  return IndexedStack(
+                    index: pageIndex,
+                    children: [
+                      Container(
+                        child: Center(
+                          child: Text("shops"),
+                        ),
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text("buy"),
+                        ),
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text("send"),
+                        ),
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text("offers"),
+                        ),
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text("profile"),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              )),
             ],
           ),
         ),
