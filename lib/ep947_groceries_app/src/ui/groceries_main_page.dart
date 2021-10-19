@@ -40,21 +40,22 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
                         )),
                     Expanded(
                         child: Align(
-                          alignment: Alignment.centerRight,
-                          child: CircleAvatar(
-                            radius: 18,
-                            backgroundColor: Colors.grey,
-                            foregroundColor: Colors.black,
-                            child: Text("D"),
-                          ),
-                        )),
+                      alignment: Alignment.centerRight,
+                      child: CircleAvatar(
+                        radius: 18,
+                        backgroundColor: Colors.grey,
+                        foregroundColor: Colors.black,
+                        child: Text("D"),
+                      ),
+                    )),
                   ],
                 ),
               ),
               SizedBox(
                 height: 16,
               ),
-              Expanded(child: ValueListenableBuilder<int>(
+              Expanded(
+                  child: ValueListenableBuilder<int>(
                 valueListenable: _bottomTabIdx,
                 builder: (context, pageIndex, child) {
                   return IndexedStack(
