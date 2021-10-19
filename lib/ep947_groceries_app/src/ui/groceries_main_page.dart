@@ -13,7 +13,14 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
     return Scaffold(
       body: Column(
         children: [
+          Row(
+            children: [
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: CircleAvatar()),
 
+            ],
+          )
         ],
       ),
     );
