@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep943_trapay_app/trapay_app.dart';
+import 'ep947_groceries_app/groceries_app.dart';
 
-main() => runApp(TrapayApp());
+main() => runApp(GroceriesApp());
