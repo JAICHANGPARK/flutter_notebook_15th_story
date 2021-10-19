@@ -8,6 +8,7 @@ class GroceriesMainPage extends StatefulWidget {
 }
 
 class _GroceriesMainPageState extends State<GroceriesMainPage> {
+  final ValueNotifier<int> _bottomTabIdx = ValueNotifier(0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
