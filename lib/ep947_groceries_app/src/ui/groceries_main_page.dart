@@ -59,14 +59,14 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
           ),
         ),
       ),
-      bottomNavigationBar: ValueListenableBuilder(
+      bottomNavigationBar: ValueListenableBuilder<int>(
         valueListenable: _bottomTabIdx,
-        builder: (context, bottomTabIdx, child){
-        return  BottomNavigationBar(
+        builder: (context, bottomTabIdx, child) {
+          return BottomNavigationBar(
             onTap: (idx) {
               _bottomTabIdx.value = idx;
             },
-            currentIndex: _bottomTabIdx.value,
+            currentIndex: bottomTabIdx,
             selectedItemColor: Colors.green,
             type: BottomNavigationBarType.fixed,
             items: [
@@ -78,7 +78,6 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
             ],
           );
         },
-
       ),
     );
   }
