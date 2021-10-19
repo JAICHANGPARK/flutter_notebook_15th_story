@@ -57,6 +57,9 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx){
+          _bottomTabIdx.value = idx;
+        },
         items: [BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Shops"),
           BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "Buy"),
           BottomNavigationBarItem(icon: Icon(Icons.markunread_mailbox_outlined), label: "Send"),
