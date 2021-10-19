@@ -13,7 +13,7 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
