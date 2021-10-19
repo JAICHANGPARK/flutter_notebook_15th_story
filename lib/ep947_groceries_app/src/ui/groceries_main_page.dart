@@ -59,18 +59,26 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx) {
-          _bottomTabIdx.value = idx;
+      bottomNavigationBar: ValueListenableBuilder(
+        valueListenable: _bottomTabIdx,
+        builder: (context, bottomTabIdx, child){
+        return  BottomNavigationBar(
+            onTap: (idx) {
+              _bottomTabIdx.value = idx;
+            },
+            currentIndex: _bottomTabIdx.value,
+            selectedItemColor: Colors.green,
+            type: BottomNavigationBarType.fixed,
+            items: [
+              BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Shops"),
+              BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "Buy"),
+              BottomNavigationBarItem(icon: Icon(Icons.markunread_mailbox_outlined), label: "Send"),
+              BottomNavigationBarItem(icon: Icon(Icons.verified_outlined), label: "Offers"),
+              BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile")
+            ],
+          );
         },
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Shops"),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "Buy"),
-          BottomNavigationBarItem(icon: Icon(Icons.markunread_mailbox_outlined), label: "Send"),
-          BottomNavigationBarItem(icon: Icon(Icons.verified_outlined), label: "Offers"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile")
-        ],
+
       ),
     );
   }
