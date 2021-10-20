@@ -15,7 +15,6 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
     return Container(
       color: Colors.grey[50],
       child: DefaultTabController(
-
         length: 2,
         child: Column(
           children: [
@@ -62,11 +61,30 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                     ),
                                   ),
                                 ),
-                              )
+                              ),
+                              SizedBox(
+                                height: 84,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 16),
+                                  child: ListView.builder(
+                                    itemBuilder: (context, index) {
+                                      return Padding(
+                                        padding: const EdgeInsets.only(right: 8),
+                                        child: Column(
+                                          children: [CircleAvatar(
+                                            radius: 32,
+                                          ), Text("Pharmacy")],
+                                        ),
+                                      );
+                                    },
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         )
-
                       ],
                     ),
                   ),
