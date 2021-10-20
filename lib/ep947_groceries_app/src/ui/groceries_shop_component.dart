@@ -63,7 +63,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                 ),
                               ),
                               SizedBox(
-                                height: 84,
+                                height: 94,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 16),
                                   child: ListView.builder(
@@ -71,9 +71,18 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                       return Padding(
                                         padding: const EdgeInsets.only(right: 8),
                                         child: Column(
-                                          children: [CircleAvatar(
-                                            radius: 32,
-                                          ), Text("Pharmacy")],
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 32,
+                                            ),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Text(
+                                              "Pharmacy",
+                                              style: TextStyle(fontSize: 13),
+                                            )
+                                          ],
                                         ),
                                       );
                                     },
