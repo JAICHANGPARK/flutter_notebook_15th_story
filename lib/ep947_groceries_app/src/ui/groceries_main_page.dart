@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'groceries_shop_component.dart';
+
 class GroceriesMainPage extends StatefulWidget {
   const GroceriesMainPage({Key? key}) : super(key: key);
 
@@ -59,11 +61,7 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
                   return IndexedStack(
                     index: pageIndex,
                     children: [
-                      Container(
-                        child: Center(
-                          child: Text("shops"),
-                        ),
-                      ),
+                      GroceriesShopComponent(),
                       Container(
                         child: Center(
                           child: Text("buy"),
