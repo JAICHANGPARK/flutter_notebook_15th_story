@@ -16,6 +16,7 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(top: 8),
