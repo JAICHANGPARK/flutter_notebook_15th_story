@@ -69,7 +69,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                   child: ListView.builder(
                                     itemBuilder: (context, index) {
                                       return Padding(
-                                        padding: const EdgeInsets.only(right: 8),
+                                        padding: const EdgeInsets.only(right: 16),
                                         child: Column(
                                           children: [
                                             CircleAvatar(
