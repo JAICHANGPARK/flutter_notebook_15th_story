@@ -36,7 +36,20 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
               children: [
                 SingleChildScrollView(
                   child: Column(
-                    children: [],
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(36)
+                          ),
+                          child: TextField(),
+                        ),
+                      )
+
+                    ],
                   ),
                 ),
                 ListView.builder(itemBuilder: (context, index) {
