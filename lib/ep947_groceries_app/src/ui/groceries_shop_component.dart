@@ -11,6 +11,13 @@ class GroceriesShopComponent extends StatefulWidget {
 class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return DefaultTabController(
+      length: 2,
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
