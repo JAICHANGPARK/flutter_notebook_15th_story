@@ -93,6 +93,20 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                               ),
                             ],
                           ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text()
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                         )
                       ],
                     ),
