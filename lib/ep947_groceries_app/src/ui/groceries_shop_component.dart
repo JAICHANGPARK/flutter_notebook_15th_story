@@ -98,21 +98,33 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Container(
                             color: Colors.white,
-                            padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                            padding: EdgeInsets.fromLTRB(16, .0, 0, 16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
                                     Text(
                                       "Deals",
-                                      style: TextStyle(
-                                       fontWeight: FontWeight.bold,
-                                        fontSize: 16
-                                      ),
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                     ),
                                     Spacer(),
-                                    Icon(Icons.arrow_forward_ios)
+                                    IconButton(
+                                      icon: Icon(Icons.arrow_forward_ios),
+                                      onPressed: () {},
+                                      iconSize: 18,
+                                    )
                                   ],
+                                ),
+                                SizedBox(
+                                  height: 160,
+                                  child: ListView.builder(
+                                      itemCount: 10,
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (context, index) {
+                                        return SizedBox(
+                                            width: MediaQuery.of(context).size.width - 84,
+                                            child: Card());
+                                      }),
                                 )
                               ],
                             ),
