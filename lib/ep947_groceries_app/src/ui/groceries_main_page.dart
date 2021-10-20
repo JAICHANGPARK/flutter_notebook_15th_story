@@ -51,9 +51,7 @@ class _GroceriesMainPageState extends State<GroceriesMainPage> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 16,
-              ),
+              SizedBox(height: 16),
               Expanded(
                   child: ValueListenableBuilder<int>(
                 valueListenable: _bottomTabIdx,
