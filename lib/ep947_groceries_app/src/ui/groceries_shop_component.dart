@@ -37,19 +37,22 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                 SingleChildScrollView(
                   child: Column(
                     children: [
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(36),
-                        ),
-                        child: TextField(
-                          controller: _textEditingController,
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Search everything",
-                            icon: Icon(Icons.search),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                          height: 48,
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(36),
+                          ),
+                          child: TextField(
+                            controller: _textEditingController,
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: "Search everything",
+                              icon: Icon(Icons.search),
+                            ),
                           ),
                         ),
                       )
