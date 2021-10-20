@@ -13,7 +13,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[50],
+      color: Colors.grey[100],
       child: DefaultTabController(
         length: 2,
         child: Column(
@@ -91,6 +91,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                   ),
                                 ),
                               ),
+                              SizedBox(height: 16,),
                             ],
                           ),
                         ),
@@ -123,7 +124,9 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                       itemBuilder: (context, index) {
                                         return SizedBox(
                                             width: MediaQuery.of(context).size.width - 84,
-                                            child: Card());
+                                            child: Card(
+                                              elevation: 4,
+                                            ));
                                       }),
                                 )
                               ],
