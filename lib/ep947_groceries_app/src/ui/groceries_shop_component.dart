@@ -19,7 +19,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
             color: Colors.black.withOpacity(0.1),
             elevation: 2,
             child: Container(
-              color: Colors.grey[50],
+              color: Colors.white,
               child: TabBar(
                   labelColor: Colors.black,
                   unselectedLabelColor: Colors.grey,
