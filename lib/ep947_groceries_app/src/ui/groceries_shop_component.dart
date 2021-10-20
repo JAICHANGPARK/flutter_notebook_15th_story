@@ -97,11 +97,21 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Container(
+                            color: Colors.white,
+                            padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Text()
+                                    Text(
+                                      "Deals",
+                                      style: TextStyle(
+                                       fontWeight: FontWeight.bold,
+                                        fontSize: 16
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Icon(Icons.arrow_forward_ios)
                                   ],
                                 )
                               ],
