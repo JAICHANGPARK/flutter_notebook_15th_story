@@ -154,8 +154,14 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                       child: Column(
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
-                                                          Text("Carrefour"),
-                                                          Text("15% off on personal core"),
+                                                          Text(
+                                                            "Carrefour",
+                                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 8),
+                                                            child: Text("15% off on personal core"),
+                                                          ),
                                                           Container(
                                                             decoration: BoxDecoration(
                                                               color: Colors.green[50],
