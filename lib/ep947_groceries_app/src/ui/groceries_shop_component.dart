@@ -149,8 +149,8 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                       )),
                                                   Positioned(
                                                       left: 16,
-                                                      top: 16,
-                                                      bottom: 16,
+                                                      top: 24,
+                                                      bottom: 24,
                                                       child: Column(
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
@@ -161,6 +161,9 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                           Padding(
                                                             padding: const EdgeInsets.symmetric(vertical: 8),
                                                             child: Text("15% off on personal core"),
+                                                          ),
+                                                          SizedBox(
+                                                            height: 24,
                                                           ),
                                                           Container(
                                                             decoration: BoxDecoration(
@@ -182,6 +185,47 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                         ],
                                                       ))
                                                 ],
+                                              ),
+                                            ));
+                                      }),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Container(
+                            color: Colors.white,
+                            padding: EdgeInsets.fromLTRB(16, .0, 0, 16),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      "Origin again",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                    Spacer(),
+                                    IconButton(
+                                      icon: Icon(Icons.arrow_forward_ios),
+                                      onPressed: () {},
+                                      iconSize: 18,
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 84,
+                                  child: ListView.builder(
+                                      itemCount: 10,
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (context, index) {
+                                        return SizedBox(
+                                            width: MediaQuery.of(context).size.width - 84,
+                                            child: Card(
+                                              elevation: 4,
+                                              child: Row(
+                                                children: [],
                                               ),
                                             ));
                                       }),
