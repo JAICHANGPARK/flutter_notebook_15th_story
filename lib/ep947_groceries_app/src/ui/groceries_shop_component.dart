@@ -141,7 +141,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                             fit: BoxFit.cover)),
                                                   )),
                                                   Positioned(
-                                                    left: -120,
+                                                    left: -160,
                                                       top: -64,
                                                       child: CircleAvatar(
                                                     backgroundColor: Colors.white,
