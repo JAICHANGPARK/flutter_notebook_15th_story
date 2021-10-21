@@ -133,7 +133,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                   Positioned(
                                                       child: Container(
                                                     decoration: BoxDecoration(
-                                                      borderRadius: BorderRadius.circular(8),
+                                                        borderRadius: BorderRadius.circular(8),
                                                         image: DecorationImage(
                                                             image: NetworkImage(
                                                               "https://cdn.pixabay.com/photo/2015/03/26/09/42/breakfast-690128__340.jpg",
@@ -141,12 +141,19 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                             fit: BoxFit.cover)),
                                                   )),
                                                   Positioned(
-                                                    left: -160,
+                                                      left: -160,
                                                       top: -64,
                                                       child: CircleAvatar(
-                                                    backgroundColor: Colors.white,
-                                                    radius: 200,
-                                                  ))
+                                                        backgroundColor: Colors.white,
+                                                        radius: 200,
+                                                      )),
+                                                  Positioned(
+                                                      left: 16,
+                                                      top: 16,
+                                                      bottom: 16,
+                                                      child: Column(
+                                                        children: [],
+                                                      ))
                                                 ],
                                               ),
                                             ));
