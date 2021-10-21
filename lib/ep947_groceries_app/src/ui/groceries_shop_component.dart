@@ -228,12 +228,27 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                 padding: const EdgeInsets.all(8.0),
                                                 child: Row(
                                                   children: [
-                                                    CircleAvatar(),
-                                                    Column(
-                                                      children: [
-                                                        Text('Coca Cola'),
-                                                        Text("AED 2.30 Lidl")
-                                                      ],
+                                                    CircleAvatar(
+                                                      backgroundColor: Colors.grey[100],
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(8.0),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        mainAxisAlignment: MainAxisAlignment.center,
+                                                        children: [
+                                                          Text(
+                                                            'Coca Cola',
+                                                            style: TextStyle(
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
+                                                          ),
+                                                          Text(
+                                                            "AED 2.30 Lidl",
+                                                            style: TextStyle(color: Colors.grey),
+                                                          )
+                                                        ],
+                                                      ),
                                                     ),
                                                     Container(
                                                       decoration: BoxDecoration(
