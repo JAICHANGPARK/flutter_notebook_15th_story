@@ -156,9 +156,14 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                           Text("Carrefour"),
                                                           Text("15% off on personal core"),
                                                           Container(
-                                                            decoration: BoxDecoration(color: Colors.green),
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.green[100], borderRadius: BorderRadius.circular(8)),
+                                                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                                             child: Center(
-                                                              child: Text("SHOP NOW"),
+                                                              child: Text(
+                                                                "SHOP NOW",
+                                                                style: TextStyle(fontWeight: FontWeight.bold),
+                                                              ),
                                                             ),
                                                           ),
                                                         ],
