@@ -74,6 +74,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                           children: [
                                             CircleAvatar(
                                               radius: 32,
+                                              backgroundColor: Colors.grey[100],
                                             ),
                                             SizedBox(
                                               height: 8,
@@ -261,7 +262,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                                                         child: Center(
                                                           child: Text(
-                                                            "SHOP NOW",
+                                                            "REORDER",
                                                             style: TextStyle(
                                                               fontWeight: FontWeight.bold,
                                                               fontSize: 12,
