@@ -215,7 +215,7 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                   ],
                                 ),
                                 SizedBox(
-                                  height: 84,
+                                  height: 72,
                                   child: ListView.builder(
                                       itemCount: 10,
                                       scrollDirection: Axis.horizontal,
@@ -224,8 +224,36 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                             width: MediaQuery.of(context).size.width - 84,
                                             child: Card(
                                               elevation: 4,
-                                              child: Row(
-                                                children: [],
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Row(
+                                                  children: [
+                                                    CircleAvatar(),
+                                                    Column(
+                                                      children: [
+                                                        Text('Coca Cola'),
+                                                        Text("AED 2.30 Lidl")
+                                                      ],
+                                                    ),
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.green[50],
+                                                        borderRadius: BorderRadius.circular(4),
+                                                      ),
+                                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                                      child: Center(
+                                                        child: Text(
+                                                          "SHOP NOW",
+                                                          style: TextStyle(
+                                                            fontWeight: FontWeight.bold,
+                                                            fontSize: 12,
+                                                            color: Colors.green,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ));
                                       }),
