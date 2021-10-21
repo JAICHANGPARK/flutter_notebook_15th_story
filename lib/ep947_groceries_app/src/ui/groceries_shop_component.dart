@@ -152,7 +152,16 @@ class _GroceriesShopComponentState extends State<GroceriesShopComponent> {
                                                       top: 16,
                                                       bottom: 16,
                                                       child: Column(
-                                                        children: [],
+                                                        children: [
+                                                          Text("Carrefour"),
+                                                          Text("15% off on personal core"),
+                                                          Container(
+                                                            decoration: BoxDecoration(color: Colors.green),
+                                                            child: Center(
+                                                              child: Text("SHOP NOW"),
+                                                            ),
+                                                          ),
+                                                        ],
                                                       ))
                                                 ],
                                               ),
