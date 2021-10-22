@@ -23,6 +23,7 @@ dependencies:
   intl: ^0.17.0 # Add this line
 
   line_icons: ^2.0.1
+  flutter_riverpod: 1.0.0-dev11
 
 dev_dependencies:
   flutter_test:
